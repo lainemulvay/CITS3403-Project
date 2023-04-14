@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat view</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #eee;
+            padding: 10px;
+            height: 50px;
+        }
+        .logo, .avatar {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .scrollable-div {
+            background-color: darkgrey;
+            height: calc(100vh - 70px);
+            overflow-y: scroll; /* enable vertical scrolling */
+            overflow-x: hidden; /* hide horizontal scrolling */
+        }
+        .message {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            max-width: 70%;
+        }
+ 
+        .received {
+            align-self: flex-start;
+            background-color: white;
+        }
+ 
+        .sent {
+            align-self: flex-end;
+            background-color: lightblue;
+        }
+ 
+        .time {
+            font-size: 0.8em;
+            color: grey;
+            margin-top: 5px;
+        }
+        .input-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px;
+            border-top: 1px solid lightgrey;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+ 
+        input {
+            flex-grow: 1;
+            border: none;
+            border-radius: 5px;
+        }
+ 
+        button {
+            background-color: lightblue;
+            color: white;
+            margin-right: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <div class="avatar">Avatar</div>
+    </header>
+    <div class="scrollable-div">
+        <div class="message received">
+            <p>Hello there!</p>
+            <span class="time">10:00 AM</span>
+        </div>
+        <div class="message sent">
+            <p>Hey! How are you?</p>
+            <span class="time">10:01 AM</span>
+        </div>
+        <div class="message received">
+            <p>I'm doing well, thanks. How about you?</p>
+            <span class="time">10:02 AM</span>
+        </div>
+        <div class="message sent">
+            <p>Not too bad. What are you up to?</p>
+            <span class="time">10:03 AM</span>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Type your message here...">
+            <button type="button">Send</button>
+        </div>          
+    </div>
+</body>
+</html>
