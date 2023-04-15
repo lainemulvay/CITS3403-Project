@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <style>
+      body {
+        background-color: white;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+    }
+    .login-form {
+        background-color: grey;
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+ 
+      form div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+      }
+      label {
+        margin-bottom: 0.5rem;
+        color: white;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="password"] {
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 0.5rem;
+      }
+      input[type="submit"] {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .black-box {
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .title {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="black-box">
+        <h1 style ="color:white">logo</h1>
+    </div>
+    <h1 class="title">Welcome to My Website</h1>
+    <div class = "container">
+        <h1> Descriptions</h1>
+    </div>
+    <div class="container">
+        <div class="login-form">
+            <form>
+                <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                </div>
+ 
+                <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                </div>
+ 
+                <div>
+                <input type="submit" value="Log In">
+                </div>
+                <p style="text-align: center;">
+                    <a href="">Sign up</a>
+                </p>
+ 
+            </form>
+      </div>
+    </div>
+  </body>
+</html>
