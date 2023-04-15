@@ -5,32 +5,31 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div id = "header">
-            <img id = "header_logo" src="./images/UWA Logo Small.png" alt="UWA logo">
-            <h1 id = "header_text"> FAQ chat </h1>
+        <div class="header">
+            <img class="header_logo" src="./images/UWA Logo Small.png" alt="UWA logo">
+            <h3 class="header_text"> FAQ chat </h3>
         </div>
-        <div style = "margin: auto">
-            <h1> TODO:Descriptions </h1>
+        <div class="intro">
+            <h3> TODO:Descriptions </h3>
         </div>
-        <div id = "login">
-            <img id = "login_logo" src="./images/UWA Logo-Full.jpg" alt="UWA logo">
-            <h1 id = "login_prompt">Sign into your account</h1>
-            <form id = "login_form">
-                <div>
-                    <input type="text" id="username" name="username" placeholder="Username" required>
+        <div class="login">
+            <img class="login_logo" src="./images/UWA Logo-Full.jpg" alt="UWA logo">
+            <h1 class="login_prompt">Sign into your account</h1>
+            <form class="login_form">
+                <div class="form_field">
+                    <input class="inputfield" type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form_field">
+                    <input class="inputfield" type="password" id="password" name="password" placeholder="Password" required>
                 </div>
                 <div>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <button class="button" type="submit"> Sign in </button>
                 </div>
                 <div>
-                    <button id="button" type="submit"> Sign in </button>
-                </div>
-                <div>
-                    <h1 id="register">Don't have an account?
+                    <p class="register">Don't have an account?
                         <a href="TODO:chatview">Register here</a>
-                    </h1>
+                    </p>
                 </div>
-                
             </form>
         </div>
     </body>
