@@ -35,8 +35,7 @@ div {
 .login {
     background-color: white;
     width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto 50px auto;
     border-radius: 50px;
     box-shadow: 0 0px 30px rgba(52, 88, 186, 0.551);
     overflow: hidden;
