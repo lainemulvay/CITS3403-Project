@@ -73,7 +73,7 @@ input {
 
 .form_field {
     margin: 15px;
-    width: 80%;
+    width: 60%;
 }
 
 .inputfield {
@@ -102,11 +102,15 @@ input {
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
     p {
-        font-size: 24px;
+        font-size: calc(24px + 1.5vw);
+    }
+
+    .login_prompt {
+        font-size: calc(1.75em + 1.5vw);
     }
 
     h3 {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .header {
@@ -127,13 +131,13 @@ input {
     }
 
     .inputfield {
-        font-size: 24px;
+        font-size: calc(1em + 1.5vw);
     }
 
     .button {
         margin: 30px;
         padding: 15px 38px;
-        font-size: 24px;
+        font-size: calc(16px + 1.5vw);
     }
     
 }
