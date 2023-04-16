@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <img class="header_logo" src="./images/UWA Logo Small.png" alt="UWA logo">
+            <h3 class="header_text"> FAQ chat </h3>
+        </div>
+        <div class="login">
+            <img class="login_logo" src="./images/UWA Logo-Full.jpg" alt="UWA logo">
+            <h1 class="login_prompt">Register a new account</h1>
+            <form class="login_form">
+                <div class="form_field">
+                    <input class="inputfield" type="firstname" id="firstname" name="firstname" placeholder="First name" required>
+                </div>
+                <div class="form_field">
+                    <input class="inputfield" type="lastname" id="lastname" name="lastname" placeholder="Last name" required>
+                </div>
+                <div class="form_field">
+                    <input class="inputfield" type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form_field">
+                    <input class="inputfield" type="password" id="newPW" name="newPW" placeholder="Enter a new Password" required>
+                </div>
+                <div class="form_field">
+                    <input class="inputfield" type="password" id="confirmPW" name="confirmPW" placeholder="Confirm password" required>
+                </div>
+                <div>
+                    <button class="button" type="submit"> Register </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+<script>
+    var password = document.getElementById("newPW")
+    var confirm_password = document.getElementById("confirmPW");
+
+function validatePassword() {
+  if (password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+
+</script>
