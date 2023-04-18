@@ -37,7 +37,7 @@ div {
     width: 50%;
     margin: 3em auto 1em auto;
     border-radius: 50px;
-    box-shadow: 0 0px 30px rgba(52, 88, 186, 0.551);
+    box-shadow: 0 0px 30px rgb(188, 187, 187);
     overflow: hidden;
 
     display:none;
@@ -106,22 +106,38 @@ input {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+    font-weight:bold
+}
+
+.intro h1 {
+    font-size: 4em;
+    margin: 0.2em;
 }
 
 .descriptions {
     display:block;
-    
+    font-weight:medium;
+}
+
+.descriptions h3{
+    margin: 1em;
+    font-size: 2em;
+    border-collapse: collapse;
 }
 
 .descrptionBox {
-    border: 1px solid #ccc;
-    padding: 1em;
+    border-radius: 35px;
+    box-shadow: 0 0px 30px rgb(188, 187, 187);
+    padding: 2em;
     margin-bottom: 2em;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
   
 .descrptionBox h3:first-of-type {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     font-family: 'Open Sans', sans-serif;
     margin-top: 0px;
     margin-bottom: 10px;
