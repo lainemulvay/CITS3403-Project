@@ -4,16 +4,47 @@
         <meta charset="UTF-8">
         <title>Login</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
     </head>
     <body>
         <div class="header">
-            <img class="header_logo" src="./images/UWA_Logo_Small.png" alt="UWA logo">
+            <img id="header_logo" class="header_logo" onclick="home()" src="./images/UWA_Logo_Small.png" alt="UWA logo">
             <h3 class="header_text"> FAQ chat </h3>
         </div>
         <div class="intro">
-            <h3> TODO:Descriptions </h3>
+            <h1> UWA FAQ Chat System </h1>
+            <button id="intro_button" class="button" onclick="loginButton()">Sign in</button>
+            <div id="descriptions" class="descriptions">
+                <h3> 
+                    The purpose of this application is to provide an easy-to-use platform for anyone seeking 
+                    information about the University of Western Australia. With the chat system.
+                </h3>
+                <div class="descrptionBox">
+                    <h3> FAQ </h3>
+                    <h3> 
+                        Users can easily receive help from a chatbot or representative
+                        about answers to their inquiries about the university. 
+                    </h3> 
+                </div>
+                
+                <div class="descrptionBox">
+                    <h3> History </h3>
+                    <h3> 
+                        Users are able to create an account to track their chat history, 
+                        which allows them to quickly and easily access previous conversations for reference. 
+                    </h3>
+                </div>
+
+                <div class="descrptionBox">
+                    <h3> Prompt Responses </h3>
+                    <h3>
+                        Users can receive personalized and timely responses to their inquiries, 
+                        helping them to make informed decisions about their education goals.
+                    </h3>
+                </div>
+            </div>
         </div>
-        <div class="login">
+        <div id="login" class="login">
             <img class="login_logo" src="./images/UWA_Logo_Full.jpg" alt="UWA logo">
             <h1 class="login_prompt">Sign into your account</h1>
             <form class="login_form">

@@ -35,10 +35,12 @@ div {
 .login {
     background-color: white;
     width: 50%;
-    margin: 0 auto 50px auto;
+    margin: 3em auto 1em auto;
     border-radius: 50px;
     box-shadow: 0 0px 30px rgba(52, 88, 186, 0.551);
     overflow: hidden;
+
+    display:none;
 }
 
 .login_logo {
@@ -97,6 +99,14 @@ input {
 .register {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
+}
+
+.intro {
+    text-align:center;
+}
+
+.descriptions {
+    display:block;
 }
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
