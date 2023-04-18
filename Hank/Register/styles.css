@@ -87,11 +87,12 @@ input {
 .button {
     border: none;
     color: white;
-    margin: 20px;
+    margin: 15px;
     padding: 10px 32px;
     font-size: 16px;
     background-color: rgb(52, 88, 186);
-    border-radius: 50px
+    border-radius: 50px;
+    cursor: pointer;
 }
 
 .register {
