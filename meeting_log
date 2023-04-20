@@ -1,14 +1,27 @@
-11/04/2023
+07/04/2023 (Laine, Murray)
+Discussion:
+    brainstorm what we personally want to do for the project and why. Including a simple structure of how we are going to achieve that idea. by tuesday where we will have another online meeting to compare ideas and decide what we will do. in this meeting we will also talk about our programming experience so we know each others strengths and weaknesses to make the project as efficient as possible.
+
+Outcome:
+    Set up time for weekly meetings
+    Attempt to use grain for meeting record
+
+11/04/2023 (All members)
 Discussion: 
     Shared ideas on the general design and function of the chat page
 Outcome:
-    Each produce a set of view to show the desired design
+    Decided to start with making a website with an automated chat mechanism and access to chat gpt.
+    Each produce a set of view to show the desired design.
+    Write some html for our idea of the website using the project description as a guide.
 
-14/04/2023
+14/04/2023 (All members)
 Discussion:
     Looked at each other's web pages, concluded on the final general look.
     Allocating work to members.
+    Discussed the organisation of git repository 
+
 Outcome: 
+    Work on the same branch with individual folders
     Split the group into Hank and Vicky, Laine and Murray, building the login and chat page respectively.
     Aim to finish the html and css in the next two weeks.
 
