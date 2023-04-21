@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CITS3403 Project</title>
+        <link rel="stylesheet" href="chat_style.css">
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- bootstrap removed-->
-    <title>CITS3403 Project</title>
-    <link rel="stylesheet" href="chat_style.css">
-    <script src="chat.js" ></script>
-</head>
-
-<body>
-    <!-- bootstrap removed -->
-    <div class="container py-5 h-100">
-        <form id="chat-form">
-            <label class="my-1 mr-2" for="mytext">Enter your message: </label>
-            <div class="form-group mb-2">
-                <input class="form-control mb-2" type="text" id="mytext" style="width: 50%; height: auto;" required
-                    placeholder="Please input your message here...">
-                <button class="btn btn-primary" type="submit">Submit</button>
+    <body>
+        <div class="container py-5 h-100">
+            <form id="chat-form">
+                <label class="my-1 mr-2" for="mytext">Enter your message: </label>
+                <div class="form-group mb-2">
+                    <input class="form-control mb-2" type="text" id="mytext" style="width: 50%; height: auto;" required
+                        placeholder="Please input your message here...">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </form>
+            <div>
+                <h2>Response:</h2>
+                <textarea id="response" rows="20" style="width: 80%;" readonly></textarea>
             </div>
-        </form>
-        <div>
-            <h2>Response:</h2>
-            <textarea id="response" rows="20" style="width: 80%;" readonly></textarea>
         </div>
-    </div>
-</body>
-
+        <script src="Chat.js" ></script>
+    </body>
 </html>
