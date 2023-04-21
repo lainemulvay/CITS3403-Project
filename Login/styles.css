@@ -160,7 +160,7 @@ input {
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
     p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .intro h1 {
@@ -168,11 +168,11 @@ input {
     }
 
     h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .header {
-        height: 80px;
+        height: 60px;
     }
 
     .descriptions h3{
@@ -182,25 +182,29 @@ input {
   
     .login{
         width: 90%;
-        margin-top: 45px;
+        margin-top: 30px;
+    }
+
+    .login_prompt {
+        font-size: 1.5em;
     }
 
     .form_field {
-        width: 90%;
+        width: 85%;
     }
 
     input {
-        height: 60px;
+        height: 48px;
     }
 
     .inputfield {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .button {
         margin: 20px;
         padding: 10px 35px;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .intro {
