@@ -7,6 +7,13 @@ html, body {
   
 div {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
 }
 
 .header {
@@ -28,16 +35,12 @@ div {
     font-weight: bold;
 }
 
-.intro {
-    padding: 0px 10px;
-}
-
 .login {
     background-color: white;
-    width: 50%;
-    margin: 0 auto 50px auto;
+    width: 45%;
+    margin: 3em auto 2em auto;
     border-radius: 50px;
-    box-shadow: 0 0px 30px rgba(52, 88, 186, 0.551);
+    box-shadow: 0 0px 30px rgb(188, 187, 187);
     overflow: hidden;
 }
 
@@ -87,7 +90,7 @@ input {
 .button {
     border: none;
     color: white;
-    margin: 15px;
+    margin: 20px;
     padding: 10px 32px;
     font-size: 16px;
     background-color: rgb(52, 88, 186);
@@ -102,24 +105,20 @@ input {
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
     p {
-        font-size: calc(24px + 1.5vw);
-    }
-
-    .login_prompt {
-        font-size: calc(1.75em + 1.5vw);
+        font-size: 20px;
     }
 
     h3 {
-        font-size: 36px;
+        font-size: 25px;
     }
 
     .header {
-        height: 120px;
+        height: 80px;
     }
-
+  
     .login{
         width: 90%;
-        margin-top: 50px;
+        margin-top: 45px;
     }
 
     .form_field {
@@ -127,17 +126,17 @@ input {
     }
 
     input {
-        height: 70px;
+        height: 60px;
     }
 
     .inputfield {
-        font-size: calc(1em + 1.5vw);
+        font-size: 20px;
     }
 
     .button {
-        margin: 30px;
-        padding: 15px 38px;
-        font-size: calc(16px + 1.5vw);
+        margin: 20px;
+        padding: 10px 35px;
+        font-size: 20px;
     }
     
 }
