@@ -1,11 +1,16 @@
 
 const API_KEY = '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' // apikey from openai
 
-const form = document.getElementById('chat-form');
-const mytextInput = document.getElementById('mytext');
-const responseTextarea = document.getElementById('response');
+window.location.href = 'Chat_view.html';
 
-form.addEventListener('submit', async (e) => {
+// wait for the page to load
+window.onload = function() {
+  // get a reference to an element on the other page
+  const form = document.getElementById('chat-form');
+  const mytextInput = document.getElementById('mytext');
+  const responseTextarea = document.getElementById('response');
+  // do something with the element
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const mytext = mytextInput.value.trim(); // remove unnecessary white spaces
 
@@ -42,3 +47,6 @@ form.addEventListener('submit', async (e) => {
         }
     }
 })
+};
+
+
