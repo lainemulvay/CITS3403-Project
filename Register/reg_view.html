@@ -8,11 +8,11 @@
     </head>
     <body>
         <div class="header">
-            <a class="header_logo" href="../Login/intro_view.html"><img id="header_logo" class="header_logo" src="./images/UWA_Logo_Small.png" alt="UWA logo"></a>
+            <a class="header_logo" href="../Login/intro_view.html"><img id="header_logo" class="header_logo" src="../images/UWA_Logo_Small.png" alt="UWA logo"></a>
             <h3 class="header_text"> FAQ chat </h3>
         </div>
         <div class="login">
-            <img class="login_logo" src="./images/UWA_Logo_Full.jpg" alt="UWA logo">
+            <img class="login_logo" src="../images/UWA_Logo_Full.jpg" alt="UWA logo">
             <h1 class="login_prompt">Register a new account</h1>
             <form class="login_form">
                 <div class="form_field">
@@ -34,30 +34,11 @@
                 <div>
                     <button class="button" type="submit"> Register </button>
                 </div>
-                <div style="margin:20px">
-                    <a class="button" style= "color: white; text-decoration: none;" href="../Login/login_view.html"> Back </a>
+                <div style="margin: 10px 0px 20px 0px;">
+                    <a style= "color: white; text-decoration: none;" href="../Login/login_view.html"><span class="button">Back</span></a>
                 </div>
-                <!-- <div>
-                    <button class="button" style="margin-top: 0px!important;"><a style= "color: white; text-decoration: none;" href="../Login/login_view.html"> Back </a></button>
-                </div>     -->
             </form>
         </div>
+        <script src="register.js"></script>
     </body>
 </html>
-
-<script>
-    var password = document.getElementById("newPW")
-    var confirm_password = document.getElementById("confirmPW");
-
-function validatePassword() {
-  if (password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
-  } else {
-    confirm_password.setCustomValidity('');
-  }
-}
-
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
-
-</script>
