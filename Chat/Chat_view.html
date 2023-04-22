@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>CITS3403 Project</title>
-        <link rel="stylesheet" href="chat_style.css">
-    </head>
-
+<head>
+  <meta charset="UTF-8">
+  <title>CITS3403 Project</title>
+  <link rel="stylesheet" href="chat_style.css">
+</head>
 <body>
-    <!-- bootstrap removed -->
-    <div class="container py-5 h-100">
-        <form id="chat-form">
-            <label class="my-1 mr-2" for="mytext">Enter your message: </label>
-            <div class="form-group mb-2">
-                <input class="form-control mb-2" type="text" id="mytext" style="width: 50%; height: auto;" required
-                    placeholder="Please input your message here...">
-                <button class="btn btn-primary" type="submit">Submit</button>
-            </div>
-        </form>
-        <div>
-            <h2>Response:</h2>
-            <textarea id="response" rows="20" style="width: 80%;" readonly></textarea>
-        </div>
+  <div class="container">
+    <div class="response-container">
+      <textarea id="response" rows="20" readonly></textarea>
     </div>
+    <div class="input-container">
+      <form class="chat_form">
+        <input class="inputfield" type="text" id="chat_input_message" name="chat_input_message" placeholder="Ask me a question..." required>
+        <button type="submit" class="button" id="submit_chat_input">Submit</button>
+      </form>
+    </div>
+  </div>
 </body>
-
 </html>
