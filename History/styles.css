@@ -56,6 +56,14 @@ div {
 .view_chat {
     float:right;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    padding:1em;
-    Margin:0.5em 1em 0.5em 0em;
+    font-size: 1em;
+    padding:0.5em;
+    Margin:0.75em 1em 0.75em 0em;
+
+    border: none;
+    color: white;
+    
+    background-color: rgb(52, 88, 186);
+    border-radius: 10px;
+    cursor: pointer;
 }
