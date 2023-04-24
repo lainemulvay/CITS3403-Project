@@ -82,16 +82,14 @@ p {
 }
 
 .view_chat {
-    float:right;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    float: right;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 0.9em;
-    padding:0.5em 1em;
+    padding: 0.5em 1em;
     margin: 17px;
-
-    border: none;
-    color: black;
-    
-    background-color: rgb(199, 199, 199);
+    border: 1px solid #00418d;
+    color: #00418d;
+    background-color: white;
     border-radius: 10px;
     cursor: pointer;
 }
