@@ -50,6 +50,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: aliceblue;
 }
 
 .history_summary {
@@ -65,7 +66,9 @@ p {
     width: 100%;
     font-size: 0.83em;
     font-weight: bold;
-    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .chat_number {
@@ -73,6 +76,9 @@ p {
     width: 100%;
     font-size: 0.7em;
     font-weight: lighter;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .view_chat {
