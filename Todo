@@ -1,17 +1,22 @@
 Login essential:
-Add description -Done
-register page -Done
-Adjust view for mobile devices - Done
+    Add description -Done
+    register page -Done
+    Adjust view for mobile devices - Done
 
 Login optional:
-navigation sign in button
+    navigation sign in button
+    Remember me 
+
+Register essential:
+    filter username and email format
 
 Chat optional:
-input message at the bottom and populate form top down like facebook messenger
+    input message at the bottom and populate form top down like facebook messenger
 
 Overall optional:
-Switch theme button
+    Switch theme button
 
 Overall essential:
-check python version
-organise css files
+    check python version
+    organise css files
+    organise files to use extend block
