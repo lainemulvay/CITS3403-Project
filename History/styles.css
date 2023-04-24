@@ -68,3 +68,63 @@ div {
     border-radius: 10px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 768px), (orientation: portrait) {
+    p {
+        font-size: 16px;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .header {
+        height: 50px;
+    }
+
+    .descriptions h3{
+        margin: 10px;
+        font-size: 25px;
+    }
+    
+    .login{
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .login_prompt {
+        font-size: 1.5em;
+    }
+
+    .form_field {
+        width: 85%;
+    }
+
+    input {
+        height: 48px;
+    }
+
+    .inputfield {
+        font-size: 16px;
+    }
+
+    .button {
+        margin: 20px;
+        padding: 10px 35px;
+        font-size: 16px;
+    }
+
+    .intro {
+        max-width: 100%;
+    }
+
+    .descrptionBox {
+        padding: 1.5em;
+        margin: 1.5em;
+        max-width: 90%;
+    }
+}
