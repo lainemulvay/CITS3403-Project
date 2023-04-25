@@ -113,6 +113,10 @@ div {
   max-width: 70%;
 }
 
+.message-input {
+  background-color: rgb(190, 213, 255);
+}
+
 .message-content {
   margin: 0;
 }
