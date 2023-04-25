@@ -11,15 +11,13 @@
     <h3 class="header_text"> FAQ chat </h3>
   </div>
   <div class="container">
-    <div>
-      <textarea id="response" rows="40" readonly></textarea>
-    </div>
-    <div class="input-container">
-      <form class="chat_form" id="chat_form">
-        <input class="inputfield" type="text" id="chat_input_message" name="chat_input_message" placeholder="Ask me a question..." required>
-        <button type="submit" class="button" id="submit_chat_input">Submit</button>
-      </form>
-    </div>
+    <textarea id="response" class="response-box" rows="40" readonly></textarea>
+  </div>
+  <div class="input-container">
+    <form class="chat_form" id="chat_form">
+      <input class="inputfield" type="text" id="chat_input_message" name="chat_input_message" placeholder="Ask me a question..." required>
+      <button type="submit" class="button" id="submit_chat_input">Submit</button>
+    </form>
   </div>
   <script src="Chat.js"></script>
 </body>
