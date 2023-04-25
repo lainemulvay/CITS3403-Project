@@ -1,12 +1,22 @@
 const API_KEY = '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' // apikey from openai
 
-const form = document.getElementById('chat_form');
+const form = document.getElementById('input_form');
 const mytextInput = document.getElementById('chat_input_message');
 const responseTextarea = document.getElementById('response');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // Display Input message
+    console.log('Input: ' + mytextInput.value)
+    const timestamp = new Date().toLocaleString();
+    const newMessage = document.createElement('div');
+    newMessage.innerHTML = '<p class="message-content">' + mytextInput.value + '</p><p class="message-timestamp">' + timestamp + '</p>';
+    newMessage.classList.add('message', 'message-input');
+    responseTextarea.appendChild(newMessage);
+    
     const mytext = mytextInput.value.trim(); // remove unnecessary white spaces
+    mytextInput.value = []; // clear mytextInput field
 
         if (mytext) {
             try {
@@ -30,8 +40,13 @@ form.addEventListener('submit', async (e) => {
 
             if (response.ok) {
                 const data = await response.json();
-                responseTextarea.value = data.choices[0].message.content;
-                mytextInput.value = []; // clear mytextInput field
+                const messageContent = data.choices[0].message.content;
+                console.log('Response: ' + messageContent)
+                const timestamp = new Date().toLocaleString();
+                const newMessage = document.createElement('div');
+                newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
+                newMessage.classList.add('message', 'message-response');
+                responseTextarea.appendChild(newMessage);
             } else {
                 responseTextarea.value = 'Error';
             }
@@ -41,3 +56,5 @@ form.addEventListener('submit', async (e) => {
         }
     }
 })
+
+// TODO: make it press submit when you press enter. At the moment it sends a message but doesnt generate a response

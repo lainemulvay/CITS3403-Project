@@ -37,10 +37,6 @@ div {
 
 .response-box {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
   margin-top: 20px;
   width: 90%;
@@ -52,7 +48,7 @@ div {
   box-sizing: border-box;
 }
 
-.chat_form {
+.input-form {
   position: absolute;
   bottom: 11px;
   left: 5.25%;
@@ -106,6 +102,31 @@ div {
   margin: 0px;
 }
 
+.message {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0px 10px rgb(188, 187, 187);
+  color: #000;
+  font-size: 16px;
+  margin: 10px;
+  padding: 10px 20px;
+  max-width: 70%;
+}
+
+.message-input {
+  background-color: rgb(190, 207, 255);
+  text-align: right;
+}
+
+.message-content {
+  margin: 0;
+}
+
+.message-timestamp {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
   
   /* add media queries for smaller screens if needed */
   /* TODO: need to fix so works on mobile */
