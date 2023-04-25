@@ -8,6 +8,7 @@ form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     // Display Input message
+    console.log('Input: ' + mytextInput.value)
     const timestamp = new Date().toLocaleString();
     const newMessage = document.createElement('div');
     newMessage.innerHTML = '<p class="message-content">' + mytextInput + '</p><p class="message-timestamp">' + timestamp + '</p>';
@@ -39,6 +40,7 @@ form.addEventListener('submit', async (e) => {
             if (response.ok) {
                 const data = await response.json();
                 const messageContent = data.choices[0].message.content;
+                console.log('Response: ' + messageContent)
                 const timestamp = new Date().toLocaleString();
                 const newMessage = document.createElement('div');
                 newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
