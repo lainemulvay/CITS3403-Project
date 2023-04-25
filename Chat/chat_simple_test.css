@@ -32,9 +32,14 @@ div {
 }
 
 .response-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   margin-top: 20px;
   width: 90%;
-  height: calc(100vh - 90px);
+  height: calc(100vh - 140px);
   border-radius: 35px;
   box-shadow: 0 0px 30px rgb(188, 187, 187);
   overflow: hidden;
