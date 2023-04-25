@@ -37,10 +37,6 @@ div {
 
 .response-box {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 0 auto;
   margin-top: 20px;
   width: 90%;
@@ -118,7 +114,6 @@ div {
 }
 
 .message-response {
-  position: absolute;
   left: 0px;
   top: 0px;
 }
