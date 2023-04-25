@@ -6,6 +6,14 @@ const responseTextarea = document.getElementById('response');
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
+
+    // Display Input message
+    const timestamp = new Date().toLocaleString();
+    const newMessage = document.createElement('div');
+    newMessage.innerHTML = '<p class="message-content">' + mytextInput + '</p><p class="message-timestamp">' + timestamp + '</p>';
+    newMessage.classList.add('message', 'message-input');
+    responseTextarea.appendChild(newMessage);
+
     const mytext = mytextInput.value.trim(); // remove unnecessary white spaces
 
         if (mytext) {
