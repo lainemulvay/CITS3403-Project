@@ -30,7 +30,9 @@ form.addEventListener('submit', async (e) => {
 
             if (response.ok) {
                 const data = await response.json();
-                const messageContent = data.choices[0].text;
+                // responseTextarea.value = data.choices[0].message.content (old textarea response)
+                const messageContent = data.choices[0].message.content;
+                console.log(messageContent);
                 const timestamp = new Date().toLocaleString();
                 const newMessage = document.createElement('div');
                 newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
