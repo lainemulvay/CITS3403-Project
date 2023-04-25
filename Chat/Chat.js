@@ -14,8 +14,9 @@ form.addEventListener('submit', async (e) => {
     newMessage.innerHTML = '<p class="message-content">' + mytextInput.value + '</p><p class="message-timestamp">' + timestamp + '</p>';
     newMessage.classList.add('message', 'message-input');
     responseTextarea.appendChild(newMessage);
-
+    
     const mytext = mytextInput.value.trim(); // remove unnecessary white spaces
+    mytextInput.value = []; // clear mytextInput field
 
         if (mytext) {
             try {
@@ -46,7 +47,6 @@ form.addEventListener('submit', async (e) => {
                 newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
                 newMessage.classList.add('message', 'message-response');
                 responseTextarea.appendChild(newMessage);
-                mytextInput.value = []; // clear mytextInput field
             } else {
                 responseTextarea.value = 'Error';
             }
@@ -56,3 +56,5 @@ form.addEventListener('submit', async (e) => {
         }
     }
 })
+
+// TODO: make it press submit when you press enter. At the moment it sends a message but doesnt generate a response
