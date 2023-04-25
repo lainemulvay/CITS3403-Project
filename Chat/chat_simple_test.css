@@ -12,13 +12,6 @@ div {
     padding: 0;
 }
 
-.container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 .header {
     width: 100%;
@@ -38,24 +31,6 @@ div {
 .header_text {
     font-weight: bold;
 }
-
-/* .response-box {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    width: 1400px;
-    max-width: 1400px;
-    min-height: 150px;
-    min-width: 300px;
-    margin: 20px auto;  Set left and right margins to auto 
-    border-radius: 50px;
-    box-shadow: 0 0px 30px rgb(188, 187, 187);
-    overflow: hidden;
-} */
-
 .response-box {
     /* add these properties */
     min-height: 150px;
@@ -69,10 +44,13 @@ div {
     justify-content: center;
     align-items: center;
   
-    /* calculate the height based on the viewport height */
-    height: calc(100vh - 220px); /* adjust the value as needed */
-    
-    /* calculate the width based on the viewport width */
-    width: calc(100vw - 200px); /* adjust the value as needed */
     max-width: 1400px;
+
+    /* set the absolute position and margins */
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    margin: 0 auto;
   }
