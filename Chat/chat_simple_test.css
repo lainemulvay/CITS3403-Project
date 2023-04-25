@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    height: 100%;
+}
+  
+div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header_logo {
+    height: 100%;
+    width: auto;
+}
+
+.header_text {
+    font-weight: bold;
+}
+
+/* .response-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 1400px;
+    max-width: 1400px;
+    min-height: 150px;
+    min-width: 300px;
+    margin: 20px auto;  Set left and right margins to auto 
+    border-radius: 50px;
+    box-shadow: 0 0px 30px rgb(188, 187, 187);
+    overflow: hidden;
+} */
+
+.response-box {
+    /* add these properties */
+    min-height: 150px;
+    min-width: 300px;
+    margin: 20px auto;
+    border-radius: 50px;
+    box-shadow: 0 0px 30px rgb(188, 187, 187);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    /* calculate the height based on the viewport height */
+    height: calc(100vh - 220px); /* adjust the value as needed */
+    
+    /* calculate the width based on the viewport width */
+    width: calc(100vw - 200px); /* adjust the value as needed */
+    max-width: 1400px;
+  }
