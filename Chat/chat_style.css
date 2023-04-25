@@ -48,7 +48,7 @@ div {
   box-sizing: border-box;
 }
 
-.chat_form {
+.input-form {
   position: absolute;
   bottom: 11px;
   left: 5.25%;
