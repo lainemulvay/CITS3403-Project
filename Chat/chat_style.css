@@ -115,6 +115,7 @@ div {
 
 .message-input {
   background-color: rgb(190, 213, 255);
+  text-align: right;
 }
 
 .message-content {
