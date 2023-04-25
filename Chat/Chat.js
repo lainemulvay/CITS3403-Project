@@ -11,7 +11,7 @@ form.addEventListener('submit', async (e) => {
     console.log('Input: ' + mytextInput.value)
     const timestamp = new Date().toLocaleString();
     const newMessage = document.createElement('div');
-    newMessage.innerHTML = '<p class="message-content">' + mytextInput + '</p><p class="message-timestamp">' + timestamp + '</p>';
+    newMessage.innerHTML = '<p class="message-content">' + mytextInput.value + '</p><p class="message-timestamp">' + timestamp + '</p>';
     newMessage.classList.add('message', 'message-input');
     responseTextarea.appendChild(newMessage);
 
