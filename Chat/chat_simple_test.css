@@ -46,11 +46,14 @@ div {
   
     max-width: 1400px;
 
-    /* set the absolute position and margins */
+    /* center the box when opening window */
     position: absolute;
     top: 100px;
     left: 100px;
     right: 100px;
     bottom: 100px;
     margin: 0 auto;
+
+    /* center the box */
+  transform: translate(-50%, -50%);
   }
