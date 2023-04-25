@@ -7,7 +7,6 @@ html, body {
 }
   
 div {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -31,37 +30,95 @@ div {
 .header_text {
     font-weight: bold;
 }
+
 .response-box {
-    /* add these properties */
-    min-height: 150px;
-    min-width: 300px;
-    border-radius: 50px;
-    box-shadow: 0 0px 30px rgb(188, 187, 187);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: calc(100vh - 200px);
-    width: 90%;
-    /* add margins */
-    margin-top: 50px;
-    margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 90%;
+  height: calc(100vh - 140px);
+  border-radius: 20px;
+  box-shadow: 0 0px 30px rgb(188, 187, 187);
+  overflow: hidden;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.chat_form {
+  position: absolute;
+  bottom: 33px;
+  left: 5.5%;
+  width: 89%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: rgb(230, 230, 230);
+  border-radius: 0px 0px 20px 20px;
+}
+
+
+.inputfield {
+  position: absolute;
+  bottom: 0px;
+  width: 93%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+  border-radius: 35px;
+  padding: 0.5em 1em 0.5em 1em;
+  font-size: 1em;
+  font-weight: bold;
+  flex-grow: 1;
+  margin-right: 0px;
+}
+
+.button {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  border: none;
+  color: white;
+  margin: 10px;
+  padding: 8px 32px;
+  font-size: 16px;
+  background-color: rgb(52, 88, 186);
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+#submit_chat_input {
+  margin: 0px;
 }
 
   
   /* add media queries for smaller screens if needed */
-  @media (max-width: 768px) {
-    .response-box {
-      max-width: 80%;
+  /* TODO: need to fix so works on mobile */
+  @media (max-height: 768px) {
+
+    .header_logo {
+      height:120%;
+      width: auto;
+   }
+  
+    .header_text {
+      font-size: 200%;
     }
   }
-  @media (max-width: 480px) {
+  @media (max-height: 480px) {
     .response-box {
-      max-width: 90%;
+      max-width: 100%;
     }
   }

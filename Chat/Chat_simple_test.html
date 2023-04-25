@@ -10,11 +10,14 @@
     <a class="header_logo" href="../Login/intro_view.html"><img id="header_logo" class="header_logo" src="../images/UWA_Logo_Smallv2.png" alt="UWA logo"></a>
     <h3 class="header_text"> FAQ chat </h3>
   </div>
-  <div>
-      <textarea class="response-box" rows="40" readonly></textarea>
+  <div class="response-container">
+    <textarea class="response-box" readonly></textarea>
   </div>
-  <div>
-      <textarea class="input-box" rows="5" placeholder="Type your question here..."></textarea>
+  <div class="input-container">
+    <form class="chat_form">
+      <input class="inputfield" type="text" id="chat_input_message" name="chat_input_message" placeholder="Ask me a question..." required>
+      <button type="submit" class="button" id="submit_chat_input">Submit</button>
+    </form>
   </div>
 </body>
 </html>
