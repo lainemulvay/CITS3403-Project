@@ -50,7 +50,7 @@ div {
 
 .chat_form {
   position: absolute;
-  bottom: 35px;
+  bottom: 33px;
   left: 5.5%;
   width: 89%;
   z-index: 1;
@@ -64,29 +64,39 @@ div {
 
 
 .inputfield {
-  position: relative;
-
-  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  width: 93%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-style: solid;
   border-color: grey;
   border-width: 1px;
   border-radius: 35px;
   padding: 0.5em 1em 0.5em 1em;
   font-size: 1em;
+  font-weight: bold;
   flex-grow: 1;
   margin-right: 0px;
 }
 
 .button {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
   border: none;
   color: white;
   margin: 10px;
-  padding: 10px 32px;
+  padding: 8px 32px;
   font-size: 16px;
   background-color: rgb(52, 88, 186);
   border-radius: 50px;
+  font-weight: bold;
   cursor: pointer;
   flex-shrink: 0;
+  z-index: 2;
 }
 
 #submit_chat_input {
