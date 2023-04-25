@@ -30,7 +30,12 @@ form.addEventListener('submit', async (e) => {
 
             if (response.ok) {
                 const data = await response.json();
-                responseTextarea.value = data.choices[0].message.content;
+                const messageContent = data.choices[0].text;
+                const timestamp = new Date().toLocaleString();
+                const newMessage = document.createElement('div');
+                newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
+                newMessage.classList.add('message', 'message-response');
+                responseTextarea.appendChild(newMessage);
                 mytextInput.value = []; // clear mytextInput field
             } else {
                 responseTextarea.value = 'Error';
