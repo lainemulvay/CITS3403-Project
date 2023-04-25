@@ -11,6 +11,11 @@ div {
     padding: 0;
 }
 
+p {
+    margin: 0;
+    line-height: 1.5;
+}
+
 .header {
     width: 100%;
     height: 50px;
@@ -30,42 +35,61 @@ div {
     font-weight: bold;
 }
 
+.content {
+    margin: 20px 10px;
+}
+
 .history_box {
-    border: solid grey;
+    border: solid 1px grey;
     border-radius: 15px;
     width: auto;
-    height: 4em;
-    margin: 0em 1em 0.5em 1em
+    min-height: 4em;
+    margin: 0em 1em 1em 1em;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: aliceblue;
 }
 
 .history_summary {
-    float:left;
+    float: left;
     margin: 1em;
     padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .datetime {
-    margin:0px;
-    size: 1.5em;
+    margin: 0px;
+    width: 100%;
+    font-size: 0.83em;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .chat_number {
     margin:0px;
-    size:1em;
+    width: 100%;
+    font-size: 0.7em;
     font-weight: lighter;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .view_chat {
-    float:right;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    float: right;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 0.9em;
-    padding:0.5em;
-    Margin:0.9em 1em 0.9em 0em;
-
-    border: none;
-    color: black;
-    
-    background-color: rgb(199, 199, 199);
+    padding: 0.5em 1em;
+    margin: 17px;
+    border: 1px solid #00418d;
+    color: #00418d;
+    background-color: white;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -122,62 +146,16 @@ div {
 }
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
-    p {
-        font-size: 16px;
-    }
-
-    .intro h1 {
-        font-size: 2.5em;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
     .header {
         height: 50px;
     }
 
-    .descriptions h3{
-        margin: 10px;
-        font-size: 25px;
-    }
-    
-    .login{
-        width: 90%;
-        margin-top: 30px;
-    }
-
-    .login_prompt {
-        font-size: 1.5em;
-    }
-
-    .form_field {
-        width: 85%;
-    }
-
-    input {
-        height: 48px;
-    }
-
-    .inputfield {
+    p {
         font-size: 16px;
     }
 
-    .button {
-        margin: 20px;
-        padding: 10px 35px;
-        font-size: 16px;
-    }
-
-    .intro {
-        max-width: 100%;
-    }
-
-    .descrptionBox {
-        padding: 1.5em;
-        margin: 1.5em;
-        max-width: 90%;
+    .view_chat {
+        margin-top: 0px;
     }
 
     .dropdown-content {
