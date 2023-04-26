@@ -100,6 +100,32 @@ p {
 
 footer {
     text-align: center;
+    background-color: rgb(240, 240, 240);
+    padding: 0.5em;
+}
+
+.about-us {
+    background-color: rgb(240,240, 240);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    text-align: left;
+    
+    width: 30%;
+    padding: 1em;
+    background-color: rgb(240, 240, 240);
+}
+
+.footer-box em {
+    margin-bottom: 1em;
+    background-color: red;
+}
+
+.footer-box p {
+    padding-bottom: 1em;
+    font-size: 0.8em;
 }
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
