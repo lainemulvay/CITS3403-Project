@@ -36,12 +36,16 @@ div {
     font-weight: bold;
 }
 
+.input-container {
+  margin-top: 50px;
+}
+
 .response-box {
   position: relative;
   margin: 0 auto;
   margin-top: 20px;
   width: 90%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 150px);
   border-radius: 20px;
   box-shadow: 0 0px 30px rgb(188, 187, 187);
   overflow: auto;
