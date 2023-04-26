@@ -1,4 +1,5 @@
-/* Style for chat page not interactive (chatbot not styled) */
+/* TODO: make messaged not cover input bar, change response box size? */
+/* TODO: make input bar get bigger if you type more than it takes */
 
 html, body {
     margin: 0;
@@ -43,9 +44,11 @@ div {
   height: calc(100vh - 100px);
   border-radius: 20px;
   box-shadow: 0 0px 30px rgb(188, 187, 187);
-  overflow: hidden;
+  overflow: auto;
   resize: none;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-form {
@@ -116,6 +119,8 @@ div {
 .message-input {
   background-color: rgb(190, 207, 255);
   text-align: right;
+  /* if this is a new div inside response-box how can I alsign it to the right side of response-box */
+  align-self: flex-end;
 }
 
 .message-content {
