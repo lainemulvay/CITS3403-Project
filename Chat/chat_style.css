@@ -1,4 +1,5 @@
-/* Style for chat page not interactive (chatbot not styled) */
+/* TODO: make response box scrollable */
+/* TODO: make input bar get bigger if you type more than it takes */
 
 html, body {
     margin: 0;
@@ -46,6 +47,8 @@ div {
   overflow: hidden;
   resize: none;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-form {
@@ -116,6 +119,8 @@ div {
 .message-input {
   background-color: rgb(190, 207, 255);
   text-align: right;
+  /* if this is a new div inside response-box how can I alsign it to the right side of response-box */
+  align-self: flex-end;
 }
 
 .message-content {
