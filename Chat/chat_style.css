@@ -1,5 +1,4 @@
-/* TODO: make messaged not cover input bar, change response box size? */
-/* TODO: make input bar get bigger if you type more than it takes */
+/* TODO: maked the css work for the mobile device*/
 
 html, body {
     margin: 0;
@@ -16,7 +15,7 @@ div {
     padding: 0;
 }
 
-
+/*
 .header {
     width: 100%;
     height: 50px;
@@ -35,12 +34,13 @@ div {
 .header_text {
     font-weight: bold;
 }
+*/
 
 .input-container {
   margin-top: 50px;
 }
 
-/* Dropdown menu */
+/* Dropdown menu 
 .dropdown {
   float: right;
   margin: 0 0 0 auto;
@@ -90,6 +90,8 @@ div {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+*/
 
 .response-box {
   position: relative;
