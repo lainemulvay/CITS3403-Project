@@ -108,10 +108,11 @@ footer {
     background-color: rgb(240,240, 240);
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .footer-box {
-    text-align: left;
+    text-align: center;
     
     width: 30%;
     padding: 1em;
