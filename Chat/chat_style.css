@@ -44,7 +44,7 @@ div {
   height: calc(100vh - 100px);
   border-radius: 20px;
   box-shadow: 0 0px 30px rgb(188, 187, 187);
-  overflow: hidden;
+  overflow: auto;
   resize: none;
   box-sizing: border-box;
   display: flex;
