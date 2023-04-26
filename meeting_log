@@ -44,3 +44,13 @@ Discussion:
     organised branches
  Outcome:
     see previous meeting
+
+26/04/2023 (All members)
+Discussion:
+    Agreed upon style for chat page
+    Discussed the inefficiencies of having similar elements on different pages written and styled for each page
+    Discussed the hamburger menu model for smaller sized windows
+    Discussed ideas for the back end
+ Outcome:
+    Finalised chat page style
+    Decided on base html and css for all pages (similar elements across pages are all from the same code)
