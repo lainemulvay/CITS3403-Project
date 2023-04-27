@@ -22,7 +22,7 @@ p {
     padding: 10px;
     display: flex;
     gap: 5px;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -33,12 +33,13 @@ p {
 
 .header_text {
     font-weight: bold;
+    width: 100%;
 }
 
 /* Dropdown menu */
 .dropdown {
-    float: right;
-    margin: 0 0 0 auto;
+    /* float: right; */
+    /* margin: 0 0 0 auto; */
 }
   
 .dropbtn {
@@ -92,7 +93,20 @@ p {
 }
 
 .accountText {
-    display: block;
+    display: flex;
+}
+
+.accountText>i {
+    width: 25px; 
+    height: 25px;
+    background-color: gray; 
+    border-radius: 50px;  
+    text-align: center;
+    margin-right: 5px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 
 #sidebaricon {
