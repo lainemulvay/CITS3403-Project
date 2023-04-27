@@ -5,13 +5,14 @@
 }
 
 .response-box {
-  position: relative;
+  /* position: relative; */
   margin: 0 auto;
   margin-top: 20px;
   width: 90%;
   height: calc(100vh - 150px);
   border-radius: 20px;
   box-shadow: 0 0px 30px rgb(188, 187, 187);
+  background-color: white;
   overflow: auto;
   resize: none;
   box-sizing: border-box;
