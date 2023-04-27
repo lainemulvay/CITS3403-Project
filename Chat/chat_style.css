@@ -47,9 +47,10 @@
   border-radius: 35px;
   padding: 0.5em 1em 0.5em 1em;
   font-size: 1em;
-  font-weight: bold;
+  font-weight: normal;
   flex-grow: 1;
   margin-right: 0px;
+
 }
 
 .button {
@@ -63,7 +64,7 @@
   font-size: 16px;
   background-color: rgb(52, 88, 186);
   border-radius: 50px;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
   flex-shrink: 0;
   z-index: 2;
