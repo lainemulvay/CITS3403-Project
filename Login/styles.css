@@ -1,38 +1,6 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-}
-  
-div {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 span {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
-}
-
-.header {
-    width: 100%;
-    height: 50px;
-    padding: 10px;
-    display: flex;
-    gap: 5px;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.header_logo {
-    height: 100%;
-    width: auto;
-}
-
-.header_text {
-    font-weight: bold;
 }
 
 .intro {
@@ -159,10 +127,6 @@ input {
 }
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
-    p {
-        font-size: 16px;
-    }
-
     .intro h1 {
         font-size: 2.5em;
     }
@@ -170,11 +134,7 @@ input {
     h3 {
         font-size: 20px;
     }
-
-    .header {
-        height: 50px;
-    }
-
+    
     .descriptions h3{
         margin: 10px;
         font-size: 25px;
