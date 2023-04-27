@@ -113,20 +113,22 @@ footer {
 
 .footer-box {
     text-align: center;
-    
     width: 30%;
     padding: 1em;
     background-color: rgb(240, 240, 240);
 }
 
-.footer-box em {
-    margin-bottom: 1em;
-    background-color: red;
+.heading {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
 }
 
 .footer-box p {
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     font-size: 0.8em;
+    text-align: left;
 }
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
@@ -141,9 +143,11 @@ footer {
     .dropdown-content {
         display: none;
     }
+
     .dropdown:hover .dropdown-content {
         display: block;
     }
+
     html {
         touch-action: manipulation;
     }
