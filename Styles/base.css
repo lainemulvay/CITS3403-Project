@@ -64,6 +64,7 @@ p {
     border-radius: 8px;
     padding: 5px;
     display: none;
+    z-index: 10;
 }
   
 .dropdown-content a {
@@ -83,7 +84,7 @@ p {
   
 .dropdown-content a:hover {
     background-color: #a9a9a9;
-    color: black;
+    color: white;
 }
   
 .dropdown:hover .dropdown-content {

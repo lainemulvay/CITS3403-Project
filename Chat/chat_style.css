@@ -76,14 +76,16 @@
 }
 
 .message {
-  background-color: #fff;
+  background-color: #e6e6e6;
   border-radius: 20px;
   box-shadow: 0 0px 10px rgb(188, 187, 187);
   color: #000;
   font-size: 16px;
-  margin: 10px;
+  margin: 15px 20px;
   padding: 10px 20px;
+  width: fit-content;
   max-width: 70%;
+  position:relative;
 }
 
 .message-input {
@@ -91,6 +93,32 @@
   text-align: right;
   /* if this is a new div inside response-box how can I alsign it to the right side of response-box */
   align-self: flex-end;
+}
+
+.message-input::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid rgb(190, 207, 255);;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(190, 207, 255);;
+  border-bottom: 10px solid transparent;
+  right: -12px;
+  top: 6px;
+}
+
+.message-response::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #e6e6e6;
+  border-top: 10px solid #e6e6e6;
+  border-bottom: 10px solid transparent;
+  left: -12px;
+  top: 6px;
 }
 
 .message-content {
