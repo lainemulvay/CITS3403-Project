@@ -1,7 +1,9 @@
 /* TODO: maked the css work for the mobile device*/
 
 .input-container {
-  margin-top: 50px;
+  margin-top: 70px;
+  position: relative;
+  z-index: 2;
 }
 
 .response-box {
@@ -32,7 +34,7 @@
   margin: 0 auto;
   background-color: transparent;
   border-radius: 20px;
-  box-shadow: 0 0px 30px rgb(188, 187, 187);
+  /* box-shadow: 0 0px 30px rgb(188, 187, 187); */
 }
 
 .inputfield {
