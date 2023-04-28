@@ -58,15 +58,7 @@
 }
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
-    .header {
-        height: 50px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
     .view_chat {
-        margin-top: 0px;
+        margin-top: auto;
     }
 }
