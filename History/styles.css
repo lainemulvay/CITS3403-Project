@@ -59,7 +59,7 @@
 
 /* @media only screen and (max-width: 768px), (orientation: portrait) {
     .view_chat {
-        margin-top: auto;
+        margin-top: 0px;
     }
 } */
 
