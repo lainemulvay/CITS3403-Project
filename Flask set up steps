@@ -1,0 +1,28 @@
+requirements:
+    have python installed
+
+for mac:
+python3 -m venv venv
+
+source venv/bin/activate
+
+    to deactivate: deactivate
+
+pip install flask
+
+pip install -r requirements.txt 
+
+export FLASK_APP = app.py
+
+for windows
+python3 -m venv venv
+
+source venv/Script/activate
+
+    to deactivate: deactivate
+
+pip install flask
+
+pip install -r requirements.txt 
+
+setx FLASK_APP "app.py"
