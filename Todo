@@ -13,6 +13,8 @@ Register essential:
 Chat optional:
     input message at the bottom and populate form top down like facebook messenger
 
+    message loading prompt
+
 Overall optional:
     Switch theme button
 
@@ -23,5 +25,5 @@ Overall essential:
 
 Bugs:
     drop down menu size -fixed
-    view chat button size in responisve view in history page
-    view chat button click function in mobile 
+    view chat button size in responisve view in history page -fixed
+    view chat button click function in mobile -fixed
