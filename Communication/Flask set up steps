@@ -17,15 +17,31 @@ pip install -r requirements.txt
 
 export FLASK_APP = app.py
 
-for windows
-python3 -m venv venv
+flask run
 
-source venv/Script/activate
+to activate debug mode
+    python3 app.py 
+    or just press the run button
+
+for windows
+py -3 -m venv venv
+
+venv\Scripts\activate
 
     to deactivate: deactivate
+
+if prompt says "cannot be loaded because running scripts is disabled on this system"
+    Set-ExecutionPolicy Unrestricted -Scope Process
 
 pip install flask
 
 pip install -r requirements.txt 
 
 setx FLASK_APP "app.py"
+
+flask run
+
+to activate debug mode
+    python3 app.py 
+    or python app.py
+    or just press the run button
