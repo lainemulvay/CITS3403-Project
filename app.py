@@ -10,5 +10,9 @@ def index():
 def login():
     return render_template("login_view.html")
 
+@app.route("/register")
+def register():
+    return render_template("reg_view.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
