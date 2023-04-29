@@ -18,5 +18,9 @@ def register():
 def history():
     return render_template("hist_view.html")
 
+@app.route("/chat")
+def chat():
+    return render_template("chat_view.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
