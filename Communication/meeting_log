@@ -54,3 +54,15 @@ Discussion:
  Outcome:
     Finalised chat page style
     Decided on base html and css for all pages (similar elements across pages are all from the same code)
+
+29/04/2023 (All members)
+Discussion:
+    Discussed backend works and codes required.
+    Discussed backend database
+ Outcome:
+    Hank - further organise the folder and files for flask structure
+    Vicky - implement login and register function
+    Murray - implement model and controller
+    Laine - implmenet chat histroy storage
+
+    Aim to have working codes by next wednesday
