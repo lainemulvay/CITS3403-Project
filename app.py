@@ -2,23 +2,23 @@ from flask import Flask, escape, render_template
 
 app = Flask(__name__)
 
-@app.route("/intro")
+@app.route("/intro/")
 def index():
     return render_template("intro_view.html")
 
-@app.route("/login")
+@app.route("/login/")
 def login():
     return render_template("login_view.html")
 
-@app.route("/register")
+@app.route("/register/")
 def register():
     return render_template("reg_view.html")
 
-@app.route("/history")
+@app.route("/history/")
 def history():
     return render_template("hist_view.html")
 
-@app.route("/chat")
+@app.route("/chat/")
 def chat():
     return render_template("chat_view.html")
 
