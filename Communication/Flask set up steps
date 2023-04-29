@@ -1,6 +1,9 @@
 requirements:
     have python installed
 
+when required:
+    pip freeze > requirements.txt
+
 for mac:
 python3 -m venv venv
 
