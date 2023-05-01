@@ -35,12 +35,6 @@ p {
     font-weight: bold;
     width: 100%;
 }
-
-/* Dropdown menu */
-.dropdown {
-    /* float: right; */
-    /* margin: 0 0 0 auto; */
-}
   
 .dropbtn {
     font-size: 1em;    
