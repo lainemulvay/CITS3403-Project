@@ -63,7 +63,8 @@
 }
 
 .view_chat:hover {
-    background-color: #1e87ff;
+    background-color: #00418d;
+    columns: white;
     border-color: white;
     color: white;
 }
