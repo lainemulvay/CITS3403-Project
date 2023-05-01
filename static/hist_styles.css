@@ -57,6 +57,17 @@
     cursor: pointer;
 }
 
+.view_chat_text {
+    display: inline;
+    margin-left: 0.5em;
+}
+
+.view_chat:hover {
+    background-color: #1e87ff;
+    border-color: white;
+    color: white;
+}
+
 /* @media only screen and (max-width: 672px) {
     .view_chat {
         margin-top: 0px;
