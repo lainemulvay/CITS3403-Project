@@ -32,10 +32,10 @@ form {
     padding: 0;
 }
   
-input {
+/* input {
     box-sizing: border-box;
     width: 100%;
-}
+} */
 
 .login_form {
     text-align: center;
@@ -50,7 +50,9 @@ input {
     width: 60%;
 }
 
-.inputfield {
+.login_inputfield {
+    box-sizing: border-box;
+    width: 100%;
     border-style: solid;
     border-color: grey;
     border-width: 1px;
@@ -59,7 +61,7 @@ input {
     font-size: 1em;
 }
 
-.button {
+.login_button {
     border: none;
     color: white;
     margin: 20px;
@@ -153,15 +155,16 @@ input {
         width: 85%;
     }
 
-    input {
+    /* input {
+        height: 48px;
+    } */
+
+    .login_inputfield {
+        font-size: 16px;
         height: 48px;
     }
 
-    .inputfield {
-        font-size: 16px;
-    }
-
-    .button {
+    .login_button {
         margin: 20px;
         padding: 10px 35px;
         font-size: 16px;
