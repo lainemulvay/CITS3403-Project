@@ -6,7 +6,7 @@
     <div id="login" class="login">
         <img class="login_logo" src="../static/images/UWA_Logo_Full.svg" alt="UWA logo">
         <h1 class="login_prompt">Sign into your account</h1>
-        <form class="login_form">
+        <form class="login_form" method="post">
             <div class="form_field">
                 <input class="inputfield" type="email" id="email" name="email" placeholder="Email Address" required>
             </div>
@@ -14,15 +14,15 @@
                 <input class="inputfield" type="password" id="password" name="password" placeholder="Password" required>
             </div>
             <div>
-                <a style= "color: white; text-decoration: none;" href="../Chat/Chat_view.html"><button class="button">Sign in</button></a>
+                <a style= "color: white; text-decoration: none;" href="{{url_for('chat')}}"><button class="button">Sign in</button></a>
             </div> 
 
             <div style="margin: 10px 0px 20px 0px;">
-                <a style= "color: white; text-decoration: none;" href="../Login/intro_view.html"><span class="button">Back</span></a>
+                <a style= "color: white; text-decoration: none;" href="{{url_for('index')}}"><span class="button">Back</span></a>
             </div> 
             <div>
                 <p class="register">Don't have an account?
-                    <a href="../Register/reg_view.html">Register here</a>
+                    <a href="{{url_for('register')}}">Register here</a>
                 </p>
             </div>
         </form>
