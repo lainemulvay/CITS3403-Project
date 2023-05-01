@@ -12,8 +12,10 @@ def login():
         return redirect(url_for('chat'))
     return render_template("login_view.html")
 
-@app.route("/register/")
+@app.route("/register/", methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+        return redirect(url_for('chat'))
     return render_template("reg_view.html")
 
 @app.route("/history/")
