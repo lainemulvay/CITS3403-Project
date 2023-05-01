@@ -3,10 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>History</title>
+        <title>UWA FAQ Chat</title>
         <link rel="stylesheet" href="../static/base.css">
+        <link rel="stylesheet" href="../static/chat_styles.css">
+        <link rel="stylesheet" href="../static/hist_styles.css">
+        <link rel="stylesheet" href="../static/intro_styles.css">
+        <link rel="stylesheet" href="../static/reg_styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-        <script src="../static/base.js"></script>
+        <script src="../static/scripts.js"></script>
     </head>
     <body>
         <div class="header">
@@ -24,6 +28,7 @@
                 </div>
             </div>  
         </div>
+        {% block content %}{% endblock %}
         <div class="about-us">
             <div class="footer-box">
                 <h1 class="heading">Help</h1>
