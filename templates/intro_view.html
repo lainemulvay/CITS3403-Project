@@ -1,51 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FAQ chat</title>
-        <link rel="stylesheet" href="../static/base.css">
-        <link rel="stylesheet" href="../static/intro_styles.css">
-        <script src="scripts.js"></script>
-    </head>
-    <body>
-        <!-- No drop down menu -->
-        <div class="header">
-            <img id="header_logo" class="header_logo" src="../static/images/UWA_Logo_Smallv2.png" alt="UWA logo">
-            <h3 class="header_text"> FAQ chat </h3>
-        </div>
-        <div class="intro">
-            <h1> UWA FAQ Chat System </h1>
-            <a href="../Login/login_view.html"><button id="intro_button" class="button">Get Started</button></a>
-            <div id="descriptions" class="descriptions">
+{% extends 'base.html'%}
+{%block content%}
+    <div class="intro">
+        <h1> UWA FAQ Chat System </h1>
+        <a href="../Login/login_view.html"><button id="intro_button" class="button">Get Started</button></a>
+        <div id="descriptions" class="descriptions">
+            <h3> 
+                Provide an easy-to-use platform for anyone seeking 
+                information about the University of Western Australia
+            </h3>
+            <div class="descrptionBox">
+                <h3> FAQ </h3>
                 <h3> 
-                    Provide an easy-to-use platform for anyone seeking 
-                    information about the University of Western Australia
+                    Easily receive help from a chatbot or representative
+                    about answers to inquiries about the university. 
+                </h3> 
+            </div>
+            
+            <div class="descrptionBox">
+                <h3> History </h3>
+                <h3> 
+                    Create an account to track user chat history.
+                    Quickly and easily access previous conversations for reference. 
                 </h3>
-                <div class="descrptionBox">
-                    <h3> FAQ </h3>
-                    <h3> 
-                        Easily receive help from a chatbot or representative
-                        about answers to inquiries about the university. 
-                    </h3> 
-                </div>
-                
-                <div class="descrptionBox">
-                    <h3> History </h3>
-                    <h3> 
-                        Create an account to track user chat history.
-                        Quickly and easily access previous conversations for reference. 
-                    </h3>
-                </div>
+            </div>
 
-                <div class="descrptionBox">
-                    <h3> Prompt Responses </h3>
-                    <h3>
-                        Receive personalized and timely responses to inquiries.
-                        Helping users to make informed decisions about education goals.
-                    </h3>
-                </div>
+            <div class="descrptionBox">
+                <h3> Prompt Responses </h3>
+                <h3>
+                    Receive personalized and timely responses to inquiries.
+                    Helping users to make informed decisions about education goals.
+                </h3>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+{%endblock%}
