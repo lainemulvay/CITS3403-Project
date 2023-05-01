@@ -3,7 +3,7 @@ span {
     font-weight: 500;
 }
 
-.login {
+.form_box {
     background-color: white;
     width: 45%;
     margin: 3em auto 2em auto;
@@ -12,12 +12,12 @@ span {
     overflow: hidden;
 }
 
-.login_logo {
+.form_box_logo {
     width: 60%;
     margin: 10% 20% 5% 20%;
 }
 
-.login_prompt {
+.form_box_prompt {
     text-align: center;
     font-size: 1.75em;
 }
@@ -28,7 +28,7 @@ form {
     padding: 0;
 }
 
-.login_form {
+._form {
     text-align: center;
     margin: 1em;
     display: flex;
