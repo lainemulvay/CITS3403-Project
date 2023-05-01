@@ -26,7 +26,14 @@
                     <input class="inputfield" type="email" id="email" name="email" placeholder="Email Address" required>
                 </div>
                 <div class="form_field">
-                    <input class="inputfield" type="password" id="newPW" name="newPW" placeholder="Enter a new Password" required>
+                    <input class="inputfield" type="password" id="newPW" name="newPW" placeholder="Enter a new Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                    <div id="pw_message">
+                        <p>Password must contain the following:</p>
+                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                        <p id="capital" class="invalid">A <b>uppercase</b> letter</p>
+                        <p id="number" class="invalid">A <b>number</b></p>
+                        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                    </div>
                 </div>
                 <div class="form_field">
                     <input class="inputfield" type="password" id="confirmPW" name="confirmPW" placeholder="Confirm password" required>
@@ -40,6 +47,6 @@
                 </div>
             </form>
         </div>
-        <script src="register.js"></script>
+        <script src="../static/register.js"></script>
     </body>
 </html>

@@ -71,6 +71,45 @@ input {
     font-weight: 100;
 }
 
+#pw_message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+  
+#pw_message p {
+    font-size: 12px;
+    line-height: 2;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: 0px;
+    content: "✔";
+    padding-right: 5px;
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: 0px;
+    content: "✖";
+    padding-right: 5px;
+  }
+
 @media only screen and (max-width: 768px), (orientation: portrait) {
     h3 {
         font-size: 20px;
