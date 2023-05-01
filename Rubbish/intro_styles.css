@@ -1,0 +1,72 @@
+.intro {
+    padding: 0px 10px;
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.intro h1 {
+    font-size: 4em;
+    margin: 0.2em;
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight:medium;
+    margin-bottom: 80px;
+}
+
+.descriptions h3{
+    margin: 1em;
+    font-size: 2em;
+    border-collapse: collapse;
+}
+
+.descrptionBox {
+    border-radius: 35px;
+    box-shadow: 0 0px 30px rgb(188, 187, 187);
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 60%;
+}
+  
+.descrptionBox h3:first-of-type {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+/* Styles for the second h3 description */
+.descrptionBox h3:last-of-type {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+}
+
+@media only screen and (max-width: 768px), (orientation: portrait) {
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .descriptions h3{
+        margin: 10px;
+        font-size: 25px;
+    }
+
+    .intro {
+        max-width: 100%;
+    }
+
+    .descrptionBox {
+        padding: 1.5em;
+        margin: 1.5em;
+        max-width: 90%;
+    }
+}

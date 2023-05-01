@@ -1,4 +1,4 @@
-from flask import Flask, escape, render_template
+from flask import Flask, escape, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
@@ -6,12 +6,16 @@ app = Flask(__name__)
 def index():
     return render_template("intro_view.html")
 
-@app.route("/login/")
+@app.route("/login/", methods=["GET", "POST"])
 def login():
+    if request.method == "POST":
+        return redirect(url_for('chat'))
     return render_template("login_view.html")
 
-@app.route("/register/")
+@app.route("/register/", methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+        return redirect(url_for('chat'))
     return render_template("reg_view.html")
 
 @app.route("/history/")
