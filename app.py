@@ -2,7 +2,7 @@ from flask import Flask, escape, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-@app.route("/intro/")
+@app.route("/")
 def index():
     return render_template("intro_view.html")
 
