@@ -1,6 +1,26 @@
 from flask import Flask, escape, render_template, request, redirect, url_for
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.secret_key = "project_1"
+app.config['SQLALCHEMY_DATABASE_URL'] = 'sqlite:///users.sqlite3'
+app.config["SQLALCHEMY_TRACK_MODIFYCATIONS"] = False
+app.permanent_session_lifetime = timedelta(minutes = 5)
+
+db = SQLAlchemy(app)
+
+class users(db.Model):
+    _id = db.Column("id", db.Integer, primary_key=True)
+    First_Name = db.Column("First Name", db.String(100))
+    Last_Name = db.Column("Last Name", db.String(100))
+    email = db.Column(db.String(100))
+    
+    def __init__(self,First_Name,Last_Name,email):
+        self.First_Name = First_Name
+        self.Last_Name = Last_Name
+        self.email = email
+        
+        
 
 @app.route("/intro/")
 def index():
@@ -15,6 +35,9 @@ def login():
 @app.route("/register/", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
+        session.permanent = True
+        
+        
         return redirect(url_for('chat'))
     return render_template("reg_view.html")
 
