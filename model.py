@@ -1,4 +1,6 @@
-'''
+'''tests the flask application for authentifycation and registration. 
+ensuring the response from the user is unique and verifyable in the database'''
+
 
 from datetime import datetime, timedelta
 import unittest, os
@@ -16,7 +18,7 @@ class ModelsTest(unittest.TestCase):
         app.config['WTF_CSRF_ENABLED'] = False
         self.app = app.test_client()
         db.create_all()
-        
+#tearDown: removes any data whcih was added to the test database during the test, dropping them all
     def tearDown(self):
         db.session.remove()
         db.session.commit()
@@ -49,6 +51,9 @@ class ModelsTest(unittest.TestCase):
         db.session.commit()
         self.login('testcase','correctpassword')
         login = self.app.get('/',follow_redirects=True)
+        
+        ### gamepage - associated page for chat_view
+        
         self.assertIn(login.data, self.app.get('/gamepage').data)
 #function to simulate registering for testing purposes
     def register(self, username, email, password, password2):
@@ -61,7 +66,7 @@ class ModelsTest(unittest.TestCase):
 #tests once the user successfully registers their account
     def test_registration(self):
         response = self.register('iexist', 'iexist@example.com','pwd','pwd')
-        self.assertIn(b'Congratulations, you are now a registered user!', response.data)
+        self.assertIn(b'Thankyou for Registering!', response.data)
 #test if a user tries to register with a username already in database
     def test_register_non_unique_user(self):
         u1 = Users(username="iexist", email='iexist@example.com')
@@ -79,5 +84,3 @@ class ModelsTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
-    
-    '''
