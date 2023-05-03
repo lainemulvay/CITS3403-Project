@@ -132,13 +132,13 @@ footer {
     margin-bottom: 0.5em;
     font-size: 1.5em;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-box p {
     padding-bottom: 0.5em;
     font-size: 1em;
-    text-align: left;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px), (orientation: portrait) {

@@ -2,7 +2,7 @@ from flask import Flask, escape, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-@app.route("/intro/")
+@app.route("/")
 def index():
     return render_template("intro_view.html")
 
@@ -20,11 +20,11 @@ def register():
 
 @app.route("/history/")
 def history():
-    return render_template("hist_view.html")
+    return render_template("hist_view.html", display = True)
 
 @app.route("/chat/")
 def chat():
-    return render_template("chat_view.html")
+    return render_template("chat_view.html", display = True)
 
 if __name__ == "__main__":
     app.run(debug=True)
