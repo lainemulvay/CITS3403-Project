@@ -45,7 +45,7 @@ def register():
         else:
             usr = users(user, "")
             db.session.add(usr)
-            db.commit
+            db.session.commit
         
         return redirect(url_for('chat'))
     return render_template("reg_view.html")
