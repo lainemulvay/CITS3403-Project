@@ -16,16 +16,18 @@
             <img id="header_logo" class="header_logo" src="../static/images/UWA_Logo_Smallv2.png" alt="UWA logo">
             <h3 class="header_text"> FAQ chat </h3>
             
-            <div class="dropdown" >
-                <div class="dropbtn" onclick="toggleDropdown()">
-                    <i class="fas fa-bars" id="sidebaricon"></i>
-                    <p class="accountText"><i class="fas fa-user"></i>Account<p>
-                </div>
-                <div class="dropdown-content">
-                    <a href="{{url_for('index')}}">Sign out</a>
-                    <a href="{{url_for('history')}}">History</a>
-                </div>
-            </div>  
+            {% if display %}
+                <div class="dropdown" >
+                    <div class="dropbtn" onclick="toggleDropdown()">
+                        <i class="fas fa-bars" id="sidebaricon"></i>
+                        <p class="accountText"><i class="fas fa-user"></i>Account<p>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="{{url_for('index')}}">Sign out</a>
+                        <a href="{{url_for('history')}}">History</a>
+                    </div>
+                </div>  
+            {% endif %}
         </div>
         {% block content %}{% endblock %}
         <div class="about-us">
@@ -56,7 +58,7 @@
         </div>
         <footer>
             <p>&copy; 2023 Semester 1 CITS3403 Project</p>
-            <p>Author: Laine, Murray, Vicky, Hank</p>
+            <p>Author: Hank, Vicky, Laine, Murray</p>
         </footer>
         
     </body>
