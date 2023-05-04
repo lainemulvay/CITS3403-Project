@@ -1,22 +1,53 @@
-from flask import Flask, escape, render_template, request, redirect, url_for
+from flask import Flask,render_template,flash, redirect,url_for,session,logging,request
+from datetime import datetime
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+app.secret_key = "project_1"
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+
+db = SQLAlchemy(app)
+
+class users(db.Model):
+    id = db.Column("id", db.Integer, primary_key=True)
+    First_Name = db.Column("First Name", db.String(100), nullable=False)
+    Last_Name = db.Column("Last Name", db.String(100), nullable=False)
+    email = db.Column(db.String(100), unique=True)
+    date_added = db.Column(db.DateTime, default=datetime.utcnow)
+        
+#intro view        
+@app.route("/intro/")
+=======
 
 @app.route("/")
 def index():
     return render_template("intro_view.html")
 
+#login
 @app.route("/login/", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        return redirect(url_for('chat'))
+        email = request.form["email"]
+        password = request.form["password"]
+        login = user.query.filter_by(username=email, password=password).first()
+        if login is not None:
+            return redirect(url_for('chat'))
     return render_template("login_view.html")
 
 @app.route("/register/", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
+        email = request.form['email']
+        First_name = request.form['firstname']
+        Last_name = request.form['lastname']
+        password = request.form['password']
+        register = user(username = email, First_name = First_name, Last_name = Last_name, password = password)
+        db.session.add(register)
+        db.session.commit()
+        
         return redirect(url_for('chat'))
     return render_template("reg_view.html")
+
 
 @app.route("/history/")
 def history():
@@ -28,6 +59,18 @@ def chat():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+'''
+@app.route("/user", methods = ["POST", "GET"])
+def user():
+    email = None
+    if "user" in session:
+        user = session["user"]
+        
+        if request.method == "POST":
+            email = request.form["email"]
+        return render_template("reg_view.html")
 
 @app.route('/signup', methods=['POST'])
 def signup_post():
@@ -67,3 +110,5 @@ def login_post():
 
     # if the above check passes, then we know the user has the right credentials
     return redirect(url_for('main.profile'))
+
+'''
