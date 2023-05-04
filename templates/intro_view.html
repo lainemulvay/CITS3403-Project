@@ -1,0 +1,37 @@
+{% extends 'base.html'%}
+{%block content%}
+    <div class="intro">
+        <h1> UWA FAQ Chat System </h1>
+        <a href="{{url_for('login')}}"><button id="intro_button" class="button">Get Started</button></a>
+        <div id="descriptions" class="descriptions">
+            <h3> 
+                Provide an easy-to-use platform for anyone seeking 
+                information about the University of Western Australia
+            </h3>
+            <div class="descrption_boxs">
+                <div class="descrption_box">
+                    <h3> FAQ </h3>
+                    <h3> 
+                        Easily receive help from a representative
+                        about answers to inquiries about the university. 
+                    </h3> 
+                </div>
+                <div class="descrption_box">
+                    <h3> History </h3>
+                    <h3> 
+                        Create an account to track user chat history.
+                        Quickly and easily access previous conversations for reference. 
+                    </h3>
+                </div>
+
+                <div class="descrption_box">
+                    <h3> Prompt Responses </h3>
+                    <h3>
+                        Receive personalized and timely responses to inquiries.
+                        Helping users to make informed decisions about education goals.
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+{%endblock%}
