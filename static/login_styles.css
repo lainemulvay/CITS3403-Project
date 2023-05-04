@@ -112,15 +112,19 @@ form {
     border-collapse: collapse;
 }
 
-.descrptionBox {
+.descriptions_boxs {
+    width: 60%;
+}
+
+.descrption_box {
     border-radius: 35px;
     box-shadow: 0 0px 30px rgb(188, 187, 187);
     padding: 2em;
     margin: 2em auto;
-    max-width: 60%;
+    max-width: 100%;
 }
   
-.descrptionBox h3:first-of-type {
+.descrption_box h3:first-of-type {
     font-size: 24px;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
@@ -129,7 +133,7 @@ form {
 }
 
 /* Styles for the second h3 description */
-.descrptionBox h3:last-of-type {
+.descrption_box h3:last-of-type {
     font-size: 18px;
     font-weight: normal;
     margin: 0;
@@ -201,9 +205,9 @@ form {
         max-width: 100%;
     }
 
-    .descrptionBox {
+    .descrption_box {
         padding: 1.5em;
         margin: 1.5em;
-        max-width: 90%;
+        max-width: 100%;
     }
 }
