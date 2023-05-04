@@ -1,21 +1,22 @@
-from app import app
 from flask import Flask,render_template,flash, redirect,url_for,session,logging,request
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 
-# app = Flask(__name__)
+app = Flask(__name__)
 app.secret_key = "project_1"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.sqlite3'
 
 db = SQLAlchemy(app)
 
 class users(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
-    First_Name = db.Column("First Name", db.String(100), nullable=False)
-    Last_Name = db.Column("Last Name", db.String(100), nullable=False)
+    first_Name = db.Column("First Name", db.String(100), nullable=False)
+    last_Name = db.Column("Last Name", db.String(100), nullable=False)
     email = db.Column(db.String(100), unique=True)
     date_added = db.Column(db.DateTime, default=datetime.utcnow)
 
+    def __repr__(self):
+        return '<User %r>' % self.email
 
 @app.route("/")
 @app.route("/index/")
@@ -36,6 +37,7 @@ def login():
 @app.route("/register/", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
+        user = Users.query.filter_by(email=form.email.data)
         email = request.form['email']
         First_name = request.form['firstname']
         Last_name = request.form['lastname']
@@ -56,8 +58,9 @@ def history():
 def chat():
     return render_template("chat_view.html", display = True)
 
-# if __name__ == "__main__":
-#     app.run(debug=True)
+if __name__ == "__main__":
+    db.create_all()
+    app.run(debug=True)
 
 
 '''
