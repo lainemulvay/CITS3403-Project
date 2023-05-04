@@ -7,25 +7,27 @@
         <link rel="stylesheet" href="../static/base.css">
         <link rel="stylesheet" href="../static/chat_styles.css">
         <link rel="stylesheet" href="../static/hist_styles.css">
-        <link rel="stylesheet" href="../static/reg_styles.css">
+        <link rel="stylesheet" href="../static/login_styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
         <script src="../static/scripts.js"></script>
     </head>
     <body>
         <div class="header">
-            <img id="header_logo" class="header_logo" src="../static/images/UWA_Logo_Smallv2.png" alt="UWA logo">
+            <a class="header_link" href="{{url_for('index')}}"><img id="header_logo" class="header_logo" src="../static/images/UWA_Logo_Smallv2.png" alt="UWA logo"></a>
             <h3 class="header_text"> FAQ chat </h3>
             
-            <div class="dropdown" >
-                <div class="dropbtn" onclick="toggleDropdown()">
-                    <i class="fas fa-bars" id="sidebaricon"></i>
-                    <p class="accountText"><i class="fas fa-user"></i>Account<p>
-                </div>
-                <div class="dropdown-content">
-                    <a href="{{url_for('index')}}">Sign out</a>
-                    <a href="{{url_for('history')}}">History</a>
-                </div>
-            </div>  
+            {% if display %}
+                <div class="dropdown" >
+                    <div class="dropbtn" onclick="toggleDropdown()">
+                        <i class="fas fa-bars" id="sidebaricon"></i>
+                        <p class="accountText"><i class="fas fa-user"></i>Account<p>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="{{url_for('index')}}">Sign out</a>
+                        <a href="{{url_for('history')}}">History</a>
+                    </div>
+                </div>  
+            {% endif %}
         </div>
         {% block content %}{% endblock %}
         <div class="about-us">
@@ -56,7 +58,7 @@
         </div>
         <footer>
             <p>&copy; 2023 Semester 1 CITS3403 Project</p>
-            <p>Author: Laine, Murray, Vicky, Hank</p>
+            <p>Author: Hank, Vicky, Laine, Murray</p>
         </footer>
         
     </body>
