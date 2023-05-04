@@ -26,6 +26,10 @@ p {
     align-items: center;
 }
 
+.header_link {
+    height:100%;
+}
+
 .header_logo {
     height: 100%;
     width: auto;
@@ -34,12 +38,6 @@ p {
 .header_text {
     font-weight: bold;
     width: 100%;
-}
-
-/* Dropdown menu */
-.dropdown {
-    /* float: right; */
-    /* margin: 0 0 0 auto; */
 }
   
 .dropbtn {
@@ -138,13 +136,13 @@ footer {
     margin-bottom: 0.5em;
     font-size: 1.5em;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-box p {
     padding-bottom: 0.5em;
     font-size: 1em;
-    text-align: left;
+    text-align: center;
 }
 
 @media only screen and (max-width: 768px), (orientation: portrait) {

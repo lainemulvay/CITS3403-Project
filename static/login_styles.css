@@ -3,10 +3,6 @@ span {
     font-weight: 500;
 }
 
-.intro {
-    padding: 0px 10px;
-}
-
 .login {
     background-color: white;
     width: 45%;
@@ -31,11 +27,6 @@ form {
     margin: 0;
     padding: 0;
 }
-  
-input {
-    box-sizing: border-box;
-    width: 100%;
-}
 
 .login_form {
     text-align: center;
@@ -51,6 +42,8 @@ input {
 }
 
 .inputfield {
+    box-sizing: border-box;
+    width: 100%;
     border-style: solid;
     border-color: grey;
     border-width: 1px;
@@ -75,7 +68,23 @@ input {
     font-weight: 100;
 }
 
+#pw_message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+  
+#pw_message p {
+    font-size: 12px;
+    line-height: 2;
+}
+
 .intro {
+    padding: 0px 10px;
     text-align: center;
     max-width: 80%;
     margin-left: auto;
@@ -126,18 +135,33 @@ input {
     margin: 0;
 }
 
-@media only screen and (max-width: 768px), (orientation: portrait) {
-    .intro h1 {
-        font-size: 2.5em;
-    }
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: 0px;
+    content: "✔";
+    padding-right: 5px;
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: 0px;
+    content: "✖";
+    padding-right: 5px;
+  }
 
+@media only screen and (max-width: 768px), (orientation: portrait) {
     h3 {
         font-size: 20px;
-    }
-    
-    .descriptions h3{
-        margin: 10px;
-        font-size: 25px;
     }
   
     .login{
@@ -153,18 +177,24 @@ input {
         width: 85%;
     }
 
-    input {
-        height: 48px;
-    }
-
     .inputfield {
         font-size: 16px;
+        height: 48px;
     }
 
     .button {
         margin: 20px;
         padding: 10px 35px;
         font-size: 16px;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .descriptions h3{
+        margin: 10px;
+        font-size: 25px;
     }
 
     .intro {
@@ -176,5 +206,4 @@ input {
         margin: 1.5em;
         max-width: 90%;
     }
-
 }

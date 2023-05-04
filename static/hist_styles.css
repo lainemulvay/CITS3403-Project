@@ -20,8 +20,8 @@
     float: left;
     margin: 1em;
     padding: 0px;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
 .datetime {
@@ -57,14 +57,30 @@
     cursor: pointer;
 }
 
-/* @media only screen and (max-width: 768px), (orientation: portrait) {
+.view_chat_text {
+    display: inline;
+    margin-left: 0.5em;
+}
+
+.view_chat:hover {
+    background-color: #00418d;
+    columns: white;
+    border-color: white;
+    color: white;
+}
+
+/* @media only screen and (max-width: 672px) {
     .view_chat {
         margin-top: 0px;
     }
 } */
 
-@media only screen and (max-width: 667px) {
-    .view_chat {
-        margin-top: 0px;
+@media only screen and (max-width: 768px), (orientation: portrait) {
+    .view_chat_text {
+        display: none;
+    }
+    
+    #icon {
+        display: inline;
     }
 }
