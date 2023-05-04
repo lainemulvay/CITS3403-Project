@@ -15,9 +15,6 @@ class users(db.Model):
     email = db.Column(db.String(100), unique=True)
     date_added = db.Column(db.DateTime, default=datetime.utcnow)
         
-#intro view        
-@app.route("/intro/")
-=======
 
 @app.route("/")
 def index():
