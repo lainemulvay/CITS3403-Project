@@ -1,6 +1,7 @@
 from flask import Flask,render_template,flash, redirect,url_for,session,logging,request
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
+from werkzeug.security import generate_password_hash, check_password_hash
 import os
 
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -11,6 +12,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 class User(db.Model):
+    __tablename__ = "users"
     id = db.Column("id", db.Integer, primary_key=True)
     email = db.Column(db.String(100), unique=True)
     first_name = db.Column("First Name", db.String(100), nullable=False)
@@ -21,6 +23,9 @@ class User(db.Model):
     def __repr__(self):
         return '<User %r>' % self.email
 
+    def get_password(self):
+        return self.password
+    
 @app.route("/")
 @app.route("/index/")
 def index():
@@ -30,30 +35,36 @@ def index():
 @app.route("/login/", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        email = request.form["email"]
+        user = User.query.filter_by(email=request.form["email"]).first()
         password = request.form["password"]
-        login = User.query.filter_by(email=email, password=password).first()
-        if login is not None:
+        hash_pw = user.get_password()
+        # Check if the password is correct
+        if check_password_hash(hash_pw, password):
             return redirect(url_for('chat'))
-    return render_template("login_view.html", msg = "Invalid username or password")
+        else:
+            return render_template("login_view.html", msg = "Incorrect password")
+    return render_template("login_view.html")
 
 @app.route("/register/", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        user = User.query.filter_by(email=request.form['email'])
+        user = User.query.filter_by(email=request.form['email']).first()
+        print(user)
+        # Check if the user exists
         if user:
             return render_template("reg_view.html", msg = "Email already exists")
-        
+    
         email = request.form['email']
         first_name = request.form['firstname']
         last_name = request.form['lastname']
         password = request.form['newPW']
-        register = User(email= email, first_name = first_name, last_name = last_name, password = password)
+        hashed_pw = generate_password_hash(password, method='sha256')
+        register = User(email= email, first_name = first_name, last_name = last_name, password = hashed_pw)
         print(register)
         db.session.add(register)
         db.session.commit()
         
-        return redirect(url_for('chat'))
+        return redirect(url_for('login'))
     return render_template("reg_view.html")
 
 @app.route("/history/")
