@@ -14,10 +14,7 @@ class users(db.Model):
     Last_Name = db.Column("Last Name", db.String(100), nullable=False)
     email = db.Column(db.String(100), unique=True)
     date_added = db.Column(db.DateTime, default=datetime.utcnow)
-        
-#intro view        
-@app.route("/intro/")
-=======
+
 
 @app.route("/")
 def index():
