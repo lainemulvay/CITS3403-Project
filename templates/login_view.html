@@ -6,6 +6,9 @@
     <div id="login" class="login">
         <img class="login_logo" src="../static/images/UWA_Logo_Full.svg" alt="UWA logo">
         <h1 class="login_prompt">Sign into your account</h1>
+        {% if msg != '' %}
+            <h1 style="color:red;font-size: medium;text-align: center;" > {{msg}} </h1>
+        {% endif %}
         <form class="login_form" method="post">
             <div class="form_field">
                 <input class="inputfield" type="email" id="email" name="email" placeholder="Email Address" required>

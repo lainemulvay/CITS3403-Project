@@ -35,7 +35,7 @@ def login():
         login = User.query.filter_by(email=email, password=password).first()
         if login is not None:
             return redirect(url_for('chat'))
-    return render_template("login_view.html")
+    return render_template("login_view.html", msg = "Invalid username or password")
 
 @app.route("/register/", methods=["GET", "POST"])
 def register():
