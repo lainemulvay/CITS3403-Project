@@ -40,7 +40,10 @@ def login():
 @app.route("/register/", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        # user = Users.query.filter_by(email=form.email.data)
+        user = User.query.filter_by(email=request.form['email'])
+        if user:
+            return render_template("reg_view.html", msg = "Email already exists")
+        
         email = request.form['email']
         first_name = request.form['firstname']
         last_name = request.form['lastname']
