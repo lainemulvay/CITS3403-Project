@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 app.secret_key = "project_1"
-app.config['SQLALCHEMY_DATABASE_URL'] = 'sqlite:///users.sqlite3'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config["SQLALCHEMY_TRACK_MODIFYCATIONS"] = False
 app.permanent_session_lifetime = timedelta(minutes = 5)
 
@@ -14,6 +14,7 @@ class users(db.Model):
     First_Name = db.Column("First Name", db.String(100))
     Last_Name = db.Column("Last Name", db.String(100))
     email = db.Column(db.String(100))
+    date_added = db.Column()
     
     def __init__(self,First_Name,Last_Name,email):
         self.First_Name = First_Name
@@ -38,7 +39,6 @@ def register():
         session.permanent = True
         user = request.form["nm"]
         session["user"] = user
-        
         found_user = users.query.filter_by(name=user).first()
         if found_user:
             session["email"] = found_user.email
@@ -49,6 +49,18 @@ def register():
         
         return redirect(url_for('chat'))
     return render_template("reg_view.html")
+
+'''
+@app.route("/user", methods = ["POST", "GET"])
+def user():
+    email = None
+    if "user" in session:
+        user = session["user"]
+        
+        if request.method == "POST":
+            email = request.form["email"]
+        return render_template("reg_view.html")
+        '''
 
 @app.route("/history/")
 def history():
