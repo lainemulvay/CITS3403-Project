@@ -18,6 +18,7 @@ class users(db.Model):
 
 
 @app.route("/")
+@app.route("/index/")
 def index():
     return render_template("intro_view.html")
 
@@ -55,8 +56,8 @@ def history():
 def chat():
     return render_template("chat_view.html", display = True)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
 
 
 '''
