@@ -1,8 +1,9 @@
+from app import app
 from flask import Flask,render_template,flash, redirect,url_for,session,logging,request
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
+# app = Flask(__name__)
 app.secret_key = "project_1"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 
@@ -14,9 +15,10 @@ class users(db.Model):
     Last_Name = db.Column("Last Name", db.String(100), nullable=False)
     email = db.Column(db.String(100), unique=True)
     date_added = db.Column(db.DateTime, default=datetime.utcnow)
-        
+
 
 @app.route("/")
+@app.route("/index/")
 def index():
     return render_template("intro_view.html")
 
@@ -54,8 +56,8 @@ def history():
 def chat():
     return render_template("chat_view.html", display = True)
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
 
 
 '''
