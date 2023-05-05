@@ -154,13 +154,13 @@ form {
   
   /* Add a red text color and an "x" when the requirements are wrong */
   .invalid {
-    color: red;
+    color: grey;
   }
   
   .invalid:before {
     position: relative;
     left: 0px;
-    content: "✖";
+    content: "●";
     padding-right: 5px;
   }
 

@@ -9,7 +9,7 @@
         {% if msg != '' %}
             <h1 style="color:red;font-size: medium;text-align: center;" > {{msg}} </h1>
         {% endif %}
-        <form class="login_form" method="post">
+        <form class="login_form" id="login-form" method="post">
             <div class="form_field">
                 <input class="inputfield" type="email" id="email" name="email" placeholder="Email Address" required>
             </div>
@@ -17,7 +17,7 @@
                 <input class="inputfield" type="password" id="password" name="password" placeholder="Password" required>
             </div>
             <div>
-                <a style= "color: white; text-decoration: none;" href="{{url_for('chat')}}"><button class="button">Sign in</button></a>
+                <a style= "color: white; text-decoration: none;"><button type="submit" class="button">Sign in</button></a>
             </div> 
 
             <div style="margin: 10px 0px 20px 0px;">
@@ -30,4 +30,6 @@
             </div>
         </form>
     </div>
+    <script src="../static/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
 {% endblock %}
