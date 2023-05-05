@@ -23,18 +23,16 @@ Discussion:
 Outcome: 
     Work on the same branch with individual folders
     Split the group into Hank and Vicky, Laine and Murray, building the login and chat page respectively.
-    Aim to finish all front end html and css in the next two weeks.
+    Aim to finish the html and css in the next two weeks.
 
 21/04/2023 (All members)
 Discussion:
     Planed a procedure to add features to project with branching
-    intro, login and register page complete -- Hank, Vicky
-    chat page not started (no work produced due to other commitments) -- Laine, Murray
     Allocation of the rest of the work
     Align design ideas
 
 Outcome:
-    Finish chat view (Laine, Murray) and history view (Vicky, Hank) by next meeting
+    Finish chat view (Laine, Murray) and history view (Vicky, Hank) by next friday
     Next Meeting: Wednesday 12pm
 
 23/04/2023 (All members)
@@ -42,32 +40,25 @@ Discussion:
     Why branching is required 
     How to use branch (making and merging)
     Explain how to correctly use branch to add feature
-    @hznkyh merged unused branches from @GrassTree-Muzz, @lainemulvay
+    @hznkyh merged used branches from @GrassTree-Muzz, @lainemulvay
     organised branches
-
  Outcome:
     see previous meeting
 
 26/04/2023 (All members)
 Discussion:
-    Chat page complete - Laine, Murray
-    History page complete - Vicky, Hank
     Agreed upon style for chat page
-    Discussed the inefficiencies of having similar elements on different pages written and styled for each page (use of extends block)
+    Discussed the inefficiencies of having similar elements on different pages written and styled for each page
     Discussed the hamburger menu model for smaller sized windows
     Discussed ideas for the back end
-
  Outcome:
     Finalised chat page style
-    Decided on base html (header and footer) and css for all pages (similar elements across pages are all from the same code)
-    Work on header and footer for all pages - Hank, Vicky
+    Decided on base html and css for all pages (similar elements across pages are all from the same code)
 
 29/04/2023 (All members)
 Discussion:
-    Current html and css structure reorganised into flask structure
     Discussed backend works and codes required.
     Discussed backend database
-
  Outcome:
     Hank - further organise the folder and files for flask structure
     Vicky - implement login and register function
@@ -79,27 +70,12 @@ Discussion:
 03/05/2023 (All members)
 Discussion:
     Front end working with flask architecture
-    Front end registers check complete, back end user authentication partially complete (no database to verify)
+    Front end registers check complete, back end user authentication partially complete
     No codes produced by Laine
     model not implement by murray
 
     Member contribution to the project is not equal
-    Team expectation and goals to meet in the next 2 weeks
 
 Outcome:
     Laine and Murray to catch up with schedule
-    Lain - continue to work on database
-    Murray - continue to work on chat history storage
     Hank and Vicky to continue working on the project
-
-05/05/2023 (Murray, Hank, Vicky)
-Discussion:
-    User database complete and working - Hank
-    Login and register working partially complete - Vicky
-    Murray admitted to hospital on 04/05/2023 due to an accident
-    Lain cannot attend meeting due to urgent family matter
-
-Outcome:
-    Murray and lain work on the storage of chat history from front end to backend
-    Vicky continue to finish login and register
-    Hank work on blueprints and restructure the project to a better architecture 
