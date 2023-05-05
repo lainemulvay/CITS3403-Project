@@ -47,6 +47,15 @@ try {
   });
 } catch (err) {}
 
+// logout function
+try {
+  function logout() {
+    fetch('/logout', { method: 'GET' })
+      .then(response => response.redirected ? window.location.href = response.url : null)
+      .catch(error => console.error('Error:', error));
+  }
+} catch (err) {}
+
 
 //Script for chat.html
 // const API_KEY = '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' // apikey from openai
