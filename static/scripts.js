@@ -13,6 +13,14 @@ try {
 } catch (err) {}
 
 
+try {
+  fetch('/me')
+  .then(response => response.json())
+  .then(data => {
+    console.log('Logged-in user details:', data);
+  })
+} catch (err) {}
+
 // login page JS
 try {
   var login_form = document.getElementById("login-form");
@@ -24,6 +32,7 @@ try {
         body: formData
     });
     console.log(response)
+    console.log('Logged in user:', response.user);
     const data = await response.json();
     console.log(data)
     if (!data.success) {

@@ -7,6 +7,7 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'mysecretkey' # secret key for session security
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'app.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
@@ -31,7 +32,16 @@ class User(db.Model):
 def index():
     return render_template("intro_view.html")
 
-#login
+# get & post User
+@app.route('/me')
+def get_me():
+    if 'email' in session:
+        user = User.query.filter_by(email=session['email']).first()
+        return jsonify({'success': True, 'user': {'id': user.id, 'email': user.email, 'first_name': user.first_name, 'last_name': user.last_name}})
+    else:
+        return jsonify({'message': 'User not logged in'})
+
+# login function
 @app.route("/login/", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -45,14 +55,15 @@ def login():
             hash_pw = user.get_password()
             # Check if the password is correct
             if check_password_hash(hash_pw, password):
-                # success login
+                # success login, store the user ID in session
+                session['email'] = user.email
                 return jsonify({'success': True, 'message': 'Login success'}), 200
             else:
                 # invalid password
                 return jsonify({'success': False, 'message': 'Invalid password'}), 401
     return render_template("login_view.html")
 
-# register
+# register function
 @app.route("/register/", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -76,10 +87,12 @@ def register():
         return jsonify({'success': True, 'message': 'Account successfully created'}), 200
     return render_template("reg_view.html")
 
+# history page
 @app.route("/history/")
 def history():
     return render_template("hist_view.html", display = True)
 
+# chat page
 @app.route("/chat/")
 def chat():
     return render_template("chat_view.html", display = True)
