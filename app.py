@@ -63,6 +63,12 @@ def login():
                 return jsonify({'success': False, 'message': 'Invalid password'}), 401
     return render_template("login_view.html")
 
+@app.route('/logout')
+def logout():
+    session.clear()
+    flash('You are now logged out', 'success')
+    return redirect(url_for('login'))
+
 # register function
 @app.route("/register/", methods=["GET", "POST"])
 def register():
@@ -90,11 +96,17 @@ def register():
 # history page
 @app.route("/history/")
 def history():
+    if 'email' not in session:
+        flash('Please log in to view this page', 'danger')
+        return redirect(url_for('login'))
     return render_template("hist_view.html", display = True)
 
 # chat page
 @app.route("/chat/")
 def chat():
+    if 'email' not in session:
+        flash('Please log in to view this page', 'danger')
+        return redirect(url_for('login'))
     return render_template("chat_view.html", display = True)
 
 if __name__ == "__main__":
