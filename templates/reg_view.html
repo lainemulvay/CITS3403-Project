@@ -6,7 +6,7 @@
         {% if msg != '' %}
             <h1 style="color:red;font-size: medium;text-align: center;" > {{msg}} </h1>
         {% endif %}
-        <form class="login_form" method="post">
+        <form class="login_form" id="reg-form" method="post">
             <div class="form_field">
                 <input class="inputfield" type="firstname" id="firstname" name="firstname" placeholder="First name" required>
             </div>
@@ -39,4 +39,5 @@
         </form>
     </div>
     <script src="../static/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
 {% endblock %}
