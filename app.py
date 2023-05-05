@@ -1,4 +1,4 @@
-from flask import Flask,render_template,flash, redirect,url_for,session,logging,request
+from flask import Flask,render_template,flash, redirect,url_for,session,logging,request, jsonify
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -36,15 +36,23 @@ def index():
 def login():
     if request.method == "POST":
         user = User.query.filter_by(email=request.form["email"]).first()
-        password = request.form["password"]
-        hash_pw = user.get_password()
-        # Check if the password is correct
-        if check_password_hash(hash_pw, password):
-            return redirect(url_for('chat'))
+        # check if user exist
+        if not user:
+            # invalid email
+            return jsonify({'success': False, 'message': 'Invalid email'}), 401
         else:
-            return render_template("login_view.html", msg = "Incorrect password")
+            password = request.form["password"]
+            hash_pw = user.get_password()
+            # Check if the password is correct
+            if check_password_hash(hash_pw, password):
+                # success login
+                return jsonify({'success': True, 'message': 'Login success'}), 200
+            else:
+                # invalid password
+                return jsonify({'success': False, 'message': 'Invalid password'}), 401
     return render_template("login_view.html")
 
+# register
 @app.route("/register/", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -52,7 +60,8 @@ def register():
         print(user)
         # Check if the user exists
         if user:
-            return render_template("reg_view.html", msg = "Email already exists")
+            # return render_template("reg_view.html", msg = "Email already exists")
+            return jsonify({'success': False, 'message': 'Email already exists'}), 401
     
         email = request.form['email']
         first_name = request.form['firstname']
@@ -64,7 +73,7 @@ def register():
         db.session.add(register)
         db.session.commit()
         
-        return redirect(url_for('login'))
+        return jsonify({'success': True, 'message': 'Account successfully created'}), 200
     return render_template("reg_view.html")
 
 @app.route("/history/")
