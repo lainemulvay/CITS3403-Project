@@ -193,6 +193,44 @@ try {
   confirm_password.onkeyup = validatePassword;
 } catch (err) {}
 
+// toggle for login page
+try {
+  const togglePassword = document.querySelector('#showPassword');
+  const password = document.getElementById('password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+  });
+} catch (err) {}
+
+// toggle for reg page
+try {
+  const togglePassword1 = document.querySelector('#showPassword');
+  const newPW = document.getElementById('newPW');
+  const togglePassword2 = document.querySelector('#showPassword2');
+  const confirmPW = document.getElementById('confirmPW');
+
+  togglePassword1.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = newPW.getAttribute('type') === 'password' ? 'text' : 'password';
+    newPW.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+  });
+
+  togglePassword2.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = confirmPW.getAttribute('type') === 'password' ? 'text' : 'password';
+    confirmPW.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+  });
+} catch (err) {}
+
 try {
   var regform = document.getElementById("reg-form");
   regform.addEventListener('submit', async (event) => {
