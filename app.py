@@ -1,4 +1,5 @@
-from flask import Flask,render_template,flash, redirect,url_for,session,logging,request, jsonify
+from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
+from flask_login import LoginManager, login_required, current_user, login_user
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -35,8 +36,8 @@ def index():
 # get & post User
 @app.route('/me')
 def get_me():
-    if 'email' in session:
-        user = User.query.filter_by(email=session['email']).first()
+    if 'id' in session:
+        user = User.query.filter_by(id=session['id']).first()
         return jsonify({'success': True, 'user': {'id': user.id, 'email': user.email, 'first_name': user.first_name, 'last_name': user.last_name}})
     else:
         return jsonify({'message': 'User not logged in'})
@@ -55,8 +56,11 @@ def login():
             hash_pw = user.get_password()
             # Check if the password is correct
             if check_password_hash(hash_pw, password):
-                # success login, store the user ID in session
+                # success login, store the user credentials in session
+                session['id'] = user.id
                 session['email'] = user.email
+                session['first_name'] = user.first_name
+                session['last_name'] = user.last_name
                 return jsonify({'success': True, 'message': 'Login success'}), 200
             else:
                 # invalid password
