@@ -1,9 +1,33 @@
-from app import app
-from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify, make_response
-# from flask_login import LoginManager, login_required, current_user, login_user
+from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
+from flask_login import LoginManager, login_required, current_user, login_user
+from datetime import datetime
+from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
-from app.models import User
+import os
 
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'mysecretkey' # secret key for session security
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'app.db')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
+
+class User(db.Model):
+    __tablename__ = "users"
+    id = db.Column("id", db.Integer, primary_key=True)
+    email = db.Column(db.String(100), unique=True)
+    first_name = db.Column("First Name", db.String(100), nullable=False)
+    last_name = db.Column("Last Name", db.String(100), nullable=False)
+    password = db.Column(db.String(100), nullable=False)
+    date_added = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def __repr__(self):
+        return '<User %r>' % self.email
+
+    def get_password(self):
+        return self.password
+    
 @app.route("/")
 @app.route("/index/")
 def index():
@@ -87,15 +111,7 @@ def chat():
     if 'email' not in session:
         flash('Please log in to view this page', 'danger')
         return redirect(url_for('login'))
-    return render_template('chat_view.html', display=True)
-
-@app.after_request
-def add_header(response):
-    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
-    response.headers['Pragma'] = 'no-cache'
-    response.headers['Expires'] = '0'
-    response.headers['Vary'] = 'User-Agent'
-    return response
+    return render_template("chat_view.html", display = True)
 
 if __name__ == "__main__":
     with app.app_context():
