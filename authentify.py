@@ -4,8 +4,8 @@ ensuring the response from the user is unique and verifyable in the database'''
 
 from datetime import datetime, timedelta
 import unittest, os
-from app import app, db
-from app.models import Animals, Users, Attempts
+from application import app, db
+from application.models import Animals, Users, Attempts
 from config import basedir
 
 class ModelsTest(unittest.TestCase):
