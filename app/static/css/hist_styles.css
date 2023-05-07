@@ -2,7 +2,7 @@
     margin: 20px 10px;
 }
 
-.history_box {
+.history-box {
     border: solid 1px grey;
     border-radius: 15px;
     width: auto;
@@ -16,7 +16,7 @@
     background-color: aliceblue;
 }
 
-.history_summary {
+.history-summary {
     float: left;
     margin: 1em;
     padding: 0px;
@@ -34,7 +34,7 @@
     align-items: center;
 }
 
-.chat_number {
+.chat-number {
     margin:0px;
     width: 100%;
     font-size: 0.7em;
@@ -44,7 +44,7 @@
     align-items: center;
 }
 
-.view_chat {
+.view-chat {
     float: right;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 0.9em;
@@ -57,12 +57,12 @@
     cursor: pointer;
 }
 
-.view_chat_text {
+.view-chat-text {
     display: inline;
     margin-left: 0.5em;
 }
 
-.view_chat:hover {
+.view-chat:hover {
     background-color: #00418d;
     columns: white;
     border-color: white;
@@ -70,13 +70,13 @@
 }
 
 /* @media only screen and (max-width: 672px) {
-    .view_chat {
+    .view-chat {
         margin-top: 0px;
     }
 } */
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
-    .view_chat_text {
+    .view-chat-text {
         display: none;
     }
     

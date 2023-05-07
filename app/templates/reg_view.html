@@ -4,33 +4,33 @@
 {% endblock %}
 {% block content %}
     <div class="login">
-        <img class="login_logo" src="{{ url_for('static', filename='images/UWA_Logo_Full.svg')}}" alt="UWA logo">
-        <h1 class="login_prompt">Register a new account</h1>
+        <img class="login-logo" src="{{ url_for('static', filename='images/UWA_Logo_Full.svg')}}" alt="UWA logo">
+        <h1 class="login-prompt">Register a new account</h1>
         {% if msg != '' %}
             <h1 style="color:red;font-size: medium;text-align: center;" > {{msg}} </h1>
         {% endif %}
-        <form class="login_form" id="reg-form" method="post">
-            <div class="form_field">
+        <form class="login-form" id="reg-form" method="post">
+            <div class="form-field">
                 <input class="inputfield" type="text" id="firstname" name="firstname" placeholder="First name" required>
             </div>
-            <div class="form_field">
+            <div class="form-field">
                 <input class="inputfield" type="text" id="lastname" name="lastname" placeholder="Last name" required>
             </div>
-            <div class="form_field">
+            <div class="form-field">
                 <input class="inputfield" type="email" id="email" name="email" placeholder="Email Address" required>
             </div>
-            <div class="form_field">
+            <div class="form-field">
                 <input class="inputfield" type="password" id="newPW" name="newPW" placeholder="Enter a new Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                 <i class="far fa-eye" id="showPassword" style="margin-left: -30px; cursor: pointer;"></i>
             </div>
-            <div id="pw_message">
+            <div id="pw-message">
                 <p>Password must contain the following:</p>
                 <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
                 <p id="capital" class="invalid">A <b>uppercase</b> letter</p>
                 <p id="number" class="invalid">A <b>number</b></p>
                 <p id="length" class="invalid">Minimum <b>8 characters</b></p>
             </div>
-            <div class="form_field">
+            <div class="form-field">
                 <input class="inputfield" type="password" id="confirmPW" name="confirmPW" placeholder="Confirm password" required>
                 <i class="far fa-eye" id="showPassword2" style="margin-left: -30px; cursor: pointer;"></i>
             </div>

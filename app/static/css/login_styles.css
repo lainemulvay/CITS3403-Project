@@ -12,12 +12,12 @@ span {
     overflow: hidden;
 }
 
-.login_logo {
+.login-logo {
     width: 60%;
     margin: 10% 20% 5% 20%;
 }
 
-.login_prompt {
+.login-prompt {
     text-align: center;
     font-size: 1.75em;
 }
@@ -28,7 +28,7 @@ form {
     padding: 0;
 }
 
-.login_form {
+.login-form {
     text-align: center;
     margin: 1em;
     display: flex;
@@ -36,7 +36,7 @@ form {
     align-items: center;
 }
 
-.form_field {
+.form-field {
     margin: 15px;
     width: 60%;
     box-sizing: border-box;
@@ -71,7 +71,7 @@ form {
     margin:1em;
 }
 
-#pw_message {
+#pw-message {
     display:none;
     background: #f1f1f1;
     color: #000;
@@ -82,7 +82,7 @@ form {
     width: 60%;
 }
   
-#pw_message p {
+#pw-message p {
     font-size: 12px;
     line-height: 2;
 }
@@ -116,11 +116,11 @@ form {
     border-collapse: collapse;
 }
 
-.description_boxes {
+.description-boxes {
     width: 60%;
 }
 
-.description_box {
+.description-box {
     border-radius: 35px;
     box-shadow: 0 0px 30px rgb(188, 187, 187);
     padding: 2em;
@@ -128,7 +128,7 @@ form {
     max-width: 100%;
 }
   
-.description_box h3:first-of-type {
+.description-box h3:first-of-type {
     font-size: 24px;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
@@ -137,7 +137,7 @@ form {
 }
 
 /* Styles for the second h3 description */
-.description_box h3:last-of-type {
+.description-box h3:last-of-type {
     font-size: 18px;
     font-weight: normal;
     margin: 0;
@@ -177,11 +177,11 @@ form {
         margin-top: 30px;
     }
 
-    .login_prompt {
+    .login-prompt {
         font-size: 1.5em;
     }
 
-    .form_field {
+    .form-field {
         width: 85%;
     }
 
@@ -209,11 +209,11 @@ form {
         max-width: 100%;
     }
 
-    .description_boxes {
+    .description-boxes {
         width: 90%;
     }
 
-    .description_box {
+    .description-box {
         padding: 1.5em;
         margin: 1.5em;
         max-width: 100%;
