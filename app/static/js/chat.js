@@ -1,7 +1,7 @@
 const API_KEY = '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' // apikey from openai
 
-const form = document.getElementById('input_form');
-const mytextInput = document.getElementById('chat_input_message');
+const form = document.getElementById('input-form');
+const mytextInput = document.getElementById('chat-input-message');
 const responseTextarea = document.getElementById('response');
 
 form.addEventListener('submit', async (e) => {

@@ -67,12 +67,12 @@ try {
 
   // When the user clicks on the password field, show the message box
   password.onfocus = function() {
-    document.getElementById("pw_message").style.display = "block";
+    document.getElementById("pw-message").style.display = "block";
   }
 
   // When the user clicks outside of the password field, hide the message box
   password.onblur = function() {
-    document.getElementById("pw_message").style.display = "none";
+    document.getElementById("pw-message").style.display = "none";
   }
 
   // When the user starts to type something inside the password field

@@ -12,8 +12,8 @@
     </head>
     <body>
         <div class="header">
-            <a class="header_link" href="{{url_for('intro.index')}}"><img id="header_logo" class="header_logo" src="{{ url_for('static', filename='images/UWA_Logo_Small.png')}}" alt="UWA logo"></a>
-            <h3 class="header_text"> FAQ chat </h3>
+            <a class="header-link" href="{{url_for('intro.index')}}"><img id="header-logo" class="header-logo" src="{{ url_for('static', filename='images/UWA_Logo_Small.png')}}" alt="UWA logo"></a>
+            <h3 class="header-text"> FAQ chat </h3>
             
             {% if display %}
                 <div class="dropdown" >
@@ -22,9 +22,8 @@
                         <p class="accountText"><i class="fas fa-user"></i>Account<p>
                     </div>
                     <div class="dropdown-content">
-                        <div id="hist_btn" onclick="location.href = '/chat';">Chat</div>
-                        <div id="hist_btn" onclick="location.href = '/history';">History</div>
-                        <!-- <div id="chat_btn" onclick="location.href = '/chat';">Chat</div> -->
+                        <div id="chat-btn" onclick="location.href = '/chat';">Chat</div>
+                        <div id="hist-btn" onclick="location.href = '/history';">History</div>
                         <div onclick="logout()">Logout</div>
                     </div>
                 </div>  
