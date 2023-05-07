@@ -64,7 +64,7 @@ def register():
         first_name = request.form['firstname']
         last_name = request.form['lastname']
         password = request.form['newPW']
-        hashed_pw = generate_password_hash(password, method='sha256')
+        hashed_pw = generate_password_hash(password, method='scrypt')
         register = User(email= email, first_name = first_name, last_name = last_name, password = hashed_pw)
         print(register)
         db.session.add(register)
