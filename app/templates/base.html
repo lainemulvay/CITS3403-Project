@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="{{url_for('static', filename='css/hist_styles.css')}}">
         <link rel="stylesheet" href="{{url_for('static', filename='css/login_styles.css')}}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-        <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
     </head>
     <body>
         <div class="header">
@@ -30,7 +29,12 @@
                 </div>  
             {% endif %}
         </div>
-        {% block content %}{% endblock %}
+        {% block content %}
+        {% endblock %}
+
+        {% block scripts %}
+        {% endblock %}
+        
         <div class="about-us">
             <div class="footer-box">
                 <h1 class="heading">Help</h1>
