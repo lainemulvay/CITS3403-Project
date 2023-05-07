@@ -38,5 +38,8 @@
             <button class="view_chat"><i id="icon" class="fas fa-eye"></i><p class="view_chat_text">View Chat</p></button>
         </div>
     </div>
+    {% block scripts %}
+        <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+    {% endblock %}
 {% endblock %}
 
