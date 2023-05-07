@@ -4,6 +4,13 @@ requirements:
 when required:
     pip freeze > requirements.txt
 
+to initialise database
+flask db init
+
+flask db migrate -m "users table"
+
+flask db upgrade
+
 for mac:
 python3 -m venv venv
 
