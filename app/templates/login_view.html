@@ -7,7 +7,7 @@
         <h1> UWA FAQ Chat System </h1>
     </div>
     <div id="login" class="login">
-        <img class="login_logo" src="../static/images/UWA_Logo_Full.svg" alt="UWA logo">
+        <img class="login_logo" src="{{ url_for('static', filename='images/UWA_Logo_Full.svg')}}" alt="UWA logo">
         <h1 class="login_prompt">Sign into your account</h1>
         {% if msg != '' %}
             <h1 style="color:red;font-size: medium;text-align: center;" > {{msg}} </h1>
