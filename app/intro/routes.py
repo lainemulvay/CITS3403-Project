@@ -6,6 +6,5 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from app.intro import intro_blueprint
 
 @intro_blueprint.route("/")
-@app.route("/index/")
 def index():
     return render_template("intro_view.html")

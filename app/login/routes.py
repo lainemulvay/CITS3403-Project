@@ -39,3 +39,8 @@ def get_me():
     else:
         return jsonify({'message': 'User not logged in'})
 
+@login_blueprint.route('/logout')
+def logout():
+    session.clear()
+    flash('You are now logged out', 'success')
+    return redirect(url_for('.login'))

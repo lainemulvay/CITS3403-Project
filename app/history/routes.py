@@ -17,4 +17,4 @@ def history():
 def logout():
     session.clear()
     flash('You are now logged out', 'success')
-    return redirect(url_for('login'))
+    return redirect(url_for('login.login'))
