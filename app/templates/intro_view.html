@@ -1,8 +1,11 @@
 {% extends 'base.html'%}
+{% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login_styles.css')}}">
+{% endblock %}
 {%block content%}
     <div class="intro">
         <h1> UWA FAQ Chat System </h1>
-        <a href="{{url_for('login')}}"><button id="intro_button" class="button">Get Started</button></a>
+        <a href="{{url_for('login.login')}}"><button id="intro_button" class="button">Get Started</button></a>
         <div id="descriptions" class="descriptions">
             <h3> 
                 Provide an easy-to-use platform for anyone seeking 

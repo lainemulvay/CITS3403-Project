@@ -1,11 +1,17 @@
 {% extends 'base.html' %}
+{% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/chat_styles.css')}}">
+{% endblock %}
 {%block content%}
-        <div id="response" class="response-box"></div>
-        <div class="input-container">
-            <form class="input-form" id="input_form">
-                <input class="chat_inputfield" type="text" id="chat_input_message" name="chat_input_message" placeholder="Ask me a question..." required>
-                <button type="submit" class="submit_button" id="submit_chat_input">Submit</button>
-            </form>
-        </div>
-        <script src="../static/chat.js"></script>
+    <div id="response" class="response-box"></div>
+    <div class="input-container">
+        <form class="input-form" id="input_form">
+            <input class="chat_inputfield" type="text" id="chat_input_message" name="chat_input_message" placeholder="Ask me a question..." required>
+            <button type="submit" class="submit_button" id="submit_chat_input">Submit</button>
+        </form>
+    </div>
+
+    {% block scripts %}
+    <script src="{{url_for('static', filename='js/chat.js')}}"></script>
+    {% endblock %}
 {% endblock %}

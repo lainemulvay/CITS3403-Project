@@ -4,16 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UWA FAQ Chat</title>
-        <link rel="stylesheet" href="../static/base.css">
-        <link rel="stylesheet" href="../static/chat_styles.css">
-        <link rel="stylesheet" href="../static/hist_styles.css">
-        <link rel="stylesheet" href="../static/login_styles.css">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/UWA_Logo_Small.png') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/base_styles.css')}}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-        <script src="../static/scripts.js"></script>
+        {% block styles %}
+        {% endblock %}
     </head>
     <body>
         <div class="header">
-            <a class="header_link" href="{{url_for('index')}}"><img id="header_logo" class="header_logo" src="../static/images/UWA_Logo_Smallv2.png" alt="UWA logo"></a>
+            <a class="header_link" href="{{url_for('intro.index')}}"><img id="header_logo" class="header_logo" src="{{ url_for('static', filename='images/UWA_Logo_Small.png')}}" alt="UWA logo"></a>
             <h3 class="header_text"> FAQ chat </h3>
             
             {% if display %}
@@ -23,6 +22,7 @@
                         <p class="accountText"><i class="fas fa-user"></i>Account<p>
                     </div>
                     <div class="dropdown-content">
+                        <div id="hist_btn" onclick="location.href = '/chat';">Chat</div>
                         <div id="hist_btn" onclick="location.href = '/history';">History</div>
                         <!-- <div id="chat_btn" onclick="location.href = '/chat';">Chat</div> -->
                         <div onclick="logout()">Logout</div>
@@ -30,7 +30,12 @@
                 </div>  
             {% endif %}
         </div>
-        {% block content %}{% endblock %}
+        {% block content %}
+        {% endblock %}
+
+        {% block scripts %}
+        {% endblock %}
+        
         <div class="about-us">
             <div class="footer-box">
                 <h1 class="heading">Help</h1>
@@ -61,6 +66,5 @@
             <p>&copy; 2023 Semester 1 CITS3403 Project</p>
             <p>Author: Hank, Vicky, Laine, Murray</p>
         </footer>
-        
     </body>
 </html>

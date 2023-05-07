@@ -1,10 +1,13 @@
 {% extends 'base.html'%}
+{% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login_styles.css')}}">
+{% endblock %}
 {% block content %}
     <div class="intro">
         <h1> UWA FAQ Chat System </h1>
     </div>
     <div id="login" class="login">
-        <img class="login_logo" src="../static/images/UWA_Logo_Full.svg" alt="UWA logo">
+        <img class="login_logo" src="{{ url_for('static', filename='images/UWA_Logo_Full.svg')}}" alt="UWA logo">
         <h1 class="login_prompt">Sign into your account</h1>
         {% if msg != '' %}
             <h1 style="color:red;font-size: medium;text-align: center;" > {{msg}} </h1>
@@ -22,15 +25,17 @@
             </div> 
 
             <div style="margin: 10px 0px 20px 0px;">
-                <a style= "color: white; text-decoration: none;" href="{{url_for('index')}}"><span class="button">Back</span></a>
+                <a style= "color: white; text-decoration: none;" href="{{url_for('intro.index')}}"><span class="button">Back</span></a>
             </div> 
             <div>
                 <p class="register">Don't have an account?
-                    <a href="{{url_for('register')}}">Register here</a>
+                    <a href="{{url_for('register.register')}}">Register here</a>
                 </p>
             </div>
         </form>
     </div>
-    <script src="../static/scripts.js"></script>
+    {% block script %}
+    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    {% endblock %}
 {% endblock %}
