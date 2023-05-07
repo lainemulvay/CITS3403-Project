@@ -4,12 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>UWA FAQ Chat</title>
-        <link rel="stylesheet" href="../static/base.css">
-        <link rel="stylesheet" href="../static/chat_styles.css">
-        <link rel="stylesheet" href="../static/hist_styles.css">
-        <link rel="stylesheet" href="../static/login_styles.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/base_styles.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/chat_styles.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/hist_styles.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/login_styles.css')}}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-        <script src="../static/scripts.js"></script>
+        <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
     </head>
     <body>
         <div class="header">
@@ -61,6 +61,5 @@
             <p>&copy; 2023 Semester 1 CITS3403 Project</p>
             <p>Author: Hank, Vicky, Laine, Murray</p>
         </footer>
-        
     </body>
 </html>
