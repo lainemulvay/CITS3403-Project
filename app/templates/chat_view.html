@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+{% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/chat_styles.css')}}">
+{% endblock %}
 {%block content%}
     <div id="response" class="response-box"></div>
     <div class="input-container">

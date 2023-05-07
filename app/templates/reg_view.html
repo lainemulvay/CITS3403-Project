@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+{% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/login_styles.css')}}">
+{% endblock %}
 {% block content %}
     <div class="login">
         <img class="login_logo" src="../static/images/UWA_Logo_Full.svg" alt="UWA logo">
