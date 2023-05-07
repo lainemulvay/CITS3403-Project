@@ -57,9 +57,8 @@
     cursor: pointer;
 }
 
-.view-chat-text {
-    display: inline;
-    margin-left: 0.5em;
+#icon {
+    margin-right: 0.5em;
 }
 
 .view-chat:hover {
