@@ -57,4 +57,13 @@ form.addEventListener('submit', async (e) => {
     }
 })
 
-// TODO: make it press submit when you press enter. At the moment it sends a message but doesnt generate a response
+form.addEventListener('keydown', (e) => {
+    if (e.keyCode === 13) {
+      e.preventDefault();
+      document.querySelector('.submit-button').click();
+    }
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.chat-inputfield').focus();
+  });

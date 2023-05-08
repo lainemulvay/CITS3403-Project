@@ -1,5 +1,8 @@
-/* TODO: maked the css work for the mobile device*/
-
+.submit-button:hover {
+  font-weight: bold;
+  overflow: hidden;
+}
+  
 .input-container {
   margin-top: 70px;
   position: relative;
