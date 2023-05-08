@@ -1,3 +1,8 @@
+.submit-button:hover {
+  font-weight: bold;
+  overflow: hidden;
+}
+  
 .input-container {
   margin-top: 70px;
   position: relative;

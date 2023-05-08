@@ -96,8 +96,15 @@ p {
     display: block;
 }
 
+.button {
+    font-weight: lighter;
+    color: white; 
+    text-decoration: none;
+}
+
 .button:hover {
-    font-weight: bolder;
+    font-weight: bold;
+    overflow: hidden;
 }
 
 .accountText {
