@@ -91,6 +91,12 @@ p {
     display: block;
 }
 
+.button:hover {
+    background-color: #105c8f;
+    color: white;
+    cursor: pointer;
+}
+
 .accountText {
     display: flex;
 }

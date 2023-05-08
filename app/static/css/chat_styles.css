@@ -1,4 +1,6 @@
-/* TODO: maked the css work for the mobile device*/
+.button:hover {
+  font-weight: bolder;
+}
 
 .input-container {
   margin-top: 70px;
