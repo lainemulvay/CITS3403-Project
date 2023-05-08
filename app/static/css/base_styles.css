@@ -97,9 +97,7 @@ p {
 }
 
 .button:hover {
-    background-color: #105c8f;
-    color: white;
-    cursor: pointer;
+    font-weight: bolder;
 }
 
 .accountText {
