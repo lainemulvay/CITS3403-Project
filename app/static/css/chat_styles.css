@@ -1,9 +1,3 @@
-.submit-button:hover {
-    color: #00418d;
-    background-color: aliceblue;
-    border: 1px solid rgb(52, 88, 186);
-}
-  
 .input-container {
     margin-top: 70px;
     position: relative;
@@ -50,13 +44,18 @@
     border-style: solid;
     border-color: grey;
     border-width: 1px;
-    border-radius: 35px;
+    border-radius: 50px;
     padding: 0.5em 1em 0.5em 1em;
     font-size: 1em;
     font-weight: normal;
     flex-grow: 1;
     margin-right: 0px;
 
+}
+
+.chat-inputfield:focus {
+  border: 2px solid rgb(52, 88, 186);
+  outline: none;
 }
 
 .submit-button {
@@ -69,11 +68,18 @@
     padding: 7.75px 32.5px;
     font-size: 16px;
     background-color: rgb(52, 88, 186);
-    border-radius: 50px;
+    border: 1px solid rgb(52, 88, 186);
+    border-radius: 30px;
     font-weight: normal;
     cursor: pointer;
     flex-shrink: 0;
     z-index: 2;
+}
+
+.submit-button:hover {
+    color: #00418d;
+    background-color: aliceblue;
+    border: 1px solid rgb(52, 88, 186);
 }
 
 #submit-chat-input {
