@@ -64,6 +64,6 @@ form.addEventListener('keydown', (e) => {
     }
   });
 
-  document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.chat-inputfield').focus();
-  });
+});
