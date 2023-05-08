@@ -66,7 +66,9 @@ form {
 }
 
 .button:hover {
-    font-weight: bolder;
+    color: #00418d;
+    background-color: aliceblue;
+    border: 1px solid rgb(52, 88, 186);
 }
 
 .register {
