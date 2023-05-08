@@ -35,6 +35,11 @@ p {
     width: auto;
 }
 
+.header-logo:hover {
+    height: 110%;
+    width: auto;
+}
+
 .header-text {
     font-weight: bold;
     width: 100%;
