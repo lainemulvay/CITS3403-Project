@@ -19,3 +19,11 @@ def logout():
     session.clear()
     flash('You are now logged out', 'success')
     return redirect(url_for('login.login'))
+
+
+@chat_blueprint.route('/send_text', methods=['POST'])
+def receive_text():
+    data = request.json
+    text = data['text']
+    print("Received text:", text)
+    return "OK"
