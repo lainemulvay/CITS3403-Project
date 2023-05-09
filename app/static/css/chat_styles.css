@@ -82,23 +82,12 @@
     border: 1px solid rgb(52, 88, 186);
 }
 
-.save-form {
-    position: absolute;
-    bottom: 8px;
-    left: 5.25%;
-    width: 50%;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    background-color: transparent;
-    border-radius: 20px;
-}
+
+
 
 .save-button {
-    position: absolute;
-    right: 1px;
+    position: sticky;
+    right: 8px;
     bottom: 1px;
     border: none;
     color: white;
@@ -112,6 +101,7 @@
     cursor: pointer;
     flex-shrink: 0;
     z-index: 2;
+    margin-left: 5%;
 }
 
 .save-button:hover {
@@ -120,10 +110,22 @@
     border: 1px solid rgb(52, 88, 186);
 }
 
-.savesession {
+.save-container {
     margin-top: 100px;
     position: relative;
     z-index: 2;
+}
+
+.save-container button {
+    margin-right: 10px;
+}
+
+p {
+    margin-left: 5%;
+    line-height: 0.5;
+    font-size: small;
+    font-style: italic;
+    position: revert;
 }
 
 #submit-chat-input {
