@@ -64,6 +64,13 @@ form.addEventListener('keydown', (e) => {
     }
   });
 
+form.addEventListener('keydown', (e) => {
+    if (e.keyCode === 13) {
+        e.preventDefault();
+        document.querySelector('.save-button').click();
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.chat-inputfield').focus();
 });

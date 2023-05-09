@@ -82,6 +82,52 @@
     border: 1px solid rgb(52, 88, 186);
 }
 
+
+
+
+.save-button {
+    position: sticky;
+    right: 8px;
+    bottom: 1px;
+    border: none;
+    color: white;
+    margin: 10px;
+    padding: 7.75px 32.5px;
+    font-size: 16px;
+    background-color: rgb(52, 88, 186);
+    border: 1px solid rgb(52, 88, 186);
+    border-radius: 30px;
+    font-weight: normal;
+    cursor: pointer;
+    flex-shrink: 0;
+    z-index: 2;
+    margin-left: 5%;
+}
+
+.save-button:hover {
+    color: #00418d;
+    background-color: aliceblue;
+    border: 1px solid rgb(52, 88, 186);
+}
+
+.save-container {
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.save-container button {
+    margin-right: 10px;
+}
+
+p {
+    margin-left: 5%;
+    line-height: 0.5;
+    font-size: small;
+    font-style: italic;
+    position: revert;
+}
+
 #submit-chat-input {
     margin: 0px;
 }
