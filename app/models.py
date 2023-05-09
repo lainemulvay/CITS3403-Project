@@ -16,16 +16,20 @@ class User(db.Model):
     def get_password(self):
         return self.password
 
-class ChatMessage(db.Model):
+class ChatDB(db.Model):
     __tablename__ = "chats"
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    text = db.Column(db.Text, nullable=False)
+    Question = db.Column(db.Text, nullable=False)
+    Response = db.Column(db.Text, nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
-
+    
+    
+'''
 class ChatResponse(db.Model):
     __tablename__ = "chat_responses"
     id = db.Column(db.Integer, primary_key=True)
     chat_id = db.Column(db.Integer, db.ForeignKey('chats.id'))
     text = db.Column(db.Text, nullable=False)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
+'''

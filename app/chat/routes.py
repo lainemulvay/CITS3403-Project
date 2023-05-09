@@ -1,9 +1,10 @@
 from app import app, db
-from app.models import User
+from app.models import ChatDB
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from app.chat import chat_blueprint
+from datetime import datetime
 
 # chat page
 @chat_blueprint.route("/chat/")
@@ -22,8 +23,16 @@ def logout():
 
 
 @chat_blueprint.route('/send_text', methods=['POST'])
-def receive_text():
+def save_chat():
     data = request.json
-    text = data['text']
-    print("Received text:", text)
-    return "OK"
+    chats = data['chats']
+    for chat in chats:
+        question = chat['Question']
+        response = chat['Response']
+        chat_entry = ChatDB(Question=question, Response=response, created_at=datetime.utcnow())
+        db.session.add(chat_entry)
+    db.session.commit()
+    return 'Chats saved to database'
+
+if __name__ == '__main__':
+    app.run(debug=True)
