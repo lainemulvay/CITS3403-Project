@@ -74,3 +74,17 @@ form.addEventListener('keydown', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.chat-inputfield').focus();
 });
+
+function sendText() {
+    var textDivs = document.getElementsByClassName("message-response");
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/send_text", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            console.log("Text sent to server successfully.");
+        }
+    };
+    var data = JSON.stringify({ "text": textDivs[textDivs.length - 1].querySelector(".message-content").textContent });
+    xhr.send(data);
+}
