@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function sendText() {
-    var textDivs = document.getElementsByClassName("message-response");
+    var textDivs = document.getElementsByClassName("chat-inputfield");
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "/send_text", true);
     xhr.setRequestHeader("Content-Type", "application/json");
