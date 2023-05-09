@@ -2,12 +2,20 @@
 {% block styles %}
     <link rel="stylesheet" href="{{url_for('static', filename='css/chat_styles.css')}}">
 {% endblock %}
+
 {%block content%}
     <div id="response" class="response-box"></div>
     <div class="input-container">
         <form class="input-form" id="input-form">
             <input class="chat-inputfield" type="text" id="chat-input-message" name="chat-input-message" placeholder="Ask me a question..." required>
             <button type="submit" class="submit-button" id="submit-chat-input">Submit</button>
+        </form>
+    </div>
+
+    <div class="savesession">
+        <form class="save-form" id="save-form">
+            <p id="save-text" class="save-text">Chat will not be saved unless saved</p>
+            <button id="save-button" class="save-button">Save</button>
         </form>
     </div>
 
