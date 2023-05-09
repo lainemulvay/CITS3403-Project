@@ -16,7 +16,7 @@ class User(db.Model):
     def get_password(self):
         return self.password
 
-class Chat(db.Model):
+class ChatMessage(db.Model):
     __tablename__ = "chats"
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
