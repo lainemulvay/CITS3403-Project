@@ -116,6 +116,9 @@ function sendText() {
 
     var data = JSON.stringify({ input: input, response: response});
     xhr.send(data);
+
+    // Reload page
+    location.reload();
 }
 
 
