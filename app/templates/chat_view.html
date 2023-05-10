@@ -4,17 +4,30 @@
 {% endblock %}
 
 {%block content%}
-    <div id="response" class="response-box"></div>
+    <div id="response" class="response-box">
+        <div class = auto-message></div>
+            <div class="message message-response">
+                <p class="message-content">
+                    👋 Welcome to UWA's FAQ Chat Service! <br>
+                    <br>
+                    We're here to assist you with any questions or concerns you may have. Whether you need help with enrollment, campus facilities, or academic programs, we've got you covered. <br>
+                    <br>
+                    To ensure you have a record of our conversation, we recommend saving the chat history by clicking on the "Save" button below. This way, you can easily refer back to our discussion at any time. <br>
+                    <br>
+                    Please don't hesitate to ask us anything you need clarification on. We're here to provide you with the most accurate and helpful information. <br>
+                    <br>
+                    Let's get started!
+                </p>
+                <p class="message-timestamp"></p>
+            </div>
+            <button id="save-button" class="save-button" onclick="sendText()">Save Chat</button>
+        </div>
+    </div>
     <div class="input-container">
         <form class="input-form" id="input-form">
             <input class="chat-inputfield" type="text" id="chat-input-message" name="chat-input-message" placeholder="Ask me a question..." required>
-            <button type="submit" class="submit-button" id="submit-chat-input">Submit</button>
+            <button type="submit" class="submit-button" id="submit-chat-input">Send</button>
         </form>
-    </div>
-
-    <div class="save-container">
-        <p id="save-text" class="save-text">Chat will not be saved unless saved</p>
-        <button id="save-button" class="save-button" onclick="sendText()">Save</button>
     </div>
 
     {% block scripts %}

@@ -28,7 +28,10 @@ def login():
             else:
                 # invalid password
                 return jsonify({'success': False, 'message': 'Invalid password'}), 401
-    return render_template("login_view.html")
+    else:
+        if 'id' in session:
+            return redirect(url_for('chat.chat'))
+        return render_template("login_view.html")
 
 # get & post User
 @login_blueprint.route('/me')
