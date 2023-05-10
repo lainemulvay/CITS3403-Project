@@ -5,12 +5,15 @@
 
 {%block content%}
     <div id="response" class="response-box">
-        <div class="message message-response">
-            <p class="message-content">
-                Hello! Ask me any question about UWA and I will try my best to answer it.
-                Remember to save the chat if you want to keep it by pressing the save button below.
-            </p>
-            <p class="message-timestamp"></p>
+        <div class = auto-message></div>
+            <div class="message message-response">
+                <p class="message-content">
+                    Hello! Ask me any question about UWA and I will try my best to answer it.
+                    Remember to save the chat if you want to keep it by pressing the save button below.
+                </p>
+                <p class="message-timestamp"></p>
+            </div>
+            <button id="save-button" class="save-button" onclick="sendText()">Save Chat</button>
         </div>
     </div>
     <div class="input-container">
@@ -19,8 +22,6 @@
             <button type="submit" class="submit-button" id="submit-chat-input">Send</button>
         </form>
     </div>
-
-    <button id="save-button" class="save-button" onclick="sendText()">Save Chat</button>
 
     {% block scripts %}
     <script src="{{url_for('static', filename='js/chat.js')}}"></script>
