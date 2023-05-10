@@ -83,7 +83,7 @@ function sendText() {
         texts.push(textDivs[i].innerHTML);
     }
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/send_text", true);
+    xhr.open("POST", "/chat/send_text", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
