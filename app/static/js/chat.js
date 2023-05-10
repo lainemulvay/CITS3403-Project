@@ -4,6 +4,12 @@ const form = document.getElementById('input-form');
 const mytextInput = document.getElementById('chat-input-message');
 const responseTextarea = document.getElementById('response');
 
+// Scroll to bottom of responseTextarea
+function scrollToBottom() {
+    var div = document.getElementById('response');
+    div.scrollTop = div.scrollHeight;
+  }
+
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -14,6 +20,9 @@ form.addEventListener('submit', async (e) => {
     newMessage.innerHTML = '<p class="message-content">' + mytextInput.value + '</p><p class="message-timestamp">' + timestamp + '</p>';
     newMessage.classList.add('message', 'message-input');
     responseTextarea.appendChild(newMessage);
+
+    // Scroll to bottom of responseTextarea
+    scrollToBottom();
     
     const mytext = mytextInput.value.trim(); // remove unnecessary white spaces
     mytextInput.value = []; // clear mytextInput field
@@ -26,6 +35,9 @@ form.addEventListener('submit', async (e) => {
     loading.classList.add('message', 'message-response');
     loading.id = 'loading';
     responseTextarea.appendChild(loading);
+
+    // Scroll to bottom of responseTextarea
+    scrollToBottom();
 
     if (mytext) {
         try {
@@ -59,6 +71,9 @@ form.addEventListener('submit', async (e) => {
             newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
             newMessage.classList.add('message', 'message-response');
             responseTextarea.appendChild(newMessage);
+
+            // Scroll to bottom of responseTextarea
+            scrollToBottom();
         } 
         else {
             responseTextarea.value = 'Error';
