@@ -45,6 +45,8 @@ form {
     border-width: 1px;
     border-radius: 35px;
     padding: 0.5em 1em 0.5em 1em;
+    display: flex;
+    align-items: center;
 }
 
 .inputfield {
@@ -195,7 +197,7 @@ form {
 
     .inputfield {
         font-size: 16px;
-        height: 48px;
+        height: 24px;
     }
 
     .button {
