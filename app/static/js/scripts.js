@@ -1,6 +1,6 @@
 // Script for base.html
 try {
-  var dropdownContent = document.getElementById("dropdownContent");
+  var dropdownContent = document.getElementsByClassName("dropdown-content");
   function toggleDropdown() {
     dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
   }
