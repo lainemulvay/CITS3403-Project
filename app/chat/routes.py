@@ -24,23 +24,19 @@ def logout():
 
 @chat_blueprint.route('/send_text', methods=['POST'])
 def save_chat():
+    # Get the chat message data from the frontend
     data = request.json
-    user = User.query.filter_by(email=session['email']).first()
-    if user:
-        chat = Chat(user_id=user.id, date=datetime.utcnow())
-        db.session.add(chat)
-        db.session.commit()
-        chat_id = chat.id
-        messages = []
-        for message in data['messages']:
-            chat_message = ChatMessage(chat_id=chat_id, question=message['question'], response=message['response'])
-            db.session.add(chat_message)
-            messages.append(chat_message)
-        db.session.commit()
-        response_data = {'success': True, 'messages': messages}
-    else:
-        response_data = {'success': False, 'error': 'User not found.'}
-    return jsonify(response_data)
+    chat_id = data.get('chat_id')
+    question = data.get('question')
+    response = data.get('response')
+    # Create a new chat message
+    chat_message = ChatMessage(chat_id=chat_id, question=question, response=response)
+    
+    # Add the chat message to the database
+    db.session.add(chat_message)
+    db.session.commit()
+
+    return jsonify(success=True)
 
 '''
 def save_chat():

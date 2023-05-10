@@ -22,6 +22,9 @@ class Chat(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     date = db.Column(db.DateTime, default=datetime.utcnow)
     messages = db.relationship('ChatMessage', backref='chat')
+    
+    def __repr__(self):
+        return '<Chat %r>' % self.id
 
 class ChatMessage(db.Model):
     __tablename__ = "chat_messages"
@@ -29,3 +32,7 @@ class ChatMessage(db.Model):
     chat_id = db.Column(db.Integer, db.ForeignKey('chats.id'))
     question = db.Column(db.Text, nullable=False)
     response = db.Column(db.Text, nullable=False)
+    date = db.Column(db.DateTime, default=datetime.utcnow)
+    
+    def __repr__(self):
+        return '<ChatMessage %r>' % self.id
