@@ -33,7 +33,7 @@ def login():
 # get & post User
 @login_blueprint.route('/me')
 def get_me():
-    if 'id' in session:
+    if session['id'] is not None:
         user = User.query.filter_by(id=session['id']).first()
         return jsonify({'success': True, 'user': {'id': user.id, 'email': user.email, 'first_name': user.first_name, 'last_name': user.last_name}})
     else:
