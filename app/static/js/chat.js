@@ -58,29 +58,39 @@ form.addEventListener('submit', async (e) => {
                     frequency_penalty: 0,
                 }),
             });
-        if (response.ok) {
-            // Remove loading message
-            const loading = document.getElementById('loading');
-            loading.remove();
+            if (response.ok) {
+                // Remove loading message
+                const loading = document.getElementById('loading');
+                loading.remove();
 
-            const data = await response.json();
-            const messageContent = data.choices[0].message.content;
-            console.log('Response: ' + messageContent)
-            const timestamp = new Date().toLocaleString();
-            const newMessage = document.createElement('div');
-            newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
-            newMessage.classList.add('message', 'message-response');
-            responseTextarea.appendChild(newMessage);
+                const data = await response.json();
+                const messageContent = data.choices[0].message.content;
+                console.log('Response: ' + messageContent)
+                const timestamp = new Date().toLocaleString();
+                const newMessage = document.createElement('div');
+                newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
+                newMessage.classList.add('message', 'message-response');
+                responseTextarea.appendChild(newMessage);
 
-            // Scroll to bottom of responseTextarea
-            scrollToBottom();
-        } 
-        else {
-            responseTextarea.value = 'Error';
-        }
+                // Scroll to bottom of responseTextarea
+                scrollToBottom();
+            } 
+            else {
+                // Remove loading message
+                const loading = document.getElementById('loading');
+                loading.remove();
+                
+                const newMessage = document.createElement('div');
+                newMessage.innerHTML = '<p class="message-content"> It looks like you are asking questions too frequently. Please take a moment to gather your thoughts, and then feel free to ask again.</p><p class="message-timestamp">' + timestamp + '</p>';
+                newMessage.classList.add('message', 'message-response');
+                responseTextarea.appendChild(newMessage);
+
+                responseTextarea.value = 'Error';
+            }
         } 
 
         catch (error) {
+            console.log("test");
             console.log(error);
             responseTextarea.value = 'Error';
         }
