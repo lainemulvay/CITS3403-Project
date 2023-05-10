@@ -4,7 +4,15 @@
 {% endblock %}
 
 {%block content%}
-    <div id="response" class="response-box"></div>
+    <div id="response" class="response-box">
+        <div class="message message-response">
+            <p class="message-content">
+                Hello! Ask me any question about UWA and I will try my best to answer it.
+                Remember to save the chat if you want to keep it by pressing the save button below.
+            </p>
+            <p class="message-timestamp"></p>
+        </div>
+    </div>
     <div class="input-container">
         <form class="input-form" id="input-form">
             <input class="chat-inputfield" type="text" id="chat-input-message" name="chat-input-message" placeholder="Ask me a question..." required>

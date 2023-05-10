@@ -172,15 +172,9 @@
 .save-container {
     margin-top: 100px;
     position: relative;
-    z-index: 2;
+    margin: 3em, auto, 0, auto;
+    z-index: 10;
 }
-
-.save-container button {
-    margin-right: 10px;
-}
-
-
-
 
 /* add media queries for smaller screens if needed */
 /* TODO: need to fix so works on mobile */

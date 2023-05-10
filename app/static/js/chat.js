@@ -18,39 +18,54 @@ form.addEventListener('submit', async (e) => {
     const mytext = mytextInput.value.trim(); // remove unnecessary white spaces
     mytextInput.value = []; // clear mytextInput field
 
-        if (mytext) {
-            try {
-                const response = await fetch('https://api.openai.com/v1/chat/completions', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'Authorization': `Bearer ${API_KEY}`,
-                    },
-                    body: JSON.stringify({
-                        model: 'gpt-3.5-turbo',
-                        messages: [{role: 'user', content: mytext }],
-                        temperature: 1.0,
-                        top_p: 0.7,
-                        n: 1,
-                        stream: false,
-                        presence_penalty: 0,
-                        frequency_penalty: 0,
-                    }),
-                });
+    // Delay for 1 second
+    await new Promise(r => setTimeout(r, 500));
+    // Display Loading message
+    const loading = document.createElement('div');
+    loading.innerHTML = 'typing...';
+    loading.classList.add('message', 'message-response');
+    loading.id = 'loading';
+    responseTextarea.appendChild(loading);
 
-            if (response.ok) {
-                const data = await response.json();
-                const messageContent = data.choices[0].message.content;
-                console.log('Response: ' + messageContent)
-                const timestamp = new Date().toLocaleString();
-                const newMessage = document.createElement('div');
-                newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
-                newMessage.classList.add('message', 'message-response');
-                responseTextarea.appendChild(newMessage);
-            } else {
-                responseTextarea.value = 'Error';
-            }
-        } catch (error) {
+    if (mytext) {
+        try {
+            const response = await fetch('https://api.openai.com/v1/chat/completions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${API_KEY}`,
+                },
+                body: JSON.stringify({
+                    model: 'gpt-3.5-turbo',
+                    messages: [{role: 'user', content: mytext }],
+                    temperature: 1.0,
+                    top_p: 0.7,
+                    n: 1,
+                    stream: false,
+                    presence_penalty: 0,
+                    frequency_penalty: 0,
+                }),
+            });
+        if (response.ok) {
+            // Remove loading message
+            const loading = document.getElementById('loading');
+            loading.remove();
+
+            const data = await response.json();
+            const messageContent = data.choices[0].message.content;
+            console.log('Response: ' + messageContent)
+            const timestamp = new Date().toLocaleString();
+            const newMessage = document.createElement('div');
+            newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
+            newMessage.classList.add('message', 'message-response');
+            responseTextarea.appendChild(newMessage);
+        } 
+        else {
+            responseTextarea.value = 'Error';
+        }
+        } 
+
+        catch (error) {
             console.log(error);
             responseTextarea.value = 'Error';
         }
