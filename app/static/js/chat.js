@@ -75,16 +75,24 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.chat-inputfield').focus();
 });
 
+
 function sendText() {
-    var textDivs = document.getElementsByClassName("chat-inputfield");
+    var textDivs = document.querySelectorAll('.message-input .message-content, .message-response .message-content');
+    var texts = [];
+    for (var i = 0; i < textDivs.length; i++) {
+        texts.push(textDivs[i].innerHTML);
+    }
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "/send_text", true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log("Text sent to server successfully.");
+            console.log("Texts sent to server successfully.");
         }
     };
-    var data = JSON.stringify({ "text": textDivs[textDivs.length - 1].querySelector(".message-content").textContent });
+    
+    var data = JSON.stringify({ "texts": texts }); 
     xhr.send(data);
 }
+
+

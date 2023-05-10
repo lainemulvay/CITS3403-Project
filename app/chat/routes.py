@@ -25,14 +25,6 @@ def logout():
 @chat_blueprint.route('/send_text', methods=['POST'])
 def save_chat():
     data = request.json
-    chats = data['chats']
-    for chat in chats:
-        question = chat['Question']
-        response = chat['Response']
-        chat_entry = ChatDB(Question=question, Response=response, created_at=datetime.utcnow())
-        db.session.add(chat_entry)
-    db.session.commit()
-    return 'Chats saved to database'
+    print(data)
+    return
 
-if __name__ == '__main__':
-    app.run(debug=True)
