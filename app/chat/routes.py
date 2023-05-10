@@ -11,7 +11,7 @@ from datetime import datetime
 def chat():
     if 'email' not in session:
         flash('Please log in to view this page', 'danger')
-        return redirect(url_for('login'))
+        return redirect(url_for('login.login'))
     return render_template("chat_view.html", display = True)
 
 
@@ -25,16 +25,23 @@ def logout():
 @chat_blueprint.route('/send_text', methods=['POST'])
 def save_chat():
     # Get the chat message data from the frontend
-    data = request.json
-    chat_id = data.get('chat_id')
-    question = data.get('question')
-    response = data.get('response')
-    # Create a new chat message
-    chat_message = ChatMessage(chat_id=chat_id, question=question, response=response)
+    data = request.get_json()
+    input = data['input']
+    print(input[0])
+    print()
+    response = data['response']
+    print(response[0])
+    return 'Text received'
+
+    # chat_id = data.get('chat_id')
+    # question = data.get('question')
+    # response = data.get('response')
+    # # Create a new chat message
+    # chat_message = ChatMessage(chat_id=chat_id, question=question, response=response)
     
-    # Add the chat message to the database
-    db.session.add(chat_message)
-    db.session.commit()
+    # # Add the chat message to the database
+    # db.session.add(chat_message)
+    # db.session.commit()
 
     return jsonify(success=True)
 
