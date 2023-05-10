@@ -8,8 +8,6 @@ app = Flask(__name__)
 app.config.from_object(Config)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
-with app.app_context():
-    db.create_all()
 
 from app.register import register_blueprint
 app.register_blueprint(register_blueprint)
@@ -27,3 +25,6 @@ from app.history import history_blueprint
 app.register_blueprint(history_blueprint)
 
 from app import models
+
+with app.app_context():
+    db.create_all()
