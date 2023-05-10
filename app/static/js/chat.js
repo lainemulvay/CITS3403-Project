@@ -4,6 +4,12 @@ const form = document.getElementById('input-form');
 const mytextInput = document.getElementById('chat-input-message');
 const responseTextarea = document.getElementById('response');
 
+// Scroll to bottom of responseTextarea
+function scrollToBottom() {
+    var div = document.getElementById('response');
+    div.scrollTop = div.scrollHeight;
+  }
+
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -14,6 +20,9 @@ form.addEventListener('submit', async (e) => {
     newMessage.innerHTML = '<p class="message-content">' + mytextInput.value + '</p><p class="message-timestamp">' + timestamp + '</p>';
     newMessage.classList.add('message', 'message-input');
     responseTextarea.appendChild(newMessage);
+
+    // Scroll to bottom of responseTextarea
+    scrollToBottom();
     
     const mytext = mytextInput.value.trim(); // remove unnecessary white spaces
     mytextInput.value = []; // clear mytextInput field
@@ -26,6 +35,9 @@ form.addEventListener('submit', async (e) => {
     loading.classList.add('message', 'message-response');
     loading.id = 'loading';
     responseTextarea.appendChild(loading);
+
+    // Scroll to bottom of responseTextarea
+    scrollToBottom();
 
     if (mytext) {
         try {
@@ -46,26 +58,39 @@ form.addEventListener('submit', async (e) => {
                     frequency_penalty: 0,
                 }),
             });
-        if (response.ok) {
-            // Remove loading message
-            const loading = document.getElementById('loading');
-            loading.remove();
+            if (response.ok) {
+                // Remove loading message
+                const loading = document.getElementById('loading');
+                loading.remove();
 
-            const data = await response.json();
-            const messageContent = data.choices[0].message.content;
-            console.log('Response: ' + messageContent)
-            const timestamp = new Date().toLocaleString();
-            const newMessage = document.createElement('div');
-            newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
-            newMessage.classList.add('message', 'message-response');
-            responseTextarea.appendChild(newMessage);
-        } 
-        else {
-            responseTextarea.value = 'Error';
-        }
+                const data = await response.json();
+                const messageContent = data.choices[0].message.content;
+                console.log('Response: ' + messageContent)
+                const timestamp = new Date().toLocaleString();
+                const newMessage = document.createElement('div');
+                newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
+                newMessage.classList.add('message', 'message-response');
+                responseTextarea.appendChild(newMessage);
+
+                // Scroll to bottom of responseTextarea
+                scrollToBottom();
+            } 
+            else {
+                // Remove loading message
+                const loading = document.getElementById('loading');
+                loading.remove();
+                
+                const newMessage = document.createElement('div');
+                newMessage.innerHTML = '<p class="message-content"> It looks like you are asking questions too frequently. Please take a moment to gather your thoughts, and then feel free to ask again.</p><p class="message-timestamp">' + timestamp + '</p>';
+                newMessage.classList.add('message', 'message-response');
+                responseTextarea.appendChild(newMessage);
+
+                responseTextarea.value = 'Error';
+            }
         } 
 
         catch (error) {
+            console.log("test");
             console.log(error);
             responseTextarea.value = 'Error';
         }
@@ -78,13 +103,6 @@ form.addEventListener('keydown', (e) => {
       document.querySelector('.submit-button').click();
     }
   });
-
-form.addEventListener('keydown', (e) => {
-    if (e.keyCode === 13) {
-        e.preventDefault();
-        document.querySelector('.save-button').click();
-    }
-});
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.chat-inputfield').focus();
