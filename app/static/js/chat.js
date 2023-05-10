@@ -77,21 +77,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function sendText() {
-    var textDivs = document.querySelectorAll('.message-input .message-content, .message-response .message-content');
-    var texts = [];
-    for (var i = 0; i < textDivs.length; i++) {
-        texts.push(textDivs[i].innerHTML);
+    var inputDivs = document.getElementsByClassName('message-input');
+    var input = []
+    for (var i = 0; i < inputDivs.length; i++) {
+        input.push(inputDivs[i].innerText);
     }
+
+    var responseDivs = document.getElementsByClassName('message-response');
+    var response = []
+    for (var i = 0; i < responseDivs.length; i++) {
+        response.push(responseDivs[i].innerText);
+    }
+
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/chat/send_text", true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log("Texts sent to server successfully.");
+    xhr.open('POST', '/send_text', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+        console.log(xhr.responseText);
         }
     };
-    
-    var data = JSON.stringify({ "texts": texts }); 
+
+    var data = JSON.stringify({ input: input, response: response});
     xhr.send(data);
 }
 
