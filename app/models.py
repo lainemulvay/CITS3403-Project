@@ -36,3 +36,4 @@ class ChatMessage(db.Model):
     
     def __repr__(self):
         return '<ChatMessage %r>' % self.id
+
