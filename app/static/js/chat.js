@@ -110,16 +110,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function sendText() {
-    var inputDivs = document.getElementsByClassName('message-input');
-    var input = []
-    for (var i = 0; i < inputDivs.length; i++) {
-        input.push(inputDivs[i].innerText);
+    var questionsDivs = document.getElementsByClassName('message-input');
+    var questions = []
+    for (var i = 0; i < questionsDivs.length; i++) {
+        questions.push(questionsDivs[i].innerText);
     }
 
-    var responseDivs = document.getElementsByClassName('message-response');
-    var response = []
-    for (var i = 0; i < responseDivs.length; i++) {
-        response.push(responseDivs[i].innerText);
+    var responsesDivs = document.getElementsByClassName('message-response');
+    var responses = []
+    for (var i = 0; i < responsesDivs.length; i++) {
+        responses.push(responsesDivs[i].innerText);
     }
 
     var xhr = new XMLHttpRequest();
@@ -132,7 +132,7 @@ function sendText() {
         }
     };
 
-    var data = JSON.stringify({ input: input, response: response});
+    var data = JSON.stringify({ questions: questions, responses: responses});
     xhr.send(data);
 
     // Reload page
