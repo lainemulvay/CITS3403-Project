@@ -25,14 +25,22 @@ class Chat(db.Model):
     def __repr__(self):
         return '<Chat %r>' % self.id
 
-class ChatMessage(db.Model):
+class ChatQuestion(db.Model):
     __tablename__ = "chat_messages"
     id = db.Column(db.Integer, primary_key=True)
     chat_id = db.Column(db.Integer, db.ForeignKey('chats.id'))
-    question = db.Column(db.Text, nullable=False)
-    response = db.Column(db.Text, nullable=False)
-    date = db.Column(db.DateTime, default=datetime.utcnow)
+    content = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, nullable=False)
     
     def __repr__(self):
-        return '<ChatMessage %r>' % self.id
+        return '<ChatQuestion %r>' % self.id
 
+class ChatResponse(db.Model):
+    __tablename__ = "chat_messages"
+    id = db.Column(db.Integer, primary_key=True)
+    chat_id = db.Column(db.Integer, db.ForeignKey('chats.id'))
+    content = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, nullable=False)
+
+    def __repr__(self):
+        return '<ChatResponse %r>' % self.id
