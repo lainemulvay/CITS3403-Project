@@ -40,20 +40,17 @@ form {
     margin: 15px;
     width: 50%;
     box-sizing: border-box;
-    border-style: solid;
-    border-color: grey;
-    border-width: 1px;
-    border-radius: 35px;
-    padding: 0.5em 1em 0.5em 1em;
     display: flex;
     align-items: center;
 }
 
 .inputfield {
     width: 100%;
-    border: none;
+    padding: 0.5em 1em 0.5em 1em;
+    border:1px solid grey;
+    border-radius: 50px;
     outline: none;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .button {
@@ -158,24 +155,24 @@ form {
     color: green;
   }
   
-  .valid:before {
+.valid:before {
     position: relative;
     left: 0px;
     content: "✔";
     padding-right: 5px;
-  }
+}
   
   /* Add a red text color and an "x" when the requirements are wrong */
-  .invalid {
+.invalid {
     color: grey;
-  }
+}
   
-  .invalid:before {
+.invalid:before {
     position: relative;
     left: 0px;
     content: "●";
     padding-right: 5px;
-  }
+}
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
     h3 {

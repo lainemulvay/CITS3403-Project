@@ -1,5 +1,6 @@
 from app import app, db
-from app.models import Chat, ChatMessage, User
+from app.models import User, Chat, ChatQuestion, ChatResponse
+from app.controller import add_chat, add_chat_question, add_chat_response
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -26,22 +27,21 @@ def logout():
 def save_chat():
     # Get the chat message data from the frontend
     data = request.get_json()
-    input = data['input']
-    print(input[0])
-    print()
-    response = data['response']
-    print(response[0])
-    return 'Text received'
+    questions = data['questions']
+    responses = data['responses']
 
-    # chat_id = data.get('chat_id')
-    # question = data.get('question')
-    # response = data.get('response')
-    # # Create a new chat message
-    # chat_message = ChatMessage(chat_id=chat_id, question=question, response=response)
+    user_id= session['id']
+    chat_id = add_chat(user_id)
+
+    for question in questions:
+        content = question[:-22]
+        timestamp = question[(len(question)-20):]
+        add_chat_question(chat_id, content, timestamp)
     
-    # # Add the chat message to the database
-    # db.session.add(chat_message)
-    # db.session.commit()
+    for response in responses:
+        content = response[:-22]
+        timestamp = response[(len(response)-20):]
+        add_chat_response(chat_id, content, timestamp)
 
     return jsonify(success=True)
 
