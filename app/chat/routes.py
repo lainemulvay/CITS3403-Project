@@ -1,5 +1,6 @@
 from app import app, db
-from app.models import Chat, ChatMessage, User
+from app.models import User, Chat, ChatQuestion, ChatResponse
+from app.controller import add_chat, add_chat_question, add_chat_response
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -26,11 +27,20 @@ def logout():
 def save_chat():
     # Get the chat message data from the frontend
     data = request.get_json()
-    input = data['input']
-    print(input[0])
-    print()
-    response = data['response']
-    print(response[0])
+    questions = data['questions']
+    print(questions[0])
+    test = questions[0]
+    print(test[(len(test)-20):])
+    responses = data['responses']
+    print(responses[0])
+
+    user_id= session['id']
+    chat_id = add_chat(user_id)
+
+    add_chat_message(chat_id, "", responses[0])
+
+    for index in range(len(questions)):
+        add_chat_message(chat_id, questions[index], responses[index+1])
 
     # chat_id = data.get('chat_id')
     # question = data.get('question')
