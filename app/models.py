@@ -30,7 +30,7 @@ class ChatQuestion(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     chat_id = db.Column(db.Integer, db.ForeignKey('chats.id'))
     content = db.Column(db.Text, nullable=False)
-    timestamp = db.Column(db.DateTime, nullable=False)
+    timestamp = db.Column(db.Text, nullable=False)
     
     def __repr__(self):
         return '<ChatQuestion %r>' % self.id
@@ -40,7 +40,7 @@ class ChatResponse(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     chat_id = db.Column(db.Integer, db.ForeignKey('chats.id'))
     content = db.Column(db.Text, nullable=False)
-    timestamp = db.Column(db.DateTime, nullable=False)
+    timestamp = db.Column(db.Text, nullable=False)
 
     def __repr__(self):
         return '<ChatResponse %r>' % self.id
