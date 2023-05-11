@@ -26,7 +26,7 @@ class Chat(db.Model):
         return '<Chat %r>' % self.id
 
 class ChatQuestion(db.Model):
-    __tablename__ = "chat_messages"
+    __tablename__ = "chat_questions"
     id = db.Column(db.Integer, primary_key=True)
     chat_id = db.Column(db.Integer, db.ForeignKey('chats.id'))
     content = db.Column(db.Text, nullable=False)
@@ -36,7 +36,7 @@ class ChatQuestion(db.Model):
         return '<ChatQuestion %r>' % self.id
 
 class ChatResponse(db.Model):
-    __tablename__ = "chat_messages"
+    __tablename__ = "chat_responses"
     id = db.Column(db.Integer, primary_key=True)
     chat_id = db.Column(db.Integer, db.ForeignKey('chats.id'))
     content = db.Column(db.Text, nullable=False)
