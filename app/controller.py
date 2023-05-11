@@ -1,5 +1,5 @@
 from flask import url_for
-from app.models import User, Chat, ChatMessage
+from app.models import User, Chat, ChatQuestion, ChatResponse
 from app import db
 from flask_login import current_user, login_user, logout_user
 from sqlalchemy.orm.attributes import flag_modified
@@ -13,8 +13,14 @@ def add_chat(user_id):
     db.session.commit()
     return chat.id
 
-def add_chat_message(chat_id, question, response):
-    chat_message = ChatMessage(chat_id=chat_id, question=question, response=response)
+def add_chat_question(chat_id, content, timestamp):
+    chat_message = ChatQuestion(chat_id=chat_id, content=content, timestamp=timestamp)
+    db.session.add(chat_message)
+    db.session.commit()
+    return chat_message
+
+def add_chat_response(chat_id, content, timestamp):
+    chat_message = ChatResponse(chat_id=chat_id, content=content, timestamp=timestamp)
     db.session.add(chat_message)
     db.session.commit()
     return chat_message
