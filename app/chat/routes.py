@@ -31,7 +31,6 @@ def save_chat():
     print()
     response = data['response']
     print(response[0])
-    return 'Text received'
 
     # chat_id = data.get('chat_id')
     # question = data.get('question')
