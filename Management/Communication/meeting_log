@@ -124,3 +124,14 @@ Discussion:
 
 Outcome:
     See discussion
+
+12/05/2023 (Hank, Vicky)
+Discussion:
+    Hank - chat history storage complete, moved on to chat history display
+    Necessity of implementing flask form
+    
+Outcome:
+    Agreed that flask form is not necessary for the project, as the website does not require sensitive information, 
+    current implementation of forms also prevent user from using the website when javascript is disabled. 
+    No real benefits from rewriting forms to implement flask form.
+    Vicky - continue to refactor login and register
