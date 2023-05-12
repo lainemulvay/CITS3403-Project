@@ -10,7 +10,7 @@ from app.history import history_blueprint
 def history():
     if 'email' not in session:
         flash('Please log in to view this page', 'danger')
-        return redirect(url_for('login'))
+        return redirect(url_for('login.login'))
     return render_template("hist_view.html", display = True)
 
 @history_blueprint.route('/logout')
