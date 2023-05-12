@@ -62,6 +62,7 @@ try {
   var letter = document.getElementById("letter");
   var capital = document.getElementById("capital");
   var number = document.getElementById("number");
+  var special = document.getElementById("special");
   var length = document.getElementById("length");
   var confirm_password = document.getElementById("confirmPW");
 
@@ -105,6 +106,16 @@ try {
     } else {
       number.classList.remove("valid");
       number.classList.add("invalid");
+    }
+
+    // Validate special characters
+    var specialChars = /[!@#$%_^&+=]/g;
+    if(password.value.match(specialChars)) {  
+      special.classList.remove("invalid");
+      special.classList.add("valid");
+    } else {
+      special.classList.remove("valid");
+      special.classList.add("invalid");
     }
     
     // Validate length
