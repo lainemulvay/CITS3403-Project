@@ -103,3 +103,24 @@ Outcome:
     Murray and lain work on the storage of chat history from front end to backend
     Vicky continue to finish login and register
     Hank work on blueprints and restructure the project to a better architecture 
+
+08/05/2023 (All members)
+Discussion:
+    Hank - Flask structure with blueprints complete
+    Vicky - login and register complete
+    Murray - wrote draft table for chat history
+    Laine - no working code produced
+
+Outcome:
+    Hank and Murray to work on chat history storage
+    Lain - work on front end interactivity 
+    Vicky - work on refactoring login and register
+
+10/05/2023 (Hank, Murray)
+Discussion:
+    Murray attempted to work on chat history storage, couldn't produce working code
+    Hank continue on chat history storage
+    Murray moved to work on front end interactivity
+
+Outcome:
+    See discussion
