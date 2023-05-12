@@ -45,9 +45,10 @@ def save_chat():
 
     return jsonify(success=True)
 
-'''
-def save_chat():
-    data = request.json
-    print(data)
-    return
-'''
+@app.after_request
+def add_header(response):
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    response.headers['Vary'] = 'User-Agent'
+    return response
