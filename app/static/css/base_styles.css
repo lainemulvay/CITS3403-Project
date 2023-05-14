@@ -59,6 +59,8 @@ p {
     background-color: inherit;
     font-family: inherit;
     width: auto;
+    display: flex;
+    align-items: center;
 }
   
 .dropdown-content {
