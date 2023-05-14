@@ -70,19 +70,3 @@
     border-color: white;
     color: white;
 }
-
-/* @media only screen and (max-width: 672px) {
-    .view-chat {
-        margin-top: 0px;
-    }
-} */
-
-@media only screen and (max-width: 768px), (orientation: portrait) {
-    .view-chat-text {
-        display: none;
-    }
-    
-    #icon {
-        display: inline;
-    }
-}
