@@ -7,6 +7,10 @@ from sqlalchemy.exc import SQLAlchemyError
 import sys
 from datetime import datetime
 
+def get_user(user):
+    user = User.query.filter_by(id=session['id']).first()
+    return user
+
 def add_chat(user_id):
     chat = Chat(user_id=user_id)
     db.session.add(chat)
@@ -25,6 +29,9 @@ def add_chat_response(chat_id, content, timestamp):
     db.session.commit()
     return chat_message
 
-def get_user(user):
-    user = User.query.filter_by(id=session['id']).first()
-    return user
+def get_chat_ids(user_id):
+    user = User.query.filter_by(id=user_id).first()
+    id_list = []
+    for chat in user.chat:
+        id_list.append(chat.id)
+    return id_list
