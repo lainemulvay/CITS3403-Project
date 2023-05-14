@@ -12,7 +12,6 @@ def history():
     if 'email' not in session:
         flash('Please log in to view this page', 'danger')
         return redirect(url_for('login.login'))
-    print(session['chat_id'])
     user_id = session['id']
     id_list = get_chat_ids(user_id)
     username = get_user(User).first_name
@@ -29,6 +28,7 @@ def view_chat():
     if request.method == 'POST':
         chat_id = request.get_json()['chat_id']
         session['chat_id'] = chat_id
+        session.modified = True
         return jsonify({'success': True})
     else:
         if 'email' not in session:
@@ -36,7 +36,7 @@ def view_chat():
             return redirect(url_for('login.login'))
         chat_id = session['chat_id']
         chat = get_chat(chat_id)
-        return render_template("base_chat.html", display = True, chat=chat)
+        return render_template("base_chat.html", display = True, chat=chat, id=chat_id)
 
 @app.after_request
 def add_header(response):
