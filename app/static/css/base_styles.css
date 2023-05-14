@@ -196,5 +196,6 @@ footer {
     
     #sidebaricon {
         display: block;
+        padding-top: 1em;
     }
 }

@@ -27,7 +27,7 @@ form.addEventListener('submit', async (e) => {
     const mytext = mytextInput.value.trim(); // remove unnecessary white spaces
     mytextInput.value = []; // clear mytextInput field
 
-    // Delay for 1 second
+    // Delay for 0.5 second for realism
     await new Promise(r => setTimeout(r, 500));
     // Display Loading message
     const loading = document.createElement('div');
@@ -118,12 +118,12 @@ function sendText() {
 
     var responsesDivs = document.getElementsByClassName('message-response');
     var responses = []
-    for (var i = 0; i < responsesDivs.length; i++) {
+    for (var i = 1; i < responsesDivs.length; i++) {
         responses.push(responsesDivs[i].innerText);
     }
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/send_text', true);
+    xhr.open('POST', '/send-text', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
 
     xhr.onreadystatechange = function() {
