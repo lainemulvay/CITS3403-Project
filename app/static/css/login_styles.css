@@ -36,23 +36,6 @@ form {
     align-items: center;
 }
 
-/* .form-field {
-    margin: 15px;
-    width: 50%;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.inputfield {
-    width: 100%;
-    padding: 0.5em 1em 0.5em 1em;
-    border:1px solid grey;
-    border-radius: 50px;
-    outline: none;
-    font-size: 15px;
-} */
-
 .form-field {
     margin: 15px;
     width: 60%;
@@ -71,6 +54,24 @@ form {
     border: none;
     outline: none;
     font-size: 1em;
+}
+
+.profile .form-field {
+    margin: 0px;
+    width: 50%;
+    padding: 0.5em 1em 0.5em 1em;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.profile .inputfield {
+    width: 100%;
+    padding: 0.5em 1em 0.5em 1em;
+    border:1px solid grey;
+    border-radius: 50px;
+    outline: none;
+    font-size: 15px;
 }
 
 .inputfield[readonly] {
