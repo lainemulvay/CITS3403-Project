@@ -218,5 +218,17 @@ try {
 
 // Script for history
 function test(button){
-  console.log(button.value)
+  var chat_id = button.value;
+
+  var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/view-chat', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+        console.log(xhr.responseText);
+        }
+    };
+
+    xhr.send(chat_id);
 }
