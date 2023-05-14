@@ -3,7 +3,7 @@ span {
     font-weight: 500;
 }
 
-.login {
+.login, .profile {
     background-color: white;
     width: 45%;
     margin: 3em auto 3em auto;
@@ -36,10 +36,10 @@ form {
     align-items: center;
 }
 
-.form-field {
+/* .form-field {
     margin: 15px;
     width: 50%;
-    box-sizing: border-box;
+    border-radius: 50px;
     display: flex;
     align-items: center;
 }
@@ -50,7 +50,44 @@ form {
     border:1px solid grey;
     border-radius: 50px;
     outline: none;
-    font-size: 0.8em;
+    font-size: 15px;
+} */
+
+.form-field {
+    margin: 15px;
+    width: 60%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 35px;
+    padding: 0.5em 1em 0.5em 1em;
+    display: flex;
+    align-items: center;
+}
+
+.inputfield {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.inputfield[readonly] {
+    background-color: #e9ecef;
+    color: #495057;
+    opacity: 1;
+}
+
+.profile .inputfield {
+    width: 60%;
+    margin-left: 10px;
+}
+
+.profile .title {
+    width: 100px;
+    text-align: right;
+    margin-right: 20px;
 }
 
 .button {
@@ -103,8 +140,7 @@ form {
 
 .intro h1 {
     font-size: 4em;
-    margin: 0.2em;
-    margin-bottom: 0.75em;
+    margin: 0.5em 0.2em 0.75em 0.2em;
 }
 
 .descriptions {
