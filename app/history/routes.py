@@ -1,6 +1,6 @@
 from app import app, db
 from app.models import User
-from app.controller import get_user, get_chat_ids, get_chat_questions, get_chat_responses
+from app.controller import get_user, get_chat_ids, get_chat
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -30,14 +30,13 @@ def view_chat():
         session['chat_id'] = chat_id
         return jsonify({'success': True})
     else:
-        print("get")
         if 'email' not in session:
             flash('Please log in to view this page', 'danger')
             return redirect(url_for('login.login'))
         chat_id = session['chat_id']
-        questions = get_chat_questions(chat_id)
-        responses = get_chat_responses(chat_id)
-        return render_template("base_chat.html", display = True, questions=questions, responses=responses)
+        chat = get_chat(chat_id)
+        print(chat[0])
+        return render_template("base_chat.html", display = True, chat=chat)
 
 @app.after_request
 def add_header(response):

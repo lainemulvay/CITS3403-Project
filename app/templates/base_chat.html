@@ -5,7 +5,6 @@
 
 {%block content%}
     <div id="response" class="response-box">
-        <div class = auto-message></div>
         <div class="message message-response">
             <p class="message-content">
                 👋 Welcome to UWA's FAQ Chat Service! <br>
@@ -25,6 +24,20 @@
             </p>
             <p class="message-timestamp"></p>
         </div>
+        {% for messages in chat %}
+        <div class="message message-input">
+            <p class="message-content">
+                {{messages[0][0]}}
+            </p>
+            <p class="message-timestamp">{{messages[0][1]}}</p>
+        </div>
+        <div class="message message-response">
+            <p class="message-content">
+                {{messages[1][0]}}
+            </p>
+            <p class="message-timestamp">{{messages[1][1]}}</p>
+        </div>
+        {% endfor %}
     </div>
     {% block scripts %}
     <script src="{{url_for('static', filename='js/scripts.js')}}"></script>

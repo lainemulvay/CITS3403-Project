@@ -51,3 +51,13 @@ def get_chat_responses(chat_id):
         response = [response.content, response.timestamp]
         responses.append(response)
     return responses
+
+def get_chat(chat_id):
+    chat = []
+    questions = get_chat_questions(chat_id)
+    responses = get_chat_responses(chat_id)
+    for i in range(len(questions)):
+        chat.append([])
+        chat[i].append(questions[i])
+        chat[i].append(responses[i])
+    return chat
