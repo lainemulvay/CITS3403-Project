@@ -23,16 +23,6 @@ def logout():
     flash('You are now logged out', 'success')
     return redirect(url_for('login.login'))
 
-@history_blueprint.route('/view-chat/', methods=['GET', 'POST'])
-def view_chat():
-    if request.method == 'POST':
-        chat_id = request.get_json()['chat_id']
-        print(session['chat_id'])
-        session['chat_id'] = chat_id
-        session.modified = True
-        print(session['chat_id'])
-        return jsonify({'success': True})
-    
 @history_blueprint.route('/history/<id>', methods=['GET'])
 def view_chat_id(id):
     if 'email' not in session:
