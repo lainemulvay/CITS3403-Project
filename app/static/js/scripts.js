@@ -232,6 +232,6 @@ function test(button){
 
   var data = JSON.stringify({chat_id: chat_id});
   xhr.send(data);
-
+  
   window.location.href = '/view-chat';
 }

@@ -12,6 +12,7 @@ def history():
     if 'email' not in session:
         flash('Please log in to view this page', 'danger')
         return redirect(url_for('login.login'))
+    print(session['chat_id'])
     user_id = session['id']
     id_list = get_chat_ids(user_id)
     username = get_user(User).first_name
@@ -35,7 +36,6 @@ def view_chat():
             return redirect(url_for('login.login'))
         chat_id = session['chat_id']
         chat = get_chat(chat_id)
-        print(chat[0])
         return render_template("base_chat.html", display = True, chat=chat)
 
 @app.after_request

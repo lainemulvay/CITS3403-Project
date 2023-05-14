@@ -27,7 +27,7 @@ form.addEventListener('submit', async (e) => {
     const mytext = mytextInput.value.trim(); // remove unnecessary white spaces
     mytextInput.value = []; // clear mytextInput field
 
-    // Delay for 1 second
+    // Delay for 0.5 second for realism
     await new Promise(r => setTimeout(r, 500));
     // Display Loading message
     const loading = document.createElement('div');
