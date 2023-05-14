@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block styles %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/chat_styles.css')}}">
+{% endblock %}
+
+{%block content%}
+    <div id="response" class="response-box">
+        <div class = auto-message></div>
+        <div class="message message-response">
+            <p class="message-content">
+                👋 Welcome to UWA's FAQ Chat Service! <br>
+                <br>
+                We're here to assist you with any questions or concerns you may have. 
+                Whether you need help with enrollment, campus facilities, or academic programs, 
+                we've got you covered. <br>
+                <br>
+                To ensure you have a record of our conversation, we recommend saving the chat history 
+                by clicking on the "Save" button below. This way, you can easily refer back to our discussion at any time. <br>
+                <br>
+                <em>PLEASE NOTE </em>that the page will be refreshed after saving.<br>
+                <br>
+                Please don't hesitate to ask us anything you need clarification on. We're here to provide you with the most accurate and helpful information. <br>
+                <br>
+                Let's get started!
+            </p>
+            <p class="message-timestamp"></p>
+        </div>
+    </div>
+    {% block scripts %}
+    <script src="{{url_for('static', filename='js/scripts.js')}}"></script>
+    {% endblock %}
+{% endblock %}
