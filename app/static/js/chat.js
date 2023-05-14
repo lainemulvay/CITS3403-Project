@@ -123,7 +123,7 @@ function sendText() {
     }
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/send_text', true);
+    xhr.open('POST', '/send-text', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
 
     xhr.onreadystatechange = function() {

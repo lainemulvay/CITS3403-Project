@@ -23,6 +23,11 @@ def logout():
     flash('You are now logged out', 'success')
     return redirect(url_for('login.login'))
 
+@history_blueprint.route('/view-chat', methods=['POST'])
+def view_chat():
+    id = request.get_json('id')['chat_id']
+    return jsonify(success=True)
+
 @app.after_request
 def add_header(response):
     response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'

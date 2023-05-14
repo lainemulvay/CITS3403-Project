@@ -24,7 +24,7 @@ def logout():
     return redirect(url_for('login.login'))
 
 
-@chat_blueprint.route('/send_text', methods=['POST'])
+@chat_blueprint.route('/send-text', methods=['POST'])
 def save_chat():
     # Get the chat message data from the frontend
     data = request.get_json()

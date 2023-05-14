@@ -230,5 +230,6 @@ function test(button){
         }
     };
 
-    xhr.send(chat_id);
+    var data = JSON.stringify({chat_id: chat_id});
+    xhr.send(data);
 }
