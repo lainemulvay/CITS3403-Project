@@ -1,4 +1,4 @@
-from flask import url_for
+from flask import url_for, session
 from app.models import User, Chat, ChatQuestion, ChatResponse
 from app import db
 from flask_login import current_user, login_user, logout_user
@@ -24,3 +24,7 @@ def add_chat_response(chat_id, content, timestamp):
     db.session.add(chat_message)
     db.session.commit()
     return chat_message
+
+def get_user(user):
+    user = User.query.filter_by(id=session['id']).first()
+    return user

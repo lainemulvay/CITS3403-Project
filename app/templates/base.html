@@ -17,13 +17,14 @@
             
             {% if display %}
                 <div class="dropdown" >
-                    <div class="dropbtn" onclick="toggleDropdown()">
+                    <div class="dropbtn">
                         <i class="fas fa-bars" id="sidebaricon"></i>
-                        <p class="accountText"><i class="fas fa-user"></i>Account<p>
+                        <p class="accountText"><i class="fas fa-user"></i>{{ username }}<p>
                     </div>
                     <div class="dropdown-content">
                         <div id="chat-btn" onclick="location.href = '/chat';">Chat</div>
                         <div id="hist-btn" onclick="location.href = '/history';">History</div>
+                        <div onclick="location.href = '/profile'">My Account</div>
                         <div onclick="logout()">Logout</div>
                     </div>
                 </div>  

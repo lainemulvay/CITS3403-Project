@@ -1,6 +1,6 @@
 from app import app, db
 from app.models import User, Chat, ChatQuestion, ChatResponse
-from app.controller import add_chat, add_chat_question, add_chat_response
+from app.controller import add_chat, add_chat_question, add_chat_response, get_user
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -13,7 +13,8 @@ def chat():
     if 'email' not in session:
         flash('Please log in to view this page', 'danger')
         return redirect(url_for('login.login'))
-    return render_template("chat_view.html", display = True)
+    username = get_user(User).first_name
+    return render_template("chat_view.html", display = True, username=username)
 
 
 @chat_blueprint.route('/logout')

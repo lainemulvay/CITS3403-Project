@@ -24,6 +24,9 @@ app.register_blueprint(login_blueprint)
 from app.history import history_blueprint
 app.register_blueprint(history_blueprint)
 
+from app.profile import profile_blueprint
+app.register_blueprint(profile_blueprint)
+
 from app import models
 
 with app.app_context():
