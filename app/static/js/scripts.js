@@ -215,3 +215,8 @@ try {
       }
   });
 } catch (err) {}
+
+// Script for history
+function test(button){
+  console.log(button.value)
+}
