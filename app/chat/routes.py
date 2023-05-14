@@ -34,14 +34,16 @@ def save_chat():
     user_id= session['id']
     chat_id = add_chat(user_id)
 
+    add_chat_response(chat_id, responses[0], "")
+
     for question in questions:
         content = question[:-22]
         timestamp = question[(len(question)-20):]
         add_chat_question(chat_id, content, timestamp)
     
-    for response in responses:
-        content = response[:-22]
-        timestamp = response[(len(response)-20):]
+    for index in range(1, len(responses)):
+        content = responses[index][:-22]
+        timestamp = responses[index][(len(responses)-20):]
         add_chat_response(chat_id, content, timestamp)
 
     return jsonify(success=True)
