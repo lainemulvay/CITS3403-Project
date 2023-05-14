@@ -118,7 +118,7 @@ function sendText() {
 
     var responsesDivs = document.getElementsByClassName('message-response');
     var responses = []
-    for (var i = 0; i < responsesDivs.length; i++) {
+    for (var i = 1; i < responsesDivs.length; i++) {
         responses.push(responsesDivs[i].innerText);
     }
 
