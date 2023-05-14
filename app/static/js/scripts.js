@@ -179,6 +179,7 @@ try {
   });
 } catch (err) {}
 
+// Register function
 try {
   var regform = document.getElementById("reg-form");
   regform.addEventListener('submit', async (event) => {

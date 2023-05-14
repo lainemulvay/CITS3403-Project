@@ -16,7 +16,7 @@ def register():
             # return render_template("reg_view.html", msg = "Email already exists")
             return jsonify({'success': False, 'message': 'Email already exists'}), 401
     
-        email = request.form['email']
+        email = request.form['email'].lower()
         first_name = request.form['firstname']
         last_name = request.form['lastname']
         password = request.form['newPW']

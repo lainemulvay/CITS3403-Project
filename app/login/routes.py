@@ -9,7 +9,8 @@ from app.login import login_blueprint
 @login_blueprint.route("/login/", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        user = User.query.filter_by(email=request.form["email"]).first()
+        # check email with lowercase
+        user = User.query.filter_by(email=request.form["email"].lower()).first()
         # check if user exist
         if not user:
             # invalid email
