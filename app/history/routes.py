@@ -27,16 +27,20 @@ def logout():
 def view_chat():
     if request.method == 'POST':
         chat_id = request.get_json()['chat_id']
+        print(session['chat_id'])
         session['chat_id'] = chat_id
         session.modified = True
+        print(session['chat_id'])
         return jsonify({'success': True})
-    else:
-        if 'email' not in session:
-            flash('Please log in to view this page', 'danger')
-            return redirect(url_for('login.login'))
-        chat_id = session['chat_id']
-        chat = get_chat(chat_id)
-        return render_template("base_chat.html", display = True, chat=chat, id=chat_id)
+    
+@history_blueprint.route('/history/<id>', methods=['GET'])
+def view_chat_id(id):
+    if 'email' not in session:
+        flash('Please log in to view this page', 'danger')
+        return redirect(url_for('login.login'))
+    chat_id = id
+    chat = get_chat(chat_id)
+    return render_template("base_chat.html", display = True, chat=chat, id=chat_id)
 
 @app.after_request
 def add_header(response):
