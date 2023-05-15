@@ -14,7 +14,7 @@ def history():
         return redirect(url_for('login.login'))
     user_id = session['id']
     id_list = get_chat_ids(user_id)
-    username = get_user(User).first_name
+    username = get_user().first_name
     return render_template("hist_view.html", display = True, username=username, ids=id_list)
 
 @history_blueprint.route('/logout/')

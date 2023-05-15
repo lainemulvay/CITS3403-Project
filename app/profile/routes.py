@@ -11,8 +11,8 @@ def profile():
     if 'email' not in session:
         flash('Please log in to view this page', 'danger')
         return redirect(url_for('login.login'))
-    firstname = get_user(User).first_name
-    lastname = get_user(User).last_name
-    email = get_user(User).email
+    firstname = get_user().first_name
+    lastname = get_user().last_name
+    email = get_user().email
     # return user details
     return render_template("profile_view.html", display = True, username=firstname, firstname=firstname, lastname=lastname, email=email)

@@ -13,7 +13,7 @@ def chat():
     if 'email' not in session:
         flash('Please log in to view this page', 'danger')
         return redirect(url_for('login.login'))
-    username = get_user(User).first_name
+    username = get_user().first_name
     return render_template("chat_view.html", display = True, username=username)
 
 
