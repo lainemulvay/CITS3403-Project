@@ -24,8 +24,6 @@ def register():
         hashed_pw = generate_password_hash(password, method='scrypt')
         register = add_user(email, first_name, last_name, hashed_pw)
         print(register)
-        db.session.add(register)
-        db.session.commit()
         
         return jsonify({'success': True, 'message': 'Account successfully created'}), 200
     return render_template("reg_view.html")
