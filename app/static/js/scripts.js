@@ -299,10 +299,10 @@ try {
 
 // change password function
 try {
-  var updateform = document.getElementById("changePW-form");
-  updateform.addEventListener('submit', async (event) => {
+  var updateform2 = document.getElementById("changePW-form");
+  updateform2.addEventListener('submit', async (event) => {
       event.preventDefault();
-      const formData = new FormData(updateform);
+      const formData = new FormData(updateform2);
       const response = await fetch('/profile/', {
           method: 'POST',
           body: formData
