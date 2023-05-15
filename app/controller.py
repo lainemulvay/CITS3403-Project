@@ -1,4 +1,4 @@
-from flask import url_for, session
+from flask import url_for, session, request
 from app.models import User, Chat, ChatQuestion, ChatResponse
 from app import db
 from flask_login import current_user, login_user, logout_user
@@ -10,6 +10,14 @@ from datetime import datetime
 def get_user():
     user = User.query.filter_by(id=session['id']).first()
     return user
+
+def check_email():
+    user = User.query.filter_by(email=request.form["email"].lower()).first()
+    return user
+
+def add_user(email, first_name, last_name, hashed_pw):
+    new = User(email= email, first_name = first_name, last_name = last_name, password = hashed_pw)
+    return new
 
 def add_chat(user_id):
     chat = Chat(user_id=user_id)
