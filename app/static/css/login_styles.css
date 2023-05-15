@@ -171,6 +171,22 @@ form {
     margin: 2em auto;
     max-width: 100%;
 }
+
+/* description box pulse */
+.description-box:hover {
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
   
 .description-box h3:first-of-type {
     font-size: 24px;
