@@ -221,3 +221,63 @@ function test(button){
   var chat_id = button.value;
   window.location.href = '/history/'+ chat_id;
 }
+
+// toggle update user button
+function update_ac() {
+  var firstnameInput = document.getElementById("firstname");
+  var lastnameInput = document.getElementById("lastname");
+  var emailInput = document.getElementById("email");
+  var updateButton = document.getElementById("update");
+  var saveButton = document.getElementById("save")
+
+  if (lastnameInput.readOnly) {
+    firstnameInput.readOnly = false;
+    lastnameInput.readOnly = false;
+    emailInput.readOnly = false;
+    updateButton.style.display = "none";
+    saveButton.style.display = "block";
+  } else {
+    firstnameInput.readOnly = true;
+    lastnameInput.readOnly = true;
+    emailInput.readOnly = true;
+    updateButton.style.display = "block";
+    saveButton.style.display = "none";
+  }
+}
+
+// update user detail function
+try {
+  var updateform = document.getElementById("update-form");
+  updateform.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const formData = new FormData(updateform);
+      const response = await fetch('/profile/', {
+          method: 'POST',
+          body: formData
+      });
+      console.log(response)
+      const data = await response.json();
+      console.log(data)
+      if (!data.success) {
+        Swal.fire({
+          icon: 'warning',
+          title: data.message,
+          confirmButtonText: 'OK',
+        }).then((res)=> {
+          if (res.isConfirmed) {
+            window.location.href = '/profile';
+          }
+        })
+      } else {
+        Swal.fire({
+          icon: 'success',
+          title: data.message,
+          confirmButtonText: 'OK',
+        }).then((res) => {
+          if (res.isConfirmed) {
+            window.location.href = '/profile';
+          }
+        })
+      }
+  });
+} catch (err) {}
