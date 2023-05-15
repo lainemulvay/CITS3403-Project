@@ -1,5 +1,6 @@
 from app import app, db
 from app.models import User
+from app.controller import check_email, add_user
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -9,7 +10,7 @@ from app.register import register_blueprint
 @register_blueprint.route("/register/", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        user = User.query.filter_by(email=request.form['email']).first()
+        user = check_email()
         print(user)
         # Check if the user exists
         if user:
@@ -21,7 +22,7 @@ def register():
         last_name = request.form['lastname']
         password = request.form['newPW']
         hashed_pw = generate_password_hash(password, method='scrypt')
-        register = User(email= email, first_name = first_name, last_name = last_name, password = hashed_pw)
+        register = add_user(email, first_name, last_name, hashed_pw)
         print(register)
         db.session.add(register)
         db.session.commit()
