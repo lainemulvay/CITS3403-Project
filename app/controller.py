@@ -1,4 +1,4 @@
-from flask import url_for, session, request
+from flask import url_for, session, request, jsonify
 from app.models import User, Chat, ChatQuestion, ChatResponse
 from app import db
 from flask_login import current_user, login_user, logout_user
@@ -20,6 +20,20 @@ def add_user(email, first_name, last_name, hashed_pw):
     db.session.add(new)
     db.session.commit()
     return new
+
+def update_user(id, email=None, first_name=None, last_name=None):
+    user = User.query.get(id)
+    if user:
+        if email:
+            user.email = email
+        if first_name:
+            user.first_name = first_name
+        if last_name:
+            user.last_name = last_name
+        db.session.commit()
+        return jsonify({'success': True, 'message': 'Account updated'}), 200
+    else:
+        return jsonify({'success': False, 'message': 'Please try again'}), 401
 
 def add_chat(user_id):
     chat = Chat(user_id=user_id)
