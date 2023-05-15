@@ -17,6 +17,8 @@ def check_email():
 
 def add_user(email, first_name, last_name, hashed_pw):
     new = User(email= email, first_name = first_name, last_name = last_name, password = hashed_pw)
+    db.session.add(new)
+    db.session.commit()
     return new
 
 def add_chat(user_id):
