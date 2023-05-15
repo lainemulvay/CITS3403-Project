@@ -244,6 +244,10 @@ form {
     padding-right: 5px;
 }
 
+.tab {
+    width: 30%;
+}
+
 @media only screen and (max-width: 768px), (orientation: portrait) {
     h3 {
         font-size: 20px;
