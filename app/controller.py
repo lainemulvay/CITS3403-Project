@@ -6,6 +6,7 @@ from sqlalchemy.orm.attributes import flag_modified
 from sqlalchemy.exc import SQLAlchemyError
 import sys
 from datetime import datetime
+from werkzeug.security import generate_password_hash
 
 def get_user():
     user = User.query.filter_by(id=session['id']).first()
@@ -34,6 +35,17 @@ def update_user(id, email=None, first_name=None, last_name=None):
         return jsonify({'success': True, 'message': 'Account updated'}), 200
     else:
         return jsonify({'success': False, 'message': 'Please try again'}), 401
+    
+def change_password(id, newpassword):
+    user = User.query.get(id)
+    if user:
+        if newpassword:
+            new_hashed_pw = generate_password_hash(newpassword, method='scrypt')
+            user.password = new_hashed_pw
+            db.session.commit()
+            return jsonify({'success': True, 'message': 'Password updated'}), 200
+        else:
+            return jsonify({'success': False, 'message': 'Please try again'}), 401
 
 def add_chat(user_id):
     chat = Chat(user_id=user_id)

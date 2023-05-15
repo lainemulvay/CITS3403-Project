@@ -155,9 +155,23 @@ try {
   });
 } catch (err) {}
 
+// toggle for reset password page
+try {
+  const togglePassword = document.querySelector('#showPassword');
+  const password = document.getElementById('oldpw');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+  });
+} catch (err) {}
+
 // toggle for reg page
 try {
-  const togglePassword1 = document.querySelector('#showPassword');
+  const togglePassword1 = document.querySelector('#showPassword1');
   const newPW = document.getElementById('newPW');
   const togglePassword2 = document.querySelector('#showPassword2');
   const confirmPW = document.getElementById('confirmPW');
@@ -231,6 +245,7 @@ function update_ac() {
   var saveButton = document.getElementById("save")
 
   if (lastnameInput.readOnly) {
+    // if is readonly, toggle to false
     firstnameInput.readOnly = false;
     lastnameInput.readOnly = false;
     emailInput.readOnly = false;
@@ -281,3 +296,56 @@ try {
       }
   });
 } catch (err) {}
+
+// change password function
+try {
+  var updateform = document.getElementById("changePW-form");
+  updateform.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const formData = new FormData(updateform);
+      const response = await fetch('/profile/', {
+          method: 'POST',
+          body: formData
+      });
+      console.log(response)
+      const data = await response.json();
+      console.log(data)
+      if (!data.success) {
+        Swal.fire({
+          icon: 'warning',
+          title: data.message,
+          confirmButtonText: 'OK',
+        })
+      } else {
+        Swal.fire({
+          icon: 'success',
+          title: data.message,
+          confirmButtonText: 'OK',
+        }).then((res) => {
+          if (res.isConfirmed) {
+            window.location.href = '/profile';
+          }
+        })
+      }
+  });
+} catch (err) {}
+
+// tab controller for profile page
+try {
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+} catch (err) {}
+
+function openTab(evt, tab) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("login-form");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tab).style.display = "block";
+  evt.currentTarget.className += " active";
+}
