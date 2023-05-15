@@ -1,5 +1,6 @@
 from app import app, db
 from app.models import User
+from app.controller import check_email, get_user
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -10,7 +11,7 @@ from app.login import login_blueprint
 def login():
     if request.method == "POST":
         # check email with lowercase
-        user = User.query.filter_by(email=request.form["email"].lower()).first()
+        user = check_email()
         # check if user exist
         if not user:
             # invalid email
@@ -38,7 +39,7 @@ def login():
 @login_blueprint.route('/me')
 def get_me():
     if 'id' in session:
-        user = User.query.filter_by(id=session['id']).first()
+        user = get_user()
         return jsonify({'success': True, 'user': {'id': user.id, 'email': user.email, 'first_name': user.first_name, 'last_name': user.last_name}})
     else:
         return jsonify({'message': 'User not logged in'})
