@@ -7,7 +7,7 @@ from sqlalchemy.exc import SQLAlchemyError
 import sys
 from datetime import datetime
 
-def get_user(user):
+def get_user():
     user = User.query.filter_by(id=session['id']).first()
     return user
 
