@@ -135,3 +135,15 @@ Outcome:
     current implementation of forms also prevent user from using the website when javascript is disabled. 
     No real benefits from rewriting forms to implement flask form.
     Vicky - continue to refactor login and register
+
+15/05/2023 (Hank, Vicky, Murray)
+Discussion:
+    Hank - chat history display complete
+    Vicky - login and register complete
+    Murray - front end interactivity in progress
+    Laine - absent
+
+Outcome:
+    Hank - work on testing
+    Vicky - work on profile page
+    Murray - work on front end interactivity
