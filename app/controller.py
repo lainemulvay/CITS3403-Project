@@ -97,3 +97,11 @@ def get_chat(chat_id):
         chat[i].append(questions[i])
         chat[i].append(responses[i])
     return chat
+
+def get_chat_records(user_id):
+    user = User.query.filter_by(id=user_id).first()
+    records = user.chat
+    chat_records = []
+    for chat in records:
+        chat_records.append([chat.id, chat.datetime.strftime("%m/%d/%Y, %H:%M:%S")])
+    return chat_records
