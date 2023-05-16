@@ -1,6 +1,6 @@
 from app import app, db
 from app.models import User
-from app.controller import get_user, get_chat_ids, get_chat
+from app.controller import get_user, get_chat_ids, get_chat, get_chat_records
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -13,9 +13,9 @@ def history():
         flash('Please log in to view this page', 'danger')
         return redirect(url_for('login.login'))
     user_id = session['id']
-    id_list = get_chat_ids(user_id)
     username = get_user().first_name
-    return render_template("hist_view.html", display = True, username=username, ids=id_list)
+    chat_records = get_chat_records(user_id)
+    return render_template("hist_view.html", display = True, username=username, chat_records=chat_records)
 
 @history_blueprint.route('/logout/')
 def logout():
