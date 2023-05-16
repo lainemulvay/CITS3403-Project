@@ -68,7 +68,7 @@ try {
 
   // When the user clicks on the password field, show the message box
   password.onfocus = function() {
-    document.getElementById("pw-message").style.display = "block";
+    document.getElementById("pw-message").style.display = "inline-block";
   }
 
   // When the user clicks outside of the password field, hide the message box
@@ -250,7 +250,7 @@ function update_ac() {
     lastnameInput.readOnly = false;
     emailInput.readOnly = false;
     updateButton.style.display = "none";
-    saveButton.style.display = "block";
+    saveButton.style.display = "inline-block";
   } else {
     firstnameInput.readOnly = true;
     lastnameInput.readOnly = true;
