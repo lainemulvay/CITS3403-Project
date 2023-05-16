@@ -16,12 +16,15 @@ def register():
         if user:
             # return render_template("reg_view.html", msg = "Email already exists")
             return jsonify({'success': False, 'message': 'Email already exists'}), 401
-    
+
+        # Get the user's information
         email = request.form['email'].lower()
         first_name = request.form['firstname']
         last_name = request.form['lastname']
         password = request.form['newPW']
         hashed_pw = generate_password_hash(password, method='scrypt')
+
+        # Add the user to the database
         register = add_user(email, first_name, last_name, hashed_pw)
         print(register)
         
