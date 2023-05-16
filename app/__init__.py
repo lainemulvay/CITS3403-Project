@@ -1,11 +1,13 @@
 from flask import Flask
 from config import Config
+import secrets
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
 
 app = Flask(__name__)
 app.config.from_object(Config)
+app.secret_key = secrets.token_urlsafe(32)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
