@@ -92,18 +92,18 @@ form {
 }
 
 .button {
-    border: none;
+    border: 1px solid rgb(52, 88, 186);
     color: white;
-    margin: 20px;
+    margin: 0.5em;
     padding: 10px 32px;
     font-size: 16px;
     background-color: rgb(52, 88, 186);
     border-radius: 50px;
     cursor: pointer;
+    display: inline-block
 }
 
 .button:hover {
-    border: 1px solid rgb(52, 88, 186);
     color: #00418d;
     background-color: aliceblue;
 }
