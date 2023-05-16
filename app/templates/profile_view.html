@@ -5,13 +5,18 @@
 {% block content %}
     <div class="profile" style="width: 80%;">
         <h1 class="login-prompt">My Account</h1>
-        <div class="content" style="display: flex; flex-wrap: nowrap;">
+        <div class="content" style="display: flex; flex-wrap: nowrap; justify-content: space-around;">
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'update-form')" id="defaultOpen">Account Information</button>
                 <button class="tablinks" onclick="openTab(event, 'changePW-form')">Password Setting</button>
             </div>
             <!-- update account tab -->
-            <form class="login-form" style="width: 70%;" id="update-form" method="post">
+            <form class="login-form" id="update-form" method="post">
+                <h2 style="margin-top: 0px; font-weight: 100;">
+                    <i class="fas fa-user" style="margin-right: 10px;"></i>
+                    Account Information
+                </h2>
+                <hr style="border-color: #ffffff6b">
                 <div class="form-field">
                     <p class="title">First Name: </p>
                     <input class="inputfield" type="text" id="firstname" name="firstname" value="{{ firstname }}" readonly>
@@ -34,7 +39,12 @@
                 </div>
             </form>
             <!-- change password tab -->
-            <form class="login-form" style="width: 70%;" id="changePW-form" method="post">
+            <form class="login-form" id="changePW-form" method="post">
+                <h2 style="margin-top: 0px; font-weight: 100;">
+                    <i class="fas fa-unlock" style="margin-right: 10px;"></i>
+                    Password Setting
+                </h2>
+                <hr style="border-color: #ffffff6b">
                 <div class="form-field">
                     <p class="title">Existing Password: </p>
                     <input class="inputfield" type="password" id="oldpw" name="oldpw" placeholder="Existing password">
