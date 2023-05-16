@@ -111,7 +111,7 @@ form {
 .button.save {
     border: none;
     color: white;
-    margin: 20px;
+    margin: 0.5em;
     padding: 10px 32px;
     font-size: 16px;
     background-color: rgb(0, 133, 62);
@@ -245,7 +245,51 @@ form {
 }
 
 .tab {
-    width: 30%;
+    width: 20%;
+    margin: 1em;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.tablinks:first-child {
+    border-top-left-radius: 0.75em;
+    border-top-right-radius: 0.75em;
+}
+
+.tablinks:last-child {
+    border-bottom-left-radius: 0.75em;
+    border-bottom-right-radius: 0.75em;
+}
+
+.tablinks {
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.tablinks.active {
+    color: #3458bb;
+    background-color: #c1d8ff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+form#update-form, form#changePW-form {
+    width: 60%;
+}
+
+#update-form > .form-field, #changePW-form > .form-field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#update-form > .form-field > .inputfield, #changePW-form > .form-field > .inputfield {
+    width: 60%;
 }
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
