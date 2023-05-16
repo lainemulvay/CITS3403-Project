@@ -7,14 +7,14 @@
         <div class="heading">
             <h1>Chat History</h1>
         </div>
-        {% for chat_record in chat_records %}
+        {% for id in ids %}
         <div class="history-box">
             <div class="history-summary">
                 <div class="datetime">
-                    <i class="fas fa-calendar-day" style="margin-right: 10px;"></i><p>{{chat_record[1]}}</p>
+                    <i class="fas fa-calendar-day" style="margin-right: 10px;"></i><p>Sunday, 23 April, 2023, 15:00pm</p>
                 </div>
                 <div class="chat-number">
-                    <i class="fas fa-comments" style="margin-right: 10px;"></i><p>Chat number: {{chat_record[0]}} </p>
+                    <i class="fas fa-comments" style="margin-right: 10px;"></i><p>Chat number: {{id}} </p>
                 </div>
             </div>
             <button class="view-chat" value="{{id}}" onclick="test(this)"><i class="fas fa-eye"></i> View Chat</button>
