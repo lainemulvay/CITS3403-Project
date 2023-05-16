@@ -5,6 +5,7 @@ from flask import Flask,render_template,flash, redirect, url_for, session,loggin
 from werkzeug.security import generate_password_hash, check_password_hash
 from app.intro import intro_blueprint
 
+# intro page
 @intro_blueprint.route("/")
 def index():
     return render_template("intro_view.html")

@@ -8,9 +8,12 @@ from app.profile import profile_blueprint
 
 @profile_blueprint.route("/profile/", methods=["GET", "POST"])
 def profile():
+    # check if user is logged in
     if 'email' not in session:
         flash('Please log in to view this page', 'danger')
         return redirect(url_for('login.login'))
+    
+    # get user details
     firstname = get_user().first_name
     lastname = get_user().last_name
     email = get_user().email
@@ -18,6 +21,8 @@ def profile():
     if request.method == "POST":
         action = request.form['action']
         id = get_user().id
+
+        # update user details
         if action == 'update_account':
             email = request.form['email'].lower()
             first_name = request.form['firstname']
@@ -26,6 +31,8 @@ def profile():
             print(update)
             # return json statement
             return jsonify({'success': True, 'message': 'Account updated'}), 200
+        
+        # update password
         elif action == 'update_password':
             user = get_user()
             oldpw = request.form['oldpw']
