@@ -5,6 +5,9 @@
     max-height: 50em;
 }
 
+.heading {
+    margin: 1em;
+}
 .history-box {
     border: solid 1px grey;
     border-radius: 15px;
