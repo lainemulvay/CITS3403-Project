@@ -244,6 +244,12 @@ form {
     padding-right: 5px;
 }
 
+.profile .content {
+    display: flex; 
+    flex-wrap: nowrap; 
+    justify-content: space-around;
+}
+
 .tab {
     width: 20%;
     margin: 1em;
@@ -364,5 +370,58 @@ form#update-form, form#changePW-form {
 
     #pw-message {
         width: 85%;
+    }
+
+    .profile {
+        width: 100% !important;
+        margin: 1em auto 1em auto;
+        border-radius: 0%;
+        box-shadow: none;
+    }
+
+    .profile .content {
+        flex-direction: column;
+    }
+
+    .tab {
+        flex-direction: row;
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .tablinks {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .tablinks:first-child {
+        border-top-left-radius: 0.75em;
+        border-top-right-radius: 0.75em;
+    }
+    
+    .tablinks:last-child {
+        border-top-left-radius: 0.75em;
+        border-top-right-radius: 0.75em;
+        border-bottom-left-radius: 0em;
+        border-bottom-right-radius: 0em;
+    }
+
+    form#update-form, form#changePW-form {
+        width: 100%;
+        margin: 0;
+        margin-top: 1em;
+        padding: 0px 20px;
+    }
+
+    #update-form > .form-field, #changePW-form > .form-field {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #update-form > .form-field > .inputfield, #changePW-form > .form-field > .inputfield {
+        width: 100%;
     }
 }
