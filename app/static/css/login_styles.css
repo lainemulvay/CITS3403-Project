@@ -345,6 +345,10 @@ form#update-form, form#changePW-form {
         font-size: 16px;
     }
 
+    .button.save {
+        margin: 20px;
+    }
+
     .intro h1 {
         font-size: 2.5em;
     }
