@@ -105,12 +105,6 @@ form {
 .button:hover {
     border: 1px solid rgb(52, 88, 186);
     color: #00418d;
-    margin: 20px;
-    padding: 10px 32px;
-    font-size: 16px;
-    background-color: aliceblue;
-    border-radius: 50px;
-    cursor: pointer;
     background-color: aliceblue;
 }
 
