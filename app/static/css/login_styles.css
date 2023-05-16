@@ -103,9 +103,15 @@ form {
 }
 
 .button:hover {
-    color: #00418d;
-    background-color: aliceblue;
     border: 1px solid rgb(52, 88, 186);
+    color: #00418d;
+    margin: 20px;
+    padding: 10px 32px;
+    font-size: 16px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: aliceblue;
 }
 
 .button.save {
@@ -191,7 +197,7 @@ form {
 
 /* description box pulse */
 .description-box:hover {
-    animation: pulse 1s infinite;
+    animation: pulse 1.5s infinite;
 }
 @keyframes pulse {
     0% {
