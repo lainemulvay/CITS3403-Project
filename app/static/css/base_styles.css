@@ -108,10 +108,10 @@ p {
     text-decoration: none;
 }
 
-.button:hover {
+/* .button:hover {
     font-weight: bold;
     overflow: hidden;
-}
+} */
 
 .accountText {
     display: flex;

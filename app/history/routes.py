@@ -28,9 +28,11 @@ def view_chat_id(id):
     if 'email' not in session:
         flash('Please log in to view this page', 'danger')
         return redirect(url_for('login.login'))
-    chat_id = id
-    chat = get_chat(chat_id)
-    return render_template("base_chat.html", display = True, chat=chat, id=chat_id)
+    elif int(id) not in get_chat_ids(session['id']):
+        flash('You do not have access to this chat', 'danger')
+        return redirect(url_for('history.history'))
+    chat = get_chat(id)
+    return render_template("base_chat.html", display = True, chat=chat)
 
 @app.after_request
 def add_header(response):
