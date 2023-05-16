@@ -1,4 +1,3 @@
-from app import app, db
 from app.models import User, Chat, ChatQuestion, ChatResponse
 from app.controller import add_chat, add_chat_question, add_chat_response, get_user
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
@@ -50,7 +49,7 @@ def save_chat():
     return jsonify(success=True)
 
 # Disable caching for the chat page
-@app.after_request
+@chat_blueprint.after_request
 def add_header(response):
     response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
     response.headers['Pragma'] = 'no-cache'

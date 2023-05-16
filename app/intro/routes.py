@@ -1,4 +1,3 @@
-from app import app, db
 from app.models import User
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
