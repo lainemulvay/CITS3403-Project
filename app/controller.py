@@ -1,11 +1,7 @@
-from flask import url_for, session, request, jsonify
+from flask import session, request, jsonify
 from app.models import User, Chat, ChatQuestion, ChatResponse
 from app import db
-from flask_login import current_user, login_user, logout_user
-from sqlalchemy.orm.attributes import flag_modified
 from sqlalchemy.exc import SQLAlchemyError
-import sys
-from datetime import datetime
 from werkzeug.security import generate_password_hash
 
 # Get the current user based on the session id
