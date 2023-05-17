@@ -36,8 +36,8 @@ def profile():
             oldpw = request.form['oldpw']
             hash_pw = user.get_password()
             if check_password_hash(hash_pw, oldpw):
-                newPW = request.form['newPW']
-                updatepw = change_password(id, newPW)
+                newpw = request.form['newpw']
+                updatepw = change_password(id, newpw)
                 print(updatepw)
                 return jsonify({'success': True, 'message': 'Password updated'}), 200
             else:

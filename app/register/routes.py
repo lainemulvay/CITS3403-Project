@@ -18,7 +18,7 @@ def register():
         email = request.form['email'].lower()
         first_name = request.form['firstname']
         last_name = request.form['lastname']
-        password = request.form['newPW']
+        password = request.form['newpw']
         hashed_pw = generate_password_hash(password, method='scrypt')
 
         # Add the user to the database
