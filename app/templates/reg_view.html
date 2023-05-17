@@ -6,9 +6,6 @@
     <div class="login">
         <img class="login-logo" src="{{ url_for('static', filename='images/UWA_Logo_Full.svg')}}" alt="UWA logo">
         <h1 class="login-prompt">Register a new account</h1>
-        {% if msg != '' %}
-            <h1 style="color:red;font-size: medium;text-align: center;" > {{msg}} </h1>
-        {% endif %}
         <form class="login-form" id="reg-form" method="post">
             <div class="form-field">
                 <input class="inputfield" type="text" id="firstname" name="firstname" placeholder="First name" required>

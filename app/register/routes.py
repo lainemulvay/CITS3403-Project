@@ -12,7 +12,6 @@ def register():
         print(user)
         # Check if the user exists
         if user:
-            # return render_template("reg_view.html", msg = "Email already exists")
             return jsonify({'success': False, 'message': 'Email already exists'}), 401
 
         # Get the user's information
