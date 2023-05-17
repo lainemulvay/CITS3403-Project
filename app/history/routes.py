@@ -1,8 +1,6 @@
-from app.models import User
 from app.controller import get_user, get_chat_ids, get_chat, get_chat_records
-from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
+from flask import render_template,flash, redirect, url_for, session
 # from flask_login import LoginManager, login_required, current_user, login_user
-from werkzeug.security import generate_password_hash, check_password_hash
 from app.history import history_blueprint
 
 # history page
