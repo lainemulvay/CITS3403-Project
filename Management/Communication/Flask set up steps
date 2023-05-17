@@ -50,3 +50,7 @@ flask run
 
 IMPORTANT to activate debug mode
     flask run --debug
+
+
+For pytest
+python -m pytest -v
