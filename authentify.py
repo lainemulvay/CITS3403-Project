@@ -2,18 +2,20 @@
 ensuring the response from the user is unique and verifyable in the database'''
 
 
+from app import initapp, db
 from datetime import datetime, timedelta
 import unittest, os
-from app import app, db
-from app.models import Animals, Users, Attempts
+from app.models import User
 from config import basedir
+
+app = initapp()
 
 class ModelsTest(unittest.TestCase):
 	#creates a test database that is not the real database
     def setUp(self):
         # basedir = os.path.abspath(os.path.dirname(__file__))
         app.config['SQLALCHEMY_DATABASE_URI'] =\
-            'sqlite:///' + os.path.join(basedir, 'test.db')
+            'sqlite:///' + os.path.join(basedir, 'app.db')
         app.config['TESTING'] = True
         app.config['WTF_CSRF_ENABLED'] = False
         self.app = app.test_client()
@@ -25,7 +27,7 @@ class ModelsTest(unittest.TestCase):
         db.drop_all()
 #tests whether the app can properly validate a users password
     def test_password_hashing(self):
-        u = Users(username='Tim')
+        u = User(username='Tim')
         u.set_password('cits3403isfun')
         self.assertFalse(u.check_password('cits3403sucks'))
         self.assertTrue(u.check_password('cits3403isfun'))
@@ -37,7 +39,7 @@ class ModelsTest(unittest.TestCase):
         ), follow_redirects=True)
 #a test in the case that the login info doesnt match anything in the DB
     def test_incorrect_login(self):
-        u = Users(username = 'testcase', email = 'test@example.com')
+        u = User(username = 'testcase', email = 'test@example.com')
         u.set_password('TEST')
         db.session.add(u)
         db.session.commit()
@@ -45,7 +47,7 @@ class ModelsTest(unittest.TestCase):
         self.assertIn(b'Invalid username or password', response.data)
 #tests the case of when the login info is correct
     def test_correct_login(self):
-        u = Users(username = 'testcase', email = 'test@example.com')
+        u = User(username = 'testcase', email = 'test@example.com')
         u.set_password('correctpassword')
         db.session.add(u)
         db.session.commit()
@@ -69,18 +71,19 @@ class ModelsTest(unittest.TestCase):
         self.assertIn(b'Thankyou for Registering!', response.data)
 #test if a user tries to register with a username already in database
     def test_register_non_unique_user(self):
-        u1 = Users(username="iexist", email='iexist@example.com')
+        u1 = User(username="iexist", email='iexist@example.com')
         db.session.add(u1)
         db.session.commit()
         register = self.register('iexist', 'different@example.com','pwd','pwd')
         self.assertIn(b'Please use a different username.', register.data)
 #test if a user tries to register with an email already in database
     def test_register_non_unique_email(self):
-        u1 = Users(username="iexist", email='iexist@example.com')
+        u1 = User(username="iexist", email='iexist@example.com')
         db.session.add(u1)
         db.session.commit()
         register = self.register('iwanttoexist', 'iexist@example.com','pwd','pwd')
         self.assertIn(b'Please use a different email address.', register.data)
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    with app.app_context():
+        unittest.main(verbosity=2)

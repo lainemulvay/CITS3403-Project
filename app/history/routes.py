@@ -1,4 +1,3 @@
-from app import app, db
 from app.models import User
 from app.controller import get_user, get_chat_ids, get_chat, get_chat_records
 from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
@@ -43,7 +42,7 @@ def view_chat_id(id):
     return render_template("base_chat.html", display = True, chat=chat)
 
 # Disable caching for the history page
-@app.after_request
+@history_blueprint.after_request
 def add_header(response):
     response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
     response.headers['Pragma'] = 'no-cache'
