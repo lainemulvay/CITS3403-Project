@@ -14,7 +14,7 @@ def chat():
     return render_template("chat_view.html", display = True, username=username)
 
 
-@chat_blueprint.route('/logout')
+@chat_blueprint.route('/logout/')
 def logout():
     # Clear the session
     session.clear()
@@ -22,7 +22,7 @@ def logout():
     return redirect(url_for('login.login'))
 
 
-@chat_blueprint.route('/send-text', methods=['POST'])
+@chat_blueprint.route('/send-text/', methods=['POST'])
 def save_chat():
     # Get the chat message data from the frontend
     data = request.get_json()
