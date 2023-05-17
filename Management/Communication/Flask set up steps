@@ -54,3 +54,5 @@ IMPORTANT to activate debug mode
 
 For pytest
 python -m pytest -v
+
+python -m pytest --cov=app 
