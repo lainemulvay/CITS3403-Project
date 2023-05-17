@@ -34,7 +34,7 @@ def login():
         return render_template("login_view.html"), 200
 
 # get & post User
-@login_blueprint.route('/me')
+@login_blueprint.route('/me/')
 def get_me():
     # If the user is logged in, return the user's information
     if 'id' in session:
@@ -42,10 +42,3 @@ def get_me():
         return jsonify({'success': True, 'user': {'id': user.id, 'email': user.email, 'first_name': user.first_name, 'last_name': user.last_name}})
     else:
         return jsonify({'message': 'User not logged in'})
-
-@login_blueprint.route('/logout')
-def logout():
-    # Clear the session
-    session.clear()
-    flash('You are now logged out', 'success')
-    return redirect(url_for('.login'))
