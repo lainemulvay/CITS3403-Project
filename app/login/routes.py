@@ -32,7 +32,7 @@ def login():
     else:
         if 'id' in session:
             return redirect(url_for('chat.chat'))
-        return render_template("login_view.html")
+        return render_template("login_view.html"), 200
 
 # get & post User
 @login_blueprint.route('/me')
