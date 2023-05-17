@@ -11,3 +11,4 @@ def test_client():
     ctx.push()
     yield testing_client
     ctx.pop()
+    return testing_client
