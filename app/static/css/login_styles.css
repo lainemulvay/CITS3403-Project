@@ -67,9 +67,6 @@ form {
 
 .profile .inputfield {
     width: 100%;
-    padding: 0.5em 1em 0.5em 1em;
-    border:1px solid grey;
-    border-radius: 50px;
     outline: none;
     font-size: 15px;
 }
@@ -81,8 +78,8 @@ form {
 }
 
 .profile .inputfield {
-    width: 60%;
-    margin-left: 10px;
+    width: 100%;
+    /* margin-left: 10px; */
 }
 
 .profile .title {
@@ -295,7 +292,25 @@ form#update-form, form#changePW-form {
 }
 
 #update-form > .form-field > .inputfield, #changePW-form > .form-field > .inputfield {
-    width: 60%;
+    width: 100%;
+}
+
+.profile .inputgroup {
+    width: 80%;
+    padding: 0.5em 1em 0.5em 1em;
+    border:1px solid grey;
+    border-radius: 50px;
+}
+
+#update-form > .form-field > .inputgroup {
+    display: flex;
+    align-items: center;
+    background-color: #e9ecef;
+}
+
+#changePW-form > .form-field > .inputgroup {
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 768px), (orientation: portrait) {
@@ -328,15 +343,9 @@ form#update-form, form#changePW-form {
     }
 
     .profile .title {
-        width: 100px;
+        width: 100%;
         text-align: left;
         margin: 5px 10px;
-    }
-
-    .profile .inputfield {
-        width: 100%;
-        margin-left: 0px;
-        padding: 0.3em 1em; 
     }
 
     .button {
@@ -425,7 +434,39 @@ form#update-form, form#changePW-form {
         flex-direction: column;
     }
 
-    #update-form > .form-field > .inputfield, #changePW-form > .form-field > .inputfield {
+    #update-form > .form-field > .inputfield {
         width: 100%;
+
+    }
+
+    #changePW-form > .form-field > .inputfield {
+        width: 90%;
+    }
+
+    #update-form > .form-field > .inputgroup {
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 50px;
+        padding: 0.5em 1em 0.5em 1em;
+        background-color: #e9ecef;
+        display: flex;
+        align-items: center;
+    }
+
+    #changePW-form > .form-field > .inputgroup {
+        width: 100%;
+        border: 1px solid grey;
+        border-radius: 50px;
+        padding: 0.5em 1em 0.5em 1em;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+    }
+
+    #update-form > .form-field > .inputgroup > .inputfield, #changePW-form > .form-field > .inputgroup > .inputfield {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
     }
 }

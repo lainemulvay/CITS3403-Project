@@ -243,6 +243,7 @@ function update_ac() {
   var emailInput = document.getElementById("email");
   var updateButton = document.getElementById("update");
   var saveButton = document.getElementById("save")
+  var inputgroup = document.querySelectorAll('.inputgroup');
 
   if (lastnameInput.readOnly) {
     // if is readonly, toggle to false
@@ -251,12 +252,20 @@ function update_ac() {
     emailInput.readOnly = false;
     updateButton.style.display = "none";
     saveButton.style.display = "inline-block";
+    // set each inputgroup background color
+    inputgroup.forEach(function(element) {
+      element.style.backgroundColor = '#ffffff';
+    });
   } else {
     firstnameInput.readOnly = true;
     lastnameInput.readOnly = true;
     emailInput.readOnly = true;
     updateButton.style.display = "block";
     saveButton.style.display = "none";
+    // set each inputgroup background colors
+    inputgroup.forEach(function(element) {
+      element.style.backgroundColor = '#e9ecef';
+    });
   }
 }
 
