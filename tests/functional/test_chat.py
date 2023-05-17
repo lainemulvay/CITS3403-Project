@@ -72,20 +72,35 @@ def test_invalid_history_access(test_client):
     assert response.status_code == 302
     assert b"Redirecting..." in response.data
 
-# def test_register(test_client):
-#     """
-#     GIVEN a Flask application
-#     WHEN the '/register' page is posted to (POST)
-#     THEN check the response is valid
-#     """
-#     response = test_client.post('/register/', data=dict(
-#         firstname="Hank",
-#         lastname="Zhang",
-#         email="example4@email.com",
-#         newPW="Abc787878%",
-#         confirmPW="Abc787878%",
-#     ))
-#     assert b"Account successfully created" in response.data
+def test_register(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/register' page is posted to (POST)
+    THEN check the response is valid
+    """
+    response = test_client.post('/register/', data=dict(
+        firstname="Test",
+        lastname="Test",
+        email="Test@email.com",
+        newPW="Test12345%",
+        confirmPW="Test12345%",
+    ))
+    assert b"Account successfully created" in response.data
+
+def test_duplicate_register(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/register' page is posted to (POST)
+    THEN check the response is valid
+    """
+    response = test_client.post('/register/', data=dict(
+        firstname="Test",
+        lastname="Test",
+        email="Test@email.com",
+        newPW="Test12345%",
+        confirmPW="Test12345%",
+    ))
+    assert b"Email already exists" in response.data
 
 def test_login(test_client):
     """
@@ -94,10 +109,34 @@ def test_login(test_client):
     THEN check the response is valid
     """
     response = test_client.post('/login/', data=dict(
-        email="test@test.com",
+        email="Test@email.com",
         password="Test12345%",
     ))
     assert b"Login success" in response.data
+
+def test_invalid_login_email(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/login' page is posted to (POST)
+    THEN check the response is valid
+    """
+    response = test_client.post('/login/', data=dict(
+        email="",
+        password="",
+    ))
+    assert b"Invalid email" in response.data
+
+def test_invalid_login_password(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/login' page is posted to (POST)
+    THEN check the response is valid
+    """
+    response = test_client.post('/login/', data=dict(
+        email="Test@email.com",
+        password="",
+    ))
+    assert b"Invalid password" in response.data
 
 def test_chat_page(test_client):
     """
@@ -155,6 +194,21 @@ def test_profile_page(test_client):
     assert b"History" in response.data
     assert b"My Account" in response.data
     assert b"Logout" in response.data
+
+def test_change_account_information(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/account' page is posted to (POST)
+    THEN check the response is valid
+    """
+    response = test_client.post('/profile/', data=dict(
+        action = "update_account",
+        firstname="Change",
+        lastname="Change",
+        email="Change@email.com",
+    ))
+
+    assert b"Account updated" in response.data
 
 def test_logout(test_client):
     """
