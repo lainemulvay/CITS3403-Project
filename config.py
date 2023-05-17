@@ -10,7 +10,8 @@ class Config(object):
 class TestingConfig(Config):
     TESTING = True
     WTF_CSRF_ENABLED = False
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'test.db')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('TEST_DATABASE_URL') or \
+        'sqlite:///' + os.path.join(basedir, 'test.db')
     PRESERVE_CONTEXT_ON_EXCEPTION = False
     DEBUG = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
