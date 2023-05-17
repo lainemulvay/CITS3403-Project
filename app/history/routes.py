@@ -18,13 +18,6 @@ def history():
     chat_records = get_chat_records(user_id)
     return render_template("hist_view.html", display = True, username=username, chat_records=chat_records)
 
-@history_blueprint.route('/logout/')
-def logout():
-    # Clear the session
-    session.clear()
-    flash('You are now logged out', 'success')
-    return redirect(url_for('login.login'))
-
 @history_blueprint.route('/history/<id>', methods=['GET'])
 def view_chat_id(id):
     # If the user is not logged in, redirect to the login page
