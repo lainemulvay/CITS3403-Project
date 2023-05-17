@@ -102,18 +102,6 @@ def test_duplicate_register(test_client):
     ))
     assert b"Email already exists" in response.data
 
-def test_login(test_client):
-    """
-    GIVEN a Flask application
-    WHEN the '/login' page is posted to (POST)
-    THEN check the response is valid
-    """
-    response = test_client.post('/login/', data=dict(
-        email="Test@email.com",
-        password="Test12345%",
-    ))
-    assert b"Login success" in response.data
-
 def test_invalid_login_email(test_client):
     """
     GIVEN a Flask application
@@ -137,6 +125,30 @@ def test_invalid_login_password(test_client):
         password="",
     ))
     assert b"Invalid password" in response.data
+
+def test_login(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/login' page is posted to (POST)
+    THEN check the response is valid
+    """
+    response = test_client.post('/login/', data=dict(
+        email="Test@email.com",
+        password="Test12345%",
+    ))
+    assert b"Login success" in response.data
+
+def test_logged_user_info(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/me' page is requested (GET)
+    THEN check the response is valid
+    """
+    response = test_client.get('/me/')
+    assert response.status_code == 200
+    assert b"1" in response.data
+    assert b"test@email.com" in response.data
+    assert b"Test" in response.data
 
 def test_chat_page(test_client):
     """
