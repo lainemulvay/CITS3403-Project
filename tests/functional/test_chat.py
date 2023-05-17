@@ -40,7 +40,7 @@ def test_register_page(test_client):
     WHEN the '/register' page is requested (GET)
     THEN check the response is valid
     """
-
+    
     response = test_client.get('/register/')
     assert response.status_code == 200
     assert b"Register a new account" in response.data
@@ -55,10 +55,20 @@ def test_register_page(test_client):
 def test_invalid_chat_access(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/chat' page is requested (GET)
+    WHEN the '/chat' page is requested (GET), and the user is not logged in
     THEN check the response is valid
     """
     response = test_client.get('/chat/')
+    assert response.status_code == 302
+    assert b"Redirecting..." in response.data
+
+def test_invalid_history_access(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/history' page is requested (GET), and the user is not logged in
+    THEN check the response is valid
+    """
+    response = test_client.get('/history/')
     assert response.status_code == 302
     assert b"Redirecting..." in response.data
 
