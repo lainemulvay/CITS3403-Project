@@ -32,21 +32,20 @@ Contain registration view
 
 --- 
 
-### `register.html `:small_blue_diamond: ![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg)
-Contain registration view and form.
+### `chat_view.html `:small_blue_diamond: ![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg)
+Contain chat page view
 
-![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Full view  
-![Registed Users](https://img.shields.io/badge/-User-yellow.svg) - Not visible  
-
----
-
-### `/imports`:small_red_triangle_down: 
-Directory containing imports 
+![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Not visible 
+![Registed Users](https://img.shields.io/badge/-User-yellow.svg) - Full view   
 
 --- 
 
-### `/profile`:small_red_triangle_down: 
-Directory containing user and admin profile template 
+### `hist_view.html `:small_blue_diamond: ![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg)
+Contain history view.
+
+![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Not visible 
+![Registed Users](https://img.shields.io/badge/-User-yellow.svg) - Full view 
+
 
 
 
