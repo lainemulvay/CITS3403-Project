@@ -8,7 +8,7 @@ class User(db.Model):
     first_name = db.Column("First Name", db.String(100), nullable=False)
     last_name = db.Column("Last Name", db.String(100), nullable=False)
     password = db.Column(db.String(100), nullable=False)
-    date_added = db.Column(db.DateTime, default=datetime.utcnow)
+    date_added = db.Column(db.DateTime, default=datetime.now)
     chat = db.relationship('Chat', backref='user', lazy=True)
 
     def __init__(self, email, first_name, last_name, password):
@@ -27,7 +27,7 @@ class Chat(db.Model):
     __tablename__ = "chats"
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    datetime = db.Column(db.DateTime, default=datetime.utcnow)
+    datetime = db.Column(db.DateTime, default=datetime.now)
     chat_questions = db.relationship('ChatQuestion', backref='chat', lazy=True)
     chat_responses = db.relationship('ChatResponse', backref='chat', lazy=True)
     
