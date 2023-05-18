@@ -19,10 +19,9 @@ def register():
         first_name = request.form['firstname']
         last_name = request.form['lastname']
         password = request.form['newpw']
-        hashed_pw = generate_password_hash(password, method='scrypt')
 
         # Add the user to the database
-        register = add_user(email, first_name, last_name, hashed_pw)
+        register = add_user(email, first_name, last_name, password)
         print(register)
         
         return jsonify({'success': True, 'message': 'Account successfully created'}), 200

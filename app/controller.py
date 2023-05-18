@@ -15,7 +15,8 @@ def check_email(email):
     return user
 
 # Add a user to the database
-def add_user(email, first_name, last_name, hashed_pw):
+def add_user(email, first_name, last_name, password):
+    hashed_pw = generate_password_hash(password, method='scrypt')
     new = User(email= email, first_name = first_name, last_name = last_name, password = hashed_pw)
     db.session.add(new)
     db.session.commit()
