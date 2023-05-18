@@ -12,86 +12,95 @@ by [Murray Lewin](https://github.com/GrassTree-Muzz) (22967374), [Laine Mulvay](
 ### Code structure 
 ```
 app/                                      <--Main App Module-->
-      assessment/                         <--Package User Assessment-->
-                __init__.py               ---initialize blueprint for assessment module---
-                forms.py                  ---assessment form---
-                routes.py                 ---assessment submission/feedback/view routes---
+      ../                         <--Package User Assessment-->
+                ""''
 
-      auth/                               <--Package User Login-->
-                __init__.py               ---initialize blueprint for login module--- 
-                forms.py                  ---login form---
-                routes.py                 ---authentication view route---
+      chat/                            <--Chat Page functionality-->
+                __init__.py               ---initialize blueprint for chat module---
+                routes.py                 ---chat/logout/save_chat/add_header routes---
 
-      index/                              <--Package Main functionality-->
-                __init__.py               ---initialize blueprint for index module---
-                routes.py                 ---User view routes---
+      history/                         <--Chat and Reponse History -->
+                __init__.py               ---initialize blueprint for history module--- 
+                routes.py                 ---history/logout/view_chat_id/add_header view routes---
 
-      register/                           <--Package Register-->
+      intro/                           <--Introdution page functionality-->
+                __init__.py               ---initialize blueprint for intro module---
+                routes.py                 ---User index route---
+
+      login/                           <--Login page functionality-->
+                __init__.py               ---initialize blueprint for login module---
+                routes.py                 ---login/get_me/logout routes---
+
+      profile/                         <--lodges database profile-->
+                __init__.py               ---initialize blueprint for profile module---
+                routes.py                 ---register profile route---
+
+      register/                        <--Database initialise for reigstration-->
                 __init__.py               ---initialize blueprint for register module---
-                forms.py                  ---register form---
-                routes.py                 ---register view route---
+                routes.py                 ---register route---
 
-      static/                             
+
+      static/                          <--Templates-->
                 css/    
+                          base_styles.css   --- styling for the base template html
+                          chat_styles.css   --- styling for the chat page html              
+                          hist_styles.css   --- styling for the historu page html
+                          login_styles.css  --- styling for the login page html
+                images/   
+                          UWA_Logo_Full.svg
+                          UWA_Logo_small.png
                 js/
-                          note.js         ---Note rendering functionality useing VexFlow---
-                          assessment.js   ---Note rendering for assessment module useing VexFlow---
-                          timer.js        ---Timed test functionality---
-                          formattime.js   ---Reformat utc time---
-                          validate.js     ---Form validation--
+                          chat.js           --- Sets up a chat interface where a user can input messages, which are then sent to the OpenAI Chat API for a response, and the conversation is displayed in real-time. Additionally, there is a functionality to send the conversation history to the server. and API
+                          scripts.js        --- Implements various functionalities for a web application, including dropdown menu toggling, user authentication (login/logout), password validation, user registration, and chat history navigation.
 
-      templates/                          <--Templates-->
-                content/                   
-                imports/
-                profile/
-                quiz/
+      templates/                       <--Templates-->
+                base_chat                   --- Formats the base template to be used on all the pages
+                base                        --- Formats the base template to be used on all the pages
+                chat_view                   --- Chat message page template
+                hist_view                   --- History page template
+                intro_view                  --- Introduction page template
+                login_view                  --- Login page template
+                profile_view                --- Visit profile 
+                reg_view                    --- Registration page template
                 ....html
 
-      __init__.py                         ---Blueprint registration and creating app object---
-      controller.py                       ---CURD and Ajax response---
-      model.py                            ---user and submission model---
-
-config.py                                 ---configuration---
-sidenote.py                               ---Application---
-seleniumTest.py                           ---User test---
-test.py                                   ---Unittest---
+authentify.py                               ---configuration---
+chat.py                                     ---Application of chat db---
+config.py                                   ---configuration---
+requirements.txt                            ---text file containing modules for install---
     
 ```
 ### Model representations 
 ```
-users(
-    'id' Integer, PRIMRARY KEY AUTOINCRIMENT NOT NULL
-    'username' String(100), UNIQUE NOT NULL
-    'password' String(96), NOT NULL
-    'email' String(128), UNIQUE NOT NULL
-    'firstname' String(130), NOT NULL
-    'lastname' String(130), NOT NULL
-    'lastLogin' DateTime,
-    'isActive' Boolean,
-    'isAdmin' Boolean,
-    'noteHighScore' Integer,
-    'KeyHighScore' Integer,
+User(
+    'id', Integer, PRIMARY KEY 
+    'email', String(100)
+    'first_name', String(100), NOT NULL
+    'last_name', String(100), NOT NULL
+    'password', String(100), NOT NULL
+    'date_added', DateTime
 )
 
-submission(
-    'id' Integer, PRIMRARY KEY AUTOINCRIMENT NOT NULL
-    'createdAt' DateTime, NOT NULL
-    'markedAt' DateTime,
-    'feedback' Boolean,
-    'totalmark' Integer,
-    'difficulty' String(30), NOT NULL
-    'passed' Boolean,
-    'creater_id' FOREIGNKEY, REFERENCES users("id") NOT NULL
+Chat(
+    'id', Integer, PRIMARY KEY
+    'user_id', Integer, FOREIGN KEY
+    'datetime', DataTime
 )
 
-answer(
-    'id' Integer, PRIMRARY KEY AUTOINCRIMENT NOT NULL
-    'answerSeq' Integer, NOT NULL
-    'submittedAnswer' String(400), NOT NULL
-    'feedback' String(400),
-    'markreceived' Boolean,
-    'submissionId' FOREIGNKEY, REFERENCES submission("id") NOT NULL
+ChatQuestions(
+    'id', Integer, PRIMARY KEY
+    'chat_id', Integer, FOREIGN KEY
+    'content', TEXT, NOT NULL
+    'timestamp', TEXT, NOT NULL
 )
+
+ChatResponse(
+    'id', Integer, PRIMARY KEY
+    'chat_id', Integer, FOREIGN KEY
+    'content', TEXT, NOT NULL
+    'timestamp' TEXT, NOT NULL
+)
+
 ```
 ### User types 
 ![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg)
