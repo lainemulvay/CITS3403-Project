@@ -9,7 +9,7 @@ from app.login import login_blueprint
 def login():
     if request.method == "POST":
         # check email with lowercase
-        user = check_email()
+        user = check_email(request.form["email"].lower())
         # check if user exist
         if not user:
             # invalid email

@@ -10,8 +10,8 @@ def get_user():
     return user
 
 # Get the current user based on the email
-def check_email():
-    user = User.query.filter_by(email=request.form["email"].lower()).first()
+def check_email(email):
+    user = User.query.filter_by(email=email).first()
     return user
 
 # Add a user to the database

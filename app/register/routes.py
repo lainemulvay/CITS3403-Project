@@ -8,7 +8,7 @@ from app.register import register_blueprint
 @register_blueprint.route("/register/", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        user = check_email()
+        user = check_email(request.form["email"].lower())
         print(user)
         # Check if the user exists
         if user:
