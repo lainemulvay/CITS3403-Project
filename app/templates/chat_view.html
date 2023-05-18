@@ -16,7 +16,7 @@
                 To ensure you have a record of our conversation, we recommend saving the chat history 
                 by clicking on the "Save" button below. This way, you can easily refer back to our discussion at any time. <br>
                 <br>
-                <em>PLEASE NOTE </em>that the page will be refreshed after saving.<br>
+                <em>PLEASE NOTE </em>that chat will end after saving.<br>
                 <br>
                 Let's get started!
             </p>
@@ -24,7 +24,7 @@
         </div>
         <button id="save-button" class="save-button" onclick="sendText()">Save Chat</button>
     </div>
-    <div class="input-container">
+    <div class="input-container" id="input-container">
         <form class="input-form" id="input-form">
             <input class="chat-inputfield" type="text" id="chat-input-message" name="chat-input-message" placeholder="Ask me a question..." required>
             <button type="submit" class="submit-button" id="submit-chat-input">Send</button>

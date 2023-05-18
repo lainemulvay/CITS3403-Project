@@ -231,7 +231,7 @@ try {
 } catch (err) {}
 
 // Script for history
-function test(button){
+function view_chat(button){
   var chat_id = button.value;
   window.location.href = '/history/'+ chat_id;
 }

@@ -123,7 +123,7 @@ function sendText() {
     }
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/send-text', true);
+    xhr.open('POST', '/send-text/', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
 
     xhr.onreadystatechange = function() {
@@ -135,8 +135,8 @@ function sendText() {
     var data = JSON.stringify({ questions: questions, responses: responses});
     xhr.send(data);
 
-    // Reload page
-    location.reload();
+    var inputfield = document.getElementById('input-container');
+    inputfield.remove();
 }
 
 

@@ -27,6 +27,7 @@ def save_chat():
     # Get the chat message data from the frontend
     data = request.get_json()
     questions = data['questions']
+    print(questions[0])
     responses = data['responses']
 
     # Get the user id from the session and add chat to the database
@@ -34,13 +35,13 @@ def save_chat():
     chat_id = add_chat(user_id)
 
     for question in questions:
-        content = question[:-22]
-        timestamp = question[(len(question)-21):]
+        content = question[:-23]
+        timestamp = question[(len(question)-23):]
         add_chat_question(chat_id, content, timestamp)
     
     for response in responses:
-        content = response[:-22]
-        timestamp = response[(len(response)-21):]
+        content = response[:-23]
+        timestamp = response[(len(response)-23):]
         add_chat_response(chat_id, content, timestamp)
 
     return jsonify({"success" : True, 'message': "Chat successfully saved"}), 200
