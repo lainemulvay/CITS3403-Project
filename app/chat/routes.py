@@ -43,7 +43,7 @@ def save_chat():
         timestamp = response[(len(response)-21):]
         add_chat_response(chat_id, content, timestamp)
 
-    return jsonify(success=True)
+    return jsonify({"success" : True, 'message': "Chat successfully saved"}), 200
 
 # Disable caching for the chat page
 @chat_blueprint.after_request
