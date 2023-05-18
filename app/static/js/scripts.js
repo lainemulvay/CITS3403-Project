@@ -58,7 +58,7 @@ try {
 
 //Script for register.html
 try {
-  var password = document.getElementById("newPW")
+  var password = document.getElementById("newpw")
   var letter = document.getElementById("letter");
   var capital = document.getElementById("capital");
   var number = document.getElementById("number");
@@ -172,14 +172,14 @@ try {
 // toggle for reg page
 try {
   const togglePassword1 = document.querySelector('#showPassword1');
-  const newPW = document.getElementById('newPW');
+  const newpw = document.getElementById('newpw');
   const togglePassword2 = document.querySelector('#showPassword2');
   const confirmPW = document.getElementById('confirmPW');
 
   togglePassword1.addEventListener('click', function (e) {
     // toggle the type attribute
-    const type = newPW.getAttribute('type') === 'password' ? 'text' : 'password';
-    newPW.setAttribute('type', type);
+    const type = newpw.getAttribute('type') === 'password' ? 'text' : 'password';
+    newpw.setAttribute('type', type);
     // toggle the eye slash icon
     this.classList.toggle('fa-eye-slash');
   });

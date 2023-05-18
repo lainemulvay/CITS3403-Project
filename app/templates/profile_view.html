@@ -39,7 +39,7 @@
                     <div class="button" id="update" onclick="update_ac()"> Update Account </div>
                 </div>
                 <!-- Hidden input field to indicate update_account action -->
-                <input type="hidden" name="action" value="update_account">
+                <input type="hidden" id="action" name="action" value="update_account">
                 <div>
                     <button class="button save" id="save" type="submit" style="display: none"> Save Changes </button>
                 </div>
@@ -61,7 +61,7 @@
                 <div class="form-field">
                     <p class="title">New Password: </p>
                     <div class="inputgroup">
-                        <input class="inputfield" type="password" id="newPW" name="newPW" placeholder="Enter a new Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <input class="inputfield" type="password" id="newpw" name="newpw" placeholder="Enter a new Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
                         <i class="far fa-eye" id="showPassword1" style="margin-left: 5px; cursor: pointer; float: right;"></i>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <!-- Hidden input field to indicate update_password action -->
-                <input type="hidden" name="action" value="update_password">
+                <input type="hidden" id='action' name="action" value="update_password">
                 <div>
                     <button class="button" type="submit"> Update Password </button>
                 </div>

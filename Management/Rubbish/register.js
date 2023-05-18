@@ -1,4 +1,4 @@
-var password = document.getElementById("newPW")
+var password = document.getElementById("newpw")
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");

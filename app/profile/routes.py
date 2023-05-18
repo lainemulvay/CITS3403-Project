@@ -1,8 +1,7 @@
-from app.models import User
-from app.controller import get_user, update_user, check_email, change_password
-from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
+from app.controller import get_user, update_user, change_password
+from flask import render_template,flash, redirect, url_for, session, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
-from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.security import check_password_hash
 from app.profile import profile_blueprint
 
 @profile_blueprint.route("/profile/", methods=["GET", "POST"])
@@ -37,8 +36,8 @@ def profile():
             oldpw = request.form['oldpw']
             hash_pw = user.get_password()
             if check_password_hash(hash_pw, oldpw):
-                newPW = request.form['newPW']
-                updatepw = change_password(id, newPW)
+                newpw = request.form['newpw']
+                updatepw = change_password(id, newpw)
                 print(updatepw)
                 return jsonify({'success': True, 'message': 'Password updated'}), 200
             else:

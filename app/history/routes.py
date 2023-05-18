@@ -1,8 +1,6 @@
-from app.models import User
 from app.controller import get_user, get_chat_ids, get_chat, get_chat_records
-from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
+from flask import render_template,flash, redirect, url_for, session
 # from flask_login import LoginManager, login_required, current_user, login_user
-from werkzeug.security import generate_password_hash, check_password_hash
 from app.history import history_blueprint
 
 # history page
@@ -19,13 +17,6 @@ def history():
     # Get the chat records for the user
     chat_records = get_chat_records(user_id)
     return render_template("hist_view.html", display = True, username=username, chat_records=chat_records)
-
-@history_blueprint.route('/logout/')
-def logout():
-    # Clear the session
-    session.clear()
-    flash('You are now logged out', 'success')
-    return redirect(url_for('login.login'))
 
 @history_blueprint.route('/history/<id>', methods=['GET'])
 def view_chat_id(id):

@@ -1,8 +1,7 @@
-from app.models import User
 from app.controller import check_email, get_user
-from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
+from flask import render_template,flash, redirect, url_for, session, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
-from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.security import check_password_hash
 from app.login import login_blueprint
 
 # login function
@@ -10,7 +9,7 @@ from app.login import login_blueprint
 def login():
     if request.method == "POST":
         # check email with lowercase
-        user = check_email()
+        user = check_email(request.form["email"].lower())
         # check if user exist
         if not user:
             # invalid email
@@ -32,10 +31,10 @@ def login():
     else:
         if 'id' in session:
             return redirect(url_for('chat.chat'))
-        return render_template("login_view.html")
+        return render_template("login_view.html"), 200
 
 # get & post User
-@login_blueprint.route('/me')
+@login_blueprint.route('/me/')
 def get_me():
     # If the user is logged in, return the user's information
     if 'id' in session:
@@ -43,10 +42,3 @@ def get_me():
         return jsonify({'success': True, 'user': {'id': user.id, 'email': user.email, 'first_name': user.first_name, 'last_name': user.last_name}})
     else:
         return jsonify({'message': 'User not logged in'})
-
-@login_blueprint.route('/logout')
-def logout():
-    # Clear the session
-    session.clear()
-    flash('You are now logged out', 'success')
-    return redirect(url_for('.login'))

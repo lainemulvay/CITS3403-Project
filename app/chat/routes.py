@@ -1,10 +1,7 @@
-from app.models import User, Chat, ChatQuestion, ChatResponse
 from app.controller import add_chat, add_chat_question, add_chat_response, get_user
-from flask import Flask,render_template,flash, redirect, url_for, session,logging, request, jsonify
+from flask import render_template,flash, redirect, url_for, session, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
-from werkzeug.security import generate_password_hash, check_password_hash
 from app.chat import chat_blueprint
-from datetime import datetime
 
 # chat page
 @chat_blueprint.route("/chat/")
@@ -17,7 +14,7 @@ def chat():
     return render_template("chat_view.html", display = True, username=username)
 
 
-@chat_blueprint.route('/logout')
+@chat_blueprint.route('/logout/')
 def logout():
     # Clear the session
     session.clear()
@@ -25,7 +22,7 @@ def logout():
     return redirect(url_for('login.login'))
 
 
-@chat_blueprint.route('/send-text', methods=['POST'])
+@chat_blueprint.route('/send-text/', methods=['POST'])
 def save_chat():
     # Get the chat message data from the frontend
     data = request.get_json()
@@ -46,7 +43,7 @@ def save_chat():
         timestamp = response[(len(response)-21):]
         add_chat_response(chat_id, content, timestamp)
 
-    return jsonify(success=True)
+    return jsonify({"success" : True, 'message': "Chat successfully saved"}), 200
 
 # Disable caching for the chat page
 @chat_blueprint.after_request
