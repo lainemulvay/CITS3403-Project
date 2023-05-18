@@ -104,30 +104,15 @@ ChatResponse(
 ```
 ### User types 
 ![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg)
-- Can view introduction 
+- Can view introduction page
 - Can register to become an user
 
 ![Registed Users](https://img.shields.io/badge/-User-yellow.svg)
-- Can login and logout useing username and password
-- Can view provided content
-- Can create submissions 
-- Can compelete Timed assessments
-- Can view feedback on performance/assessments
-- Can view global user performance on timed assessments
+- Can login and logout using username and password
+- Can ask the chat questions
+- Can recieve responses fromthe server based on questions
+- Can view their individual history of past chats that have been saved 
 
-![Admin Users](https://img.shields.io/badge/-Admin-blue.svg)
-- Can login and logout useing username and password
-- Can delete users
-- Can provide feedback* on a submission
-- Can view useage statistic 
-
-### Submission type 
-![Compeleted Submission](https://img.shields.io/badge/Sub-Compeleted-orange.svg)  
-A user can chose to compelete and submit assessment at desired difficulty.
-Automark result will be avliable after submission. 
-
-![Marked Submission](https://img.shields.io/badge/Sub-Marked-greed.svg)  
-Manuel feedback become visible to users once the marker have submitted the feedback. 
 
 ## Project Management 
 
@@ -138,7 +123,7 @@ Manuel feedback become visible to users once the marker have submitted the feedb
       
 * Agile Methodology 
 
-      > Scope of each iterations were outlined based on the analysis of requirements constructed from user storys.
+      > Scope of each iterations were outlined based on the analysis of requirements.
       > Determine functionalities that needs to be delivered. 
 
 * Implimentation phase
@@ -148,6 +133,10 @@ Manuel feedback become visible to users once the marker have submitted the feedb
 * Testing
 
       > Basic unittest were automated and carried out at each iteration.
+
+
+-------------------
+
 ## Testing
 ### Unit test coverage 
 - ***CURD operation*** on user and submission model 
