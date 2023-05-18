@@ -22,7 +22,7 @@ pip install flask
 
 pip install -r requirements.txt
 
-IMPORTANT export FLASK_APP = chat.py
+IMPORTANT export FLASK_APP=chat.py
 
 flask run
 
