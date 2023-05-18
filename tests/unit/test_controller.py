@@ -40,6 +40,17 @@ def test_update_user(test_database):
     assert updated_user.email == "Change@email.com"
     assert updated_user.first_name == "Change"
 
+def test_invalid_udpate_user(test_database):
+    """
+    GIVEN a User model
+    WHEN an existing user is updated with invalid information
+    THEN information is not updated
+    """
+
+    response = update_user(2, None, None, None)
+
+    assert 401 in response
+
 def test_change_password(test_database):
     """
     GIVEN a User model

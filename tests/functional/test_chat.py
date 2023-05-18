@@ -1,3 +1,5 @@
+import json
+
 def test_index_page(test_client):
     """
     GIVEN a Flask application
@@ -192,6 +194,23 @@ def test_chat_page(test_client):
     assert b"My Account" in response.data
     assert b"Logout" in response.data
 
+def test_save_chat(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/chat' page is posted to (POST)
+    THEN check the response is valid
+    """
+    headers = {
+        'Content-Type': 'application/json'
+    }
+    questions = ["question1 5/18/2023, 10:44:58 PM", "question2 5/18/2023, 10:44:58 PM", "question3 5/18/2023, 10:44:58 PM"]
+    responses = ["response1 5/18/2023, 10:44:58 PM", "response2 5/18/2023, 10:44:58 PM", "response3 5/18/2023, 10:44:58 PM"]
+    data = json.dumps({"questions": questions, "responses": responses})
+    response = test_client.post('/send-text/', data = data, headers = headers)
+
+    assert b"Chat successfully saved" in response.data
+
+
 def test_history_page(test_client):
     """
     GIVEN a Flask application
@@ -205,6 +224,17 @@ def test_history_page(test_client):
     assert b"History" in response.data
     assert b"My Account" in response.data
     assert b"Logout" in response.data
+
+def test_view_history(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/history' page is requested (GET)
+    THEN check the response is valid
+    """
+    response = test_client.get('/history/1')
+    assert response.status_code == 200
+    assert b"question1" in response.data
+    assert b"response1" in response.data
 
 def test_profile_page(test_client):
     """
