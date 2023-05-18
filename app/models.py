@@ -11,6 +11,12 @@ class User(db.Model):
     date_added = db.Column(db.DateTime, default=datetime.utcnow)
     chat = db.relationship('Chat', backref='user', lazy=True)
 
+    def __init__(self, email, first_name, last_name, password):
+        self.email = email
+        self.first_name = first_name
+        self.last_name = last_name
+        self.password = password
+
     def __repr__(self):
         return '<User %r>' % self.email
 
@@ -25,6 +31,9 @@ class Chat(db.Model):
     chat_questions = db.relationship('ChatQuestion', backref='chat', lazy=True)
     chat_responses = db.relationship('ChatResponse', backref='chat', lazy=True)
     
+    def __init__(self, user_id):
+        self.user_id = user_id
+
     def __repr__(self):
         return '<Chat %r>' % self.id
 
@@ -35,6 +44,11 @@ class ChatQuestion(db.Model):
     content = db.Column(db.Text, nullable=False)
     timestamp = db.Column(db.Text, nullable=False)
     
+    def __init__(self, chat_id, content, timestamp):
+        self.chat_id = chat_id
+        self.content = content
+        self.timestamp = timestamp
+
     def __repr__(self):
         return '<ChatQuestion %r>' % self.id
 
@@ -45,5 +59,10 @@ class ChatResponse(db.Model):
     content = db.Column(db.Text, nullable=False)
     timestamp = db.Column(db.Text, nullable=False)
 
+    def __init__(self, chat_id, content, timestamp):
+        self.chat_id = chat_id
+        self.content = content
+        self.timestamp = timestamp
+        
     def __repr__(self):
         return '<ChatResponse %r>' % self.id
