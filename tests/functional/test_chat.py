@@ -1,8 +1,3 @@
-from app import initapp
-from app import db
-
-app = initapp()
-
 def test_index_page(test_client):
     """
     GIVEN a Flask application
