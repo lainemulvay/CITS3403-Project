@@ -8,18 +8,21 @@ def getFAQs(identifier):
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"}
     r = requests.get(url, headers=headers)
     soup = BeautifulSoup(r.text, 'html.parser')
-    # questionBox = soup.select('#rn_PageContent #ans_desc')
-    # for element in questionBox:
-    faq = {
-    'question': soup.select('#rn_PageContent #ans_desc')[0].text.strip(),
-    'answer': soup.select('#rn_AnswerText')[0].text.strip()
-    }
-    faqList.append(faq)
-    return
 
+    try:
+        faq = {
+            'question': soup.select('#rn_PageContent #ans_desc')[0].text.strip(),
+            'answer': soup.select('#rn_AnswerText')[0].text.strip()
+        }
+        faqList.append(faq)
+        print(f"Added Answer ID {identifier}")
+    except IndexError:
+        print(f"Skipping Answer ID {identifier} - Page not found")
 
-getFAQs(1283)  # Replace 1234 with the actual identifier
+for x in range(1283, 1300):
+    getFAQs(x)
 
+print(len(faqList))
 print(faqList)
 
 
