@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import csv
 
 faqList = []
 
@@ -24,5 +25,5 @@ for x in range(1283, 1290):
     getFAQs(x)
 
 df = pd.DataFrame(faqList)
-df.to_csv('faq.csv', index=False)
+df.to_csv('faq.csv', index=False, quoting=csv.QUOTE_ALL)
 print(df.head())
