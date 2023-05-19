@@ -10,15 +10,17 @@ def getFAQs(identifier):
     soup = BeautifulSoup(r.text, 'html.parser')
     # questionBox = soup.select('#rn_PageContent #ans_desc')
     # for element in questionBox:
-    question = soup.select('#rn_PageContent #ans_desc')[0].text.strip()
-    print(question)
-    answer = soup.select('#rn_AnswerText')[0].text.strip()
-    print(answer)
+    faq = {
+    'question': soup.select('#rn_PageContent #ans_desc')[0].text.strip(),
+    'answer': soup.select('#rn_AnswerText')[0].text.strip()
+    }
+    faqList.append(faq)
+    return
 
 
 getFAQs(1283)  # Replace 1234 with the actual identifier
 
-
+print(faqList)
 
 
 
