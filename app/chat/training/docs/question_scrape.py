@@ -12,7 +12,8 @@ def getFAQs(identifier):
     # for element in questionBox:
     question = soup.select('#rn_PageContent #ans_desc')[0].text.strip()
     print(question)
-    answer = soup.select('#rn_PageContent #ans_desc')
+    answer = soup.select('#rn_AnswerText')[0].text.strip()
+    print(answer)
 
 
 getFAQs(1283)  # Replace 1234 with the actual identifier
