@@ -21,7 +21,7 @@ def getFAQs(identifier):
     except IndexError:
         print(f"Skipping Answer ID {identifier} - Page not found")
 
-for x in range(1283, 1290):
+for x in range(1,1700): #none past 1700
     getFAQs(x)
 
 df = pd.DataFrame(faqList)
