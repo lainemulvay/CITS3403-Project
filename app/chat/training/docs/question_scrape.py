@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import pandas as pd
 
 faqList = []
 
@@ -19,45 +20,9 @@ def getFAQs(identifier):
     except IndexError:
         print(f"Skipping Answer ID {identifier} - Page not found")
 
-for x in range(1283, 1300):
+for x in range(1283, 1290):
     getFAQs(x)
 
-print(len(faqList))
-print(faqList)
-
-
-
-
-  # Replace 
-    #     answerContainer = soup2.find_all('div', {'id': 'rn_AnswerText'})
-
-
-    #     faqs = {
-    #     'question': q.text.strip(),
-    #     'link': 'https://ipoint.uwa.edu.au/' + q.find('a')['href']
-    #     }
-    #     faqList.append(faqs)
-
-
-    #     r2 = requests.get(link, headers=headers)
-    #     soup2 = BeautifulSoup(r2.text, 'html.parser')
-    #     answerContainer = soup2.find_all('div', {'id': 'rn_AnswerText'})
-    #     print(answerContainer)
-
-    #     answer = []
-    #     answer.extend(answerContainer.find_all(lambda tag: tag.name in ['p', 'ul', 'ol']))
-    #     print(answer)
-
-    #     for paragraph in questionAnswer:
-    #         paragraphs = paragraph.find_all('p')
-    #         for p in paragraphs:
-    #             answer += p.text.strip()
-
-    #     faqList.append({'question': question_text, 'answer': answer})
-
-    # return
-    
-# for x in range (1283, 1284):
-#     getFAQs(x)
-
-# print(len(faqList))
+df = pd.DataFrame(faqList)
+df.to_csv('faq.csv', index=False)
+print(df.head())
