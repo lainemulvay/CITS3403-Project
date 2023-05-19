@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+faqList = []
+
 url = 'https://ipoint.uwa.edu.au/app/answers/list/st/5/page/2'
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"}
 r = requests.get(url, headers=headers)
@@ -15,6 +17,8 @@ for question in questionBox:
         'question': q.text.strip(),
         'link': 'https://ipoint.uwa.edu.au/' + q.find('a')['href']
         }
-        print(faqs)
+        faqList.append(faqs)
+        
+print(faqList)
 
 
