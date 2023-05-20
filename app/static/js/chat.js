@@ -66,7 +66,7 @@ form.addEventListener('submit', async (e) => {
                 const data = await response.json();
                 const messageContent = data.choices[0].message.content;
                 console.log('Response: ' + messageContent)
-                const timestamp = new Date().toLocaleString({ hour12: true });
+                const timestamp = new Date().toLocaleString('en-US', { hour12: true });
                 const newMessage = document.createElement('div');
                 newMessage.innerHTML = '<p class="message-content">' + messageContent + '</p><p class="message-timestamp">' + timestamp + '</p>';
                 newMessage.classList.add('message', 'message-response');
