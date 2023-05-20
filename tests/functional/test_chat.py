@@ -163,6 +163,7 @@ def test_logged_user_info(test_client):
     """
     response = test_client.get('/me/')
     assert response.status_code == 200
+    assert b"1" in response.data
     assert b"test@email.com" in response.data
     assert b"Test" in response.data
 

@@ -2,7 +2,7 @@ from app.controller import *
 from app.models import *
 from app import initapp
 
-app = initapp()
+app = initapp('config.TestingConfig')
 
 def test_add_user(test_database):
     """
