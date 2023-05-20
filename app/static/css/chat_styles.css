@@ -144,19 +144,26 @@
 }
 
 .save-button {
-    margin: 0 auto 1em auto;
+    margin: 1.5em auto 1em auto;
     padding: 10px 30px;
     font-weight: bold;
     border:none;
     color: white;
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 0, 0);
-    border-radius: 30px;    
+    border-radius: 30px;   
+    cursor: pointer; 
 }
 
 .save-button:hover {
     color: black;
     background-color: white;
+}
+
+.save-button:disabled, .save-button:disabled:hover {
+    border: none;
+    background-color: rgb(125, 125, 125);
+    color: white;
 }
 
 .backbtn {
