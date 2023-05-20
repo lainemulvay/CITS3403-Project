@@ -20,6 +20,11 @@ def test_add_user(test_database):
     assert user.password != 'Test12345%'
 
 def test_get_user(test_database):
+    """
+    GIVEN a User model
+    WHEN a user is requested
+    THEN check the email, first_name, last_name are defined correctly
+    """
     user = check_email('Test@email.com')
     assert user.email == 'Test@email.com'
 
@@ -40,7 +45,7 @@ def test_update_user(test_database):
     assert updated_user.email == "Change@email.com"
     assert updated_user.first_name == "Change"
 
-def test_invalid_udpate_user(test_database):
+def test_invalid_update_user(test_database):
     """
     GIVEN a User model
     WHEN an existing user is updated with invalid information
@@ -68,7 +73,7 @@ def test_add_chat(test_database):
     """
     GIVEN a Chat model
     WHEN a new chat is added
-    THEN check the user_id is defined correctly
+    THEN check the user_id for the chat is defined correctly
     """
     chat_id = add_chat(1)
     chat = Chat.query.filter_by(id=chat_id).first()
@@ -105,7 +110,7 @@ def test_add_chat_response(test_database):
 def test_get_chat_ids(test_database):
     """
     GIVEN a Chat model
-    WHEN a new chat is added
+    WHEN a chats for a user are requested
     THEN check the chat_id is returned
     """
     chat_ids = get_chat_ids(1)
@@ -115,8 +120,8 @@ def test_get_chat_ids(test_database):
 def test_get_chat_questions(test_database):
     """
     GIVEN a ChatQuestion model
-    WHEN a new question is added
-    THEN check the chat_id, content, and timestamp are returned
+    WHEN a chat question is requested
+    THEN check the content, and timestamp are returned
     """
     chat_questions = get_chat_questions(1)
 
@@ -126,8 +131,8 @@ def test_get_chat_questions(test_database):
 def test_get_chat_responses(test_database):
     """
     GIVEN a ChatResponse model
-    WHEN a new response is added
-    THEN check the chat_id, content, and timestamp are returned
+    WHEN a chat response is requested
+    THEN check the content, and timestamp are returned
     """
     chat_responses = get_chat_responses(1)
 
@@ -137,8 +142,8 @@ def test_get_chat_responses(test_database):
 def test_get_chat(test_database):
     """
     GIVEN a Chat model
-    WHEN a new chat is added
-    THEN check the chat_id is returned
+    WHEN a chat is requested
+    THEN check the content, and timestamp of the question and response are returned
     """
     chat = get_chat(1)
 
@@ -150,8 +155,8 @@ def test_get_chat(test_database):
 def test_get_chat_records(test_database):
     """
     GIVEN a Chat model
-    WHEN a new chat is added
-    THEN check the chat_id is returned
+    WHEN chat records of a user are requested
+    THEN check the chat_id, and timestamp are returned
     """
     chat_records = get_chat_records(1)
 
