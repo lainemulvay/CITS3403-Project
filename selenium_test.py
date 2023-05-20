@@ -1,5 +1,6 @@
 import unittest
 import os, time
+from werkzeug.security import generate_password_hash
 from app.models import User, Chat, ChatQuestion, ChatResponse
 from app import initapp, db
 from selenium import webdriver
@@ -22,6 +23,9 @@ class systemTest(unittest.TestCase):
             app_context = app.app_context()
             app_context.push()
             db.create_all()
+
+            user = User(first_name="Example", last_name="Example", email="Example@email.com", password="")
+            user.password = generate_password_hash("Example1234$", method='scrypt')
             self.driver.maximize_window()
             self.driver.get("http://localhost:5000/")
 
@@ -49,23 +53,52 @@ class systemTest(unittest.TestCase):
         register = self.driver.find_element("id", "register-button")
 
         self.driver.find_element("id", "firstname").send_keys("")
-        self.driver.find_element("id", "lastname").send_keys("")
-        self.driver.find_element("id", "email").send_keys("")
-        self.driver.find_element("id", "newpw").send_keys("")
-        self.driver.find_element("id", "confirmPW").send_keys("")
+        self.driver.find_element("id", "lastname").send_keys('')
+        self.driver.find_element("id", "email").send_keys('')
+        self.driver.find_element("id", "newpw").send_keys('')
+        self.driver.find_element("id", "confirmpw").send_keys('')
         register.click()
 
+        warning1 = self.driver.find_element(By.ID, "firstname").get_attribute("validationMessage")
+        warning2 = self.driver.find_element(By.ID, "lastname").get_attribute("validationMessage")
+        warning3 = self.driver.find_element(By.ID, "email").get_attribute("validationMessage")
+        warning4 = self.driver.find_element(By.ID, "newpw").get_attribute("validationMessage")
+        warning5 = self.driver.find_element(By.ID, "confirmpw").get_attribute("validationMessage")
 
-        warnings = self.driver.find_element(By.ID, "firstname").get_attribute("validationMessage")
+        self.assertEqual(warning1, "Please fill out this field.")
+        self.assertEqual(warning2, "Please fill out this field.")
+        self.assertEqual(warning3, "Please fill out this field.")
+        self.assertEqual(warning4, "Please fill out this field.")
+        self.assertEqual(warning5, "Please fill out this field.")
 
-        # self.assertEqual(warnings[0], "Please fill out this field.")
+        self.driver.find_element("id", "firstname").send_keys(valid_first_name)
+        self.driver.find_element("id", "lastname").send_keys(valid_last_name)
+        self.driver.find_element("id", "email").send_keys("123")
+        register.click()
 
-        # self.driver.find_element("id", "first-name").send_keys(valid_first_name)
-        # self.driver.find_element("id", "last-name").send_keys(valid_last_name)
-        # self.driver.find_element("id", "email").send_keys(valid_email)
-        # self.driver.find_element("id", "password").send_keys(valid_password)
-        # self.driver.find_element("id", "confirm-password").send_keys(valid_confirm_password)
-        # self.driver.find_element("id", "register-button").click()
+        warning1 = self.driver.find_element(By.ID, "email").get_attribute("validationMessage")
+        self.assertEqual(warning1, "Please include an '@' in the email address. '123' is missing an '@'.")
+
+        self.driver.find_element("id", "firstname").send_keys(valid_first_name)
+        self.driver.find_element("id", "lastname").send_keys(valid_last_name)
+        self.driver.find_element("id", "email").send_keys(valid_email)
+        self.driver.find_element("id", "newpw").send_keys("123")
+        register.click()
+
+        warning1 = self.driver.find_element(By.ID, "newpw").get_attribute("validationMessage")
+        register.click()
+
+        self.assertEqual(warning1, "Please match the requested format.")
+
+        self.driver.find_element("id", "firstname").send_keys(valid_first_name)
+        self.driver.find_element("id", "lastname").send_keys(valid_last_name)
+        self.driver.find_element("id", "email").send_keys(valid_email)
+        self.driver.find_element("id", "newpw").send_keys("Abc787878$")
+        self.driver.find_element("id", "confirmpw").send_keys("Abc787878")
+        register.click()
+
+        warning1 = self.driver.find_element(By.ID, "confirmpw").get_attribute("validationMessage")
+        self.assertEqual(warning1, "Passwords don't match.")
 
 
 if __name__ == "__main__":
