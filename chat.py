@@ -1,4 +1,4 @@
 from app import initapp
 
-app = initapp()
+app = initapp('config.Config')
 

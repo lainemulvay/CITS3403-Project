@@ -4,7 +4,7 @@ def test_index_page(test_client):
     """
     GIVEN a Flask application
     WHEN the '/' page is requested (GET)
-    THEN check the response is valid
+    THEN check the response contains the index page content
     """
     response = test_client.get('/')
     assert response.status_code == 200
@@ -18,7 +18,7 @@ def test_login_page(test_client):
     """
     GIVEN a Flask application
     WHEN the '/login' page is requested (GET)
-    THEN check the response is valid
+    THEN check the response contains the login page content
     """
 
     response = test_client.get('/login/')
@@ -35,7 +35,7 @@ def test_register_page(test_client):
     """
     GIVEN a Flask application
     WHEN the '/register' page is requested (GET)
-    THEN check the response is valid
+    THEN check the response contains the correct content
     """
     
     response = test_client.get('/register/')
@@ -53,7 +53,7 @@ def test_invalid_chat_access(test_client):
     """
     GIVEN a Flask application
     WHEN the '/chat' page is requested (GET), and the user is not logged in
-    THEN check the response is valid
+    THEN check the response redirects to the login page
     """
     response = test_client.get('/chat/')
     assert response.status_code == 302
@@ -63,9 +63,19 @@ def test_invalid_history_access(test_client):
     """
     GIVEN a Flask application
     WHEN the '/history' page is requested (GET), and the user is not logged in
-    THEN check the response is valid
+    THEN check the response redirects to the login page
     """
     response = test_client.get('/history/')
+    assert response.status_code == 302
+    assert b"Redirecting..." in response.data
+
+def test_invalid_chat_id_access(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/history/<id>' page is requested (GET), and the user is not logged in
+    THEN check the response redirects to the login page
+    """
+    response = test_client.get('/history/1')
     assert response.status_code == 302
     assert b"Redirecting..." in response.data
 
@@ -73,7 +83,7 @@ def test_invalid_profile_access(test_client):
     """
     GIVEN a Flask application
     WHEN the '/profile' page is requested (GET), and the user is not logged in
-    THEN check the response is valid
+    THEN check the response redirects to the login page
     """
     response = test_client.get('/profile/')
     assert response.status_code == 302
@@ -83,7 +93,7 @@ def test_register(test_client):
     """
     GIVEN a Flask application
     WHEN the '/register' page is posted to (POST)
-    THEN check the response is valid
+    THEN check the user is registered
     """
     response = test_client.post('/register/', data=dict(
         firstname="Test",
@@ -97,8 +107,8 @@ def test_register(test_client):
 def test_duplicate_register(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/register' page is posted to (POST)
-    THEN check the response is valid
+    WHEN the '/register' page is posted to (POST) with a duplicate email
+    THEN check user is not registered
     """
     response = test_client.post('/register/', data=dict(
         firstname="Test",
@@ -112,8 +122,8 @@ def test_duplicate_register(test_client):
 def test_invalid_login_email(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/login' page is posted to (POST)
-    THEN check the response is valid
+    WHEN the '/login' page is posted to (POST) with invalid email
+    THEN check login fails
     """
     response = test_client.post('/login/', data=dict(
         email="",
@@ -124,8 +134,8 @@ def test_invalid_login_email(test_client):
 def test_invalid_login_password(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/login' page is posted to (POST)
-    THEN check the response is valid
+    WHEN the '/login' page is posted to (POST) with invalid password
+    THEN check login fails
     """
     response = test_client.post('/login/', data=dict(
         email="Test@email.com",
@@ -136,8 +146,8 @@ def test_invalid_login_password(test_client):
 def test_not_logged_user_info(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/me' page is requested (GET)
-    THEN check the response is valid
+    WHEN the '/me' page is requested (GET) and user is not logged in
+    THEN check the response contains not logged in message
     """
     response = test_client.get('/me/')
     assert response.status_code == 200
@@ -146,8 +156,8 @@ def test_not_logged_user_info(test_client):
 def test_login(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/login' page is posted to (POST)
-    THEN check the response is valid
+    WHEN the '/login' page is posted to (POST) with valid credentials
+    THEN check the user is logged in
     """
     response = test_client.post('/login/', data=dict(
         email="Test@email.com",
@@ -158,18 +168,19 @@ def test_login(test_client):
 def test_logged_user_info(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/me' page is requested (GET), email is stored as lowercase
-    THEN check the response is valid
+    WHEN the '/me' page is requested (GET) and user is logged in
+    THEN check the response contains user info with lowercase email
     """
     response = test_client.get('/me/')
     assert response.status_code == 200
+    assert b"1" in response.data
     assert b"test@email.com" in response.data
     assert b"Test" in response.data
 
 def test_auto_log_in(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/login' page is requested (GET) and user is logged in
+    WHEN the '/login' page is requested (GET) and user is logged in already
     THEN redirect to '/chat'
     """
     response = test_client.get('/login/')
@@ -180,7 +191,7 @@ def test_chat_page(test_client):
     """
     GIVEN a Flask application
     WHEN the '/chat' page is requested (GET)
-    THEN check the response is valid
+    THEN check the response contains the chat page
     """
     response = test_client.get('/chat/')
     assert response.status_code == 200
@@ -196,8 +207,8 @@ def test_chat_page(test_client):
 def test_save_chat(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/chat' page is posted to (POST)
-    THEN check the response is valid
+    WHEN the '/chat' page is posted to (POST) with valid data
+    THEN check the chat is saved
     """
     headers = {
         'Content-Type': 'application/json'
@@ -214,7 +225,7 @@ def test_history_page(test_client):
     """
     GIVEN a Flask application
     WHEN the '/history' page is requested (GET)
-    THEN check the response is valid
+    THEN check the response contains the history page
     """
     response = test_client.get('/history/')
     assert response.status_code == 200
@@ -228,7 +239,7 @@ def test_view_history(test_client):
     """
     GIVEN a Flask application
     WHEN the '/history' page is requested (GET)
-    THEN check the response is valid
+    THEN check the response contains chat history
     """
     response = test_client.get('/history/1')
     assert response.status_code == 200
@@ -239,7 +250,7 @@ def test_profile_page(test_client):
     """
     GIVEN a Flask application
     WHEN the '/account' page is requested (GET)
-    THEN check the response is valid
+    THEN check the response contains user info
     """
     response = test_client.get('/profile/')
     assert response.status_code == 200
@@ -250,6 +261,7 @@ def test_profile_page(test_client):
     assert b"Last Name" in response.data
     assert b"Test" in response.data
     assert b"Email" in response.data
+    assert b"test@email.com" in response.data
     assert b"Password Setting" in response.data
     assert b"Existing Password" in response.data
     assert b"New Password" in response.data
@@ -265,7 +277,7 @@ def test_change_account_information(test_client):
     """
     GIVEN a Flask application
     WHEN the '/account' page is posted to (POST) and user changed account information
-    THEN check the response is valid
+    THEN check the account is updated
     """
     response = test_client.post('/profile/', data=dict(
         action = "update_account",
@@ -279,8 +291,8 @@ def test_change_account_information(test_client):
 def test_invalid_old_password(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/account' page is posted to (POST) and user changed password
-    THEN check the response is valid
+    WHEN the '/account' page is posted to (POST) and user changed password with invalid old password
+    THEN check the password is not updated
     """
     response = test_client.post('/profile/', data=dict(
         action = "update_password",
@@ -293,8 +305,8 @@ def test_invalid_old_password(test_client):
 def test_change_password(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/account' page is posted to (POST) and user changed password
-    THEN check the response is valid
+    WHEN the '/account' page is posted to (POST) and user changed password with valid old password
+    THEN check the password is updated
     """
     response = test_client.post('/profile/', data=dict(
         action = "update_password",
@@ -308,8 +320,31 @@ def test_logout(test_client):
     """
     GIVEN a Flask application
     WHEN the '/logout' page is requested (GET)
-    THEN check the response is valid
+    THEN check the user is redirected to login page
     """
     response = test_client.get('/logout/')
+    assert response.status_code == 302
+    assert b"Redirecting..." in response.data
+
+def test_invalid_chat_id_access_from_logged_in_user(test_client):
+    """
+    GIVEN a Flask application
+    WHEN the '/history/<id>' page is requested (GET) with invalid user id
+    THEN check the user is redirected to history page
+    """
+    test_client.post('/register/', data=dict(
+        firstname="Test2",
+        lastname="Test2",
+        email="Test2@email.com",
+        newpw="Test12345%",
+        confirmPW="Test12345%",
+    ))
+
+    test_client.post('/login/', data=dict(
+        email="Test2@email.com",
+        password="Test12345%",
+    ))
+
+    response = test_client.get('/history/1')
     assert response.status_code == 302
     assert b"Redirecting..." in response.data

@@ -1,5 +1,4 @@
 from flask import Flask
-from config import Config
 import secrets
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -8,9 +7,9 @@ from flask_migrate import Migrate
 db = SQLAlchemy()
 migrate = Migrate()
 
-def initapp():
+def initapp(config_object):
     app = Flask(__name__)
-    app.config.from_object(Config)
+    app.config.from_object(config_object)
     app.secret_key = secrets.token_urlsafe(32)
     db.init_app(app)
     migrate.init_app(app, db)

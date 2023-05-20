@@ -24,7 +24,7 @@ def add_user(email, first_name, last_name, password):
 
 # Update the user's information
 def update_user(id, email=None, first_name=None, last_name=None):
-    user = User.query.get(id)
+    user = db.session.get(User, int(id))
     if user:
         if email:
             user.email = email
@@ -39,7 +39,7 @@ def update_user(id, email=None, first_name=None, last_name=None):
 
 # Update the user's password
 def change_password(id, newpassword):
-    user = User.query.get(id)
+    user = db.session.get(User, int(id))
     if user:
         if newpassword:
             new_hashed_pw = generate_password_hash(newpassword, method='scrypt')
