@@ -26,141 +26,141 @@ class systemTest(unittest.TestCase):
         if self.driver:
             self.driver.close()
     
-    # def test_register(self):
-    #     self.driver.get("http://localhost:5000/")
-    #     self.driver.find_element("id", "start-button").click()
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/login/")
+    def test_register(self):
+        self.driver.get("http://localhost:5000/")
+        self.driver.find_element("id", "start-button").click()
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/login/")
 
-    #     self.driver.find_element("id", "back-button").click()
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/")
+        self.driver.find_element("id", "back-button").click()
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/")
 
-    #     self.driver.find_element("id", "start-button").click()
-    #     self.driver.find_element("id", "register-link").click()
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/register/")
+        self.driver.find_element("id", "start-button").click()
+        self.driver.find_element("id", "register-link").click()
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/register/")
 
-    #     valid_first_name = valid_last_name = "Test"
-    #     valid_email = "Test@email.com"
-    #     valid_password = "Test1234$"
-    #     register = self.driver.find_element("id", "register-button")
+        valid_first_name = valid_last_name = "Test"
+        valid_email = "Test@email.com"
+        valid_password = "Test1234$"
+        register = self.driver.find_element("id", "register-button")
 
-    #     register.click()
-    #     warning1 = self.driver.find_element(By.ID, "firstname").get_attribute("validationMessage")
+        register.click()
+        warning1 = self.driver.find_element(By.ID, "firstname").get_attribute("validationMessage")
 
-    #     # chrome on windows show "Please fill out this field"
-    #     self.assertEqual(warning1, "Please fill in this field.")
+        # chrome on windows show "Please fill out this field"
+        self.assertEqual(warning1, "Please fill in this field.")
 
-    #     self.driver.find_element("id", "firstname").send_keys(valid_first_name)
-    #     self.driver.find_element("id", "lastname").send_keys(valid_last_name)
-    #     self.driver.find_element("id", "email").send_keys("123")
-    #     register.click()
+        self.driver.find_element("id", "firstname").send_keys(valid_first_name)
+        self.driver.find_element("id", "lastname").send_keys(valid_last_name)
+        self.driver.find_element("id", "email").send_keys("123")
+        register.click()
 
-    #     warning1 = self.driver.find_element(By.ID, "email").get_attribute("validationMessage")
-    #     self.assertEqual(warning1, "Please include an '@' in the email address. '123' is missing an '@'.")
+        warning1 = self.driver.find_element(By.ID, "email").get_attribute("validationMessage")
+        self.assertEqual(warning1, "Please include an '@' in the email address. '123' is missing an '@'.")
 
-    #     self.driver.find_element("id", "email").clear()
-    #     self.driver.find_element("id", "email").send_keys(valid_email)
-    #     self.driver.find_element("id", "newpw").send_keys("123")
-    #     register.click()
+        self.driver.find_element("id", "email").clear()
+        self.driver.find_element("id", "email").send_keys(valid_email)
+        self.driver.find_element("id", "newpw").send_keys("123")
+        register.click()
 
-    #     warning1 = self.driver.find_element(By.ID, "newpw").get_attribute("validationMessage")
-    #     register.click()
+        warning1 = self.driver.find_element(By.ID, "newpw").get_attribute("validationMessage")
+        register.click()
 
-    #     # chrome on windows show "Please match the requested format."
-    #     self.assertEqual(warning1, "Please match the format requested.")
+        # chrome on windows show "Please match the requested format."
+        self.assertEqual(warning1, "Please match the format requested.")
 
-    #     self.driver.find_element("id", "newpw").clear()
-    #     self.driver.find_element("id", "newpw").send_keys(valid_password)
-    #     self.driver.find_element("id", "confirmpw").send_keys("Test1234")
-    #     register.click()
+        self.driver.find_element("id", "newpw").clear()
+        self.driver.find_element("id", "newpw").send_keys(valid_password)
+        self.driver.find_element("id", "confirmpw").send_keys("Test1234")
+        register.click()
 
-    #     warning1 = self.driver.find_element(By.ID, "confirmpw").get_attribute("validationMessage")
-    #     self.assertEqual(warning1, "Passwords don't match.")
+        warning1 = self.driver.find_element(By.ID, "confirmpw").get_attribute("validationMessage")
+        self.assertEqual(warning1, "Passwords don't match.")
 
-    # def test_login(self):
-    #     self.driver.get("http://localhost:5000/")
-    #     self.driver.find_element("id", "start-button").click()
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/login/")
+    def test_login(self):
+        self.driver.get("http://localhost:5000/")
+        self.driver.find_element("id", "start-button").click()
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/login/")
 
-    #     valid_email = "Test@email.com"
-    #     valid_password = "Test1234$"
-    #     login = self.driver.find_element("id", "signin-button")
+        valid_email = "Test@email.com"
+        valid_password = "Test1234$"
+        login = self.driver.find_element("id", "signin-button")
 
-    #     login.click()
-    #     warning1 = self.driver.find_element("id", "email").get_attribute("validationMessage")
-    #     self.assertEqual(warning1, "Please fill in this field.")
+        login.click()
+        warning1 = self.driver.find_element("id", "email").get_attribute("validationMessage")
+        self.assertEqual(warning1, "Please fill in this field.")
 
-    #     self.driver.find_element("id", "email").send_keys(valid_email)
-    #     login.click()
-    #     warning1 = self.driver.find_element("id", "password").get_attribute("validationMessage")
-    #     self.assertEqual(warning1, "Please fill in this field.")
+        self.driver.find_element("id", "email").send_keys(valid_email)
+        login.click()
+        warning1 = self.driver.find_element("id", "password").get_attribute("validationMessage")
+        self.assertEqual(warning1, "Please fill in this field.")
 
-    #     self.driver.find_element("id", "password").send_keys("123")
-    #     login.click()
-    #     time.sleep(1)
-    #     warning1 = self.driver.find_element("id", "swal2-html-container").text
-    #     self.assertEqual(warning1, "Invalid password")
+        self.driver.find_element("id", "password").send_keys("123")
+        login.click()
+        time.sleep(1)
+        warning1 = self.driver.find_element("id", "swal2-html-container").text
+        self.assertEqual(warning1, "Invalid password")
 
-    #     self.driver.find_element(By.CLASS_NAME, "swal2-confirm").click()
+        self.driver.find_element(By.CLASS_NAME, "swal2-confirm").click()
 
-    #     self.driver.find_element("id", "password").clear()
-    #     self.driver.find_element("id", "password").send_keys(valid_password)
-    #     login.click()
-    #     time.sleep(1)
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/chat/")
+        self.driver.find_element("id", "password").clear()
+        self.driver.find_element("id", "password").send_keys(valid_password)
+        login.click()
+        time.sleep(1)
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/chat/")
     
-    # def test_chat(self):
-    #     self.driver.get("http://localhost:5000/login/")
-    #     valid_email = "Test@email.com"
-    #     valid_password = "Test1234$"
-    #     self.driver.find_element("id", "email").send_keys(valid_email)
-    #     self.driver.find_element("id", "password").send_keys(valid_password)
-    #     self.driver.find_element("id", "signin-button").click()
-    #     time.sleep(1)
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/chat/")
+    def test_chat(self):
+        self.driver.get("http://localhost:5000/login/")
+        valid_email = "Test@email.com"
+        valid_password = "Test1234$"
+        self.driver.find_element("id", "email").send_keys(valid_email)
+        self.driver.find_element("id", "password").send_keys(valid_password)
+        self.driver.find_element("id", "signin-button").click()
+        time.sleep(1)
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/chat/")
 
-    #     welcome_message = "Let's get started!"
+        welcome_message = "Let's get started!"
 
-    #     input = "Hello"
-    #     send = self.driver.find_element("id", "submit-chat-input")
+        input = "Hello"
+        send = self.driver.find_element("id", "submit-chat-input")
         
-    #     self.driver.find_element("id", "chat-input-message").send_keys(input)
-    #     send.click()
+        self.driver.find_element("id", "chat-input-message").send_keys(input)
+        send.click()
 
-    #     time.sleep(5)
-    #     responses = self.driver.find_elements(By.CLASS_NAME, "message-content")
+        time.sleep(5)
+        responses = self.driver.find_elements(By.CLASS_NAME, "message-content")
 
-    #     self.assertIn(welcome_message, responses[0].text)
-    #     # Can't test response as it is random
-    #     self.assertNotEqual(responses[2].text, "")
+        self.assertIn(welcome_message, responses[0].text)
+        # Can't test response as it is random
+        self.assertNotEqual(responses[2].text, "")
 
-    # def test_history(self):
-    #     self.driver.get("http://localhost:5000/login/")
-    #     valid_email = "Test@email.com"
-    #     valid_password = "Test1234$"
-    #     self.driver.find_element("id", "email").send_keys(valid_email)
-    #     self.driver.find_element("id", "password").send_keys(valid_password)
-    #     self.driver.find_element("id", "signin-button").click()
-    #     time.sleep(1)
+    def test_history(self):
+        self.driver.get("http://localhost:5000/login/")
+        valid_email = "Test@email.com"
+        valid_password = "Test1234$"
+        self.driver.find_element("id", "email").send_keys(valid_email)
+        self.driver.find_element("id", "password").send_keys(valid_password)
+        self.driver.find_element("id", "signin-button").click()
+        time.sleep(1)
 
-    #     self.driver.get("http://localhost:5000/history/")
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/history/")
+        self.driver.get("http://localhost:5000/history/")
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/history/")
 
-    #     chat_number = self.driver.find_element("id", "chat-number").text
-    #     self.assertEqual(chat_number, "Chat number: 1")
+        chat_number = self.driver.find_element("id", "chat-number").text
+        self.assertEqual(chat_number, "Chat number: 1")
 
-    #     self.driver.find_element("id", "view-chat-btn").click()
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/history/1")
+        self.driver.find_element("id", "view-chat-btn").click()
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/history/1")
 
-    #     welcome_message = "Let's get started!"
-    #     responses = self.driver.find_elements(By.CLASS_NAME, "message-content")
-    #     self.assertIn(welcome_message, responses[0].text)
-    #     # Can't test response as it is random
-    #     self.assertNotEqual(responses[2].text, "")
+        welcome_message = "Let's get started!"
+        responses = self.driver.find_elements(By.CLASS_NAME, "message-content")
+        self.assertIn(welcome_message, responses[0].text)
+        # Can't test response as it is random
+        self.assertNotEqual(responses[2].text, "")
 
-    #     self.driver.find_element(By.CLASS_NAME, "backbtn").click()
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/history/")
+        self.driver.find_element(By.CLASS_NAME, "backbtn").click()
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/history/")
     
-    def test_profile(self):
+    def test_profile_and_log_out(self):
         self.driver.get("http://localhost:5000/login/")
         valid_email = "Test@email.com"
         valid_password = "Test1234$"
