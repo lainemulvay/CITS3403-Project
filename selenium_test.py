@@ -151,11 +151,12 @@ class systemTest(unittest.TestCase):
         self.driver.find_element("id", "view-chat-btn").click()
         self.assertEqual(self.driver.current_url, "http://localhost:5000/history/1")
 
+        time.sleep(1)
         welcome_message = "Let's get started!"
         responses = self.driver.find_elements(By.CLASS_NAME, "message-content")
         self.assertIn(welcome_message, responses[0].text)
-        # Can't test response as it is random
-        self.assertNotEqual(responses[2].text, "")
+        self.assertEqual(responses[1].text, "Hello")
+        self.assertEqual(responses[2].text, "Hello! How can I assist you today?")
 
         self.driver.find_element(By.CLASS_NAME, "backbtn").click()
         self.assertEqual(self.driver.current_url, "http://localhost:5000/history/")
