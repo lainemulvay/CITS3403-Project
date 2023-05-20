@@ -8,7 +8,7 @@
         <div class="content">
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'update-form')" id="defaultOpen">Account Information</button>
-                <button class="tablinks" onclick="openTab(event, 'changePW-form')">Password Setting</button>
+                <button class="tablinks" onclick="openTab(event, 'changePW-form')" id="password-page">Password Setting</button>
             </div>
             <!-- update account tab -->
             <form class="login-form" id="update-form" method="post">
@@ -83,7 +83,7 @@
                 <!-- Hidden input field to indicate update_password action -->
                 <input type="hidden" id='action' name="action" value="update_password">
                 <div>
-                    <button class="button" type="submit"> Update Password </button>
+                    <button id="update-password" class="button" type="submit"> Update Password </button>
                 </div>
             </form>
         </div>

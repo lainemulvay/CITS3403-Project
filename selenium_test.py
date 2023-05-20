@@ -133,34 +133,7 @@ class systemTest(unittest.TestCase):
     #     # Can't test response as it is random
     #     self.assertNotEqual(responses[2].text, "")
 
-    def test_history(self):
-        self.driver.get("http://localhost:5000/login/")
-        valid_email = "Test@email.com"
-        valid_password = "Test1234$"
-        self.driver.find_element("id", "email").send_keys(valid_email)
-        self.driver.find_element("id", "password").send_keys(valid_password)
-        self.driver.find_element("id", "signin-button").click()
-        time.sleep(1)
-
-        self.driver.get("http://localhost:5000/history/")
-        self.assertEqual(self.driver.current_url, "http://localhost:5000/history/")
-
-        chat_number = self.driver.find_element("id", "chat-number").text
-        self.assertEqual(chat_number, "Chat number: 1")
-
-        self.driver.find_element("id", "view-chat-btn").click()
-        self.assertEqual(self.driver.current_url, "http://localhost:5000/history/1")
-
-        welcome_message = "Let's get started!"
-        responses = self.driver.find_elements(By.CLASS_NAME, "message-content")
-        self.assertIn(welcome_message, responses[0].text)
-        # Can't test response as it is random
-        self.assertNotEqual(responses[2].text, "")
-
-        self.driver.find_element(By.CLASS_NAME, "backbtn").click()
-        self.assertEqual(self.driver.current_url, "http://localhost:5000/history/")
-    
-    # def test_profile(self):
+    # def test_history(self):
     #     self.driver.get("http://localhost:5000/login/")
     #     valid_email = "Test@email.com"
     #     valid_password = "Test1234$"
@@ -169,73 +142,109 @@ class systemTest(unittest.TestCase):
     #     self.driver.find_element("id", "signin-button").click()
     #     time.sleep(1)
 
-    #     self.driver.get("http://localhost:5000/profile/")
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/profile/")
+    #     self.driver.get("http://localhost:5000/history/")
+    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/history/")
 
-    #     time.sleep(1)
-    #     first_name = self.driver.find_element("id", "firstname").get_attribute("value")
-    #     last_name = self.driver.find_element("id", "lastname").get_attribute("value")
-    #     email = self.driver.find_element("id", "email").get_attribute("value")
-    #     self.assertEqual(first_name, "Test")
-    #     self.assertEqual(last_name, "Test")
-    #     self.assertEqual(email, "test@email.com")
+    #     chat_number = self.driver.find_element("id", "chat-number").text
+    #     self.assertEqual(chat_number, "Chat number: 1")
 
-    #     self.driver.find_element("id", "update-account").click()
+    #     self.driver.find_element("id", "view-chat-btn").click()
+    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/history/1")
 
-    #     self.driver.find_element("id", "firstname").clear()
-    #     self.driver.find_element("id", "firstname").send_keys("Change")
-    #     self.driver.find_element("id", "lastname").clear()
-    #     self.driver.find_element("id", "lastname").send_keys("Change")
-    #     self.driver.find_element("id", "email").clear()
-    #     self.driver.find_element("id", "email").send_keys("Change@email.com")
+    #     welcome_message = "Let's get started!"
+    #     responses = self.driver.find_elements(By.CLASS_NAME, "message-content")
+    #     self.assertIn(welcome_message, responses[0].text)
+    #     # Can't test response as it is random
+    #     self.assertNotEqual(responses[2].text, "")
 
-    #     self.driver.find_element("id", "up").click()
-    #     time.sleep(1)
+    #     self.driver.find_element(By.CLASS_NAME, "backbtn").click()
+    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/history/")
+    
+    def test_profile(self):
+        self.driver.get("http://localhost:5000/login/")
+        valid_email = "Test@email.com"
+        valid_password = "Test1234$"
+        self.driver.find_element("id", "email").send_keys(valid_email)
+        self.driver.find_element("id", "password").send_keys(valid_password)
+        self.driver.find_element("id", "signin-button").click()
+        time.sleep(1)
 
-    #     prompt = self.driver.find_element("id", "swal2-title").text
-    #     self.assertEqual(prompt, "Account updated")
+        self.driver.get("http://localhost:5000/profile/")
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/profile/")
 
-    #     self.driver.find_element("id", "oldpw").send_keys(valid_password)
-    #     self.driver.find_element("id", "newpw").send_keys("Change1234$")
-    #     self.driver.find_element("id", "confirmpw").send_keys("Change1234$")
-    #     self.driver.find_element("id", "update-password").click()
+        time.sleep(1)
+        first_name = self.driver.find_element("id", "firstname").get_attribute("value")
+        last_name = self.driver.find_element("id", "lastname").get_attribute("value")
+        email = self.driver.find_element("id", "email").get_attribute("value")
+        self.assertEqual(first_name, "Test")
+        self.assertEqual(last_name, "Test")
+        self.assertEqual(email, "test@email.com")
 
-    #     prompt = self.driver.find_element("id", "swal2-title").text
-    #     self.assertEqual(prompt, "Password updated")
-    #     self.driver.find_element(By.CLASS_NAME, "swal2-confirm").click()
+        self.driver.find_element("id", "update").click()
 
-    #     first_name = self.driver.find_element("id", "firstname").get_attribute("value")
-    #     last_name = self.driver.find_element("id", "lastname").get_attribute("value")
-    #     email = self.driver.find_element("id", "email").get_attribute("value")
-    #     self.assertEqual(first_name, "Change")
-    #     self.assertEqual(last_name, "Change")
-    #     self.assertEqual(email, "change@email.com")
+        self.driver.find_element("id", "firstname").clear()
+        self.driver.find_element("id", "firstname").send_keys("Change")
+        self.driver.find_element("id", "lastname").clear()
+        self.driver.find_element("id", "lastname").send_keys("Change")
+        self.driver.find_element("id", "email").clear()
+        self.driver.find_element("id", "email").send_keys("Change@email.com")
 
-    #     self.driver.get("http://localhost:5000/logout/")
-    #     new_email = "Change@email.com"
-    #     new_password = "Change1234$"
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/login/")
+        self.driver.find_element("id", "save").click()
+        time.sleep(1)
 
-    #     self.driver.find_element("id", "email").send_keys(new_email)
-    #     self.driver.find_element("id", "password").send_keys(new_password)
-    #     self.driver.find_element("id", "signin-button").click()
-    #     time.sleep(1)
+        prompt = self.driver.find_element("id", "swal2-title").text
+        self.assertEqual(prompt, "Account updated")
+        self.driver.find_element(By.CLASS_NAME, "swal2-confirm").click()
 
-    #     self.assertEqual(self.driver.current_url, "http://localhost:5000/chat/")
+        self.driver.find_element("id", "password-page").click()
+        time.sleep(1)
+        
+        self.driver.find_element("id", "oldpw").send_keys(valid_password)
+        self.driver.find_element("id", "newpw").send_keys("Change1234$")
+        self.driver.find_element("id", "confirmpw").send_keys("Change1234$")
+        self.driver.find_element("id", "update-password").click()
 
-    #     self.driver.get("http://localhost:5000/profile/")
-    #     self.driver.find_element("id", "firstname").clear()
-    #     self.driver.find_element("id", "firstname").send_keys("Test")
-    #     self.driver.find_element("id", "lastname").clear()
-    #     self.driver.find_element("id", "lastname").send_keys("Test")
-    #     self.driver.find_element("id", "email").clear()
-    #     self.driver.find_element("id", "email").send_keys(valid_email)
-    #     self.driver.find_element("id", "save").click()
+        time.sleep(1)
+        prompt = self.driver.find_element("id", "swal2-title").text
+        self.assertEqual(prompt, "Password updated")
+        self.driver.find_element(By.CLASS_NAME, "swal2-confirm").click()
 
-    #     self.driver.find_element("id", "oldpw").send_keys("Change1234$")
-    #     self.driver.find_element("id", "newpw").send_keys(valid_password)
-    #     self.driver.find_element("id", "confirmpw").send_keys(valid_password)
-    #     self.driver.find_element("id", "update-password").click()
+        first_name = self.driver.find_element("id", "firstname").get_attribute("value")
+        last_name = self.driver.find_element("id", "lastname").get_attribute("value")
+        email = self.driver.find_element("id", "email").get_attribute("value")
+        self.assertEqual(first_name, "Change")
+        self.assertEqual(last_name, "Change")
+        self.assertEqual(email, "change@email.com")
+
+        self.driver.get("http://localhost:5000/logout/")
+        new_email = "Change@email.com"
+        new_password = "Change1234$"
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/login/")
+
+        self.driver.find_element("id", "email").send_keys(new_email)
+        self.driver.find_element("id", "password").send_keys(new_password)
+        self.driver.find_element("id", "signin-button").click()
+        time.sleep(1)
+
+        self.assertEqual(self.driver.current_url, "http://localhost:5000/chat/")
+
+        self.driver.get("http://localhost:5000/profile/")
+        self.driver.find_element("id", "update").click()
+        self.driver.find_element("id", "firstname").clear()
+        self.driver.find_element("id", "firstname").send_keys("Test")
+        self.driver.find_element("id", "lastname").clear()
+        self.driver.find_element("id", "lastname").send_keys("Test")
+        self.driver.find_element("id", "email").clear()
+        self.driver.find_element("id", "email").send_keys(valid_email)
+        self.driver.find_element("id", "save").click()
+        time.sleep(1)
+        self.driver.find_element(By.CLASS_NAME, "swal2-confirm").click()
+
+        self.driver.find_element("id", "password-page").click()
+        self.driver.find_element("id", "oldpw").send_keys("Change1234$")
+        self.driver.find_element("id", "newpw").send_keys(valid_password)
+        self.driver.find_element("id", "confirmpw").send_keys(valid_password)
+        self.driver.find_element("id", "update-password").click()
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
