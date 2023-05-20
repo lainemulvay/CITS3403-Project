@@ -12,29 +12,51 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.agents import create_pandas_dataframe_agent
 
 
+import os
+import pandas as pd
+from transformers import GPT2TokenizerFast
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+
 os.environ["OPENAI_API_KEY"] = "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"
 
-#finds and reads faq.csv
+# Find and read faq.csv
 script_path = os.path.abspath(__file__)
 faq_path = os.path.join(os.path.dirname(script_path), 'docs', 'faq.csv')
 df = pd.read_csv(faq_path)
 
+# Get question and answer columns from DataFrame
+questions = df['question'].tolist()
+answers = df['answer'].tolist()
+
+# Load the sentence transformer model
+model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+
+# Compute sentence embeddings for questions
+question_embeddings = model.encode(questions)
+
+# Create a dictionary to store the embeddings
+embedding_dict = {question: embedding for question, embedding in zip(questions, question_embeddings)}
+
+# Function to find most similar questions
+def find_similar_questions(query, embedding_dict):
+    query_embedding = model.encode([query])[0]
+    similarities = cosine_similarity([query_embedding], question_embeddings)[0]
+    most_similar_idx = similarities.argmax()
+    most_similar_question = questions[most_similar_idx]
+    most_similar_answer = answers[most_similar_idx]
+    return most_similar_question, most_similar_answer
+
+# Example usage
+query = "where are exams held?"
+most_similar_question, most_similar_answer = find_similar_questions(query, embedding_dict)
+print(f"Most similar question: {most_similar_question}")
+print(f"Corresponding answer: {most_similar_answer}")
 
 
-# Split the dataframe by rows
-chunks = [df.iloc[[i]] for i in range(len(df))]
-
-# Iterate over the chunks and process them as needed
-for i, chunk in enumerate(chunks):
-    # Process the chunk (add to vector database, perform operations, etc.)
-    
-    # Print the chunk as an example
-    print(f"Chunk {i+1}:\n{chunk}")
-
-
-#inputs question to chatbot and runs on faq.csv
-pd_agent = create_pandas_dataframe_agent(OpenAI(temperature=0), df, verbose=True)
-pd_agent.run("where are exams held?")
+# #inputs question to chatbot and runs on faq.csv
+# pd_agent = create_pandas_dataframe_agent(OpenAI(temperature=0), df, verbose=True)
+# pd_agent.run("where are exams held?")
 
 
 # import pandas as pd
