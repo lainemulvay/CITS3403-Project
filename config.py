@@ -14,3 +14,11 @@ class TestingConfig(Config):
     PRESERVE_CONTEXT_ON_EXCEPTION = False
     DEBUG = True
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+class SeleniumConfig(Config):
+    TESTING = True
+    SQLALCHEMY_DATABASE_URI = os.environ.get('SELENIUM_DATABASE_URL') or \
+        'sqlite:///' + os.path.join(basedir, 'selenium.db')
+    PRESERVE_CONTEXT_ON_EXCEPTION = False
+    DEBUG = True
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
