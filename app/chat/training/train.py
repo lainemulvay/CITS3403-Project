@@ -17,6 +17,7 @@ import pandas as pd
 from transformers import GPT2TokenizerFast
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+import heapq
 
 os.environ["OPENAI_API_KEY"] = "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"
 
@@ -39,19 +40,23 @@ question_embeddings = model.encode(questions)
 embedding_dict = {question: embedding for question, embedding in zip(questions, question_embeddings)}
 
 # Function to find most similar questions
-def find_similar_questions(query, embedding_dict):
+def find_similar_questions(query, embedding_dict, top_k=4):
     query_embedding = model.encode([query])[0]
     similarities = cosine_similarity([query_embedding], question_embeddings)[0]
-    most_similar_idx = similarities.argmax()
-    most_similar_question = questions[most_similar_idx]
-    most_similar_answer = answers[most_similar_idx]
-    return most_similar_question, most_similar_answer
+    top_similar_indices = heapq.nlargest(top_k, range(len(similarities)), similarities.take)
+    similar_questions = [questions[idx] for idx in top_similar_indices]
+    similar_answers = [answers[idx] for idx in top_similar_indices]
+    return similar_questions, similar_answers
 
 # Example usage
-query = "where are exams held?"
-most_similar_question, most_similar_answer = find_similar_questions(query, embedding_dict)
-print(f"Most similar question: {most_similar_question}")
-print(f"Corresponding answer: {most_similar_answer}")
+query = "Where are exams held?"
+similar_questions, similar_answers = find_similar_questions(query, embedding_dict, top_k=4)
+print("Most similar questions:")
+for i, question in enumerate(similar_questions):
+    print(f"Question {i+1}: {question}")
+    print(f"Answer {i+1}: {similar_answers[i]}")
+    print()
+
 
 
 # #inputs question to chatbot and runs on faq.csv
