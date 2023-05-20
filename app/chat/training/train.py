@@ -1,21 +1,10 @@
 import os
-import pandas as pd
-import matplotlib.pyplot as plt
-from transformers import GPT2TokenizerFast
-from langchain.document_loaders import DataFrameLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
-from langchain.vectorstores import FAISS
 from langchain.chains.question_answering import load_qa_chain
-from langchain.llms import OpenAI
-from langchain.chains import ConversationalRetrievalChain
 from langchain.agents import create_pandas_dataframe_agent
 from langchain.chains import RetrievalQA
-from langchain.indexes import VectorstoreIndexCreator
 from langchain.embeddings.openai import OpenAIEmbeddings
-from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
-from langchain.document_loaders import TextLoader
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.chat_models import ChatOpenAI
 
@@ -37,7 +26,7 @@ def perform_query(query):
     response = qa.run(query)
     return response
 
-print(perform_query("what is the exam timetable?"))
+print(perform_query(input("Enter a question: ")))
 
 # loader = DataFrameLoader(df, page_content_column="question")
 
