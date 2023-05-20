@@ -30,12 +30,14 @@ question_bank = loader.load()
 
 embeddings = OpenAIEmbeddings()
 db = Chroma.from_documents(question_bank, embeddings)
-
 retriever = db.as_retriever()
-qa = RetrievalQA.from_chain_type(llm=ChatOpenAI(model_name='gpt-3.5-turbo'), chain_type="stuff", retriever=retriever)
-query = "what are uwa's values?"
-response = qa.run(query)
-print(response)
+
+def perform_query(query):
+    qa = RetrievalQA.from_chain_type(llm=ChatOpenAI(model_name='gpt-3.5-turbo'), chain_type="stuff", retriever=retriever)
+    response = qa.run(query)
+    return response
+
+print(perform_query("what is the exam timetable?"))
 
 # loader = DataFrameLoader(df, page_content_column="question")
 
