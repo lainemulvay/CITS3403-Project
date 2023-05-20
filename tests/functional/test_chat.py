@@ -100,7 +100,7 @@ def test_register(test_client):
         lastname="Test",
         email="Test@email.com",
         newpw="Test12345%",
-        confirmPW="Test12345%",
+        confirmpw="Test12345%",
     ))
     assert b"Account successfully created" in response.data
 
@@ -115,7 +115,7 @@ def test_duplicate_register(test_client):
         lastname="Test",
         email="Test@email.com",
         newpw="Test12345%",
-        confirmPW="Test12345%",
+        confirmpw="Test12345%",
     ))
     assert b"Email already exists" in response.data
 
@@ -337,7 +337,7 @@ def test_invalid_chat_id_access_from_logged_in_user(test_client):
         lastname="Test2",
         email="Test2@email.com",
         newpw="Test12345%",
-        confirmPW="Test12345%",
+        confirmpw="Test12345%",
     ))
 
     test_client.post('/login/', data=dict(
