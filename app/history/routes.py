@@ -28,9 +28,11 @@ def view_chat_id(id):
     elif int(id) not in get_chat_ids(session['id']):
         flash('You do not have access to this chat', 'danger')
         return redirect(url_for('history.history'))
+    # get username for top nav bar
+    username = get_user().first_name
     # Get the chat with the given id
     chat = get_chat(id)
-    return render_template("base_chat.html", display = True, chat=chat)
+    return render_template("base_chat.html", username=username, display = True, chat=chat)
 
 # Disable caching for the history page
 @history_blueprint.after_request
