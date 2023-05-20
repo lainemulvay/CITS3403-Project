@@ -25,12 +25,12 @@ async function performQuery(query) {
       const data = await response.json();
       return data.response;
     } else {
-      console.error('Error: ' + response.statusText);
-      return 'Error: ' + response.statusText;
+      console.error('Error1: ' + response.statusText);
+      return 'Error1: ' + response.statusText;
     }
   } catch (error) {
-    console.error('Error: ' + error);
-    return 'Error: ' + error;
+    console.error('Error2: ' + error);
+    return 'Error2: ' + error;
   }
 }
 
@@ -79,8 +79,8 @@ form.addEventListener('submit', async (e) => {
       // Scroll to bottom of responseTextarea
       scrollToBottom();
     } catch (error) {
-      console.error('Error: ' + error);
-      responseTextarea.value = 'Error: ' + error;
+      console.error('Error3: ' + error);
+      responseTextarea.value = 'Error3: ' + error;
     }
   }
 });
