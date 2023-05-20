@@ -129,6 +129,22 @@ function sendText() {
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
         console.log(xhr.responseText);
+        Swal.fire({
+            icon: 'success',
+            title: 'Your chat is saved',
+            confirmButtonText: 'Start a new chat',
+            showDenyButton: true,
+            denyButtonColor: '#b3b3b3',
+            denyButtonText: 'Go to History page',
+          }).then((result) => {
+            if (result.isConfirmed) {
+                // refresh chat page
+                window.location.href = '/chat';
+            } else if (result.isDenied) {
+                // go to history page
+                window.location.href = '/history';
+            }
+          })
         }
     };
 
