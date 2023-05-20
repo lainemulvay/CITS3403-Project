@@ -4,7 +4,7 @@
 {% endblock %}
 
 {%block content%}
-    <div id="response" class="response-box">
+    <div class="response-box">
         <div class="message message-response">
             <p class="message-content">
                 👋 Welcome to UWA's FAQ Chat Service! <br>
@@ -22,6 +22,7 @@
             </p>
             <p class="message-timestamp"></p>
         </div>
+        <div id="response" style="display: contents;"></div>
         <button id="save-button" class="save-button" onclick="sendText()">Save Chat</button>
     </div>
     <div class="input-container" id="input-container">
