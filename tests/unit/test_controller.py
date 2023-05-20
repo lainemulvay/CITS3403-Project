@@ -37,13 +37,17 @@ def test_update_user(test_database):
     user = User.query.filter_by(id=1).first()
     old_email = user.email
     old_first_name = user.first_name
+    old_last_name = user.last_name
     update_user(1, "Change@email.com", "Change", "Change")
     updated_user = User.query.filter_by(id=1).first()
 
     assert old_email == 'Test@email.com'
     assert old_first_name == 'Test'
+    assert old_last_name == 'Test'
+
     assert updated_user.email == "Change@email.com"
     assert updated_user.first_name == "Change"
+    assert updated_user.last_name == "Change"
 
 def test_invalid_update_user(test_database):
     """
@@ -110,8 +114,8 @@ def test_add_chat_response(test_database):
 def test_get_chat_ids(test_database):
     """
     GIVEN a Chat model
-    WHEN a chats for a user are requested
-    THEN check the chat_id is returned
+    WHEN chats for a user are requested
+    THEN check the chat_id of the user are returned
     """
     chat_ids = get_chat_ids(1)
 

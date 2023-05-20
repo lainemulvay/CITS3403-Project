@@ -53,7 +53,7 @@ def test_invalid_chat_access(test_client):
     """
     GIVEN a Flask application
     WHEN the '/chat' page is requested (GET), and the user is not logged in
-    THEN check the response is valid
+    THEN check the response redirects to the login page
     """
     response = test_client.get('/chat/')
     assert response.status_code == 302
@@ -63,7 +63,7 @@ def test_invalid_history_access(test_client):
     """
     GIVEN a Flask application
     WHEN the '/history' page is requested (GET), and the user is not logged in
-    THEN check the response is valid
+    THEN check the response redirects to the login page
     """
     response = test_client.get('/history/')
     assert response.status_code == 302
@@ -73,7 +73,7 @@ def test_invalid_profile_access(test_client):
     """
     GIVEN a Flask application
     WHEN the '/profile' page is requested (GET), and the user is not logged in
-    THEN check the response is valid
+    THEN check the response redirects to the login page
     """
     response = test_client.get('/profile/')
     assert response.status_code == 302
@@ -97,7 +97,7 @@ def test_register(test_client):
 def test_duplicate_register(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/register' page is posted to (POST)
+    WHEN the '/register' page is posted to (POST) with a duplicate email
     THEN check the response is valid
     """
     response = test_client.post('/register/', data=dict(
@@ -112,7 +112,7 @@ def test_duplicate_register(test_client):
 def test_invalid_login_email(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/login' page is posted to (POST)
+    WHEN the '/login' page is posted to (POST) with invalid email
     THEN check the response is valid
     """
     response = test_client.post('/login/', data=dict(
@@ -124,7 +124,7 @@ def test_invalid_login_email(test_client):
 def test_invalid_login_password(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/login' page is posted to (POST)
+    WHEN the '/login' page is posted to (POST) with invalid password
     THEN check the response is valid
     """
     response = test_client.post('/login/', data=dict(
@@ -136,7 +136,7 @@ def test_invalid_login_password(test_client):
 def test_not_logged_user_info(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/me' page is requested (GET)
+    WHEN the '/me' page is requested (GET) and user is not logged in
     THEN check the response is valid
     """
     response = test_client.get('/me/')
@@ -146,7 +146,7 @@ def test_not_logged_user_info(test_client):
 def test_login(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/login' page is posted to (POST)
+    WHEN the '/login' page is posted to (POST) with valid credentials
     THEN check the response is valid
     """
     response = test_client.post('/login/', data=dict(
@@ -158,8 +158,8 @@ def test_login(test_client):
 def test_logged_user_info(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/me' page is requested (GET), email is stored as lowercase
-    THEN check the response is valid
+    WHEN the '/me' page is requested (GET) and user is logged in
+    THEN check the response contains user info with lowercase email
     """
     response = test_client.get('/me/')
     assert response.status_code == 200
@@ -170,7 +170,7 @@ def test_logged_user_info(test_client):
 def test_auto_log_in(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/login' page is requested (GET) and user is logged in
+    WHEN the '/login' page is requested (GET) and user is logged in already
     THEN redirect to '/chat'
     """
     response = test_client.get('/login/')
@@ -197,7 +197,7 @@ def test_chat_page(test_client):
 def test_save_chat(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/chat' page is posted to (POST)
+    WHEN the '/chat' page is posted to (POST) with valid data
     THEN check the response is valid
     """
     headers = {
@@ -229,7 +229,7 @@ def test_view_history(test_client):
     """
     GIVEN a Flask application
     WHEN the '/history' page is requested (GET)
-    THEN check the response is valid
+    THEN check the response contains chat history
     """
     response = test_client.get('/history/1')
     assert response.status_code == 200
@@ -240,7 +240,7 @@ def test_profile_page(test_client):
     """
     GIVEN a Flask application
     WHEN the '/account' page is requested (GET)
-    THEN check the response is valid
+    THEN check the response contains user info
     """
     response = test_client.get('/profile/')
     assert response.status_code == 200
@@ -280,7 +280,7 @@ def test_change_account_information(test_client):
 def test_invalid_old_password(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/account' page is posted to (POST) and user changed password
+    WHEN the '/account' page is posted to (POST) and user changed password with invalid old password
     THEN check the response is valid
     """
     response = test_client.post('/profile/', data=dict(
@@ -294,7 +294,7 @@ def test_invalid_old_password(test_client):
 def test_change_password(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/account' page is posted to (POST) and user changed password
+    WHEN the '/account' page is posted to (POST) and user changed password with valid old password
     THEN check the response is valid
     """
     response = test_client.post('/profile/', data=dict(
