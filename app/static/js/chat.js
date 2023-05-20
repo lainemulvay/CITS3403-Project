@@ -15,7 +15,7 @@ form.addEventListener('submit', async (e) => {
 
     // Display Input message
     console.log('Input: ' + mytextInput.value)
-    const timestamp = new Date().toLocaleString();
+    const timestamp = new Date().toLocaleString('en-US', { hour12: true });
     const newMessage = document.createElement('div');
     newMessage.innerHTML = '<p class="message-content">' + mytextInput.value + '</p><p class="message-timestamp">' + timestamp + '</p>';
     newMessage.classList.add('message', 'message-input');
