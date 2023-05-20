@@ -3,7 +3,7 @@ var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
 var number = document.getElementById("number");
 var length = document.getElementById("length");
-var confirm_password = document.getElementById("confirmPW");
+var confirm_password = document.getElementById("confirmpw");
 
 // When the user clicks on the password field, show the message box
 password.onfocus = function() {
@@ -60,7 +60,7 @@ password.onkeyup = function() {
 // confirm password matched
 function validatePassword() {
   if (password.value != confirm_password.value) {
-    confirm_password.setCustomValidity("Passwords Don't Match");
+    confirm_password.setCustomValidity("Passwords don't match.");
   } else {
     confirm_password.setCustomValidity('');
   }
