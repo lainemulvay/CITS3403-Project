@@ -1,7 +1,16 @@
-from langchain.agents import create_pandas_dataframe_agent
-from langchain.llms import OpenAI
-import pandas as pd
 import os
+import pandas as pd
+import matplotlib.pyplot as plt
+from transformers import GPT2TokenizerFast
+from langchain.document_loaders import PyPDFLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import FAISS
+from langchain.chains.question_answering import load_qa_chain
+from langchain.llms import OpenAI
+from langchain.chains import ConversationalRetrievalChain
+from langchain.agents import create_pandas_dataframe_agent
+
 
 os.environ["OPENAI_API_KEY"] = "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"
 
@@ -9,6 +18,19 @@ os.environ["OPENAI_API_KEY"] = "sk-7xBESGbTvHGSU599VmbUT3BlbkFJPxZphKImXlb13gGPj
 script_path = os.path.abspath(__file__)
 faq_path = os.path.join(os.path.dirname(script_path), 'docs', 'faq.csv')
 df = pd.read_csv(faq_path)
+
+
+
+# Split the dataframe by rows
+chunks = [df.iloc[[i]] for i in range(len(df))]
+
+# Iterate over the chunks and process them as needed
+for i, chunk in enumerate(chunks):
+    # Process the chunk (add to vector database, perform operations, etc.)
+    
+    # Print the chunk as an example
+    print(f"Chunk {i+1}:\n{chunk}")
+
 
 #inputs question to chatbot and runs on faq.csv
 pd_agent = create_pandas_dataframe_agent(OpenAI(temperature=0), df, verbose=True)
