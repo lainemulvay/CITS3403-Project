@@ -14,7 +14,6 @@ def test_client():
             db.create_all()
         yield testing_client
         with flask_app.app_context():
-            db.session.remove()
             db.drop_all()
 
 @pytest.fixture(scope='module')
@@ -25,7 +24,6 @@ def test_database():
     with flask_app.app_context():
         db.create_all()
         yield db
-        db.session.remove()
         db.drop_all()
         
 @pytest.fixture(scope='module')

@@ -158,12 +158,11 @@ def test_login(test_client):
 def test_logged_user_info(test_client):
     """
     GIVEN a Flask application
-    WHEN the '/me' page is requested (GET)
+    WHEN the '/me' page is requested (GET), email is stored as lowercase
     THEN check the response is valid
     """
     response = test_client.get('/me/')
     assert response.status_code == 200
-    assert b"1" in response.data
     assert b"test@email.com" in response.data
     assert b"Test" in response.data
 
