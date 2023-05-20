@@ -110,6 +110,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function sendText() {
+    var inputfield = document.getElementById('input-container');
+    var savebtn = document.getElementById('save-button');
+
     var questionsDivs = document.getElementsByClassName('message-input');
     var questions = []
     for (var i = 0; i < questionsDivs.length; i++) {
@@ -129,6 +132,8 @@ function sendText() {
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
         console.log(xhr.responseText);
+        inputfield.remove();
+        savebtn.disabled = true;
         Swal.fire({
             icon: 'success',
             title: 'Your chat is saved',
@@ -145,14 +150,17 @@ function sendText() {
                 window.location.href = '/history';
             }
           })
+        } else {
+            Swal.fire({
+                icon: 'error',
+                text: 'There is no message',
+                confirmButtonText: 'Start chat',
+              })
         }
     };
 
     var data = JSON.stringify({ questions: questions, responses: responses});
     xhr.send(data);
-
-    var inputfield = document.getElementById('input-container');
-    inputfield.remove();
 }
 
 
