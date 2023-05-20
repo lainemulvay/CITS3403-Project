@@ -9,7 +9,6 @@ from app.register import register_blueprint
 def register():
     if request.method == "POST":
         user = check_email(request.form["email"].lower())
-        print(user)
         # Check if the user exists
         if user:
             return jsonify({'success': False, 'message': 'Email already exists'}), 401
@@ -22,7 +21,6 @@ def register():
 
         # Add the user to the database
         register = add_user(email, first_name, last_name, password)
-        print(register)
         
         return jsonify({'success': True, 'message': 'Account successfully created'}), 200
     return render_template("reg_view.html")
