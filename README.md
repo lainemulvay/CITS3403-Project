@@ -1,7 +1,7 @@
 # CITS3403Project
 
 [Note](https://github.com/lainemulvay/CITS3403-Project) FAQ chat system [CITS3403-Project](https://teaching.csse.uwa.edu.au/units/CITS3403/) semester 1, 2023 
-by [Murray Lewin](https://github.com/GrassTree-Muzz) (22967374), [Laine Mulvay](https://github.com/lainemulvay) (22708032), [Vicky Cow](https://github.com/vicky-chow) (23638279) and [Hank Zhang](https://github.com/hznkyh) (23072214)
+by [Murray Lewin](https://github.com/GrassTree-Muzz) (22967374), [Laine Mulvay](https://github.com/lainemulvay) (22708032), [Vicky Cow](https://github.com/vicky-chow) (23638279) and [Yinghao Zhang](https://github.com/hznkyh) (23072214)
 
 ## Features
 
