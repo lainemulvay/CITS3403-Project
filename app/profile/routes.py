@@ -1,6 +1,5 @@
 from app.controller import get_user, update_user, change_password
 from flask import render_template,flash, redirect, url_for, session, request, jsonify
-# from flask_login import LoginManager, login_required, current_user, login_user
 from werkzeug.security import check_password_hash
 from app.profile import profile_blueprint
 
