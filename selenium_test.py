@@ -164,7 +164,7 @@ class systemTest(unittest.TestCase):
         responses = self.driver.find_elements(By.CLASS_NAME, "message-content")
         self.assertIn(welcome_message, responses[0].text)
         self.assertEqual(responses[1].text, "Hello")
-        self.assertEqual(responses[2].text, "Hello! How can I assist you today?")
+        self.assertEqual(responses[2].text, "Hello! How may I assist you today?")
 
         self.driver.find_element(By.CLASS_NAME, "backbtn").click()
         self.assertEqual(self.driver.current_url, "http://localhost:5000/history/")
