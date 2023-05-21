@@ -2,6 +2,12 @@ from app.controller import add_chat, add_chat_question, add_chat_response, get_u
 from flask import render_template,flash, redirect, url_for, session, request, jsonify
 # from flask_login import LoginManager, login_required, current_user, login_user
 from app.chat import chat_blueprint
+import os
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import Chroma
+from langchain.document_loaders.csv_loader import CSVLoader
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import RetrievalQA
 
 # Initialize the components for perform_query
 os.environ["OPENAI_API_KEY"] = "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"
