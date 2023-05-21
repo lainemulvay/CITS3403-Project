@@ -76,6 +76,14 @@ class systemTest(unittest.TestCase):
         warning1 = self.driver.find_element(By.ID, "confirmpw").get_attribute("validationMessage")
         self.assertEqual(warning1, "Passwords don't match.")
 
+        self.driver.find_element("id", "confirmpw").clear()
+        self.driver.find_element("id", "confirmpw").send_keys(valid_password)
+        register.click()
+
+        time.sleep(1)
+        prompt = self.driver.find_element("id", "swal2-title").text
+        self.assertEqual(prompt, "Email already exists")
+
     def test_login(self):
         self.driver.get("http://localhost:5000/")
         self.driver.find_element("id", "start-button").click()
