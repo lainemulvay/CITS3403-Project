@@ -1,6 +1,7 @@
 .DS_Store
 app.db
 test.db
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
