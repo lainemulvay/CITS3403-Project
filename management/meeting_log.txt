@@ -160,3 +160,13 @@ Outcome:
     Vicky - see if anything is broken
     Murray - work on front end interactivity
     Laine - attempt to train the bot for UWA FAQ
+
+21/05/2023 (All members)
+Discussion:
+    Selenium test complete - Hank
+    Chatgpt trained but incompatibility is a issue hence not used - Laine
+    Test the project is finalised
+
+Outcome:
+    Submit the project
+    
