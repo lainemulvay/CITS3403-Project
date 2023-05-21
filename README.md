@@ -83,6 +83,7 @@ test.db                               ---Test database---
 ```
 
 ### Model representations 
+```
 User(
     'id', Integer, PRIMARY KEY 
     'email', String(100), UNIQUE, NOT NULL
@@ -111,6 +112,7 @@ ChatResponse(
     'content', TEXT, NOT NULL
     'timestamp' TEXT, NOT NULL
 )
+```
 
 ### User types 
 ![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg)
