@@ -217,6 +217,7 @@ Export the flask app.
 $ flask run
 ```
 ## Test
+Before running the tests, launch the application (using 'flask run') and ensure that the application is running on port 5000. Otherwise selenium tests will not work.  
 To run tests, run the following command in the root directory of the project:
 ```
 python -m pytest -v
