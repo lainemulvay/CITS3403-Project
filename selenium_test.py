@@ -258,6 +258,7 @@ class systemTest(unittest.TestCase):
         self.driver.find_element(By.CLASS_NAME, "swal2-confirm").click()
 
         self.driver.find_element("id", "password-page").click()
+        time.sleep(1)
         self.driver.find_element("id", "oldpw").send_keys("Change1234$")
         self.driver.find_element("id", "newpw").send_keys(valid_password)
         self.driver.find_element("id", "confirmpw").send_keys(valid_password)
