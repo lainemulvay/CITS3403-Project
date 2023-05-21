@@ -74,7 +74,7 @@ tests/                                <--Unit tests-->
       __init__.py                     ---init file for pytest---
       conftest.py                     ---Fixture setup for pytest---
 .gitignore                            ---Git ignore file---
-app.db                                ---Database---
+app.db                                ---Database. Contains a Test user and test chat instance---
 chat.py                               ---Application of chat db---
 config.py                             ---configuration---
 requirements.txt                      ---text file containing modules for install---
