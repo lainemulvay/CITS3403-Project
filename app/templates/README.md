@@ -42,7 +42,7 @@ Contain chat page view
 
 --- 
 
-### `hist_view.html `:small_blue_diamond: ![Registered User](https://img.shields.io/badge/-User-yellow.svg)
+### `hist_view.html ` ![Registered User](https://img.shields.io/badge/-User-yellow.svg)
 Contain history page view
 
 ![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Not visible 
@@ -50,7 +50,7 @@ Contain history page view
 
 ---
 
-### `profile_view.html `:small_blue_diamond: ![Registered User](https://img.shields.io/badge/-User-yellow.svg)
+### `profile_view.html ` ![Registered User](https://img.shields.io/badge/-User-yellow.svg)
 Contain profile page view
 
 ![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Not visible
