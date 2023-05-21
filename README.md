@@ -48,38 +48,38 @@ app/                                  <--Main App Module-->
             js/
                   chat.js             --- Sets up a chat interface where a user can input messages, which are then sent to the OpenAI Chat API for a response, and the conversation is displayed in real-time. Additionally, there is a functionality to send the conversation history to the server. and API
                   scripts.js          --- Implements various functionalities for a web application, including dropdown menu toggling, user authentication (login/logout), password validation, user registration, and chat history navigation.
-      templates/                        <--Templates-->
-            base_chat                   --- Base template for viewing of chat history
-            base                        --- Base template for all pages
-            chat_view                   --- Chat page template
-            hist_view                   --- History page template
-            intro_view                  --- Introduction page template
-            login_view                  --- Login page template
-            profile_view                --- Profile page template 
-            reg_view                    --- Registration page template
+      templates/                      <--Templates-->
+            base_chat                 --- Base template for viewing of chat history
+            base                      --- Base template for all pages
+            chat_view                 --- Chat page template
+            hist_view                 --- History page template
+            intro_view                --- Introduction page template
+            login_view                --- Login page template
+            profile_view              --- Profile page template 
+            reg_view                  --- Registration page template
             ....html
-management/                             <--Information record of team management-->
-      Flask set up steps.txt            ---Shared instructions for project set up.---
-      meeting_log.txt                   ---Meeting log---
-migrations/                             <--migration folder for SQLAlchemy>
-      versions/                         <--migration versions-->
-tests/                                  <--Unit tests-->
-      functional/                       <--Test website functionality-->
-            __init__.py                 ---init file for pytest---
-            test_chat.py                ---Test app routes functionality---
-      unit/                             <--Test module functionality-->
-            __init__.py                 ---init file for pytest---
-            test_controller.py          ---Test functions in controller.py---
-            test_model.py               ---Test functions in model.py---
-      __init__.py                       ---init file for pytest---
-      conftest.py                       ---Fixture setup for pytest---
-.gitignore                              ---Git ignore file---
-app.db                                  ---Database---
-chat.py                                 ---Application of chat db---
-config.py                               ---configuration---
-requirements.txt                        ---text file containing modules for install---
-selenium_test.py                        ---Selenium test---
-test.db                                 ---Test database---
+management/                           <--Information record of team management-->
+      Flask set up steps.txt          ---Shared instructions for project set up.---
+      meeting_log.txt                 ---Meeting log---
+migrations/                           <--migration folder for SQLAlchemy>
+      versions/                       <--migration versions-->
+tests/                                <--Unit tests-->
+      functional/                     <--Test website functionality-->
+            __init__.py               ---init file for pytest---
+            test_chat.py              ---Test app routes functionality---
+      unit/                           <--Test module functionality-->
+            __init__.py               ---init file for pytest---
+            test_controller.py        ---Test functions in controller.py---
+            test_model.py             ---Test functions in model.py---
+      __init__.py                     ---init file for pytest---
+      conftest.py                     ---Fixture setup for pytest---
+.gitignore                            ---Git ignore file---
+app.db                                ---Database---
+chat.py                               ---Application of chat db---
+config.py                             ---configuration---
+requirements.txt                      ---text file containing modules for install---
+selenium_test.py                      ---Selenium test---
+test.db                               ---Test database---
 ```
 
 ### Model representations 
