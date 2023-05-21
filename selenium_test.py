@@ -125,6 +125,7 @@ class systemTest(unittest.TestCase):
     
     def test_chat(self):
         self.driver.get("http://localhost:5000/login/")
+        time.sleep(1)
         valid_email = "Test@email.com"
         valid_password = "Test1234$"
         self.driver.find_element("id", "email").send_keys(valid_email)
