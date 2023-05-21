@@ -19,6 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: aliceblue;
 }
 
@@ -72,4 +73,12 @@
     columns: white;
     border-color: white;
     color: white;
+
+@media only screen and (max-width: 768px), (orientation: portrait) {
+    .history-box {
+        padding-bottom: 15px;
+    }
+    .view-chat {
+        margin: 0px 17px;
+    }
 }
