@@ -233,7 +233,7 @@ $ python selenium_test.py
 ```
 
 ## Libraries Used
-- [Sweet Alert][https://sweetalert2.github.io/] - Used for displaying alerts to the user [Approved]
+- [Sweet Alert](https://sweetalert2.github.io/) - Used for displaying alerts to the user. Approved
 
 ## Acknowledgment
 - [CITS3403 Lecture material](https://teaching.csse.uwa.edu.au/units/CITS3403/) by Dr Tim French
