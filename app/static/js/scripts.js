@@ -1,18 +1,3 @@
-// Script for base.html
-// try {
-//   var dropdownContent = document.getElementsByClassName("dropdown-content");
-//   function toggleDropdown() {
-//     dropdownContent.style.display = (dropdownContent.style.display === "block") ? "none" : "block";
-//   }
-//   document.addEventListener("click", function(event) {
-//     var target = event.target;
-//     if (!target.closest(".dropdown")) {
-//       dropdownContent.style.display = "none";
-//     }
-//   });
-// } catch (err) {}
-
-
 try {
   fetch('/me')
   .then(response => response.json())
