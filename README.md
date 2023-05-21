@@ -77,6 +77,7 @@ tests/                                <--Unit tests-->
 app.db                                ---Database. Contains a Test user and test chat instance---
 chat.py                               ---Application of chat db---
 config.py                             ---configuration---
+gitlog.txt                            ---Log of git commits up till 21st May 2023---
 requirements.txt                      ---text file containing modules for install---
 selenium_test.py                      ---Selenium test---
 test.db                               ---Test database---
