@@ -3,6 +3,33 @@ from flask import render_template,flash, redirect, url_for, session, request, js
 # from flask_login import LoginManager, login_required, current_user, login_user
 from app.chat import chat_blueprint
 
+# Initialize the components for perform_query
+os.environ["OPENAI_API_KEY"] = "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"
+
+script_path = os.path.abspath(__file__)
+faq_path = os.path.join(os.path.dirname(script_path), 'docs', 'faq.csv')
+loader = CSVLoader(faq_path, encoding='utf-8')
+question_bank = loader.load()
+
+embeddings = OpenAIEmbeddings()
+db = Chroma.from_documents(question_bank, embeddings)
+retriever = db.as_retriever()
+
+
+def perform_query(query):
+    qa = RetrievalQA.from_chain_type(llm=ChatOpenAI(model_name='gpt-3.5-turbo'), chain_type="stuff", retriever=retriever)
+    response = qa.run(query)
+    return response
+
+
+# handle query
+@chat_blueprint.route('/perform_query', methods=['POST'])
+def handle_query():
+    data = request.get_json()
+    query = data['query']
+    response = perform_query(query)
+    return jsonify({'response': response})
+
 # chat page
 @chat_blueprint.route("/chat/")
 def chat():
