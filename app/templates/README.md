@@ -37,7 +37,7 @@ Contain registration view for register
 ### `chat_view.html ` ![Registered User](https://img.shields.io/badge/-User-yellow.svg)
 Contain chat page view
 
-![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Not visible 
+![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Not visible  
 ![Registered Users](https://img.shields.io/badge/-User-yellow.svg) - Full view   
 
 --- 
@@ -45,7 +45,7 @@ Contain chat page view
 ### `hist_view.html ` ![Registered User](https://img.shields.io/badge/-User-yellow.svg)
 Contain history page view
 
-![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Not visible 
+![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Not visible  
 ![Registered Users](https://img.shields.io/badge/-User-yellow.svg) - Full view 
 
 ---
@@ -53,7 +53,7 @@ Contain history page view
 ### `profile_view.html ` ![Registered User](https://img.shields.io/badge/-User-yellow.svg)
 Contain profile page view
 
-![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Not visible
+![Anonymous](https://img.shields.io/badge/-Anonymous-black.svg) - Not visible  
 ![Registered Users](https://img.shields.io/badge/-User-yellow.svg) - Full view
 
 
