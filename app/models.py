@@ -4,7 +4,7 @@ from datetime import datetime
 class User(db.Model):
     __tablename__ = "users"
     id = db.Column("id", db.Integer, primary_key=True)
-    email = db.Column(db.String(100), unique=True)
+    email = db.Column(db.String(100), unique=True, nullable=False)
     first_name = db.Column("First Name", db.String(100), nullable=False)
     last_name = db.Column("Last Name", db.String(100), nullable=False)
     password = db.Column(db.String(100), nullable=False)
