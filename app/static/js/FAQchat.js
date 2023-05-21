@@ -100,33 +100,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function sendText() {
-    var questionsDivs = document.getElementsByClassName('message-input');
-    var questions = []
-    for (var i = 0; i < questionsDivs.length; i++) {
-        questions.push(questionsDivs[i].innerText);
-    }
+  var inputfield = document.getElementById('input-container');
+  var savebtn = document.getElementById('save-button');
 
-    var responsesDivs = document.getElementsByClassName('message-response');
-    var responses = []
-    for (var i = 1; i < responsesDivs.length; i++) {
-        responses.push(responsesDivs[i].innerText);
-    }
+  var questionsDivs = document.getElementsByClassName('message-input');
+  var questions = []
+  for (var i = 0; i < questionsDivs.length; i++) {
+      questions.push(questionsDivs[i].innerText);
+  }
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', '/send-text', true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
+  var responsesDivs = document.getElementsByClassName('message-response');
+  var responses = []
+  for (var i = 1; i < responsesDivs.length; i++) {
+      responses.push(responsesDivs[i].innerText);
+  }
 
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-        console.log(xhr.responseText);
-        }
-    };
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', '/send-text/', true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
 
-    var data = JSON.stringify({ questions: questions, responses: responses});
-    xhr.send(data);
+  xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+      console.log(xhr.responseText);
+      inputfield.remove();
+      savebtn.disabled = true;
+      Swal.fire({
+          icon: 'success',
+          title: 'Your chat is saved',
+          confirmButtonText: 'Start a new chat',
+          showDenyButton: true,
+          denyButtonColor: '#b3b3b3',
+          denyButtonText: 'Go to History page',
+        }).then((result) => {
+          if (result.isConfirmed) {
+              // refresh chat page
+              window.location.href = '/chat';
+          } else if (result.isDenied) {
+              // go to history page
+              window.location.href = '/history';
+          }
+        })
+      } else {
+          Swal.fire({
+              icon: 'error',
+              text: 'There is no message',
+              confirmButtonText: 'Start chat',
+            })
+      }
+  };
 
-    // Reload page
-    location.reload();
+  var data = JSON.stringify({ questions: questions, responses: responses});
+  xhr.send(data);
 }
-
-
