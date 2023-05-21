@@ -167,9 +167,7 @@ $ cd CITS3403-Project
 ```
 
 ## For Mac/Linux
-```
 If required, create a virtual environment. Skip this and the following step if you do not wish to use a virtual environment.
-```
 ```
 $ python3 -m venv venv
 ```
@@ -190,7 +188,6 @@ $ export FLASK_APP=chat.py
 ```
 
 ## For Windows
-```
 If required, create a virtual environment. Skip this and the following step if you do not wish to use a virtual environment.
 ```
 > py -3 -m venv venv
