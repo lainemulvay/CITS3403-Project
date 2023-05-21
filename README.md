@@ -6,7 +6,7 @@ by [Murray Lewin](https://github.com/GrassTree-Muzz) (22967374), [Laine Mulvay](
 ## Features
 
 
-- A Question and Response box are provided where the user can access the Open AI API and ask it any question, where a response willbe recieved.
+- A Question and Response box are provided where the user can access the Open AI API and ask it any question, where a response will be recieved.
 
 ## Design 
 ### Code structure 
@@ -19,11 +19,11 @@ app/                                      <--Main App Module-->
                 __init__.py               ---initialize blueprint for chat module---
                 routes.py                 ---chat/logout/save_chat/add_header routes---
 
-      history/                         <--Chat and Reponse History -->
+      history/                         <--Chat and Response History -->
                 __init__.py               ---initialize blueprint for history module--- 
                 routes.py                 ---history/logout/view_chat_id/add_header view routes---
 
-      intro/                           <--Introdution page functionality-->
+      intro/                           <--Introduction page functionality-->
                 __init__.py               ---initialize blueprint for intro module---
                 routes.py                 ---User index route---
 
@@ -35,7 +35,7 @@ app/                                      <--Main App Module-->
                 __init__.py               ---initialize blueprint for profile module---
                 routes.py                 ---register profile route---
 
-      register/                        <--Database initialise for reigstration-->
+      register/                        <--Database initialize for registration-->
                 __init__.py               ---initialize blueprint for register module---
                 routes.py                 ---register route---
 
@@ -44,7 +44,7 @@ app/                                      <--Main App Module-->
                 css/    
                           base_styles.css   --- styling for the base template html
                           chat_styles.css   --- styling for the chat page html              
-                          hist_styles.css   --- styling for the historu page html
+                          hist_styles.css   --- styling for the history page html
                           login_styles.css  --- styling for the login page html
                 images/   
                           UWA_Logo_Full.svg
@@ -64,10 +64,25 @@ app/                                      <--Main App Module-->
                 reg_view                    --- Registration page template
                 ....html
 
-authentify.py                               ---configuration---
+tests/                                      <--Unit tests-->
+      ../                                   <--Package User Assessment-->
+                ""''
+
+      functional/                           <--Test website functionality-->
+                __init__.py                 ---init file for pytest---
+                test_chat.py                ---Test chat page functionality---
+      unit/                                 <--Test module functionality-->
+                __init__.py                 ---init file for pytest---
+                test_controller.py          ---Test controller.py---
+                test_model.py               ---Test model.py---
+      
+      __init__.py                           ---init file for pytest---
+      conftest.py                           ---Fixture setup for pytest---
+
 chat.py                                     ---Application of chat db---
 config.py                                   ---configuration---
 requirements.txt                            ---text file containing modules for install---
+selenium_test.py                            ---Selenium test---
     
 ```
 ### Model representations 
@@ -110,32 +125,8 @@ ChatResponse(
 ![Registed Users](https://img.shields.io/badge/-User-yellow.svg)
 - Can login and logout using username and password
 - Can ask the chat questions
-- Can recieve responses fromthe server based on questions
+- Can receive responses from the server based on questions
 - Can view their individual history of past chats that have been saved 
-
-
-## Project Management 
-
-* Planing phase  
-
-      > Inital planing were carried out to outline the content, scope and workflow. 
-      > Estimation were made on required framework, library and implimentation time.
-      
-* Agile Methodology 
-
-      > Scope of each iterations were outlined based on the analysis of requirements.
-      > Determine functionalities that needs to be delivered. 
-
-* Implimentation phase
-
-      > Writing code.
-
-* Testing
-
-      > Basic unittest were automated and carried out at each iteration.
-
-
--------------------
 
 ## Testing
 ### Unit test coverage 
@@ -146,37 +137,97 @@ ChatResponse(
 
 ### Selenium test coverage
 - User register case
-- User Login case
-- User submission case
+- User login case
+- User chat case
+- User history case
+- User profile case
+- User logout case
 
-## Install
+### Requirements
 ```
-$ sudo apt install python3
-$ sudo apt install python3-pip
-$ sudo apt-get install python3-setuptools
-$ sudo apt install python3-flask
-$ git clone https://github.com/kurapikaaaa/CITS3403Project.git
-$ pip3 install -r requirements.txt
-$ export FLASK_APP=sidenote.py
+python 3.11.3 or above
 ```
-## Launch
+
+If you don't have python installed, you can download it [here](https://www.python.org/downloads/)
+
+### Installation
+Download the project from github. Skip this step if you have already downloaded the project.
+```
+$ git clone https://github.com/lainemulvay/CITS3403-Project.git
+```
+
+Navigate to the project directory.
+```
+$ cd CITS3403-Project
+```
+
+## For Mac/Linux
+```
+If required, create a virtual environment. Skip this and the following step if you do not wish to use a virtual environment.
+```
+```
+python3 -m venv venv
+```
+
+Activate the virtual environment.
+```
+$ source venv/bin/activate
+```
+
+Download the required modules.
+```
+$ pip install -r requirements.txt
+```
+
+Export the flask app.
+```
+$ export FLASK_APP=chat.py
+```
+
+## For Windows
+```
+If required, create a virtual environment. Skip this and the following step if you do not wish to use a virtual environment.
+```
+> py -3 -m venv venv
+```
+
+Activate the virtual environment.
+```
+> venv\Scripts\activate
+
+if prompt says "cannot be loaded because running scripts is disabled on this system", run the following command, then try again:
+> Set-ExecutionPolicy Unrestricted -Scope Process
+```
+
+Download the required modules.
+```
+> pip install -r requirements.txt
+```
+> setx FLASK_APP "chat.py"
+```
+
+### Launch
+## For Mac/Linux and Windows
 ```
 $ flask run
 ```
-## Unittest
+## Test
+To run tests, run the following command in the root directory of the project:
 ```
-$ python3 -W ignore test.py
+python -m pytest -v
 ```
-## Selenium Test
+
+To view the coverage report, run the following command in the root directory of the project:
 ```
-$ export DRIVER='**PATH_TO_WEB_DRIVER**'
-$ python3 -W ignore seleniumTest.py
+python -m pytest --cov=app
+```
+
+To run only the selenium tests, run the following command in the root directory of the project:
+```
+$ python selenium_test.py
 ```
 ## Libraries Used
-- [Bootstrap](https://getbootstrap.com/)
-- [jQuery](https://jquery.com/)
-- [VexFlow](https://github.com/0xfe/vexflow)
-- [GoogleFont](https://fonts.google.com/specimen/Zilla+Slab#standard-styles)
+- [Sweet Alert][https://sweetalert2.github.io/] - Used for displaying alerts to the user
 
 ## Acknowledgment
 - [CITS3403 Lecture material](https://teaching.csse.uwa.edu.au/units/CITS3403/) by Dr Tim French
