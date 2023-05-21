@@ -28,14 +28,19 @@ class systemTest(unittest.TestCase):
     
     def test_register(self):
         self.driver.get("http://localhost:5000/")
+        time.sleep(1)
         self.driver.find_element("id", "start-button").click()
+        time.sleep(1)
         self.assertEqual(self.driver.current_url, "http://localhost:5000/login/")
 
         self.driver.find_element("id", "back-button").click()
+        time.sleep(1)
         self.assertEqual(self.driver.current_url, "http://localhost:5000/")
 
         self.driver.find_element("id", "start-button").click()
+        time.sleep(1)
         self.driver.find_element("id", "register-link").click()
+        time.sleep(1)
         self.assertEqual(self.driver.current_url, "http://localhost:5000/register/")
 
         valid_first_name = valid_last_name = "Test"
@@ -44,6 +49,7 @@ class systemTest(unittest.TestCase):
         register = self.driver.find_element("id", "register-button")
 
         register.click()
+        time.sleep(1)
         warning1 = self.driver.find_element(By.ID, "firstname").get_attribute("validationMessage")
 
         # chrome on windows show "Please fill out this field"
@@ -72,7 +78,7 @@ class systemTest(unittest.TestCase):
         self.driver.find_element("id", "newpw").send_keys(valid_password)
         self.driver.find_element("id", "confirmpw").send_keys("Test1234")
         register.click()
-
+  
         warning1 = self.driver.find_element(By.ID, "confirmpw").get_attribute("validationMessage")
         self.assertEqual(warning1, "Passwords don't match.")
 
@@ -86,6 +92,7 @@ class systemTest(unittest.TestCase):
 
     def test_login(self):
         self.driver.get("http://localhost:5000/")
+        time.sleep(1)
         self.driver.find_element("id", "start-button").click()
         self.assertEqual(self.driver.current_url, "http://localhost:5000/login/")
 
