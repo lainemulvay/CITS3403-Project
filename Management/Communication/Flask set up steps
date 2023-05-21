@@ -56,3 +56,6 @@ For pytest
 python -m pytest -v
 
 python -m pytest --cov=app 
+
+for selenium test
+python selenium_test.py

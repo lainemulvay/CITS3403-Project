@@ -64,7 +64,7 @@ try {
   var number = document.getElementById("number");
   var special = document.getElementById("special");
   var length = document.getElementById("length");
-  var confirm_password = document.getElementById("confirmPW");
+  var confirm_password = document.getElementById("confirmpw");
 
   // When the user clicks on the password field, show the message box
   password.onfocus = function() {
@@ -131,7 +131,7 @@ try {
   // confirm password matched
   function validatePassword() {
     if (password.value != confirm_password.value) {
-      confirm_password.setCustomValidity("Passwords Don't Match");
+      confirm_password.setCustomValidity("Passwords don't match.");
     } else {
       confirm_password.setCustomValidity('');
     }
@@ -174,7 +174,7 @@ try {
   const togglePassword1 = document.querySelector('#showPassword1');
   const newpw = document.getElementById('newpw');
   const togglePassword2 = document.querySelector('#showPassword2');
-  const confirmPW = document.getElementById('confirmPW');
+  const confirmpw = document.getElementById('confirmpw');
 
   togglePassword1.addEventListener('click', function (e) {
     // toggle the type attribute
@@ -186,8 +186,8 @@ try {
 
   togglePassword2.addEventListener('click', function (e) {
     // toggle the type attribute
-    const type = confirmPW.getAttribute('type') === 'password' ? 'text' : 'password';
-    confirmPW.setAttribute('type', type);
+    const type = confirmpw.getAttribute('type') === 'password' ? 'text' : 'password';
+    confirmpw.setAttribute('type', type);
     // toggle the eye slash icon
     this.classList.toggle('fa-eye-slash');
   });

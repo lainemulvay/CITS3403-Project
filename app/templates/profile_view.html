@@ -8,7 +8,7 @@
         <div class="content">
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'update-form')" id="defaultOpen">Account Information</button>
-                <button class="tablinks" onclick="openTab(event, 'changePW-form')">Password Setting</button>
+                <button class="tablinks" onclick="openTab(event, 'changePW-form')" id="password-page">Password Setting</button>
             </div>
             <!-- update account tab -->
             <form class="login-form" id="update-form" method="post">
@@ -61,7 +61,7 @@
                 <div class="form-field">
                     <p class="title">New Password: </p>
                     <div class="inputgroup">
-                        <input class="inputfield" type="password" id="newpw" name="newpw" placeholder="Enter a new Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                        <input class="inputfield" type="password" id="newpw" name="newpw" placeholder="Enter a new Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%_^&+=]).{8,}" title="Must contain at least one number, one uppercase and lowercase letter, one special character and at least 8 or more characters" required>
                         <i class="far fa-eye" id="showPassword1" style="margin-left: 5px; cursor: pointer; float: right;"></i>
                     </div>
                 </div>
@@ -76,14 +76,14 @@
                 <div class="form-field">
                     <p class="title">Confirm New Password: </p>
                     <div class="inputgroup">
-                        <input class="inputfield" type="password" id="confirmPW" name="confirmPW" placeholder="Confirm new Password">
+                        <input class="inputfield" type="password" id="confirmpw" name="confirmpw" placeholder="Confirm new Password">
                         <i class="far fa-eye" id="showPassword2" style="margin-left: 5px; cursor: pointer; float: right;"></i>
                     </div>
                 </div>
                 <!-- Hidden input field to indicate update_password action -->
                 <input type="hidden" id='action' name="action" value="update_password">
                 <div>
-                    <button class="button" type="submit"> Update Password </button>
+                    <button id="update-password" class="button" type="submit"> Update Password </button>
                 </div>
             </form>
         </div>

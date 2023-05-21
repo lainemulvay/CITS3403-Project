@@ -73,8 +73,7 @@
     columns: white;
     border-color: white;
     color: white;
-}
-    
+
 @media only screen and (max-width: 768px), (orientation: portrait) {
     .history-box {
         padding-bottom: 15px;

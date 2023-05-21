@@ -14,10 +14,10 @@
                     <i class="fas fa-calendar-day" style="margin-right: 10px;"></i><p style="margin: 5px;">{{chat_record[1]}}</p>
                 </div>
                 <div class="chat-number">
-                    <i class="fas fa-comments" style="margin-right: 10px;"></i><p style="margin: 5px;">Chat number: {{chat_record[0]}} </p>
+                    <i class="fas fa-comments" style="margin-right: 10px;"></i><p id="chat-number" style="margin: 5px;">Chat number: {{chat_record[0]}} </p>
                 </div>
             </div>
-            <button class="view-chat" value="{{chat_record[0]}}" onclick="view_chat(this)"><i class="fas fa-eye"></i> View Chat</button>
+            <button id="view-chat-btn" class="view-chat" value="{{chat_record[0]}}" onclick="view_chat(this)"><i class="fas fa-eye"></i> View Chat</button>
         </div>
         {% endfor %}
     </div>
