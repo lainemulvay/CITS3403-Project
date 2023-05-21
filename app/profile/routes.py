@@ -1,6 +1,5 @@
 from app.controller import get_user, update_user, change_password
 from flask import render_template,flash, redirect, url_for, session, request, jsonify
-# from flask_login import LoginManager, login_required, current_user, login_user
 from werkzeug.security import check_password_hash
 from app.profile import profile_blueprint
 
@@ -46,3 +45,12 @@ def profile():
 
     # return with user details
     return render_template("profile_view.html", display = True, username=firstname, firstname=firstname, lastname=lastname, email=email)
+
+# Disable caching for the history page
+@profile_blueprint.after_request
+def add_header(response):
+    response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+    response.headers['Vary'] = 'User-Agent'
+    return response

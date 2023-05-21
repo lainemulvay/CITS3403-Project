@@ -2,10 +2,8 @@
 ## ***__init__.py***
 - Initializes module blueprint 
 
-
 ## ***routes.py***
 @route
-- Chat
+- chat
 - logout
-- save_chat
-- add_header
+- send-text

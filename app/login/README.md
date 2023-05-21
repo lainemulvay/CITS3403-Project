@@ -6,5 +6,4 @@
 ## ***routes.py***
 @route
 - login
-- get_me
-- logout
+- me
