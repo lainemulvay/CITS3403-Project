@@ -25,7 +25,6 @@ def profile():
             first_name = request.form['firstname']
             last_name = request.form['lastname']
             update = update_user(id, email, first_name, last_name)
-            print(update)
             # return json statement
             return jsonify({'success': True, 'message': 'Account updated'}), 200
         
@@ -37,7 +36,6 @@ def profile():
             if check_password_hash(hash_pw, oldpw):
                 newpw = request.form['newpw']
                 updatepw = change_password(id, newpw)
-                print(updatepw)
                 return jsonify({'success': True, 'message': 'Password updated'}), 200
             else:
                 # check_password_hash not match
