@@ -124,7 +124,7 @@ class systemTest(unittest.TestCase):
         self.assertEqual(self.driver.current_url, "http://localhost:5000/chat/")
     
     def test_chat(self):
-        self.driver.get("http://localhost:5000/login/")
+        self.driver.get("http://127.0.0.1:5000/login/")
         time.sleep(5)
         valid_email = "Test@email.com"
         valid_password = "Test1234$"
