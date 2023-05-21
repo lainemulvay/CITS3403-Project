@@ -233,6 +233,8 @@ To run only the selenium tests, run the following command in the root directory 
 $ python selenium_test.py
 ```
 
+Note that selenium test will pass on mac but not windows, due to different chrome implementations on the warning for empty field.
+
 ## Libraries Used
 - [Sweet Alert](https://sweetalert2.github.io/) - Used for displaying alerts to the user. Approved
 
