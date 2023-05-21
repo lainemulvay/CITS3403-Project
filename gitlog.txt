@@ -1,0 +1,4997 @@
+*   commit 6a5097ea630e97cb41933a0bb56011329f66ec75 (HEAD -> main, origin/main, origin/HEAD)
+|\  Merge: 6d3f264 621b903
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun May 21 17:27:38 2023 +0800
+| | 
+| |     Merge pull request #109 from lainemulvay:finalise
+| |     
+| |     Finalise
+| | 
+| * commit 621b903885872b9c6bd21fae5be3f62ef59c72ee
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 17:24:46 2023 +0800
+| | 
+| |     update read me
+| | 
+| * commit cab119886cd38d3f2fcd13e701adfaacc5b5e9e2
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun May 21 17:19:37 2023 +0800
+|   
+|       adjusted html for validator
+| 
+* commit 6d3f2644934b97713d1e395d2ecc54439f78b1de
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 17:03:03 2023 +0800
+| 
+|     delete vscode file
+| 
+* commit 631ea9c776e231b855aad485a593bb2f64ae4486
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 17:02:35 2023 +0800
+| 
+|     update gitignore
+| 
+* commit f012a29117491c15eb926e3ddf296fbdb5f38ac1
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 16:56:44 2023 +0800
+| 
+|     added more sleep time for compatibility
+| 
+* commit 5b357007a96a04448513711e31fe4d1735909fc7
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 16:35:23 2023 +0800
+| 
+|     changed back
+| 
+* commit 48fda26d4daab4cfad9abb7da6579f6eedd2c05a
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 16:33:40 2023 +0800
+| 
+|     test vivky selenium test
+| 
+* commit 92ec601a8c9509b4bf0a68aa9aba60411b9867aa
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 16:32:11 2023 +0800
+| 
+|     update sleep time
+| 
+* commit 32bcf04c1f6d8495e72e35544ed1770210b9b1ea
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 16:31:59 2023 +0800
+| 
+|     sleep time update
+| 
+* commit a9ee74b889f3ce6a53b44bab1e59cf3e689a985b
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 16:27:38 2023 +0800
+| 
+|     update sleep time
+|   
+*   commit 4796b46e849d86f491dc351730738d34bb9d6a2a
+|\  Merge: a0d8506 2dc5949
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun May 21 16:09:34 2023 +0800
+| | 
+| |     Merge pull request #108 from lainemulvay:intro
+| |     
+| |     update intro
+| | 
+| * commit 2dc5949949332ee7aab667eb7b350d40d5ac70be
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun May 21 16:09:15 2023 +0800
+|   
+|       update intro
+|   
+*   commit a0d85068b9c83a966dff98d0057d205510196685
+|\  Merge: 671478a ecdf7d7
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun May 21 15:48:40 2023 +0800
+| | 
+| |     Merge pull request #107 from lainemulvay:readme
+| |     
+| |     update database description
+| | 
+| * commit ecdf7d7390d4c2fe85ee660626c22538f0caaab7
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun May 21 15:48:21 2023 +0800
+|   
+|       update database description
+| 
+* commit 671478ab7cf557f150430b4acc3f615ebec04272
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 15:41:40 2023 +0800
+| 
+|     changed response text due to refresh
+|   
+*   commit dfae12e2e612a8f43b432744c027573cece54196
+|\  Merge: d6f617a b0db83e
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun May 21 15:37:06 2023 +0800
+| | 
+| |     Merge pull request #106 from lainemulvay:bug-fix
+| |     
+| |     new db
+| | 
+| * commit b0db83e55752e97734b154cf9b3faa14ee149d54
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun May 21 15:36:48 2023 +0800
+|   
+|       new db
+| 
+* commit d6f617a2053653fef222f868c59038123e222df7
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 15:30:39 2023 +0800
+| 
+|     cleaning
+| 
+* commit b229ee59919f0f301943b4f83c6188fb6a197a6e
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 15:25:09 2023 +0800
+| 
+|     update read me
+| 
+* commit 8f9f80e850245c4ae1df157f229915a1e9be63d2
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 21 14:28:31 2023 +0800
+| 
+|     default db
+|   
+*   commit ac91a4cb8c103a1b24dd328c72083f716b52e6e0
+|\  Merge: 27a6125 aca200d
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun May 21 14:25:23 2023 +0800
+| | 
+| |     Merge pull request #105 from lainemulvay:final-clean
+| |     
+| |     Final-clean
+| | 
+| * commit aca200d700c4a2959bc892e5e1e7dd9b300591a0
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 14:24:46 2023 +0800
+| | 
+| |     add new line
+| | 
+| * commit f078717778f0eeb8f10eae2f05cd659221afc536
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 14:22:56 2023 +0800
+| | 
+| |     update read me
+| | 
+| * commit 582bca9de3639092bf5a383d6f3b39303c708768
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 14:20:41 2023 +0800
+| | 
+| |     update read me
+| | 
+| * commit e1ff78994bece9630b82139f1dd397075c04dfd6
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 14:12:03 2023 +0800
+| | 
+| |     update chat readme
+| | 
+| * commit 666f1cd14cf786b553e0f3b1b30b37e06e77c952
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 14:10:56 2023 +0800
+| | 
+| |     update app readme
+| | 
+| * commit e8358ac9c9b25008e5ea39833ff3fe0b26434f33
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 13:57:43 2023 +0800
+| | 
+| |     update library
+| | 
+| * commit 171b55dc5f65180b2765d35feec1c9f91e118d07
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 13:57:07 2023 +0800
+| | 
+| |     updated library
+| | 
+| * commit 26821a95528a67f058227cad9f3856ab782d26e9
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 13:56:14 2023 +0800
+| | 
+| |     update format
+| | 
+| * commit ed257fccf499b1d21b987c824baae3d9c4f08019
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 13:54:40 2023 +0800
+| | 
+| |     update format
+| | 
+| * commit 834b7b5b838f261737644d059018b80453ba4e1f
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 13:53:50 2023 +0800
+| | 
+| |     update
+| | 
+| * commit b009f4679a51d117d0eda27e79d0e596710806f7
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 13:51:37 2023 +0800
+| | 
+| |     cleaning
+| | 
+| * commit 685bdd8c0994a599cb6c1b7b7cd53c2ab2f2575c
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 13:51:30 2023 +0800
+| | 
+| |     update
+| | 
+| * commit 6793c7022e858630925d21af5572e87dfc12a4ee
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 13:41:35 2023 +0800
+| | 
+| |     update user model
+| | 
+| * commit a1567e3f3924a76fd873fc9be6fffe9665374f81
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 13:22:26 2023 +0800
+| | 
+| |     add delete cache to profile
+| | 
+| * commit ffe660349236d57dae20d599e131f05ee36b68d1
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 12:43:52 2023 +0800
+| | 
+| |     update name
+| | 
+| * commit 8aa95ecd576d2d30d2a39e0236509531feee7f1a
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 12:42:31 2023 +0800
+| | 
+| |     update
+| | 
+| * commit 2cbe3917848dd350459601937f5e0a19823b5b5d
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 21 12:21:22 2023 +0800
+| | 
+| |     cleaning
+| | 
+| * commit 59cfee3399d035072c6f0b62fa6993a29680aef7
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun May 21 12:20:28 2023 +0800
+|   
+|       cleaning
+|   
+*   commit 27a6125bb87b6265aa4ac442a9e527bb9b869e81
+|\  Merge: 7c5c414 e6d5842
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun May 21 12:18:34 2023 +0800
+| | 
+| |     Merge pull request #104 from lainemulvay/testing
+| |     
+| |     Testing
+| |   
+| *   commit e6d5842cb6d881250c83404f709ab84682d30dec
+| |\  Merge: c294731 7c5c414
+| |/  Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+|/|   Date:   Sun May 21 12:18:24 2023 +0800
+| |   
+| |       Merge branch 'main' into testing
+| | 
+* | commit 7c5c41405eaad47ba5e028881a81ac15c7630387
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sat May 20 22:19:57 2023 +0800
+| | 
+| |     update hist_style
+| |   
+* |   commit 010e4152716cc8bc959e59ff994eb7e5cbbfe582
+|\ \  Merge: 0275e5f 9ec5a7e
+| | | Author: lainemulvay <127926136+lainemulvay@users.noreply.github.com>
+| | | Date:   Sat May 20 20:14:13 2023 +0800
+| | | 
+| | |     Merge pull request #103 from lainemulvay/requirements
+| | |     
+| | |     new requirements
+| | | 
+| * | commit 9ec5a7e2e1010ef6bd793b5582a859c1396aeb41
+| | | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | | Date:   Sat May 20 20:10:29 2023 +0800
+| | | 
+| | |     new requirements
+| | | 
+| | * commit c29473137144714e5efab79f570c78fd0e6aea3f
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 21 12:16:45 2023 +0800
+| | | 
+| | |     added test for register
+| | | 
+| | * commit 34fa02a6c2241cdc23c8acb55ee5139ea113b649
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 21 02:36:47 2023 +0800
+| | | 
+| | |     finialised
+| | | 
+| | * commit 2c020d10df9fd59e13d098e5c87cc47938b5463b
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 21 02:27:34 2023 +0800
+| | | 
+| | |     final
+| | | 
+| | * commit c3c39da6f9b715a96118e336d2a1ab1eae83c9fc
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 21 02:27:18 2023 +0800
+| | | 
+| | |     finalised
+| | | 
+| | * commit 614bb4fc2f251de34105b3151a57016e0811320b
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 21 02:25:38 2023 +0800
+| | | 
+| | |     add test chat
+| | | 
+| | * commit d0f76a68796326470bf9aa6b1db84571c42722be
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 21 02:01:00 2023 +0800
+| | | 
+| | |     add history test
+| | | 
+| | * commit fba8a8293773d1d6ffd4f122dac3f206637f1c2d
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 21 00:29:25 2023 +0800
+| | | 
+| | |     update gitignore
+| | | 
+| | * commit c38d92e7847a6350546954b394cb6b9d3a66135e
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 21 00:28:40 2023 +0800
+| | | 
+| | |     add login test
+| | | 
+| | * commit 8f358c275a49bc1cd86bd1b8814f78b66111fb14
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 23:12:37 2023 +0800
+| | | 
+| | |     commented
+| | | 
+| | * commit 4455169da6ad3b3ef50a8dc808301f6422a901b6
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 23:12:30 2023 +0800
+| | | 
+| | |     adding login test
+| | | 
+| | * commit 352fbf12f4d0d4fd13d4fd2147d1b89357458cb8
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 22:09:30 2023 +0800
+| | | 
+| | |     changed confirmPW to confirmpw
+| | | 
+| | * commit 751899929eb76d6266f4cd04a85bfabecb6d87cd
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 22:09:04 2023 +0800
+| | | 
+| | |     add instruction to selenium test
+| | | 
+| | * commit 962cc0daa0c24707dce100a2810e1253bfefb02f
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 22:08:53 2023 +0800
+| | | 
+| | |     add tests
+| | | 
+| | * commit 2711b6463771f8100e6c7dbcd303db5ae4c68afc
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 22:08:46 2023 +0800
+| | | 
+| | |     changed confirmPW to confirmpw
+| | | 
+| | * commit 33e59331c74a6782eb55e4a289d61ac359aa7ddb
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 22:08:26 2023 +0800
+| | | 
+| | |     changed confirmPW to confirmpw
+| | | 
+| | * commit 3515718b99f3341e3f58003a79b511f863b2cc1f
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 22:08:11 2023 +0800
+| | | 
+| | |     deleted css for mobile
+| | | 
+| | * commit e72a1b1da517aa63bca29109215dc22ddc1354fe
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 21:21:49 2023 +0800
+| | | 
+| | |     draft tests
+| | | 
+| | * commit d3e29c9b7a7c559926c2b1737b94dee73d8ace8a
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 21:01:17 2023 +0800
+| | | 
+| | |     deleted print statement
+| | | 
+| | * commit 7cfd63aeb0493380af07e01040775ace4096c5f2
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 21:00:09 2023 +0800
+| | | 
+| | |     added id to critical clicks
+| | | 
+| | * commit 942adca662444a473535ff58eb5143a452c69588
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 20:59:53 2023 +0800
+| | | 
+| | |     updated require password pattern
+| | | 
+| | * commit f81ccf61b3b9ffc36322197c0622709ddef70cbf
+| |/  Author: hznkyh <hank021008@outlook.com>
+|/|   Date:   Sat May 20 20:01:42 2023 +0800
+| |   
+| |       added selenium test file
+| | 
+* | commit 0275e5ff96f8610005eb9ed914de6f079bd92d40
+|\| Merge: 1275af1 085155d
+| | Author: lainemulvay <127926136+lainemulvay@users.noreply.github.com>
+| | Date:   Sat May 20 17:54:07 2023 +0800
+| | 
+| |     Merge pull request #102 from lainemulvay:FAQ-training
+| |     
+| |     FAQ-training
+| | 
+| * commit 085155d2c304d9cf1b0c85acf01041f143092bef
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 17:52:58 2023 +0800
+| | 
+| |     change back to chat.js
+| | 
+| * commit c1639fd215e253e1faf95d7d4d752f0e52ad33b1
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 17:46:53 2023 +0800
+| | 
+| |     pushin all work
+| | 
+| * commit 6b8f179d0e806f2d6cc196352c6a93de4e5da79a
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 17:18:06 2023 +0800
+| | 
+| |     chat works but give Error:NOT FOUND
+| | 
+| * commit f873126f910931ab5ef0309481bfd3c215ab9572
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 11:31:42 2023 +0800
+| | 
+| |     query function
+| | 
+| * commit 99aa24e1d0ff2857c04f620967a721012e24d639
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 11:25:13 2023 +0800
+| | 
+| |     question answers with Chroma
+| | 
+| * commit 69dfb2c6c69490ebc5b398f82370af0113019d9d
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 10:27:27 2023 +0800
+| | 
+| |     loads documents
+| | 
+| * commit b6f45465ab63d20d1d153be19599fa42e7a0a153
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 09:58:14 2023 +0800
+| | 
+| |     returns 4 most similar q and a
+| | 
+| * commit 879b72cd8f06b7ae3a73bc89bb5f5178059f6422
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 09:56:26 2023 +0800
+| | 
+| |     returns most similar Q and A
+| | 
+| * commit 71c37309630f56ecc7edd3cfe349621ac35663e2
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 09:47:37 2023 +0800
+| | 
+| |     splits df into chunks
+| | 
+| * commit 5ded952966a7693bab6a7bbcc944337c4e6d66d5
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 09:33:57 2023 +0800
+| | 
+| |     updated find url
+| | 
+| * commit dd51b21f54abee155fa310e64c06aebaaac36fb4
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat May 20 09:26:09 2023 +0800
+| | 
+| |     langchain ideas
+| | 
+| * commit 416ff586d600131059ec61d0f9d6c7d139a8c3d0
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 21:26:59 2023 +0800
+| | 
+| |     not working- new method
+| | 
+| * commit 77e175409340c5478566d0d5f551a0b95996460c
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 20:53:51 2023 +0800
+| | 
+| |     all faqs
+| | 
+| * commit 7c595d1fea132866cc425879d9d7c47a6d3cb9f0
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 20:51:29 2023 +0800
+| | 
+| |     can answer questions from dataframe
+| | 
+| * commit a3862bc1551bed65c72f1bba3c21c502d761c3b8
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 18:44:12 2023 +0800
+| | 
+| |     scrapes all FAQs
+| | 
+| * commit 0bff6201bcc155e9678064dbc27d3137bbc81ee2
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 16:17:34 2023 +0800
+| | 
+| |     first 100 IDs
+| | 
+| * commit d179f4a9b7f1e013038aa9df3083efdb851430aa
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 16:10:11 2023 +0800
+| | 
+| |     export to csv, excel doesnt show full answer
+| | 
+| * commit 36ebf6b123d7f35305d81219f059ffd8de01b504
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 16:04:58 2023 +0800
+| | 
+| |     exports to csv
+| | 
+| * commit dcf48784b5ae1faa2b5c091045d60d9bfda375a0
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 15:50:45 2023 +0800
+| | 
+| |     working - can choose ID range
+| | 
+| * commit b0aefa7ee01989058ca12b64816bf4f4802f9803
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 15:43:07 2023 +0800
+| | 
+| |     returns QA dictionary
+| | 
+| * commit 2872483d6a10d15d602411150a2ecf2e238cd06f
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 15:39:42 2023 +0800
+| | 
+| |     Scrapes Q and A text
+| | 
+| * commit 3eb6f6edd73299b7ce25f18ae7d32e00c4bd7b1d
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 15:37:49 2023 +0800
+| | 
+| |     scrapes question form specific page
+| | 
+| * commit ecb40dfb6e869603b6a2073e9fa314c3131da45b
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 14:27:22 2023 +0800
+| | 
+| |     returns list of page questions and urls
+| | 
+| * commit b162040f41545c00c9d2c50bbc08a852e66a8c9b
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 14:16:45 2023 +0800
+| | 
+| |     prints dictionary
+| | 
+| * commit c5f495a583250ce7ee45d441cfba43ffeb1a4a17
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 14:15:26 2023 +0800
+| | 
+| |     scraper prints list for one page
+| | 
+| * commit dcee498d054cadc204989ece5af88e2d14fca77a
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri May 19 13:52:09 2023 +0800
+| | 
+| |     scrapes titles and urls
+| |   
+* |   commit 1275af1cbb3aebdd87f9e43f00761925574347bc
+|\ \  Merge: 86b1788 0410d0f
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Sat May 20 17:49:37 2023 +0800
+| | | 
+| | |     Merge pull request #101 from lainemulvay:testing
+| | |     
+| | |     Testing
+| | | 
+| * | commit 0410d0f0405c5ae154daf685a32f44dfa4b900f5
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 17:49:19 2023 +0800
+| | | 
+| | |     cleaning
+| | | 
+| * | commit c12833d75f6dff935e14863f5fb0ec84260366aa
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 17:46:11 2023 +0800
+| | | 
+| | |     add a new test case, and update comments
+| | | 
+| * | commit 719f588c5098e412cab5e312276015d6cad2b9f6
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 17:27:29 2023 +0800
+| | | 
+| | |     update meeting log
+| | | 
+| * | commit 677cf3c3f829d6561e237b2c74cb763703271794
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 17:23:37 2023 +0800
+| | | 
+| | |     update comments
+| | | 
+| * | commit 17b8418348eb5f091709bccc534132fc414154f4
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 15:05:32 2023 +0800
+| | | 
+| | |     updated test config so test.db is used
+| | | 
+| * | commit a1d6a682d58c6c26187f93c750664df2477d0535
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 14:39:21 2023 +0800
+| | | 
+| | |     changed query.get to db.session.get
+| | |   
+* | |   commit 86b1788ad04a207b71258d4d04b59f5ad20c9804
+|\ \ \  Merge: 614ed24 0f87c9c
+| | | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | | Date:   Sat May 20 15:01:50 2023 +0800
+| | | | 
+| | | |     merge branch
+| | | | 
+| * | | commit 0f87c9c709638a018da513fe6119560619716a1a
+| | | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | | Date:   Sat May 20 15:01:10 2023 +0800
+| | | | 
+| | | |     update: popup msg for error
+| | | | 
+| * | | commit 238cdb32d1c6f9d48d69a1f6217a620dc0e30bdd
+| | | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | | Date:   Sat May 20 15:00:42 2023 +0800
+| | | | 
+| | | |     update: save button
+| | | | 
+| * | | commit e5a0cd52a6501a9c305b0b83ee322d451cf8197a
+|/ / /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | |   Date:   Sat May 20 14:59:54 2023 +0800
+| | |   
+| | |       update: save button always at bottom
+| | |   
+* | |   commit 614ed24a9b57bd72cbe626bd7c7429356bd7d525
+|\ \ \  Merge: 05e14e6 4117ec3
+| |/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|/| |   Date:   Sat May 20 14:37:54 2023 +0800
+| | |   
+| | |       merge
+| | | 
+| * | commit 4117ec3a8174bdb3c27d72c27af8a1cab04d0204
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Sat May 20 14:37:30 2023 +0800
+| |   
+| |       update: response with popup msg
+| | 
+* | commit 05e14e660b432575ae9185eb4cb5ba38be1b7762
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat May 20 14:23:29 2023 +0800
+| | 
+| |     changed timstamp format for input
+| |   
+* |   commit 2e808dcc0a20bdec3284000acf004ceae5d867fb
+|\ \  Merge: 2ca5962 30362db
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Sat May 20 14:05:45 2023 +0800
+| | | 
+| | |     Merge pull request #100 from lainemulvay/hank
+| | | 
+| * | commit 30362dbd9b924fa39a058a4786fddf3ddf1f785d
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 14:05:15 2023 +0800
+| | | 
+| | |     changed comments
+| | | 
+| * | commit d447eeab6ea42ecb082ef0329735e5693b4ad363
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Sat May 20 14:04:32 2023 +0800
+| |   
+| |       changed timestamp format
+| |   
+* |   commit 2ca59628f2464dc9c32da453e3e5ac64e25ad44b
+|\ \  Merge: 0f72a67 e69e242
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Sat May 20 13:54:54 2023 +0800
+| | | 
+| | |     Merge pull request #99 from lainemulvay:hank
+| | |     
+| | |     Hank
+| | | 
+| * | commit e69e242c7f6d8a632fd5940b8fe77b2574717c22
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sat May 20 13:54:20 2023 +0800
+| | | 
+| | |     changed test case result
+| | | 
+| * | commit 58a91c70054c4e734fd3eb6c078cb8e143a1d8e9
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Sat May 20 13:54:11 2023 +0800
+| |   
+| |       format time as 12 hours
+| |   
+* |   commit 0f72a67711df4add354b84057bc1e542de86ddf6
+|\ \  Merge: 9c8fec5 05cb347
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Sat May 20 13:17:47 2023 +0800
+| | | 
+| | |     merge branch
+| | | 
+| * | commit 05cb347981cc0e0fc3d63bfe3045755d5ad27460
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Sat May 20 13:17:22 2023 +0800
+| | | 
+| | |     update: button style
+| | | 
+| * | commit 894ae23f4c1340a1f14beeaae10593f972ca5cbb
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Sat May 20 13:17:13 2023 +0800
+| | | 
+| | |     update: goback function
+| | | 
+| * | commit 043197b2682674625525013e537662e669032901
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Sat May 20 13:16:53 2023 +0800
+| | | 
+| | |     update: add a go back button on history page
+| | | 
+| * | commit d1e36ebc93eff1f52cc9a6760606241d9c6f729e
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Sat May 20 13:16:28 2023 +0800
+| |   
+| |       update: return with username
+| | 
+* | commit 9c8fec5137aaf7ae6dd484a4b4be7a0fc37f418f
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sat May 20 12:54:08 2023 +0800
+| | 
+| |     update: history page layout
+| |   
+* |   commit 08154be2729aaaff0c661a78d9759757a4b3f82f
+|\ \  Merge: f50e96e 564a98d
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Fri May 19 00:27:11 2023 +0800
+| | | 
+| | |     Merge pull request #98 from lainemulvay:hank
+| | |     
+| | |     changed utcnow to now for local time
+| | | 
+| * | commit 564a98d11a3ad1a3fbce261186d2b1c6b95db16e
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Fri May 19 00:26:53 2023 +0800
+| |   
+| |       changed utcnow to now for local time
+| |   
+* |   commit f50e96e122c99d7c4af8ea17a4fe40cd0e9ccffb
+|\ \  Merge: da1e745 1d15a48
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Fri May 19 00:20:35 2023 +0800
+| | | 
+| | |     Merge pull request #97 from lainemulvay:hank
+| | |     
+| | |     Hank
+| | | 
+| * | commit 1d15a489499ce688abf8876aa92a620a91c790c0
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Fri May 19 00:19:52 2023 +0800
+| | | 
+| | |     update requirement
+| | | 
+| * | commit e885ee3f042aa821a51168d389247d36dfd17700
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Fri May 19 00:13:18 2023 +0800
+| | | 
+| | |     update mac export command
+| | | 
+| * | commit 0335413712b5c837ad29a8854e297e67ca46b08f
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Fri May 19 00:11:24 2023 +0800
+| |   
+| |       fixed history storage bug
+| |   
+* |   commit da1e745371eee6c284e6e54ac0385f2a071747f5
+|\ \  Merge: 1c6df95 fe59276
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Thu May 18 23:44:38 2023 +0800
+| | | 
+| | |     Merge pull request #96 from lainemulvay:hank
+| | |     
+| | |     Hank
+| | | 
+| * | commit fe59276f77bc5b7db5bca32eb5c47d86ad6bee55
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 23:19:20 2023 +0800
+| | | 
+| | |     update tests
+| | | 
+| * | commit 6b3bdc7d1671ebb57faeef9d8c57fa01fd3cda15
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 23:18:56 2023 +0800
+| | | 
+| | |     update returned message
+| | | 
+| * | commit adec413f8d1fc66754043d98c47847f249101afa
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 23:10:56 2023 +0800
+| | | 
+| | |     populate datatime
+| | | 
+| * | commit b24d23225082a524df718f660791f53d47de6b57
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 21:57:07 2023 +0800
+| | | 
+| | |     add init function and test get_password
+| | | 
+| * | commit 897796374209fed3b804fa4d474a0cdaa173dd38
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 21:38:48 2023 +0800
+| | | 
+| | |     cleaning
+| | | 
+| * | commit 744bae053b00498ee9974d0f7f22564ed5ee436d
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 21:38:37 2023 +0800
+| | | 
+| | |     add test_database fixture
+| | | 
+| * | commit 2bccbd96dcadc89c7fc770cb15b141d26ff07cf1
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 21:38:22 2023 +0800
+| | | 
+| | |     update test config
+| | | 
+| * | commit 86213c7952f393a9943ccd9bfe7329a67f093ab2
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 21:38:11 2023 +0800
+| | | 
+| | |     test controller
+| | | 
+| * | commit a8b8fac360cef37ef88842d6286e4b8362049dc8
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 21:10:18 2023 +0800
+| | | 
+| | |     update add_user
+| | | 
+| * | commit 266aaaeca288c8436d5fed1bbfd6bd329a187673
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 21:05:33 2023 +0800
+| | | 
+| | |     changed function parameter
+| | | 
+| * | commit e191320ee762be36fa74e8ada198794dc2bd6aa4
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:37:21 2023 +0800
+| | | 
+| | |     add more test functions
+| | | 
+| * | commit 1af9706cffe7c66c2320d38c15a441ba47af18aa
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:34:25 2023 +0800
+| | | 
+| | |     changed name of newPW to newpw
+| | | 
+| * | commit 48dfef1bd120d9dff31c51cc14addf558db9f468
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:28:21 2023 +0800
+| | | 
+| | |     add backslash to logout route
+| | | 
+| * | commit 98d1a8ad0e55d31470829871e0237f9bb908b753
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:27:00 2023 +0800
+| | | 
+| | |     cleaned unused route
+| | | 
+| * | commit de9ff82fc2168b1aa685fa638db90816b84314f2
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:20:30 2023 +0800
+| | | 
+| | |     delete unused route
+| | | 
+| * | commit d296bd087c75e82da27b178e4d02950e018af695
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:20:18 2023 +0800
+| | | 
+| | |     add test_logged_user_info function
+| | | 
+| * | commit eeb53ccf5d4006031341f4cac0c216ef59c42b25
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:13:35 2023 +0800
+| | | 
+| | |     add test register function
+| | | 
+| * | commit 0090240c2d5be522e26b832afc0252f172241a67
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:13:19 2023 +0800
+| | | 
+| | |     add database fixture
+| | | 
+| * | commit c260d7622e3a34ae68cd0437fc6923606c2a3a28
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:13:09 2023 +0800
+| | | 
+| | |     add pytest report instruction
+| | | 
+| * | commit eb7e7f2d04a717493e31ba4c348768efe47ec9af
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:12:55 2023 +0800
+| | | 
+| | |     add id to action
+| | | 
+| * | commit ad653b1df0689ba35a86d23fafc71c0d946118c1
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 18 00:12:21 2023 +0800
+| | | 
+| | |     add test.db
+| | | 
+| * | commit dad6040f31ae031b3f5c3ddcdc817c618f2e0354
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 23:24:17 2023 +0800
+| | | 
+| | |     cleaning
+| | | 
+| * | commit 909d4d05b26cb39428bce0325a5d19583ec2e19d
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 22:00:20 2023 +0800
+| | | 
+| | |     update test cases
+| | | 
+| * | commit 486695fc4957211bfff909bc5aafd691cde86c77
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 22:00:12 2023 +0800
+| | | 
+| | |     update config
+| | | 
+| * | commit dacd107eac32775466b5ca72872728cea0d17742
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 20:20:52 2023 +0800
+| | | 
+| | |     deleted old unused code
+| | | 
+| * | commit 71558cbcb452facb777e4644ae9194c8928371a1
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 20:12:05 2023 +0800
+| | | 
+| | |     add tests
+| | | 
+| * | commit b1527936319f1714a8e6e2b0628808f07f43e4bd
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 17:09:36 2023 +0800
+| | | 
+| | |     modifed test using test_client
+| | | 
+| * | commit 087dc980004eef8c371a4a7c7b7e265cb40606ee
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 17:09:27 2023 +0800
+| | | 
+| | |     added test_client
+| | | 
+| * | commit 1bfb60ae5fdcb2b3727d8bffa43f3e95490604af
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 17:03:32 2023 +0800
+| | | 
+| | |     add testing config
+| | | 
+| * | commit 52459b0834a300fecb5deaf6035b14bb25ea62a5
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 17:03:22 2023 +0800
+| | | 
+| | |     add test_client
+| | | 
+| * | commit 42d9ac282eceb548fa278215e315a0c7b4ff1eeb
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 16:55:27 2023 +0800
+| | | 
+| | |     add test config
+| | | 
+| * | commit b981342607e9316a356b04a9ff5ee181e5f0a0a5
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 16:55:19 2023 +0800
+| | | 
+| | |     add pytest instruction
+| | | 
+| * | commit 50b346ab97789c983d58b85518b9b1f46ed2b7cb
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 16:55:11 2023 +0800
+| | | 
+| | |     update place holder text
+| | | 
+| * | commit d049e2f59c6900d6f3a81a46552ad6e9e622e862
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 16:55:04 2023 +0800
+| | | 
+| | |     add 200 response for get
+| | | 
+| * | commit e0504c6ae26582acd49d3390304d57098afcd901
+| |/  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Wed May 17 16:54:52 2023 +0800
+| |   
+| |       update imports
+| |   
+* |   commit 1c6df95a3c3a896a35029ea503011d822d71ad46
+|\ \  Merge: bf33708 930b744
+| | | Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| | | Date:   Thu May 18 12:50:59 2023 +0800
+| | | 
+| | |     Merge pull request #95 from lainemulvay:readme
+| | |     
+| | |     Readme
+| | | 
+| * | commit 930b7441e95d27bc74813d381f6f0e6cb8d1416b
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Thu May 18 12:50:29 2023 +0800
+| | | 
+| | |     MCV architecture
+| | | 
+| * | commit f310d2978252f1169db0bc28bf858fe9887a4467
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Thu May 18 12:36:37 2023 +0800
+| | | 
+| | |     template readme
+| | | 
+| * | commit 4e28ffdca6473108c42022b882584a78ecdd3a85
+|/ /  Author: Murray Lewin <murraylewin91@gmail.com>
+| |   Date:   Thu May 18 12:31:15 2023 +0800
+| |   
+| |       other Readme files
+| |   
+* |   commit bf33708f38ddeae8606047a08e74a1a5e291e4c0
+|\ \  Merge: a1ddc9c b501257
+| |/  Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+|/|   Date:   Thu May 18 11:06:22 2023 +0800
+| |   
+| |       Merge pull request #94 from lainemulvay:Readme
+| |       
+| |       Readme
+| | 
+| * commit b501257eeb5e858b04421a0bc1ad916a00e65c3e
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Thu May 18 11:04:16 2023 +0800
+| | 
+| |     almost finished readme
+| | 
+| * commit 1971c851ebb99fc9858b70d4bcadc596a59ffa8b
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Thu May 18 10:55:20 2023 +0800
+| | 
+| |     readme
+| | 
+| * commit d10b17e359bc8ad26273e24e7bf2b319ffd626aa
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Wed May 17 10:35:09 2023 +0800
+| | 
+| |     readme main
+| |   
+* |   commit a1ddc9c02d5afbb08447afe301b3a834a8c9b0cb
+|\ \  Merge: da37086 e8e16bd
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Wed May 17 16:29:20 2023 +0800
+| | | 
+| | |     Merge pull request #93 from lainemulvay:hank
+| | |     
+| | |     Hank
+| | | 
+| * | commit e8e16bddeb9ad93974ee85df21d14a32dc94643d
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Wed May 17 16:29:00 2023 +0800
+| | | 
+| | |     modified imports
+| | | 
+| * | commit 73337a5c932ec3e56481c4463523c8e677af6622
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 23:45:41 2023 +0800
+| | | 
+| | |     cleaning
+| | | 
+| * | commit aef080bd83ad15d84a053ee2bfc53e684b590150
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 23:45:36 2023 +0800
+| | | 
+| | |     app restructure
+| | | 
+| * | commit 5f2c3adbf08dfd6b5223129e40b0b70ad75a0c68
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 23:23:13 2023 +0800
+| | | 
+| | |     cleaning
+| | | 
+| * | commit 604d65b2f3a23f609d8388d8091bdbaa4dc353b6
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 23:22:08 2023 +0800
+| | | 
+| | |     update app.secret_key
+| | | 
+| * | commit 761851bc0bb6c8cfe31ce87d0cbeb379ea624542
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 23:20:34 2023 +0800
+| | | 
+| | |     update default key
+| | | 
+| * | commit 5bb885ce7f4322287759de80f7f3724e72b90997
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 23:18:48 2023 +0800
+| | | 
+| | |     changed secret key
+| | |   
+* | |   commit da370868d43fb9382133debe3ab6b685a29d4ecf
+|\ \ \  Merge: 0b74f9e 24554b8
+| | | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | | Date:   Wed May 17 16:27:22 2023 +0800
+| | | | 
+| | | |     Merge pull request #92 from lainemulvay:hank
+| | | |     
+| | | |     Hank
+| | | | 
+| * | | commit 24554b8ae783bffd0a786d1cd2770eabb69b902c
+| | | | Author: hznkyh <hank021008@outlook.com>
+| | | | Date:   Wed May 17 16:24:38 2023 +0800
+| | | | 
+| | | |     update welcome message
+| | | | 
+| * | | commit 90040e2c149096780d099bc49368bab39c41a111
+|/ / /  Author: hznkyh <hank021008@outlook.com>
+| | |   Date:   Wed May 17 16:24:21 2023 +0800
+| | |   
+| | |       update welcome message
+| | |   
+* | |   commit 0b74f9e5fb5427a8d2ccf8a79aba194fc593eef4
+|\ \ \  Merge: 65671d5 d4ed743
+| | | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | | Date:   Wed May 17 13:43:17 2023 +0800
+| | | | 
+| | | |     merge
+| | | | 
+| * | | commit d4ed7433f5eee3c1576c296a7d4e20dbdf3afd4e
+| | | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | | Date:   Wed May 17 13:42:57 2023 +0800
+| | | | 
+| | | |     profile: responsive color control
+| | | | 
+| * | | commit 960828dd3ebc8e53ec3a4703eaffd60436391ef6
+| | | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | | Date:   Wed May 17 13:42:26 2023 +0800
+| | | | 
+| | | |     profile: responsive css update
+| | | | 
+| * | | commit 4ad18f793b53a7b4c90a9d152e2779c65b95213a
+|/ / /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | |   Date:   Wed May 17 13:42:08 2023 +0800
+| | |   
+| | |       profile: responsive layout
+| | | 
+* | | commit 65671d5f2faeb731ac19e0319621f72df5bdf1c9
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Wed May 17 03:10:04 2023 +0800
+| | | 
+| | |     css update
+| | |   
+* | |   commit 26ffc8db28f2a8c9b4bc2fc8573133fe3aa08431
+|\ \ \  Merge: 6f8b740 37aefb7
+| | | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | | Date:   Wed May 17 03:07:51 2023 +0800
+| | | | 
+| | | |     merge branch
+| | | | 
+| * | | commit 37aefb79f530571a4711689f2f60abfe79f6d773
+| | | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | | Date:   Wed May 17 03:07:27 2023 +0800
+| | | | 
+| | | |     profile: responsive update
+| | | | 
+| * | | commit 82ac77fbb1d971eefc0c8f1ad94bae809cdd5d52
+|/ / /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | |   Date:   Wed May 17 03:07:03 2023 +0800
+| | |   
+| | |       profile: style update
+| | |   
+* | |   commit 6f8b7406ace87894d504e134fd8eda7d702b7bab
+|\ \ \  Merge: 46818a6 932bceb
+| |/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|/| |   Date:   Wed May 17 02:18:47 2023 +0800
+| | |   
+| | |       merge profile update
+| | | 
+| * | commit 932bceb6e701b8fa1d3fd39bfcb8315e04753727
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Wed May 17 02:17:46 2023 +0800
+| | | 
+| | |     profile: bug fix
+| | | 
+| * | commit 78dbe4b727d4d63947b2090f27f4d32c193ca8a1
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Wed May 17 02:17:29 2023 +0800
+| | | 
+| | |     profile: style update
+| | | 
+| * | commit 56841c29be9edeb7ff91018c654af0e5243a05cc
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Wed May 17 02:17:07 2023 +0800
+| |   
+| |       profile: add icon
+| | 
+* | commit 46818a6d021453d161015937877ae03859e7859b
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Tue May 16 23:07:00 2023 +0800
+| | 
+| |     update meeting log
+| |   
+* |   commit b45b1d731e872cbb5bf5ea6b95b75de4805f95af
+|\ \  Merge: 470fc92 b0e747e
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Tue May 16 23:01:39 2023 +0800
+| | | 
+| | |     Merge pull request #91 from lainemulvay:Hank
+| | |     
+| | |     Hank
+| | | 
+| * | commit b0e747e1cd24ee27bc5cb7dc9d89983ee242e3f3
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 23:01:19 2023 +0800
+| | | 
+| | |     add comments
+| | | 
+| * | commit d43b5eb10f5541fd04b8e1220c2833b56f6bd91e
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 23:00:33 2023 +0800
+| | | 
+| | |     add comment
+| | | 
+| * | commit b9e676fc6efca1c22ae358491576fe664b3a7fe4
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 22:59:53 2023 +0800
+| | | 
+| | |     add comments
+| | | 
+| * | commit 8b8763cda57bdc4ef15b3fd13404dbc09657a72b
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 22:59:28 2023 +0800
+| | | 
+| | |     add comment
+| | | 
+| * | commit 07d7bc8e307eec6195bebac885f6d4912453b45e
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 22:59:10 2023 +0800
+| | | 
+| | |     add comments
+| | | 
+| * | commit d37b2e432204b69f41c73d05b6ecbf3adcdde5af
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 22:57:55 2023 +0800
+| | | 
+| | |     add comments
+| | | 
+| * | commit d6dc8b8027139aea7f45efd5e69e7735e6812d97
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Tue May 16 22:56:28 2023 +0800
+| |   
+| |       add comments
+| | 
+* | commit 470fc9296297d2513362d335e4fd0406e6273f38
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Tue May 16 22:52:38 2023 +0800
+| | 
+| |     Revert "populate time with chat datetime"
+| |     
+| |     This reverts commit 680939c7f6d2b5a6e0d08a54c2e3436193fed311.
+| | 
+* | commit 680939c7f6d2b5a6e0d08a54c2e3436193fed311
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Tue May 16 22:50:02 2023 +0800
+| | 
+| |     populate time with chat datetime
+| | 
+* | commit 2290645bfa466f6bb3aa85e20d80a1e8f675abef
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Tue May 16 22:49:51 2023 +0800
+| | 
+| |     return chat id and datetime to html
+| | 
+* | commit 22909ebbfd0c50b2460ef164cb22ae79fca72a86
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Tue May 16 22:49:24 2023 +0800
+| | 
+| |     add get_chat_records function
+| |   
+* |   commit ce81c815ad61c5c164ee80c3544dce0b20864eeb
+|\ \  Merge: d30c635 445c2c7
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Tue May 16 21:50:21 2023 +0800
+| | | 
+| | |     Merge pull request #90 from lainemulvay:hank
+| | |     
+| | |     Hank
+| | | 
+| * | commit 445c2c73a8a678d5faf6800a0df0a09e2ea5d8e7
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 21:44:32 2023 +0800
+| | | 
+| | |     fixed intro button hover on safari
+| | | 
+| * | commit 6f2de91c4321dea236522e96a283f6c5439c8473
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 21:16:24 2023 +0800
+| | | 
+| | |     changed secret key
+| | | 
+| * | commit 06c8087fcb3bb0c54d70baa7fe1d4bf5be541aaf
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 21:12:56 2023 +0800
+| | | 
+| | |     add heading
+| | | 
+| * | commit 44f35443654b762eace0eedd2d8b9f217764bf37
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 21:12:48 2023 +0800
+| | | 
+| | |     prevent illegal access
+| | | 
+| * | commit 1810845be327ce87c8b71c9c5639deaa4705bf1f
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 21:12:40 2023 +0800
+| | | 
+| | |     fix for wrong data length saved
+| | | 
+| * | commit c694658669e1721f7c557d60e9ccd56f1c707880
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 12:01:41 2023 +0800
+| | | 
+| | |     adjust button hover
+| | | 
+| * | commit 5b28340883656c937b79744b9cdb4daacdac9348
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 16 11:58:08 2023 +0800
+| | | 
+| | |     commented old css
+| | | 
+| * | commit 39d48f44959f7df5b3292f3a2aa1d3212b6a4c10
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Tue May 16 11:57:51 2023 +0800
+| |   
+| |       changed pulse time
+| | 
+* | commit d30c635af2715a19d85e64af4a520b8292172c1e
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Tue May 16 03:36:13 2023 +0800
+| | 
+| |     update user info bug fix
+| |   
+* |   commit e1122e38246e0bf6290b8691bfe1996c5f3f62c8
+|\ \  Merge: 2d664ac 27bd045
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Tue May 16 03:20:40 2023 +0800
+| | | 
+| | |     merge
+| | | 
+| * | commit 27bd04515b65f814e77235b03c4a42f806635d57
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Tue May 16 03:20:17 2023 +0800
+| | | 
+| | |     update: profile view tab and style
+| | | 
+| * | commit a5fdc3d5b739046b043aa0acaddb2b388e0f89ad
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Tue May 16 03:19:42 2023 +0800
+| | | 
+| | |     update password form
+| | | 
+| * | commit aded7d2eeb84d98a4eb520d1b7cb2c8335b1a320
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Tue May 16 03:19:16 2023 +0800
+| | | 
+| | |     change password function
+| | | 
+| * | commit 2dc04df6abe5bccf952a2a54ac283cc1ae86da99
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Tue May 16 03:18:47 2023 +0800
+| |   
+| |       tab profile
+| |   
+* |   commit 2d664ac7b3cf60e931bd6743b5620ea439e9d9db
+|\ \  Merge: d4ebdb7 fc77691
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 23:41:40 2023 +0800
+| | | 
+| | |     merge update user branch
+| | | 
+| * | commit fc776912a96411aab4cc88446b0492ead55d1c28
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 23:40:56 2023 +0800
+| | | 
+| | |     update button
+| | | 
+| * | commit c2aaeaaf182b52eccf5e13acdcb9c08cae60c4e2
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 23:40:35 2023 +0800
+| | | 
+| | |     toggle update button
+| | | 
+| * | commit 0d4f55e236775cc76e6abd3af1ce66a11eacc744
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 23:40:11 2023 +0800
+| | | 
+| | |     update user button
+| | | 
+| * | commit 7ca9d8a8cfa1b259465a2234746bbbc4fa5ed829
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Mon May 15 23:39:30 2023 +0800
+| |   
+| |       add update_user function
+| |   
+* |   commit d4ebdb7fbbe9402831c3c3705361944eadd183e5
+|\ \  Merge: a841525 8103e0b
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 21:43:59 2023 +0800
+| | | 
+| | |     merge
+| | | 
+| * | commit 8103e0b7ab5735226525ec3dd2edd57f0f8a239c
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Mon May 15 21:38:25 2023 +0800
+| |   
+| |       update add_user()
+| |   
+* |   commit a841525c3ffd9e7e37b4b435e8c80b7c23ef7838
+|\ \  Merge: e259b14 cd2b768
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 21:23:19 2023 +0800
+| | | 
+| | |     merge
+| | | 
+| * | commit cd2b7682fee3fdd6f102af35d77ddfae29600a0f
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 21:22:56 2023 +0800
+| | | 
+| | |     update register function
+| | | 
+| * | commit 038baa084a9318518ca0d2409a1bda4ed239dfa7
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 21:22:45 2023 +0800
+| | | 
+| | |     update login function
+| | | 
+| * | commit 852c554f5e0f5015a56fd0000c7475eadaaddf43
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Mon May 15 21:22:30 2023 +0800
+| |   
+| |       added functions
+| |   
+* |   commit e259b144342cca8d842af317f27366d0fdb32de4
+|\ \  Merge: f79d76e 8873a93
+| |/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|/|   Date:   Mon May 15 21:04:52 2023 +0800
+| |   
+| |       merge
+| | 
+| * commit 8873a939b456b990e1057fb33c36ea395f990c4c
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Mon May 15 21:04:25 2023 +0800
+|   
+|       update get_user()
+|   
+*   commit f79d76e3d06487c974e730086f076fca71251ba7
+|\  Merge: 6fb8f7f 2516b9e
+| | Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| | Date:   Mon May 15 20:05:12 2023 +0800
+| | 
+| |     Merge pull request #89 from lainemulvay:intro
+| |     
+| |     Intro
+| | 
+| * commit 2516b9e96ec0b9af95fbfd31d9df496f5bb75cd8
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Mon May 15 20:04:48 2023 +0800
+| | 
+| |     pulse
+| | 
+| * commit d1d7cf35a4f415a43e264a0b958dd68f1386be9d
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Sat May 13 12:55:30 2023 +0800
+| | 
+| |     intro view wording
+| |   
+* |   commit 6fb8f7f175aa1aa0f68636c825eca7eed430d496
+|\ \  Merge: 2be4768 acd46bd
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Mon May 15 01:09:37 2023 +0800
+| | | 
+| | |     Merge pull request #88 from lainemulvay:hank
+| | |     
+| | |     increased margin for intro h1
+| | | 
+| * | commit acd46bd5403176066c9109663dab92dee192ef2b
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Mon May 15 01:09:20 2023 +0800
+| |   
+| |       increased margin for intro h1
+| |   
+* |   commit 2be4768810faea8ffedcf7c261e0c069086294e4
+|\ \  Merge: 74facfa 68d2b0f
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Mon May 15 01:05:20 2023 +0800
+| | | 
+| | |     Merge pull request #87 from lainemulvay:hank
+| | |     
+| | |     delete old css
+| | | 
+| * | commit 68d2b0f8069bd164a6bd160a27335ed417ca0d36
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Mon May 15 01:05:06 2023 +0800
+| |   
+| |       delete old css
+| |   
+* |   commit 74facfaf3b30af8e1bf469cd3488de98d0c36644
+|\ \  Merge: 6f8044b 31e58ad
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Mon May 15 00:55:54 2023 +0800
+| | | 
+| | |     Merge pull request #86 from lainemulvay:hank
+| | |     
+| | |     Hank
+| | | 
+| * | commit 31e58ad76b36014915afdade3fb219201d76bbeb
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 15 00:55:38 2023 +0800
+| | | 
+| | |     removed old code
+| | | 
+| * | commit 012615bb1b5c6d366919d59ab0107b8ab053ee39
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 15 00:53:56 2023 +0800
+| | | 
+| | |     fixed chat id clicked not updated
+| | | 
+| * | commit 0e2634ba5959d483561479c7dd61c13cf67b6098
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Mon May 15 00:53:38 2023 +0800
+| |   
+| |       fixed chat id clicked not updated
+| |   
+* |   commit 6f8044b0314ff50d4626d4bebc1628d54355c994
+|\ \  Merge: 625a8ac fd530b7
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Mon May 15 00:39:35 2023 +0800
+| | | 
+| | |     Merge pull request #85 from lainemulvay:hank
+| | |     
+| | |     Hank
+| | | 
+| * | commit fd530b7f04a202fe825b67c97e078ab462ccc78c
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 15 00:39:17 2023 +0800
+| | | 
+| | |     attempt to fix
+| | | 
+| * | commit 365350def1b08abd191e27b656f41d550203eb97
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 15 00:23:44 2023 +0800
+| | | 
+| | |     able to display message,
+| | |     but session does not update fast enough to reflect the click chat id
+| | | 
+| * | commit 93a53854c96a620049fbf74a240feed725abc22d
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 15 00:08:35 2023 +0800
+| | | 
+| | |     display chat history in view-chat
+| | | 
+| * | commit 8abb9ca324442996b061a53e6acc9971ddfa8c5e
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 23:56:19 2023 +0800
+| | | 
+| | |     removed unused div
+| | | 
+| * | commit e14211febf9503e35799949bdebc19f9fe8d34f4
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 23:56:08 2023 +0800
+| | | 
+| | |     does not store welcome message
+| | | 
+| * | commit 6e6c2ed72c41ad6cf872f5c55dd6ba12f1ab6bd4
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 23:52:29 2023 +0800
+| | | 
+| | |     redirect to view-chat after clicking
+| | | 
+| * | commit 834c556efa4ccda4cbfaef5a4308c9798c9380a4
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 23:20:42 2023 +0800
+| | | 
+| | |     cleaning
+| | | 
+| * | commit 81920aafa2378ca6fba1ed8c3f36c283592fc123
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 23:16:21 2023 +0800
+| | | 
+| | |     fixed wrong attribute used
+| | | 
+| * | commit a24c23e30668a9265c25cd34cb2e2898cda3a2ea
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 23:13:04 2023 +0800
+| | | 
+| | |     send chat id click to server
+| | | 
+| * | commit 50f654333a85decc817dfec2093dfbd5c3071826
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 23:06:17 2023 +0800
+| | | 
+| | |     add view_chat route
+| | | 
+| * | commit e25fdcd16d13104953d013f05cbaefaa391d6a90
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 23:00:51 2023 +0800
+| | | 
+| | |     added a function to
+| | |     return the chat id when button is pressed
+| | | 
+| * | commit a44cf3fbf7f343836258974c0d253687122e04c4
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 22:48:59 2023 +0800
+| | | 
+| | |     added for loop to generate chat history boxes
+| | | 
+| * | commit a73cdabd17329bade2b892a917f72e6b1ede86cd
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 22:46:07 2023 +0800
+| | | 
+| | |     delete old css
+| | | 
+| * | commit 5a4409b7b2e5da0aeae2db85ea740e62f5eb482a
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 22:44:34 2023 +0800
+| | | 
+| | |     added function to get chat ids
+| | | 
+| * | commit 0f2f062c4f10ad7c738186685dd1c4c8cea0b36d
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 22:44:11 2023 +0800
+| | | 
+| | |     delete old file
+| | | 
+| * | commit 38f2b32f6f7446b5236d2ccbe6069595725779a1
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 22:44:04 2023 +0800
+| | | 
+| | |     add get_chat_ids
+| | | 
+| * | commit d12e7c79ba83a8b7c6d7625dd3dca6cba4a77c57
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 22:28:54 2023 +0800
+| | | 
+| | |     save first response with no timestamp
+| | | 
+| * | commit d496ee185faae3b1814fbeb7114b4990aa743fb6
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 22:18:36 2023 +0800
+| | | 
+| | |     added relationship to all the tables
+| | | 
+| * | commit 56269a46b727ea1088f79aa7096851dcc6b935fa
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun May 14 22:12:28 2023 +0800
+| | | 
+| | |     fixed hamburger icon position
+| | | 
+* | | commit 625a8ac8b3d21438e598b19908f3c009c8667253
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 00:37:30 2023 +0800
+| | | 
+| | |     style update
+| | | 
+* | | commit 9848f57f1cdfb4c6399ae22aba4a9ceb6c1c3cf0
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 00:29:01 2023 +0800
+| | | 
+| | |     align btn centre
+| | | 
+* | | commit d3751096b22272fd419ca74d5696f858a645c93d
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Mon May 15 00:22:36 2023 +0800
+| | | 
+| | |     profile style modify
+| | |   
+* | |   commit 0b53868b3df860168f2b0d99720ba4b11bdd7629
+|\ \ \  Merge: 1927588 b21188d
+| |/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|/| |   Date:   Mon May 15 00:16:10 2023 +0800
+| | |   
+| | |       merge branch
+| | | 
+| * | commit b21188ddb9b637c198a44a17f9d59dc76970f0b8
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Sun May 14 21:40:58 2023 +0800
+| | | 
+| | |     update input field style
+| | | 
+| * | commit 9a86799bd43108fcdaddc17d07d0426f0b139d84
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Sun May 14 21:25:29 2023 +0800
+| | | 
+| | |     update profile view
+| | | 
+| * | commit a6be500f4f65b86af83470cb27d251d90ac06ba3
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Sun May 14 21:25:00 2023 +0800
+| |   
+| |       profile: return user details
+| |   
+* |   commit 1927588461735e0e45292b6f81694e97d702c95b
+|\ \  Merge: f14e5aa 9ee4377
+| |/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|/|   Date:   Sun May 14 20:39:04 2023 +0800
+| |   
+| |       merge branch for profile page and style updates
+| | 
+| * commit 9ee437796a4afecc2c4e02dfebe847d05b7d79d9
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sun May 14 20:38:10 2023 +0800
+| | 
+| |     top nav bar: add profile button
+| | 
+| * commit e5778cc4ca863a326ecd0b65dd137e29fc38f08d
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sun May 14 20:37:30 2023 +0800
+| | 
+| |     todo: profile page
+| | 
+| * commit 1a0638ae364b8e467748ed3672761cca0bab197b
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sun May 14 20:37:11 2023 +0800
+| | 
+| |     create profile page
+| | 
+| * commit a0f0dd379524a8a1f5b594139636e046444c9de4
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sun May 14 20:19:33 2023 +0800
+| | 
+| |     add shadow to top nav bar
+| | 
+| * commit 9e8cd2eb8d70fd70526b69bac72c9521f2d61429
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sun May 14 19:59:02 2023 +0800
+| | 
+| |     clean up code: toggle dropdown
+| | 
+| * commit 7375ced96e0ed0a679d0755feba3d5bc202f0ba8
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sun May 14 19:51:40 2023 +0800
+| | 
+| |     history page: show username on top nav bar
+| | 
+| * commit 83968f18be7d27ef412206ee3b0966b2ee878176
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sun May 14 19:49:08 2023 +0800
+| | 
+| |     display username on top nav bar
+| | 
+| * commit becbfe83e9258422858a51e5e58cc680ddff3a87
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sun May 14 19:48:45 2023 +0800
+| | 
+| |     getUser function
+| | 
+| * commit 2c14f6f3400d84a89c36feffe4880459e863fc70
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Sun May 14 15:23:47 2023 +0800
+|   
+|       update: email to lowercase
+|   
+*   commit f14e5aa17e37422275e10841bb308cd002c83f47
+|\  Merge: 31e20ef 748cbb3
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri May 12 18:08:18 2023 +0800
+| | 
+| |     merge branch
+| | 
+| * commit 748cbb335e995464b95b2027ec24ff961c2466d5
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Fri May 12 18:07:34 2023 +0800
+|   
+|       update: password must contain special character
+| 
+* commit 31e20efe724edfc49d5c85131d8c37db9c4d3e88
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Fri May 12 15:25:39 2023 +0800
+| 
+|     update meeting log
+|   
+*   commit dedc9401ac972196437840b2f39e6465b99df256
+|\  Merge: 7d65576 97b8e71
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Fri May 12 15:21:14 2023 +0800
+| | 
+| |     Merge pull request #84 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit 97b8e713fa747a0080341bb067b27a5b99fe7add
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri May 12 15:20:13 2023 +0800
+| | 
+| |     implement prevent back button on chrome
+| | 
+| * commit a3583d412d697e04ccbe52bdc33d74299c9c0abb
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri May 12 15:19:05 2023 +0800
+| | 
+| |     implemented preventing back button on chrome
+| | 
+| * commit fda68fa5094d452b7ab853918dffe8d5727f2117
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Fri May 12 15:18:48 2023 +0800
+|   
+|       fixed function ref for history()
+| 
+* commit 7d65576b94b2cf8f00e44a020ee2ab2a8866121d
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Fri May 12 14:38:13 2023 +0800
+| 
+|     update meeting log
+|   
+*   commit d3b0f3870c1ae91cc5ae0de20be16a7a4b5a362d
+|\  Merge: 2097ef3 b58f73f
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Thu May 11 23:53:39 2023 +0800
+| | 
+| |     Merge pull request #83 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit b58f73fbe186d6724a70aa30e2759dd8cdd2f3f1
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 23:53:18 2023 +0800
+| | 
+| |     adjusted inputfield padding for
+| |     chrom auto complete background color
+| | 
+| * commit 36596143c794a3cecf141c639ea66ac2a9433655
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 23:32:33 2023 +0800
+| | 
+| |     store chat messages into database
+| | 
+| * commit ad2b96c624367ecb82750112ac5fe41291164fdf
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 23:31:03 2023 +0800
+| | 
+| |     changed timestamp type
+| | 
+| * commit 0c8acf409645a4626ef67b84022e2be53629b1ea
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 23:20:30 2023 +0800
+| | 
+| |     import new controller and table functions
+| | 
+| * commit 2664653b38c4d620c11b0474a73b9b0cf1491acf
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 23:19:02 2023 +0800
+| | 
+| |     changed table name
+| | 
+| * commit 194fbbda9e568586ad47e4610bdfc4b0b376e5a7
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 23:18:21 2023 +0800
+| | 
+| |     added new add entry function for
+| |     the ChatQuestion and ChatResponse
+| | 
+| * commit 371c7aa521bad2ebeaff5a5993cb2c99fa82cc5f
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 23:16:28 2023 +0800
+| | 
+| |     deleted chatMessages table
+| |     splite it up into
+| |     chatQuestions
+| |     chatResponses
+| | 
+| * commit c4d58fc66f5ea7d99f44f450a089c28484a95e53
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 23:15:53 2023 +0800
+| | 
+| |     adjusted returned value of add_chat function
+| | 
+| * commit 1a261d5f0e4de6e6a878ec0df4880e3f64a8266f
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 23:15:26 2023 +0800
+| | 
+| |     changed variable name to align with database
+| | 
+| * commit 3a33e0b1722540036c0e5fa23b11d8ec973d5aec
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 22:11:05 2023 +0800
+| | 
+| |     fixed save button margin in small window
+| | 
+| * commit ca340725a737559fc7f7874a0323f25a42a0ecd7
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 22:08:39 2023 +0800
+| | 
+| |     added controller file
+| |     added function for story chat history
+| | 
+| * commit 24d5fb9ed4b0b22f08b9c6483b6f555d77ee11cc
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 11 22:07:40 2023 +0800
+| | 
+| |     Delete Chat table column messages
+| | 
+| * commit 0f18777348ef56769b9e1914a7f9e3f34f15a2c2
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Thu May 11 22:06:53 2023 +0800
+|   
+|       update chat column name
+|   
+*   commit 2097ef384751cf656b28f97c3e1c807ef2cbd0f4
+|\  Merge: 263a2c6 e579ebc
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Wed May 10 23:54:23 2023 +0800
+| | 
+| |     Merge pull request #82 from lainemulvay:hank
+| |     
+| |     add chat and chat messages table
+| | 
+| * commit e579ebcb44210bee9832e507f1d7d06e9c451384
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Wed May 10 23:54:04 2023 +0800
+|   
+|       add chat and chat messages table
+|   
+*   commit 263a2c617532bf9d5809efadcaeb09cd2e57efad
+|\  Merge: d2e001a 04cabdc
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Wed May 10 23:41:47 2023 +0800
+| | 
+| |     Merge pull request #81 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit 04cabdcd0d046c7adac15b7d0aef1bb1ab1adfc5
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 23:41:28 2023 +0800
+| | 
+| |     update chat feature
+| | 
+| * commit f18e573bfded51ecfb1d5168f5bceeba214d454b
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 23:40:23 2023 +0800
+| | 
+| |     error recover for too frequent messages
+| | 
+| * commit b92b130f73b59e66e6cf3ab130bb254a5a0b9469
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 23:22:40 2023 +0800
+| | 
+| |     automatically scroll to the bottom
+| |     when new message is added
+| | 
+| * commit 1cbe551997f50eae7bacd6d323be561787516c1b
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 23:12:02 2023 +0800
+| | 
+| |     update save button style
+| | 
+| * commit 46d4bcb23a4f357edaf94e4861783406a7ee3bde
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 23:04:40 2023 +0800
+| | 
+| |     added warning message
+| | 
+| * commit 3b92b59a74965972b0624205bd331958f45192ef
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 23:01:29 2023 +0800
+| | 
+| |     removed pressed enter key event for save button
+| | 
+| * commit f952b00a074a4ca5ad6b762ee6abe98a93795c30
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Wed May 10 23:01:08 2023 +0800
+|   
+|       database migration
+|   
+*   commit d2e001afd45e6f8ba9a94e7f89bc7cd81ab6993b
+|\  Merge: 5193fb9 d33eb8b
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Wed May 10 22:43:05 2023 +0800
+| | 
+| |     Merge pull request #80 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit d33eb8b228021b54a7afb168ebe2d2fdb805c2dd
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 22:42:51 2023 +0800
+| | 
+| |     reload the page when chat is saved,
+| |      update welcome message
+| | 
+| * commit 7d58f9d57794e3cb2148ac6345b356a4255e2ee6
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 22:37:07 2023 +0800
+| | 
+| |     added save button inside chat box
+| | 
+| * commit 233c2f4ebb8191ec3e6ef1358cbe4be560a1ea3e
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 22:31:42 2023 +0800
+| | 
+| |     changed button text
+| | 
+| * commit 9dfb8d092079f7ebd2f2e33995c21ed9deb8d699
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 22:23:48 2023 +0800
+| | 
+| |     add automated reply and loading message
+| | 
+| * commit 8626a8a2f268c57c351bbf9e7418482203938e05
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 21:52:03 2023 +0800
+| | 
+| |     made chat history scrollable
+| | 
+| * commit b9d26347f18d832c7734be3e12cd6083b2983627
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Wed May 10 21:42:07 2023 +0800
+|   
+|       logged in user will automatically login
+|   
+*   commit 5193fb9eec8cdbaa143bfe683a3ea350a348db31
+|\  Merge: 2356b9f 1c62505
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Wed May 10 21:35:12 2023 +0800
+| | 
+| |     Merge pull request #79 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit 1c625058db8e6b20c68a62e944bed84268bcd008
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 21:34:47 2023 +0800
+| | 
+| |     deleted unused script
+| | 
+| * commit d1a60183521f8ae42034066ddeb14c393ade064b
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 21:34:12 2023 +0800
+| | 
+| |     able to send input and response to flask
+| | 
+| * commit a1418759d1804dd85ed81d886a4c6c007243df43
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 21:13:53 2023 +0800
+| | 
+| |     fixed id ref for dropdown content
+| |   
+* |   commit 2356b9f5f78cf2df301885320c8980200de7b84a
+|\ \  Merge: d1e74bb 3adb7fd
+| |/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|/|   Date:   Wed May 10 21:16:17 2023 +0800
+| |   
+| |       merge update
+| | 
+| * commit 3adb7fd1562d79adfaf31af0765bf414995ba56d
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Wed May 10 21:13:24 2023 +0800
+|   
+|       update: login/reg form-field width
+| 
+* commit d1e74bb1faf44161e80d2cc7740122293459f0e4
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Wed May 10 20:32:41 2023 +0800
+| 
+|     fixed /me if statement error
+|   
+*   commit e326ccb3641ef2052de826ef5c70a1a168a49752
+|\  Merge: 38be631 f67685c
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Wed May 10 20:18:06 2023 +0800
+| | 
+| |     merge branch
+| | 
+| * commit f67685c8ce8a27799a3db265fa75ff8f50f100cc
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Wed May 10 20:17:42 2023 +0800
+|   
+|       fix: login&reg password field
+|   
+*   commit 38be6317d79859d15ea226bfaab95d5dc1b4d7fe
+|\  Merge: 490bb08 e46970f
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Wed May 10 19:52:43 2023 +0800
+| | 
+| |     Merge pull request #78 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit e46970f5d7156609b8964b03bfa8ff70c1426b68
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 19:52:29 2023 +0800
+| | 
+| |     able to create database with just flask run
+| | 
+| * commit 7a5f2792f5665249507a436ad18b7dc4ff2afb76
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed May 10 19:51:53 2023 +0800
+| | 
+| |     migration folder
+| | 
+| * commit f42f3fadd359f0b09d7e240fd2fcd40e09ef4da5
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Wed May 10 19:51:45 2023 +0800
+|   
+|       upload migration to github
+|   
+*   commit 490bb080cb4d759980727e0df5f60f421a301c4d
+|\  Merge: fbce546 6466db2
+| | Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| | Date:   Wed May 10 19:08:19 2023 +0800
+| | 
+| |     Merge pull request #77 from lainemulvay:response
+| |     
+| |     Response
+| | 
+| * commit 6466db2003597359c98d980c04e1de15646ede62
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Wed May 10 19:07:06 2023 +0800
+| | 
+| |     merge
+| | 
+| * commit 83403b6c029a859451dd63c6dc1040525161b9a7
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Wed May 10 18:23:21 2023 +0800
+| | 
+| |     response and database working
+| | 
+| * commit 72dc4f3995f5f12ae8209d7839fe2f3bb994c0cd
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Wed May 10 16:11:05 2023 +0800
+| | 
+| |     response
+| | 
+| * commit c9d63ec6fe40cf0e1fdc3786dbb22890e7f0f703
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Tue May 9 19:29:28 2023 +0800
+| | 
+| |     spacing
+| | 
+| * commit bb9261c929d02c2abf7246f5a0973383f4022157
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Tue May 9 18:45:04 2023 +0800
+| | 
+| |     routes linking to models
+| | 
+| * commit a85f34aca6416656efbb34360cb836696c311568
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Tue May 9 18:41:55 2023 +0800
+| | 
+| |     routes link to models
+| | 
+| * commit d294f26ff113c147b49189b0466d45af5b1aad36
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Tue May 9 18:26:06 2023 +0800
+| | 
+| |     bueprint to send text
+| | 
+| * commit 2a066002418c40bd142155305f2ff99981a8abc1
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Tue May 9 18:17:09 2023 +0800
+| | 
+| |     response javascript
+| | 
+| * commit a7e2ccb73744e6e20b98684b8a15b81277171cba
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Tue May 9 12:04:58 2023 +0800
+| | 
+| |     return routes to normal
+| |   
+* |   commit fbce54643ece0a1b1dd19a1e5c838e1ac2f93a6b
+|\ \  Merge: 03297fe 2ca574a
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Wed May 10 13:57:25 2023 +0800
+| | | 
+| | |     merge branch
+| | | 
+| * | commit 2ca574ae793cb8bfa19b898989d18c7e824e7e46
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Wed May 10 13:56:47 2023 +0800
+| |   
+| |       fix: reg_view password field
+| |   
+* |   commit 03297fe3017f52ad23007c2ce09c8010f79d1f8c
+|\ \  Merge: 913c7bd 29c2981
+| |/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|/|   Date:   Wed May 10 13:07:50 2023 +0800
+| |   
+| |       merge branch
+| | 
+| * commit 29c29819d492ed5475052f2e129695af01e1e60f
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Wed May 10 13:07:14 2023 +0800
+|   
+|       fixing password input field
+|   
+*   commit 913c7bd7188da305ddc6b8b2a0f43e8c7ec3c063
+|\  Merge: 51511c9 c034a29
+| | Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| | Date:   Tue May 9 11:50:30 2023 +0800
+| | 
+| |     Merge pull request #76 from lainemulvay:savebut
+| |     
+| |     Savebut
+| | 
+| * commit c034a297a778c69f389276bbf5ffc71e9be8133b
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Tue May 9 11:49:59 2023 +0800
+| | 
+| |     save button done
+| | 
+| * commit ae13013ffa7adef5308c79ebe8abf510c72737a9
+|/  Author: Murray Lewin <murraylewin91@gmail.com>
+|   Date:   Tue May 9 10:14:12 2023 +0800
+|   
+|       save button
+|   
+*   commit 51511c9c649dfcc1e8b51670496ad702dbd4c78a
+|\  Merge: 0613f3a 3be2d91
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Tue May 9 07:47:48 2023 +0800
+| | 
+| |     Merge pull request #75 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit 3be2d9150d958014979057f90612dde0049c0f3c
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Tue May 9 07:47:15 2023 +0800
+| | 
+| |     changed focus style
+| | 
+| * commit 9f796f096810dfd24d57ffa0378d0778feeb5c03
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Tue May 9 07:38:17 2023 +0800
+| | 
+| |     changed button hover for chat
+| | 
+| * commit 35c8f2bd8e70165f918029532e6ef01cabae98d1
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Tue May 9 07:34:35 2023 +0800
+|   
+|       modified button hover for home page
+|   
+*   commit 0613f3aac3b634f9d6668d33a6d795e8bfa3d079
+|\  Merge: ab26c7c 9c1ef07
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Tue May 9 07:24:48 2023 +0800
+| | 
+| |     Merge pull request #73 from lainemulvay:hank
+| |     
+| |     update requirements
+| | 
+| * commit 9c1ef0715223d8fbe530a70f82ed83b66390f6f8
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Tue May 9 07:24:33 2023 +0800
+|   
+|       update requirements
+|   
+*   commit ab26c7c6afb2edbdfaaea8bd36b4dd1f2cb2edc8
+|\  Merge: 7a7f97d 49609c6
+| | Author: lainemulvay <127926136+lainemulvay@users.noreply.github.com>
+| | Date:   Mon May 8 20:19:31 2023 +0800
+| | 
+| |     Merge pull request #72 from lainemulvay:front-end
+| |     
+| |     Front-end
+| | 
+| * commit 49609c68d5aaf6fbb4c9917597063e4debbf825a
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Mon May 8 20:18:48 2023 +0800
+| | 
+| |     focus on input bar automatically
+| | 
+| * commit 3dcd6e5a8efb92f143a1cf2ca9edd2d34c574f61
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Mon May 8 20:15:11 2023 +0800
+| | 
+| |     submitted when you press enter
+| | 
+| * commit 71b041aeec28c914baf3d8c3151d1614ff440643
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Mon May 8 20:07:44 2023 +0800
+| | 
+| |     submit button hover
+| | 
+| * commit ffdf1bdc47fd6863ce1817d31b0b77f6d9f6d279
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Mon May 8 19:57:10 2023 +0800
+| | 
+| |     style updates
+| | 
+| * commit 50c0677bbda490d9acb846a6b607ebb9cbef3f5b
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Mon May 8 19:49:56 2023 +0800
+| | 
+| |     logo hover
+| | 
+| * commit 01c0872ef7e6e1ba0341ef1ee97cd3e98231bc78
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Mon May 8 19:47:10 2023 +0800
+| | 
+| |     buttons hover
+| | 
+| * commit e986ae6df191beeb7ecbf4d12a6ca0a95dee7a96
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Mon May 8 19:35:33 2023 +0800
+| | 
+| |     description #2
+| | 
+| * commit 475be34423d68707edb3b935cfe05e34205e515b
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Mon May 8 19:34:54 2023 +0800
+| | 
+| |     updated descriptions
+| | 
+| * commit 76f5f401ce2742e7f7fa621d67a755ed22362b79
+|/  Author: LaineMulvay <22708032@student.uwa.edu.au>
+|   Date:   Mon May 8 19:23:39 2023 +0800
+|   
+|       Authors Update
+|   
+*   commit 7a7f97dcde3c80e514980a441f269f9c3418ff4d
+|\  Merge: 19cc122 5c7829e
+| | Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| | Date:   Mon May 8 18:27:26 2023 +0800
+| | 
+| |     Merge pull request #71 from lainemulvay:chatdb
+| |     
+| |     Chatdb
+| | 
+| * commit 5c7829e02ae9c036a6087331184f1a1eea623933
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Mon May 8 18:12:37 2023 +0800
+| | 
+| |     routes for chat history
+| | 
+| * commit 1d49100710fd11d23d6b5fdb58fc955a3e667508
+|/  Author: Murray Lewin <murraylewin91@gmail.com>
+|   Date:   Mon May 8 17:02:24 2023 +0800
+|   
+|       databases for response and chats
+|   
+*   commit 19cc122afa259f615864b1d0f369f916d1738e09
+|\  Merge: e3b7578 5a616f6
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun May 7 18:31:35 2023 +0800
+| | 
+| |     Merge pull request #70 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit 5a616f6fc8cca1f2cf4f27b021f4c131581962b5
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 18:31:04 2023 +0800
+| | 
+| |     modified files based on html validator
+| | 
+| * commit e805f9ce1490d78c2ebdefc20e177d01f3370306
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun May 7 18:09:41 2023 +0800
+|   
+|       modified css naming
+| 
+* commit e3b75785c59196a47edfb5952f90173bad224f0c
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun May 7 16:53:31 2023 +0800
+| 
+|     changed name
+|   
+*   commit 74a3f8fb41556630ee2a6f206cd6bf45c9cd6332
+|\  Merge: 8de7654 ebf4787
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun May 7 16:52:19 2023 +0800
+| | 
+| |     Merge pull request #69 from lainemulvay:hank
+| |     
+| |     fixed log out button
+| | 
+| * commit ebf47873588c6b483d7ecda34e05752e9df2534a
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun May 7 16:51:38 2023 +0800
+|   
+|       fixed log out button
+|   
+*   commit 8de76541bd8559c7a3dba1de5a6f0ea9cf607387
+|\  Merge: fdcdc4a 0275f5f
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun May 7 16:43:53 2023 +0800
+| | 
+| |     Merge pull request #68 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit 0275f5f853d5d0c9b8ca16c5f56be21fff1485e8
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 16:43:08 2023 +0800
+| | 
+| |     attempt to fix log out
+| | 
+| * commit 07e5967284fb226fa2ed002caa87acee915e2129
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 16:26:32 2023 +0800
+| | 
+| |     incorporated blueprint
+| | 
+| * commit 5c582075a0df0a83c1b4d89713693fc5b9bdb031
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 15:41:39 2023 +0800
+| | 
+| |     changed according to html validator
+| | 
+| * commit 7c80f7fc8d3255ef8998fcc75a6af688fac1de95
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 15:28:57 2023 +0800
+| | 
+| |     added favicon, and modified img ref
+| | 
+| * commit 1722ceb40cf4b19755f0fb832f8b56c002780ac2
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 15:22:06 2023 +0800
+| | 
+| |     modified css ref
+| | 
+| * commit 23625b82a11986571663ffb7217923978945ba68
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 15:16:22 2023 +0800
+| | 
+| |     extend scripts
+| | 
+| * commit 999d404e82c0dd3f073ca75ef2d4e07a212b3cb8
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 14:48:24 2023 +0800
+| | 
+| |     changed css and js ref
+| | 
+| * commit 52e2e1be4bb235b8f72ee2fd982116968f966829
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 14:36:04 2023 +0800
+| | 
+| |     changed hash method
+| | 
+| * commit a96f06df6967abc582fb28ac427d805998278c19
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 14:35:53 2023 +0800
+| | 
+| |     organised static folder
+| | 
+| * commit 5a262e39cbbb966458e01d2df81da1be64948c0c
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun May 7 12:20:45 2023 +0800
+| | 
+| |     added new step up steps
+| | 
+| * commit 553ee3e41f53adaa9cfb4daf160890c7ffc1486f
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun May 7 12:13:09 2023 +0800
+|   
+|       updated gitignore
+|   
+*   commit fdcdc4ab22eb679a82d9c835b1314c79383cc641
+|\  Merge: 0f2be8e 2c043c6
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sat May 6 22:27:30 2023 +0800
+| | 
+| |     Merge pull request #66 from lainemulvay:hank
+| |     
+| |     changed code so database is
+| | 
+| * commit 2c043c639485ada00e623501571978f84e626ea6
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sat May 6 22:27:13 2023 +0800
+|   
+|       changed code so database is
+|       automatically generated
+|   
+*   commit 0f2be8ed6cdfeb000594f7b951b7d578b6c50235
+|\  Merge: 6f0a410 57185f4
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sat May 6 22:24:23 2023 +0800
+| | 
+| |     Merge pull request #65 from lainemulvay:hank
+| |     
+| |     fixed db reference
+| | 
+| * commit 57185f419402c72c03247a7e1728ce87df7afb2d
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sat May 6 22:23:10 2023 +0800
+|   
+|       fixed db reference
+| 
+* commit 6f0a41073bf152a6454b37dee6f19d1be57530f6
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sat May 6 22:20:11 2023 +0800
+| 
+|     update instruction for new structure
+|   
+*   commit 4fcbed5f11b899e1d7c8f28f9abb32148013da76
+|\  Merge: a243561 e6aaded
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sat May 6 22:15:34 2023 +0800
+| | 
+| |     Merge pull request #64 from lainemulvay:hank
+| |     
+| |     restructured folder
+| | 
+| * commit e6aaded326f825e4b8e0d7aa8d3b907f7a6ed0bc
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sat May 6 22:14:46 2023 +0800
+|   
+|       restructured folder
+|       as flask mega tutorial
+|   
+*   commit a243561d133e7ee827ac67ffb5e778e2c8afb4d7
+|\  Merge: 028bd6c 02c857c
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sat May 6 22:00:16 2023 +0800
+| | 
+| |     Merge pull request #62 from lainemulvay:hank
+| |     
+| |     test
+| |   
+| *   commit 02c857cef98f14859f3d3601cc3e239769f3ca7f
+| |\  Merge: 74ba492 028bd6c
+| |/  Author: hznkyh <hank021008@outlook.com>
+|/|   Date:   Sat May 6 21:59:54 2023 +0800
+| |   
+| |       Merge branch 'main' into hank
+| |   
+* |   commit 028bd6ced2278182d9fcb899c5d490233a2a5858
+|\ \  Merge: 43ee250 ecac90e
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Sat May 6 21:57:14 2023 +0800
+| | | 
+| | |     Merge pull request #63 from lainemulvay/revert-60-hank
+| | |     
+| | |     Revert "Hank"
+| | | 
+| * | commit ecac90e8c5283ca6505058303af7bab3e5b53328
+|/ /  Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| |   Date:   Sat May 6 21:56:53 2023 +0800
+| |   
+| |       Revert "Hank"
+| |   
+* |   commit 43ee250f28a83f0501088a2383a10846ad93fbb6
+|\ \  Merge: 65b2232 42c1637
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Sat May 6 21:50:02 2023 +0800
+| | | 
+| | |     Merge pull request #60 from lainemulvay/hank
+| | |     
+| | |     Hank
+| | | 
+| | * commit 74ba49237aa7e1d2b5fb3258077bdc9827852b6d
+| |/  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Sat May 6 21:54:08 2023 +0800
+| |   
+| |       test
+| |   
+| *   commit 42c163775d1845340fd44a7c512502338ad625e6
+| |\  Merge: 9d7b795 65b2232
+| |/  Author: hznkyh <hank021008@outlook.com>
+|/|   Date:   Sat May 6 21:49:29 2023 +0800
+| |   
+| |       Merge branch 'main' into hank
+| |   
+* |   commit 65b223276044a036104df0510fa28d6bddcbf270
+|\ \  Merge: 5ff7a1a d57063d
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Sat May 6 21:39:37 2023 +0800
+| | | 
+| | |     merge branch
+| | | 
+| * | commit d57063da4eba90bcb67802112e9b023a05d3db97
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Sat May 6 21:38:48 2023 +0800
+| |   
+| |       toggle pw visibility
+| | 
+| * commit 9d7b7951e453381084f3ccb970810f14083fac64
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat May 6 21:36:37 2023 +0800
+| | 
+| |     changed structure to mega tutorial
+| | 
+| * commit ba8f73cbeb29d09f979efd0012f96f6a73c441b4
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat May 6 21:36:13 2023 +0800
+| | 
+| |     changed structure to mega tutorial
+| | 
+| * commit 292cb053e4dd35aaadc2f10dbd0bccb04861d111
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat May 6 20:45:51 2023 +0800
+| | 
+| |     delete old js
+| | 
+| * commit 9c135ae3a43c2594cf1241ebe4c6fa067c185103
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sat May 6 20:29:03 2023 +0800
+|   
+|       prevent back button on chrome
+| 
+* commit 5ff7a1aae7f8f15e86f3a52e5e658704c25404da
+| Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| Date:   Sat May 6 19:42:21 2023 +0800
+| 
+|     fields updates
+|   
+*   commit 8768ded5922b8b040027e55817e4080dd9889baf
+|\  Merge: ca651fc 4e3ffd9
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sat May 6 03:02:01 2023 +0800
+| | 
+| |     merge branch
+| | 
+| * commit 4e3ffd9bc35dfcfd8cd5979704d2f2d3c36ddc8f
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sat May 6 03:01:33 2023 +0800
+| | 
+| |     base layout update (working)
+| | 
+| * commit ddfe1488bf3736ede5d1681e8cecd841f9301e47
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sat May 6 03:00:58 2023 +0800
+| | 
+| |     logout api
+| | 
+| * commit dc9b9254993e34263ece5359a3c5cc739c1f313d
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Sat May 6 03:00:35 2023 +0800
+|   
+|       logout function & reject page if NOT logged in
+|   
+*   commit ca651fc685f6a499262f2c3342e23deec28d37cd
+|\  Merge: 06e88e9 37d8d1b
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Fri May 5 17:39:44 2023 +0800
+| | 
+| |     Merge pull request #59 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit 37d8d1b16c75c26a19a5bbd3ba44a55ccff2deb9
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri May 5 17:39:26 2023 +0800
+| | 
+| |     Updated and added to old meeting log
+| |     to indicate work done
+| | 
+| * commit 963043888185bebc81d39c92083899afe0eeb180
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri May 5 17:38:44 2023 +0800
+| | 
+| |     Updated and added to
+| |     old meeting log to indicate work done
+| | 
+| * commit 8a7bc1ed9fad79b68d841acc0774d4fd8b142b6d
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Fri May 5 17:36:47 2023 +0800
+|   
+|       Updated and added to the old
+|       meeting log for work record
+|   
+*   commit 06e88e977026497efb5db56c6a261c11456bc45d
+|\  Merge: fc4888a 24b3e06
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri May 5 12:36:21 2023 +0800
+| | 
+| |     merge
+| | 
+| * commit 24b3e067f219ca4fd21d093537b82413539cd974
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri May 5 12:35:31 2023 +0800
+| | 
+| |     fetch user info
+| | 
+| * commit 82db1ac3514ce04bdedba0f5e475beb9bd3346c8
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri May 5 12:35:06 2023 +0800
+| | 
+| |     get user api
+| | 
+* | commit fc4888a9ac8a11f065e256d94a76a9ef893279fa
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri May 5 09:07:18 2023 +0800
+| | 
+| |     archive not in used codes
+| | 
+* | commit 1bcd2cd0014b40d6d63d2e6ee58233ea02da2bbb
+|\| Merge: 16d8505 058dac4
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri May 5 08:55:05 2023 +0800
+| | 
+| |     merge branch
+| | 
+| * commit 058dac4f06e8bf7f98926db00a970cdaadffa3df
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri May 5 08:53:57 2023 +0800
+| | 
+| |     register function update and popup view
+| | 
+| * commit b1b661cd3d7799a2fc417cb99296465b257bfa85
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri May 5 08:53:30 2023 +0800
+| | 
+| |     login function update & popup view
+| | 
+| * commit 4fd805663bd9d952de269ac43e81cf50ab82dab8
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri May 5 08:52:53 2023 +0800
+| | 
+| |     js try-catch
+| | 
+| * commit a49ab3858dad1022c2de1c539e2d3586d6bb9451
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri May 5 08:51:49 2023 +0800
+| | 
+| |     api update
+| | 
+| * commit 5e034cc753b55df881d076234eee9ad2e053e584
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Fri May 5 08:51:11 2023 +0800
+|   
+|       regview css update
+| 
+* commit 16d850557d0d96657a4018c06fea86bd707918d3
+| Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| Date:   Thu May 4 22:28:18 2023 +0800
+| 
+|     regpage update
+|   
+*   commit a540919fd68223d877f6c00bd2375c38ad2b1385
+|\  Merge: f5775d9 4e78198
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Thu May 4 21:56:14 2023 +0800
+| | 
+| |     Merge pull request #58 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit 4e78198522cbd91ac8a8f0316056d933dd7f47a1
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 21:55:56 2023 +0800
+| | 
+| |     incorporate hashed password
+| | 
+| * commit 3d5ea3d8570c2c22adc75203dd52ed31cba237a2
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 20:54:43 2023 +0800
+| | 
+| |     added user already exist prompt
+| | 
+| * commit 666d235c1e03abf5e6958fadbfe3e4e286344003
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 20:48:08 2023 +0800
+| | 
+| |     added promopt for email already exist
+| | 
+| * commit 3e49c7d6d3843f2e578c72f66580073d98e94703
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Thu May 4 20:41:24 2023 +0800
+|   
+|       added invalid login prompt
+|   
+*   commit f5775d9559f50e6201facb6cbd86cba80a86f57e
+|\  Merge: 57b028c 5670834
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Thu May 4 20:34:24 2023 +0800
+| | 
+| |     Merge pull request #57 from lainemulvay:hank
+| |     
+| |     working databse, login and register
+| | 
+| * commit 567083454a44d0e4c0770be31c043f7bc6d90f81
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Thu May 4 20:34:08 2023 +0800
+|   
+|       working databse, login and register
+|   
+*   commit 57b028c6abaf3bb3df3799091fdf35c8ebeb24fb
+|\  Merge: a7e789a 803f9a3
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Thu May 4 18:27:10 2023 +0800
+| | 
+| |     Merge pull request #56 from lainemulvay:hank
+| |     
+| |     Hank
+| | 
+| * commit 803f9a35c3c401195c4028b68ca42ef91829ca2d
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 18:26:42 2023 +0800
+| | 
+| |     updated some database
+| | 
+| * commit 94b5e20dcafbc58b591c50760f77592e5a1f504e
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 18:04:22 2023 +0800
+| | 
+| |     modified footer margin
+| | 
+| * commit 05fe7703eae7ee76b19f1a3bcbfd6ba7e566f347
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 17:59:02 2023 +0800
+| | 
+| |     fixed disaply bug of input bar of chat
+| | 
+| * commit 3adc21997a9f6fcdb85ba2e98eabec8523c625bd
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Thu May 4 17:54:35 2023 +0800
+|   
+|       revert back to old structure
+|   
+*   commit a7e789ac2a659831bb876591deadd2036a383a9c
+|\  Merge: 4b0ccf5 8140b3b
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Thu May 4 16:58:58 2023 +0800
+| | 
+| |     Merge pull request #55 from lainemulvay:hank
+| |     
+| |     fixed issue occured during merge
+| | 
+| * commit 8140b3b6a02241b242ebf4944197e951a1b2e138
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Thu May 4 16:57:48 2023 +0800
+|   
+|       fixed issue occured during merge
+|   
+*   commit 4b0ccf5346778cc267289fe999b98b3a0d937751
+|\  Merge: 204055b 766ceae
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Thu May 4 16:53:43 2023 +0800
+| | 
+| |     Merge pull request #54 from lainemulvay/hank
+| |     
+| |     Hank
+| |   
+| *   commit 766ceaedf47cbedd58af11cb8900966aa5e6d04d
+| |\  Merge: a4b79d1 204055b
+| |/  Author: hznkyh <hank021008@outlook.com>
+|/|   Date:   Thu May 4 16:53:24 2023 +0800
+| |   
+| |       Merge branch 'main' into hank
+| |   
+* |   commit 204055b13af1f6a349985434b47c7e685101fe28
+|\ \  Merge: 893c33f ed25522
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Thu May 4 16:11:41 2023 +0800
+| | | 
+| | |     Merge pull request #53 from lainemulvay:hank
+| | |     
+| | |     Hank
+| | | 
+| * | commit ed255226cd5c140a4988bf278c8e6827c82c39b5
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 4 16:09:55 2023 +0800
+| | | 
+| | |     fixed set up instruction
+| | | 
+| * | commit 093e7e1bfdfdec795eae755feb321c24096e78b2
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Thu May 4 16:09:12 2023 +0800
+| | | 
+| | |     modified css for intro page so have same width box
+| | | 
+| * | commit 6dfbd5510102e16bd21d4ff4c9b48101c22bf05d
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Thu May 4 16:08:20 2023 +0800
+| |   
+| |       changed requirements name
+| | 
+| * commit a4b79d1c0dc624793f6668212b2768a866edeede
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 16:48:15 2023 +0800
+| | 
+| |     changed css for description box
+| | 
+| * commit 40099c141276942abc0b828ca3de4fe44a2c9185
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 16:40:17 2023 +0800
+| | 
+| |     restructure folder and files
+| | 
+| * commit 2f5280c7ba6a0f27dc3dde9cdd8719ef586006d1
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 16:27:22 2023 +0800
+| | 
+| |     restructured folder following tutorial chapter 1
+| | 
+| * commit 10de3c2267574f224f50ad3e7233fe65e1a036be
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 16:27:00 2023 +0800
+| | 
+| |     update box style
+| | 
+| * commit 141ed4046538fdbcb8c4915ddb0bb08f26a80993
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Thu May 4 16:13:18 2023 +0800
+|   
+|       deleted error code
+|   
+*   commit 893c33f64cd330a6655eb502d54200014f338f65
+|\  Merge: db9fe14 016876d
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu May 4 13:41:13 2023 +0800
+| | 
+| |     Merge branch 'main' of https://github.com/lainemulvay/CITS3403-Project
+| |   
+| *   commit 016876d5467f0f5759fe18e9cb64c8761cb69940
+| |\  Merge: 5395428 5065f08
+| | | Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| | | Date:   Thu May 4 10:26:06 2023 +0800
+| | | 
+| | |     Merge pull request #52 from lainemulvay/desmount
+| | |     
+| | |     Desmount
+| | |   
+| | *   commit 5065f081349092dfa9814a069d8a077947b45d7f
+| | |\  Merge: 3a7b2b4 5395428
+| | |/  Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| |/|   Date:   Thu May 4 10:25:58 2023 +0800
+| | |   
+| | |       Merge branch 'main' into desmount
+| | |   
+| * |   commit 5395428e15ad43ce6215cd5ad5635b71f527e9a6
+| |\ \  Merge: ae5a6e7 fa1a24c
+| | | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | | Date:   Wed May 3 18:54:14 2023 +0800
+| | | | 
+| | | |     Merge pull request #51 from lainemulvay:hank
+| | | |     
+| | | |     update home logo functionality
+| | | | 
+| | * | commit fa1a24cd3ce9d6517d12c88eb54ebc627279efa5
+| |/ /  Author: hznkyh <hank021008@outlook.com>
+| | |   Date:   Wed May 3 18:53:51 2023 +0800
+| | |   
+| | |       update home logo functionality
+| | |   
+| * |   commit ae5a6e7d34d0b590ef061dbc4a9240d563c409e2
+| |\ \  Merge: 514cb71 62cffcb
+| | | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | | Date:   Wed May 3 18:44:20 2023 +0800
+| | | | 
+| | | |     Merge pull request #50 from lainemulvay:hank
+| | | |     
+| | | |     Hank
+| | | | 
+| | * | commit 62cffcb0dfde88a8e3790f909d5328153d9ad2b2
+| | | | Author: hznkyh <hank021008@outlook.com>
+| | | | Date:   Wed May 3 18:43:57 2023 +0800
+| | | | 
+| | | |     display account dropdown menu
+| | | |     only on certain pages
+| | | | 
+| | * | commit ed5236f3bc88dd3b44787eefbed9c43c318856fd
+| | | | Author: hznkyh <hank021008@outlook.com>
+| | | | Date:   Wed May 3 18:35:41 2023 +0800
+| | | | 
+| | | |     extends chat html with base,
+| | | |     modified ref for back button in reg,
+| | | | 
+| | * | commit 0d5442c289315b23d21e1d76320c14a4cf5e94a1
+| | | | Author: hznkyh <hank021008@outlook.com>
+| | | | Date:   Wed May 3 18:28:23 2023 +0800
+| | | | 
+| | | |     renamed reg css, and modified footer css
+| | | | 
+| | * | commit 98b6c64d66242e030ca7dba607013a528208c9b9
+| | | | Author: hznkyh <hank021008@outlook.com>
+| | | | Date:   Wed May 3 18:25:28 2023 +0800
+| | | | 
+| | | |     modofied description and root route
+| | | | 
+| | * | commit 28b8c2d4eaebf7c70fa4beaaf9026240560e221f
+| |/ /  Author: hznkyh <hank021008@outlook.com>
+| | |   Date:   Wed May 3 18:24:12 2023 +0800
+| | |   
+| | |       removed old js
+| | | 
+| | * commit 3a7b2b45e478b3437942f3bc523225d7ea219a60
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Thu May 4 10:21:15 2023 +0800
+| | | 
+| | |     more database
+| | | 
+| | * commit 96ad7644d0840b69c7f34e0013939e3693d26b30
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Thu May 4 09:29:41 2023 +0800
+| | | 
+| | |     user.html
+| | | 
+| | * commit 31a16b5d613f5a9e6e316ec6f72e9444dadb7142
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Thu May 4 08:48:28 2023 +0800
+| | | 
+| | |     adding date
+| | | 
+| | * commit 3235ecdd5b6f67e8d24bfefd90d0a7dd9d859d81
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Wed May 3 15:43:37 2023 +0800
+| | | 
+| | |     flask setup error
+| | | 
+| | * commit fff27176012277490cebcbb5faf5deab81adf31b
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Wed May 3 15:41:53 2023 +0800
+| | | 
+| | |     session.commit
+| | | 
+| | * commit c0f534509201538e4bf3da212592fafba1203b8e
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Wed May 3 15:16:48 2023 +0800
+| | | 
+| | |     user functions
+| | | 
+| | * commit 42feb292e6f75198f067e3f18f8d781a2e3bdcc1
+| |/  Author: Murray Lewin <murraylewin91@gmail.com>
+| |   Date:   Wed May 3 15:08:45 2023 +0800
+| |   
+| |       database and authentify
+| |   
+| *   commit 514cb71fd3b0ca792d0a11e629ef32f10237b631
+| |\  Merge: e390e98 2c71e69
+| | | Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| | | Date:   Wed May 3 11:51:07 2023 +0800
+| | | 
+| | |     Merge pull request #49 from lainemulvay:database
+| | |     
+| | |     autentifycation for flask application
+| | | 
+| | * commit 2c71e69a2533227484ce31294bf1901f89670e55
+| |/  Author: Murray Lewin <murraylewin91@gmail.com>
+| |   Date:   Wed May 3 11:06:16 2023 +0800
+| |   
+| |       autentifycation for flask application
+| |   
+| *   commit e390e98ddf21303bef9c130384b8264193c6014a
+| |\  Merge: 4f84248 fa6bab7
+| | | Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| | | Date:   Tue May 2 08:52:00 2023 +0800
+| | | 
+| | |     Merge pull request #48 from lainemulvay:Database
+| | |     
+| | |     layout of a model
+| | | 
+| | * commit fa6bab72f4e7b6a7ad4f82d9b5ebef034937a683
+| |/  Author: Murray Lewin <murraylewin91@gmail.com>
+| |   Date:   Tue May 2 08:51:26 2023 +0800
+| |   
+| |       layout of a model
+| |   
+| *   commit 4f84248c6f230d7a43629df6bb3341c74910c759
+| |\  Merge: 0ac5cc0 5640dde
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Tue May 2 00:08:19 2023 +0800
+| | | 
+| | |     Merge pull request #47 from lainemulvay:hank
+| | |     
+| | |     Hank
+| | | 
+| | * commit 5640dde79ef08e08a1aa3dd63ec9494a9b2292d4
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Tue May 2 00:08:03 2023 +0800
+| | | 
+| | |     modified style for view chat button
+| | | 
+| | * commit 94b6917908c306948864915d8daa44668f115d29
+| |/  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Tue May 2 00:05:45 2023 +0800
+| |   
+| |       updated style for view chat button
+| |   
+| *   commit 0ac5cc05dae570d4bc85cfd4cf8a6d3901d1d69c
+| |\  Merge: f058ced d952ea8
+| | | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Mon May 1 23:55:54 2023 +0800
+| | | 
+| | |     Merge pull request #46 from lainemulvay:hank
+| | |     
+| | |     Hank
+| | | 
+| | * commit d952ea8c202be3ca1097293264acfebdc12adc2d
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 23:55:13 2023 +0800
+| | | 
+| | |     fixed view chat button responsive
+| | | 
+| | * commit 3314cda954486f72c51eec5c95edd1f285c2765d
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 23:36:26 2023 +0800
+| | | 
+| | |     modified all button refs
+| | | 
+| | * commit 02c376e72aa989e9d669f07c4dcb817e885145b9
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 23:31:03 2023 +0800
+| | | 
+| | |     modified redirect for login and back button
+| | | 
+| | * commit 6948028500abef05c1af74dc2757d84c0ec1e655
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 23:23:25 2023 +0800
+| | | 
+| | |     changed href for button
+| | | 
+| | * commit f8f7e22b948fb3b1f7518e93fe74372af876d8f9
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 23:12:22 2023 +0800
+| | | 
+| | |     modifed css to work for reg and login
+| | | 
+| | * commit 40820f20f3862569da9c4d811639dc92d7378c68
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 23:00:14 2023 +0800
+| | | 
+| | |     moved old css to rubbish folder
+| | | 
+| | * commit 8230f953a77082aa7385a9a3a7fd907b7371e3b0
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 22:51:47 2023 +0800
+| | | 
+| | |     delete duplicate css ref
+| | | 
+| | * commit 34855cd59286fd984cfe09bb2806e97fbbec56c9
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 22:51:33 2023 +0800
+| | | 
+| | |     delete duplite css from intro and reg styles
+| | | 
+| | * commit 67466d6bbd490b204f754bd16b428b22fb85a033
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 22:40:44 2023 +0800
+| | | 
+| | |     commented script for chat
+| | | 
+| | * commit 1307d422a6095205cbe4981e2a404ceea39aaf62
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 22:27:43 2023 +0800
+| | | 
+| | |     changed conflicting class names
+| | | 
+| | * commit 2db8eaad15e5d78f25a50262f34db00ae3cbbbae
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 22:13:23 2023 +0800
+| | | 
+| | |     extend reg with base html
+| | | 
+| | * commit 98bf0c498ab50eeb2b986f7374878a269b9a81bb
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 22:09:57 2023 +0800
+| | | 
+| | |     extend login with base html
+| | | 
+| | * commit 5d94304b01c869ef79622fb6eae497d7f514712b
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 22:01:44 2023 +0800
+| | | 
+| | |     extend intro with base html
+| | | 
+| | * commit 00b4a0c1d4997183c8bf2918668f787e913c3bbf
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 22:01:28 2023 +0800
+| | | 
+| | |     modified conflicting class
+| | | 
+| | * commit 49f9c0976bc663515e0cb0ee7f537fadcd335132
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 21:57:53 2023 +0800
+| | | 
+| | |     extend hist with base html
+| | | 
+| | * commit 17bfa3d276f623dcc0908733231f99ff60d0528d
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon May 1 21:57:43 2023 +0800
+| | | 
+| | |     combined scripts and css into base.html
+| | |   
+| * |   commit f058ced932d8c3031e2ac433f8eac579c42b02ca
+| |\ \  Merge: 78d92d3 1883e84
+| | |/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |/|   Date:   Mon May 1 23:14:28 2023 +0800
+| | |   
+| | |       merge branch api
+| | | 
+| | * commit 1883e84401861e909f6fa0ec983ea61b749c1322
+| |/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Mon May 1 23:13:57 2023 +0800
+| |   
+| |       api update (draft)
+| | 
+* | commit db9fe14c5c5d1d47ecbbe68a5d46a969e3143e82
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Thu May 4 13:41:07 2023 +0800
+|   
+|       update meeting_log
+|   
+*   commit 78d92d3fa7c78e3a8548105cb0d0c6cb80324a9a
+|\  Merge: 939e422 7ff7165
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Mon May 1 15:03:10 2023 +0800
+| | 
+| |     merge branch
+| | 
+| * commit 7ff7165207ede7adfd3a346cdb8e163e90acb054
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Mon May 1 15:02:20 2023 +0800
+|   
+|       reg_view update
+| 
+* commit 939e422b55e0f32b626ffb7550f114fefb6f9620
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sat Apr 29 22:56:12 2023 +0800
+| 
+|     update meeting log
+|   
+*   commit 6f845252ffa041d4737ca49620ed67a3c01607f9
+|\  Merge: 2bbcad9 11e25f8
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sat Apr 29 12:51:36 2023 +0800
+| | 
+| |     Merge pull request #45 from lainemulvay:flask-set-up
+| |     
+| |     Flask-set-up
+| | 
+| * commit 11e25f816fdce57dda98c6c9f0d3e47925b2f42b
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:51:21 2023 +0800
+| | 
+| |     update flask set up step for windows
+| | 
+| * commit 3e7562f96ecea30d6cc440d78e013b9225e4cd40
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sat Apr 29 12:47:21 2023 +0800
+|   
+|       update windows set up steps
+|   
+*   commit 2bbcad91969e9c2c587f35fe471b49b77714df46
+|\  Merge: 2eeca85 adecc19
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sat Apr 29 12:37:05 2023 +0800
+| | 
+| |     Merge pull request #44 from lainemulvay:script-ref
+| |     
+| |     modified base css image and js ref
+| | 
+| * commit adecc194600411470bddb65daf9de585bf6a2b44
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sat Apr 29 12:36:48 2023 +0800
+|   
+|       modified base css image and js ref
+|   
+*   commit 2eeca85b5858e3654aaeca38c2f7a31cab8d4b5d
+|\  Merge: d5a8b1b 2fef7fa
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sat Apr 29 12:28:03 2023 +0800
+| | 
+| |     Merge pull request #43 from lainemulvay:flask
+| |     
+| |     Flask
+| | 
+| * commit 2fef7fae8d8fb3c4e2e4b66644436a5465423a6f
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:27:44 2023 +0800
+| | 
+| |     updated set up guide
+| | 
+| * commit 4cba9bfa151169569e3b7f2afbe4421081e457a3
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sat Apr 29 12:25:23 2023 +0800
+|   
+|       added some empty files to be complete,
+|       cleaned up repo
+|   
+*   commit d5a8b1b755af161f77e40ffd0b8187e7c6dd0846
+|\  Merge: 5bf8ddd 62477d6
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sat Apr 29 12:13:55 2023 +0800
+| | 
+| |     Merge pull request #42 from lainemulvay:flask
+| |     
+| |     Flask
+| | 
+| * commit 62477d65fb2761d02716530c357116516a2315e7
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:13:30 2023 +0800
+| | 
+| |     update todo
+| | 
+| * commit e61d8aed0fb93367433161f52502c3a3be505d6d
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:12:59 2023 +0800
+| | 
+| |     update todo
+| | 
+| * commit caaaf37e6b6820577e74849337ec729b87560ddb
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:12:07 2023 +0800
+| | 
+| |     modified routes name
+| | 
+| * commit 86b84c463f661d30ce88893cab490e73a8edc14a
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:11:24 2023 +0800
+| | 
+| |     modified chat script ref
+| | 
+| * commit b29c3c980e0f270685119e1f521524e05ac01be9
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:11:03 2023 +0800
+| | 
+| |     modified chat image ref
+| | 
+| * commit b84a722e3f515600a77e7642acd5fa59e4b5245c
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:10:45 2023 +0800
+| | 
+| |     modified chat css ref
+| | 
+| * commit e1f8a8a3190034dca521a6940869a3739a9a6cb3
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:10:03 2023 +0800
+| | 
+| |     migrated files for flask (chat)
+| | 
+| * commit d4db851a32968f8e300d67b5cd44a99c9dca1f48
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:08:51 2023 +0800
+| | 
+| |     modified hist image ref
+| | 
+| * commit b9d8de2179a642ed71247805da0228680265fe9c
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:08:33 2023 +0800
+| | 
+| |     modified hist css ref
+| | 
+| * commit 718268f3408c0f770282c956b1140e34bfb371a2
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:07:56 2023 +0800
+| | 
+| |     migrated files for flask (history)
+| | 
+| * commit 0f9a85b6e2bd3b73f03caf23886408476045be70
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:06:05 2023 +0800
+| | 
+| |     modified reg view image ref
+| | 
+| * commit 883e273c1a0e9e1a60bd3153ab4de6802e89371c
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:05:24 2023 +0800
+| | 
+| |     modified reg css ref
+| | 
+| * commit ddde5f9fb527be849d4ef530e1ef458cbdfeb9e7
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:04:31 2023 +0800
+| | 
+| |     changed css file name for reg
+| | 
+| * commit 88ebde89cb3a5902e9f2a040aa0162c426bca431
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:03:12 2023 +0800
+| | 
+| |     migrated files for flask (register)
+| | 
+| * commit 12ea182fc4f4bd23fcfa6f925ab4e67e4d00e7e6
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:02:10 2023 +0800
+| | 
+| |     modified image ref
+| | 
+| * commit 499c7b23aa3ce694af70024ecd62cd644e976e7c
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 12:01:48 2023 +0800
+| | 
+| |     modified css ref and image folder location
+| | 
+| * commit dce1a1523c34fb95b50061b4e81b8840bfa1e7b9
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 11:59:04 2023 +0800
+| | 
+| |     migrated files for flask (login)
+| | 
+| * commit 37167167c8a56b56ce526f393efd59aa151cf838
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 11:56:51 2023 +0800
+| | 
+| |     migrated files for flask (intro page)
+| | 
+| * commit 187bc9ab310197beef88434cd11cdb38063a585f
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sat Apr 29 11:30:51 2023 +0800
+| | 
+| |     update .gitignore
+| | 
+| * commit 98ab4c1f5630801206cc937932284937418e749b
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sat Apr 29 11:12:02 2023 +0800
+|   
+|       update gitignore for python
+|   
+*   commit 5bf8ddd2a3ffd08cb7c41f449c769407e3656eb9
+|\  Merge: 8097a4f a34209c
+| | Author: Zhang Yinghao <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Fri Apr 28 21:47:57 2023 +0800
+| | 
+| |     Merge pull request #41 from lainemulvay:drop_down_menu
+| |     
+| |     Drop_down_menu
+| | 
+| * commit a34209c95620364115998c15e9af9cde8304a9e1
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 28 21:47:39 2023 +0800
+| | 
+| |     adjusted css for chat page
+| | 
+| * commit 1efa1beb52fcbb49ca0627b64c05395febd159cd
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 28 21:20:00 2023 +0800
+| | 
+| |     dropdown menu compatibility on mobile device
+| | 
+| * commit f8ff57867efcd20b8fb6f61838bdb69a226eedd1
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 28 21:05:55 2023 +0800
+| | 
+| |     modifed footer css
+| | 
+| * commit b98b8741bf48d89fe645470798f6d7ce7e1467c3
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 28 20:48:22 2023 +0800
+| | 
+| |     fixed view button margin
+| |     when adjusting window size
+| | 
+| * commit 28d3fc333d61e1d929c2ea7f00ada25fede50796
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 28 20:26:46 2023 +0800
+| | 
+| |     delete duplicate css
+| | 
+| * commit 9cb543667626821408dd96263b24294284130b5f
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Fri Apr 28 19:53:00 2023 +0800
+|   
+|       fixed dropdown width compatibility
+|       in windows chrome.
+| 
+* commit 8097a4fda69e85f6b62a3c93fd75e131b0d8bb6d
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Fri Apr 28 14:53:58 2023 +0800
+| 
+|     update to fix bugs
+| 
+* commit d5b75e092abc4fa17a2cbe77c4427098d8072a54
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Fri Apr 28 14:39:33 2023 +0800
+| 
+|     update bugs
+|   
+*   commit 82cc51df8c6373bc81288818b0ad72b5fa61983c
+|\  Merge: 46dfc4e 948ed52
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Thu Apr 27 23:22:08 2023 +0800
+| | 
+| |     merge
+| | 
+| * commit 948ed5284117e3e573c491d9d22b1e6d44b58217
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Thu Apr 27 23:21:44 2023 +0800
+|   
+|       top bar update
+|   
+*   commit 46dfc4efe76e67f7381ee4eef465c78673ed4197
+|\  Merge: badd6fd 26dae1d
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Thu Apr 27 22:40:45 2023 +0800
+| | 
+| |     merge
+| | 
+| * commit 26dae1ddb4b35917aab9415596b63ccf6ebd55d3
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Thu Apr 27 22:40:08 2023 +0800
+|   
+|       chat style update
+|   
+*   commit badd6fdeff1df13d3a12665f5beb003ba529fbeb
+|\  Merge: fe2f432 e15fe32
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Thu Apr 27 20:35:54 2023 +0800
+| | 
+| |     merge
+| | 
+| * commit e15fe3235c9bead29926bdc142072bbf849da7bf
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Thu Apr 27 20:35:24 2023 +0800
+|   
+|       dropdown menu fixed
+|   
+*   commit fe2f4320cebbc58232aab7455510a5645f0a0e95
+|\  Merge: e8d55c5 eb5a065
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Thu Apr 27 15:02:19 2023 +0800
+| | 
+| |     Merge pull request #40 from lainemulvay:footer
+| |     
+| |     adjusted css for footer
+| | 
+| * commit eb5a06542d5c5c6824143d3333ab36ffa7642475
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Thu Apr 27 15:02:02 2023 +0800
+|   
+|       adjusted css for footer
+|   
+*   commit e8d55c5c4b4a6205a6681a6ea706abbc86838465
+|\  Merge: 05a7163 23432ef
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Thu Apr 27 14:52:58 2023 +0800
+| | 
+| |     Merge pull request #39 from lainemulvay:chat-page
+| |     
+| |     Chat-page
+| | 
+| * commit 23432ef1adcea35eb043d308d3ef7585c5ed5df5
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu Apr 27 14:52:30 2023 +0800
+| | 
+| |     changed input font weight
+| | 
+| * commit 7c6b7317c1bbac43b9b186e09c9bfdeb89f7a3e0
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Thu Apr 27 14:51:15 2023 +0800
+|   
+|       fixed class name
+|   
+*   commit 05a716332cba19b5c5eeda31b93d3d869d9ecc2c
+|\  Merge: 777503c 62afabf
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Thu Apr 27 14:49:40 2023 +0800
+| | 
+| |     Merge pull request #38 from lainemulvay:drop-down-button
+| |     
+| |     Drop-down-button
+| | 
+| * commit 62afabf5fa42cd14a1f8a39b4155de35764d56fd
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu Apr 27 14:48:31 2023 +0800
+| | 
+| |     adjusted css for chat
+| | 
+| * commit 199ff39562bee96a904cdba2b243daebc2c4579a
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu Apr 27 14:36:20 2023 +0800
+| | 
+| |     adjusted css for reg
+| | 
+| * commit 38b52362d50d2b13ebbd386b49c8e0f8749b9d9d
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu Apr 27 14:34:13 2023 +0800
+| | 
+| |     adjusted css for login
+| | 
+| * commit 90e201a6b58b9ad1be69794f8191782ee7e4920b
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu Apr 27 14:33:08 2023 +0800
+| | 
+| |     adjusted css for intro
+| | 
+| * commit 9b79cb8897d9935678aa032d9516063185d8bb99
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu Apr 27 14:27:29 2023 +0800
+| | 
+| |     cleared duplicate image folder
+| | 
+| * commit 5e113f7e5c2c090f0b96b106caa7af122821dd88
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu Apr 27 14:26:26 2023 +0800
+| | 
+| |     adjusted to share base.css
+| | 
+| * commit 35c005ce6d3dfe3b5fc598461c19ba2c7966e623
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Thu Apr 27 14:24:00 2023 +0800
+| | 
+| |     adjust dropdown content css
+| | 
+| * commit d243183846e12a09f6d31269f2c3b92ea42f04d0
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Thu Apr 27 14:10:17 2023 +0800
+|   
+|       adjusted dropdown menu css
+|   
+*   commit 777503ca254a013047cdcc62c154a0e6780ba9b9
+|\  Merge: d2f1c70 7341761
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Wed Apr 26 22:01:42 2023 +0800
+| | 
+| |     merge
+| | 
+| * commit 73417615016e3aa7a22b2194095e7d8e33e256ed
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Wed Apr 26 22:01:07 2023 +0800
+|   
+|       footer style
+| 
+* commit d2f1c704bc4820ce72f36622c0811f4a8fd0ecca
+| Author: LaineMulvay <22708032@student.uwa.edu.au>
+| Date:   Wed Apr 26 18:59:17 2023 +0800
+| 
+|     todays meeting notes
+|   
+*   commit 9291e04844ad7160b0d0c264f016763492273b09
+|\  Merge: b17a6ba 75a68d2
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Wed Apr 26 15:02:05 2023 +0800
+| | 
+| |     Merge pull request #37 from lainemulvay:about_us
+| |     
+| |     add about us
+| | 
+| * commit 75a68d2ead14bb140234ae8b8aba2655a9eb7151
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Wed Apr 26 15:01:32 2023 +0800
+| | 
+| |     add about us
+| |   
+* |   commit b17a6baa209aa038fc0aa52c6b7fe2cf3bbdb35e
+|\ \  Merge: 078f3d5 a209124
+| |/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|/|   Date:   Wed Apr 26 14:45:47 2023 +0800
+| |   
+| |       merge
+| | 
+| * commit a209124005eb31f6228d24f777b1edd18393fb60
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Wed Apr 26 14:45:24 2023 +0800
+|   
+|       btn update
+|   
+*   commit 078f3d5eee0bae1262955435d44f7aa34663d45e
+|\  Merge: 6ed35dc e39ee2d
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Wed Apr 26 14:34:03 2023 +0800
+| | 
+| |     Merge pull request #36 from lainemulvay:footer
+| |     
+| |     add footer
+| | 
+| * commit e39ee2df6070a8a70129176577a0d65580d9e870
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Wed Apr 26 14:33:31 2023 +0800
+|   
+|       add footer
+|   
+*   commit 6ed35dcca114654fb5a6c839d3050211f95789da
+|\  Merge: 0927dfa 95461a7
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Wed Apr 26 14:16:44 2023 +0800
+| | 
+| |     merge
+| | 
+| * commit 95461a7d66bae2dd36116d0c0a166f2157c764ed
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Wed Apr 26 14:16:08 2023 +0800
+|   
+|       header css
+|   
+*   commit 0927dfa177622202814aa58816f6ebef2bcde3dc
+|\  Merge: 7d5841e 1f59e86
+| | Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| | Date:   Wed Apr 26 14:10:09 2023 +0800
+| | 
+| |     Merge pull request #35 from lainemulvay:accounts
+| |     
+| |     commenting out the dropdown and header
+| | 
+| * commit 1f59e8682f4f3e3ec9758e6a9178f659abe32b0a
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Wed Apr 26 14:07:41 2023 +0800
+| | 
+| |     commenting out the dropdown and header
+| |   
+* |   commit 7d5841e33bc2b26dda9f06309c767cde9c910051
+|\ \  Merge: 484a4e6 9aca2e1
+| |/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|/|   Date:   Wed Apr 26 13:52:17 2023 +0800
+| |   
+| |       css
+| | 
+| * commit 9aca2e124c045f14956bd84679774a4d9602e1e4
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Wed Apr 26 13:50:57 2023 +0800
+|   
+|       history css
+|   
+*   commit 484a4e6dc718ab22b01502860efce867c0696bce
+|\  Merge: eecb09c 313b64d
+| | Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| | Date:   Wed Apr 26 13:45:01 2023 +0800
+| | 
+| |     Merge pull request #34 from lainemulvay:accounts
+| |     
+| |     adding accounts button
+| | 
+| * commit 313b64d50da07c573efa4ba6b787fe437ff7ca93
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Wed Apr 26 13:43:50 2023 +0800
+| | 
+| |     adding accounts button
+| |   
+* |   commit eecb09cd3d8628fd6de450027104527944032174
+|\ \  Merge: 0cd84fd 7284682
+| |/  Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+|/|   Date:   Wed Apr 26 13:44:42 2023 +0800
+| |   
+| |       Merge pull request #33 from lainemulvay:base.html
+| |       
+| |       add base html and css
+| | 
+| * commit 728468214976ecf48e6fa03669cde342afeebe46
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Wed Apr 26 13:44:21 2023 +0800
+|   
+|       add base html and css
+|   
+*   commit 0cd84fd525937cb185c32bb5de2930ed104caa5c
+|\  Merge: 44963af efa937a
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Wed Apr 26 13:25:31 2023 +0800
+| | 
+| |     merge
+| | 
+| * commit efa937aead73f492819333b692131d31db004bf9
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Wed Apr 26 13:24:46 2023 +0800
+|   
+|       style
+|   
+*   commit 44963af27c7ca32b457979120599da71f3aa1dc2
+|\  Merge: 26d43b8 7ef5eed
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Wed Apr 26 13:18:10 2023 +0800
+| | 
+| |     “merge”
+| | 
+| * commit 7ef5eed85946c930b7d82798794c0c86eb96dae1
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Wed Apr 26 13:17:28 2023 +0800
+|   
+|       chat style
+|   
+*   commit 26d43b87010559dbbc16c1494913830b0c2dd911
+|\  Merge: 6e26231 92105cb
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Wed Apr 26 12:58:42 2023 +0800
+| | 
+| |     “merge”
+| | 
+| * commit 92105cbce28473e0ecd02cc9d73462776442dcd5
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Wed Apr 26 12:57:57 2023 +0800
+|   
+|       icon update
+|   
+*   commit 6e262313d1698617b13fae9b65e73842d2bea55f
+|\  Merge: 897cf1d dc2d04c
+| | Author: lainemulvay <127926136+lainemulvay@users.noreply.github.com>
+| | Date:   Wed Apr 26 11:29:21 2023 +0800
+| | 
+| |     Merge pull request #32 from lainemulvay:chat_style5
+| |     
+| |     Chat_style5
+| | 
+| * commit dc2d04c8f18b54ee1efd0d4257aefb03ee2c7afb
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Wed Apr 26 11:28:50 2023 +0800
+| | 
+| |     new TODOs
+| | 
+| * commit 38356f9aed6dbbda29a85ff73d27cafb4d41e03b
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Wed Apr 26 11:22:21 2023 +0800
+| | 
+| |     message box scrollable (not perfect)
+| | 
+| * commit 61d0b577bb818aa19323eb9c1771a627bbb52524
+|/  Author: LaineMulvay <22708032@student.uwa.edu.au>
+|   Date:   Wed Apr 26 11:20:25 2023 +0800
+|   
+|       input message styled, TODOs added
+|   
+*   commit 897cf1d8ce5ef86de525f383cbe6b26ec35b3e14
+|\  Merge: 5df757f e7d9bd0
+| | Author: lainemulvay <127926136+lainemulvay@users.noreply.github.com>
+| | Date:   Tue Apr 25 23:39:51 2023 +0800
+| | 
+| |     Merge pull request #31 from lainemulvay:chat-response
+| |     
+| |     Chat-response working and styled apart form moving input messages to the right (didnt work with absolute positioning)
+| | 
+| * commit e7d9bd015cc2741addb4876864e5219a24002d5c
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 23:38:12 2023 +0800
+| | 
+| |     last change
+| | 
+| * commit 777f9e23ff12c101fe8c2b1c91007e15ce746521
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 23:38:03 2023 +0800
+| | 
+| |     clearing input at correct time
+| | 
+| * commit 9fa394f1441a630460682b56edd68db6aed17f4a
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 23:05:05 2023 +0800
+| | 
+| |     input text working
+| | 
+| * commit 56c7bc681ae9401bc7b34fee1ba2c40421ff4597
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 23:04:50 2023 +0800
+| | 
+| |     response text right aligned
+| | 
+| * commit 00f04bffe02c5203319f7bfaf61ff397bc69855d
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 23:02:29 2023 +0800
+| | 
+| |     console logging input and response
+| | 
+| * commit 7871693a371f3a2dc8856daba92c0f2101d171ce
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:57:22 2023 +0800
+| | 
+| |     rename chat_form to input-form
+| | 
+| * commit 21e5cf7bab86ad7351a24f6a81859b624c5835de
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:53:33 2023 +0800
+| | 
+| |     input message coloured
+| | 
+| * commit ff520fc28400cc322590b1865a43305617e84872
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:50:18 2023 +0800
+| | 
+| |     input message showing but not correct
+| | 
+| * commit 8bec79fc70fa716d5c5813537da930507d4475b6
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:44:59 2023 +0800
+| | 
+| |     chat style cleanup not needed
+| | 
+| * commit 98153d3fce06f6997e6e93fb4814de5a682e6283
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:43:18 2023 +0800
+| | 
+| |     chat.js cleanup
+| | 
+| * commit 304e52d90b62fa051a1f98c8355e854d9722f4dd
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:41:34 2023 +0800
+| | 
+| |     update page title
+| | 
+| * commit 52444232a888ed6c85c1083fc0a192b10efd0dfe
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:40:58 2023 +0800
+| | 
+| |     Chat response In correct positions
+| | 
+| * commit ea6974391e811a6336389e0a78bfc9ac9253a263
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:31:16 2023 +0800
+| | 
+| |     1st response positioned correctly
+| | 
+| * commit 6c6aba5d1e8cfb9ade8577a110135176763318d7
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:19:36 2023 +0800
+| | 
+| |     smaller timestamp
+| | 
+| * commit d880e9e5ccd6dc77e4a5a917a47a53adfe842a7c
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:11:59 2023 +0800
+| | 
+| |     gpt response working
+| | 
+| * commit 7154d6f05356f0057ccf7135babab8dc8b7d5b6c
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 22:03:00 2023 +0800
+| | 
+| |     message pop up working
+| | 
+| * commit df7f5b76e9f877438ea28f935d2f9efa934b0031
+|/  Author: LaineMulvay <22708032@student.uwa.edu.au>
+|   Date:   Tue Apr 25 22:01:00 2023 +0800
+|   
+|       removed response container
+|   
+*   commit 5df757f77645dda1872cf2822b468e00563a6812
+|\  Merge: 5402242 1f8e26c
+| | Author: lainemulvay <127926136+lainemulvay@users.noreply.github.com>
+| | Date:   Tue Apr 25 18:09:54 2023 +0800
+| | 
+| |     Merge pull request #30 from lainemulvay:chat-style-again
+| |     
+| |     Chat-style-again
+| | 
+| * commit 1f8e26c8380ecdb7cc9ddfd6814bf7a357d45b6a
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 18:09:01 2023 +0800
+| | 
+| |     comment
+| | 
+| * commit fa76a25dff148dad632d04b3667986429d1a5d25
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 18:01:59 2023 +0800
+| | 
+| |     removed test files used to edit style
+| | 
+| * commit c27d04c0fd0e0537df3041f3abc3141c151ae984
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 18:01:17 2023 +0800
+| | 
+| |     new style added to chat.html
+| | 
+| * commit aa841edfeaf96071d6fb02b6f5d6b867df3f02e2
+|/  Author: LaineMulvay <22708032@student.uwa.edu.au>
+|   Date:   Tue Apr 25 17:36:08 2023 +0800
+|   
+|       chat style FINISHED (no response text)
+|   
+*   commit 54022428671681251b9fe34054b43eed716d7aa9
+|\  Merge: 28aa28a c02dc5d
+| | Author: lainemulvay <127926136+lainemulvay@users.noreply.github.com>
+| | Date:   Tue Apr 25 17:21:08 2023 +0800
+| | 
+| |     Merge pull request #29 from lainemulvay:chat_style
+| |     
+| |     Chat_style
+| | 
+| * commit c02dc5de5caf80977bfbbc0e201f2146ee9c8378
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 17:06:53 2023 +0800
+| | 
+| |     input bar works for a specific sized window
+| | 
+| * commit 0fd954d4a2065cdbca23a26def3a308a9070d16d
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 16:48:51 2023 +0800
+| | 
+| |     grey bottom
+| | 
+| * commit 068190b252b4a8b584137acc522abcbfc6c5af7c
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 16:40:44 2023 +0800
+| | 
+| |     input inside response box
+| | 
+| * commit 98c0c1f4da683aac27553c9f62e589297f3fffc6
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 16:19:51 2023 +0800
+| | 
+| |     response box correct size
+| | 
+| * commit a6992b52fd17900a0ea0c80056e7a6951e6e9eee
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 16:12:38 2023 +0800
+| | 
+| |     input added, resonse box right size
+| | 
+| * commit a8033187e39e9c381742308ddeb739888fd1c3da
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 15:08:44 2023 +0800
+| | 
+| |     input container added
+| | 
+| * commit 04f46366649d2d23ef0875f8bbbd35e5f99ea2aa
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 15:05:16 2023 +0800
+| | 
+| |     container working with response box
+| | 
+| * commit 18a045a55279f7e0b37eb05c80f8e25ffff9b2a0
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 15:01:21 2023 +0800
+| | 
+| |     changed response tox to container and added box
+| | 
+| * commit 086c7e77e5c62f11f19a5048c579cc3bc07e9631
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 14:32:01 2023 +0800
+| | 
+| |     box max size added
+| | 
+| * commit 32e9645ddc1c22b14a2d6e2032ec37503abf3755
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 14:28:44 2023 +0800
+| | 
+| |     box correct size and resizing
+| | 
+| * commit 1ea881945231f32308830737918f36e577e771c9
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 14:28:27 2023 +0800
+| | 
+| |     deleted test div
+| | 
+* | commit 28aa28aba87525c4e422799ab2b3a49f6319437c
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Tue Apr 25 14:26:33 2023 +0800
+|   
+|       fixed chat function
+|   
+*   commit ef18306305db6d04c180113d9cb70f92dddac929
+|\  Merge: 2961ca9 c5b3785
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Tue Apr 25 13:39:54 2023 +0800
+| | 
+| |     Merge pull request #28 from lainemulvay/chatbot
+| |     
+| |     Merge pull request #27 from lainemulvay/main
+| |   
+| *   commit c5b3785205a20f9de9a9ba978343263b9c870e70
+| |\  Merge: 09e5f8f 2961ca9
+| |/  Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+|/|   Date:   Tue Apr 25 13:39:20 2023 +0800
+| |   
+| |       Merge pull request #27 from lainemulvay/main
+| |       
+| |       merge
+| |   
+* |   commit 2961ca9cccb0b7136952c3e2420ea157a4587ad8
+|\ \  Merge: 81b31c7 28ccbf2
+| | | Author: lainemulvay <127926136+lainemulvay@users.noreply.github.com>
+| | | Date:   Tue Apr 25 13:31:42 2023 +0800
+| | | 
+| | |     Merge pull request #26 from lainemulvay:chat_style4
+| | |     
+| | |     test pull request
+| | | 
+| * | commit 28ccbf2ec29ca4352799830ec89a91c84c7045d9
+|/ /  Author: LaineMulvay <22708032@student.uwa.edu.au>
+| |   Date:   Tue Apr 25 13:30:46 2023 +0800
+| |   
+| |       new test div
+| |   
+* |   commit 81b31c7a8c4d6efa37df8784639debffb558aff3
+|\ \  Merge: 7291705 c4e27bc
+| | | Author: lainemulvay <127926136+lainemulvay@users.noreply.github.com>
+| | | Date:   Tue Apr 25 13:22:40 2023 +0800
+| | | 
+| | |     Merge pull request #25 from lainemulvay:chat_style2
+| | |     
+| | |     test change css
+| | | 
+| * | commit c4e27bcf63355fadcded758222a45ec5e7388f06
+| | | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | | Date:   Tue Apr 25 13:02:04 2023 +0800
+| | | 
+| | |     test change css
+| | |   
+* | |   commit 7291705ddb78ef213d1440fce6ac410f6092d3c4
+|\ \ \  Merge: 73cb1fd 09e5f8f
+| | |/  Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| |/|   Date:   Tue Apr 25 13:21:50 2023 +0800
+| | |   
+| | |       Merge pull request #24 from lainemulvay/chatbot
+| | | 
+| * | commit 09e5f8f266220aa90b1019304ca18fd7f793f322
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Tue Apr 25 13:18:49 2023 +0800
+| | | 
+| | |     deleteting changes
+| | | 
+| * | commit 054590893e63a84e80b5a8120ea0341f52380d70
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Tue Apr 25 13:15:03 2023 +0800
+| | | 
+| | |     check
+| | | 
+| * | commit cf6a8ca4d4b8a00d1bc52841d8d44cbd5d01faab
+| |/  Author: Murray Lewin <murraylewin91@gmail.com>
+| |   Date:   Tue Apr 25 13:10:40 2023 +0800
+| |   
+| |       test
+| |   
+* |   commit 73cb1fd6e1158aa673ff8facb5951f1a53426001
+|\ \  Merge: 3111bf3 3d4bb7f
+| |/  Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+|/|   Date:   Tue Apr 25 13:14:15 2023 +0800
+| |   
+| |       Merge pull request #23 from lainemulvay:test
+| |       
+| |       change history page title
+| | 
+| * commit 3d4bb7fecfb3b6037098a701c8ca9bfdbbc106a6
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Tue Apr 25 13:12:53 2023 +0800
+| | 
+| |     change history page title
+| | 
+* | commit 3111bf3c89dd67118e0c4e4ba66c4835c647f38b
+|\| Merge: ccc7e5c b83edac
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Tue Apr 25 12:57:32 2023 +0800
+| | 
+| |     Merge pull request #22 from lainemulvay/chat_style
+| |     
+| |     Chat style
+| | 
+| * commit b83edac5299c015ac0bed8185695d839dce9d254
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 12:46:47 2023 +0800
+| | 
+| |     response box nearly finished
+| | 
+| * commit ec0b6b0a06ee79a96966527d2a8f53562ae70c9e
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Tue Apr 25 12:19:49 2023 +0800
+| | 
+| |     response box resizing right, not starting right
+| |   
+* |   commit ccc7e5c184c8fa24caae3c440c636fe350f758e1
+|\ \  Merge: 02dea43 cfe4e19
+| |/  Author: LaineMulvay <22708032@student.uwa.edu.au>
+|/|   Date:   Tue Apr 25 12:55:13 2023 +0800
+| |   
+| |       Merge branch 'main' of https://github.com/lainemulvay/CITS3403-Project
+| |   
+| *   commit cfe4e1932bf390ae6853315029ff876191bfd925
+| |\  Merge: 8c74a2f 988fd9e
+| | | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Tue Apr 25 12:10:51 2023 +0800
+| | | 
+| | |     Merge pull request #21 from lainemulvay/drop-down-menu
+| | |     
+| | |     Drop-down-menu
+| | |   
+| | *   commit 988fd9e54ac4546ab8dd7aef442b97cafebd0653
+| | |\  Merge: 62ec690 8c74a2f
+| | |/  Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| |/|   Date:   Tue Apr 25 12:10:38 2023 +0800
+| | |   
+| | |       Merge branch 'main' into drop-down-menu
+| | | 
+| | * commit 62ec6902f1ad263e43e6403b847e1ee3c66596da
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon Apr 24 23:19:27 2023 +0800
+| | | 
+| | |     made history boxes round
+| | | 
+| | * commit d8638a5b21fd78a7131b0d830d1e74cbf84030e6
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon Apr 24 23:15:18 2023 +0800
+| | | 
+| | |     modified styling
+| | | 
+| | * commit 157784a83d6377606a44c546a296909069305e22
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon Apr 24 23:02:30 2023 +0800
+| | | 
+| | |     Added a new drop down menu
+| | | 
+| | * commit 8a27b90f92bd28e7beae8524687c1970db46151e
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon Apr 24 21:50:41 2023 +0800
+| | | 
+| | |     Add responsive drop down menu
+| | | 
+| | * commit 9a4ab5bd095ae0c1d41d052ab334a6ef8a406d2f
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Mon Apr 24 21:25:55 2023 +0800
+| | | 
+| | |     Add drop down menu
+| | | 
+* | | commit 02dea4351316d4093ca0c520e793a80d6a86768b
+| | | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | | Date:   Tue Apr 25 12:04:06 2023 +0800
+| | | 
+| | |     non working code (so I can change branch)
+| | | 
+* | | commit b8d3aa2d9e791156d2148d46199ef2db06ac5508
+| | | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | | Date:   Tue Apr 25 11:54:48 2023 +0800
+| | | 
+| | |     response-box centered
+| | | 
+* | | commit 7ccdbad90feda859b76a7bcdcd424e5b28fccf67
+|/ /  Author: LaineMulvay <22708032@student.uwa.edu.au>
+| |   Date:   Tue Apr 25 11:36:48 2023 +0800
+| |   
+| |       Interactive response box
+| |   
+* |   commit 8c74a2fcfee392721daa49bd9f76b4b109e6ceec
+|\ \  Merge: d25c74d 0f9b839
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Tue Apr 25 03:44:59 2023 +0800
+| | | 
+| | |     Merge branch 'history_page' into main
+| | | 
+| * | commit 0f9b83903737c7887785c4ae39cdd8ad38be522d
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Tue Apr 25 03:29:44 2023 +0800
+| | | 
+| | |     button style update
+| | | 
+| * | commit b2c553a60454f7571a630b1bd33cadb6a84431dd
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Tue Apr 25 03:29:44 2023 +0800
+| | | 
+| | |     button style update
+| | | 
+* | | commit d25c74dc01379654cc2415d2bf06d44d3e53b7fe
+| | | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | | Date:   Tue Apr 25 03:29:44 2023 +0800
+| | | 
+| | |     button style update
+| | | 
+* | | commit a5a5cd3d1d208aa371d2b418aab7d566e51734db
+|/ /  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Tue Apr 25 03:26:32 2023 +0800
+| |   
+| |       updated icons and background color
+| | 
+* | commit 28600282bc20fec659faa5ce80f7f13be88938ef
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Tue Apr 25 02:58:26 2023 +0800
+|   
+|       update history layout
+|   
+*   commit d74b83bde2db7502c3e7edaa8c195de731495717
+|\  Merge: b6efb8d 43e71f6
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Mon Apr 24 21:15:37 2023 +0800
+| | 
+| |     Merge pull request #20 from lainemulvay:Modify-mobile-css
+| |     
+| |     modify mobile css for header height
+| | 
+| * commit 43e71f61080a7657bfc0bb32133b274664fb0ffd
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Mon Apr 24 21:15:13 2023 +0800
+|   
+|       modify mobile css for header height
+| 
+* commit b6efb8d81de2a325193360c58d25b553a64d416f
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Mon Apr 24 21:08:19 2023 +0800
+| 
+|     add tasks to Todo
+| 
+* commit a83a1a87f4f91eccbe8471581c7e3fb4ab79b267
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Mon Apr 24 16:18:11 2023 +0800
+| 
+|     Added to Todo
+| 
+* commit 69141eec67c99b5a3209d4a2d4524bb76769064f
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun Apr 23 20:05:13 2023 +0800
+| 
+|     update todo list
+|   
+*   commit dd827556e1dc65c0d49255dc1d31bb6a1685f671
+|\  Merge: 9cd66e8 f4715a7
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun Apr 23 20:01:49 2023 +0800
+| | 
+| |     Merge pull request #19 from lainemulvay:images-fix
+| |     
+| |     replaced image reference with new ones modifed css
+| | 
+| * commit f4715a7ab55151aa2b76c13ae94e5d05d542c87a
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun Apr 23 20:01:06 2023 +0800
+|   
+|       replaced image reference with new ones
+|       change css styles to aline with the new image size
+|   
+*   commit 9cd66e8921fcb0a7bc083e70f45934f702dfcb2b
+|\  Merge: f1a49b6 bb8ac1f
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun Apr 23 19:55:33 2023 +0800
+| | 
+| |     Merge pull request #18 from lainemulvay:images
+| |     
+| |     changed images to new ones with transparent
+| | 
+| * commit bb8ac1feda6857b340efa4e46840b7f63b2f96fe
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun Apr 23 19:54:54 2023 +0800
+|   
+|       changed images to new ones with transparent
+|       background
+|   
+*   commit f1a49b62b8d749c0b7d836fd68fd4d08547ef860
+|\  Merge: 1678abc cd638b2
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun Apr 23 19:36:54 2023 +0800
+| | 
+| |     Merge pull request #17 from lainemulvay:History
+| |     
+| |     History
+| | 
+| * commit cd638b2d0b4ff2d347fc84b637f817ab47a9027e
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun Apr 23 19:36:08 2023 +0800
+| | 
+| |     changed style for view chat button
+| |     applied styles to the descriptions
+| |     added two more boxes to test display
+| | 
+| * commit a8fce64a01f3809020ee62a683c7b8414bf9213a
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun Apr 23 19:31:08 2023 +0800
+| | 
+| |     styled view chat button
+| | 
+| * commit 1fa13ae9f345e6c78b637d9d664569fd80f33603
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Sun Apr 23 19:27:26 2023 +0800
+|   
+|       added css and a sample html for history box
+| 
+* commit 1678abc560409334b1df040b3b10c31fe864000b
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sun Apr 23 14:44:18 2023 +0800
+| 
+|     update meeting_log
+|   
+*   commit 7db40ca4f1c5d4f46619ca0f3c5bd18443255edc
+|\  Merge: 9feb765 ec7abc7
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Sun Apr 23 12:37:48 2023 +0800
+| | 
+| |     Merge pull request #16 from lainemulvay/history_chat_box
+| |     
+| |     Merge pull request #15 from lainemulvay/main
+| |   
+| *   commit ec7abc7cefcc7c5767954e647448745d635cd4b1
+| |\  Merge: c9d8278 9feb765
+| |/  Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+|/|   Date:   Sun Apr 23 12:31:16 2023 +0800
+| |   
+| |       Merge pull request #15 from lainemulvay/main
+| |       
+| |       clean branch
+| |   
+* |   commit 9feb7658bedcd3e3725758341778f91682daf16d
+|\ \  Merge: aed3dac 4034ac0
+| | | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Sun Apr 23 12:03:47 2023 +0800
+| | | 
+| | |     Merge pull request #14 from lainemulvay:history_box
+| | |     
+| | |     History_box
+| | | 
+| * | commit 4034ac07c1e4f31b18f91b944ad49c854d31e079
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Sun Apr 23 12:03:01 2023 +0800
+| | | 
+| | |     box 2
+| | | 
+| * | commit 63b35a46861626a00b5ed55357eb41479b181f58
+|/ /  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Sun Apr 23 12:01:51 2023 +0800
+| |   
+| |       add history box
+| |   
+* |   commit aed3dac9f314812b9c88071801a9a6d0829765eb
+|\ \  Merge: e5cb59b ac20606
+| | | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Sun Apr 23 11:56:48 2023 +0800
+| | | 
+| | |     Merge pull request #13 from lainemulvay/chat_function
+| | |     
+| | |     Merge pull request #12 from lainemulvay/main
+| | |   
+| * |   commit ac2060665a2582405d1c4b14c01e5a3f27b9e2d0
+| |\ \  Merge: 27259c3 e5cb59b
+| |/ /  Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+|/| |   Date:   Sun Apr 23 11:56:28 2023 +0800
+| | |   
+| | |       Merge pull request #12 from lainemulvay/main
+| | |       
+| | |       clean branches
+| | |   
+* | |   commit e5cb59bd1e9b49739bda04c65130d68ab6c7be51
+|\ \ \  Merge: 9e0c422 b7b7540
+| | | | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | | | Date:   Sun Apr 23 11:55:53 2023 +0800
+| | | | 
+| | | |     Merge pull request #11 from lainemulvay/responsive
+| | | |     
+| | | |     Merge pull request #10 from lainemulvay/main
+| | | |   
+| * | |   commit b7b7540a3e4aea828c3b86cc9d6b62692ad8e9a4
+| |\ \ \  Merge: 27259c3 9e0c422
+| |/ / /  Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+|/| / /   Date:   Sun Apr 23 11:55:28 2023 +0800
+| |/ /    
+| | |         Merge pull request #10 from lainemulvay/main
+| | |         
+| | |         clean branches
+| | |   
+* | |   commit 9e0c42254a85918e5f1a59c4cd0a3416079f85b0
+|\ \ \  Merge: 14c83aa 2c3b429
+| | | | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | | | Date:   Sun Apr 23 11:53:25 2023 +0800
+| | | | 
+| | | |     Merge pull request #9 from lainemulvay/Laine
+| | | |     
+| | | |     Laine
+| | | |   
+| * | |   commit 2c3b429a77a117fc88bacc18b07c925f826bc6d8
+| |\ \ \  Merge: ac91195 0daa2bd
+| | | | | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | | | | Date:   Sun Apr 23 11:52:46 2023 +0800
+| | | | | 
+| | | | |     Merge pull request #8 from lainemulvay/revert-7-main
+| | | | |     
+| | | | |     Revert "Merge"
+| | | | | 
+| | * | | commit 0daa2bd059fc6709c36cb914176ce5f81a3719c0
+| |/ / /  Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | | |   Date:   Sun Apr 23 11:52:28 2023 +0800
+| | | |   
+| | | |       Revert "Merge"
+| | | |   
+| * | |   commit ac91195a7e51e5614ea61860f57fbb368091c44b
+| |\ \ \  Merge: c9d8278 14c83aa
+| |/ / /  Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+|/| | /   Date:   Sun Apr 23 11:52:08 2023 +0800
+| | |/    
+| |/|         Merge pull request #7 from lainemulvay/main
+| | |         
+| | |         Merge
+| | | 
+* | | commit 14c83aa697d3a95a4c04a25cb4327d512360fc5f
+| | | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | | Date:   Sat Apr 22 16:17:17 2023 +0800
+| | | 
+| | |     response box partly interactive
+| | | 
+* | | commit 98cd6e213439f3a30175af3f8d414f53bcd10184
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Sat Apr 22 12:36:17 2023 +0800
+| | | 
+| | |     putting javascript into html
+| | | 
+* | | commit 694208e515313ebae20fa31664b80b7c7b1f22b2
+|/ /  Author: Murray Lewin <murraylewin91@gmail.com>
+| |   Date:   Sat Apr 22 12:12:28 2023 +0800
+| |   
+| |       javascript
+| | 
+* | commit c9d82783033bcd7e9013f048edc2579bebb49a34
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat Apr 22 11:18:53 2023 +0800
+| | 
+| |     chat styling p2 (shading, size, logo)
+| | 
+* | commit 667be2745d70b5713ec5cdd64b62126553731279
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Sat Apr 22 10:44:07 2023 +0800
+| | 
+| |     Styled chat p1
+| | 
+* | commit 150079451d6ccc1327ae76c126405b41df24b6af
+|\| Merge: c843a46 27259c3
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Sat Apr 22 07:24:34 2023 +0800
+| | 
+| |     Merge branch 'main' of https://github.com/lainemulvay/CITS3403-Project
+| | 
+| * commit 27259c3c4794b37e2d74d29b2bba9fd8363a2c76
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sat Apr 22 00:20:28 2023 +0800
+| | 
+| |     login and reg view responsive update
+| | 
+| * commit 35814ce2d14bcfef28c2cb2abead6a5f6bbba8f1
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri Apr 21 23:51:50 2023 +0800
+| | 
+| |     login & reg layout update
+| | 
+| * commit d8f46e66ae887a2ea8d56e26ebe528808e85a592
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri Apr 21 23:05:21 2023 +0800
+| | 
+| |     reorganise code
+| | 
+| * commit 19b3228db8f2dcfa6d81b6102a29a7aab5ba29bf
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri Apr 21 23:04:41 2023 +0800
+| | 
+| |     chat bug fix
+| | 
+| * commit 0ce625e978b8311b97f44f8555b9328667b1d7f7
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri Apr 21 22:07:30 2023 +0800
+| | 
+| |     updated meeting notes and test branch commit/merge
+| | 
+| * commit 8f5c491f7e8b8a29c003bf5ba713ab77a8651e49
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 21 20:00:33 2023 +0800
+| | 
+| |     changed intro title and modified some descriptions
+| | 
+| * commit 7044d38d2a2a202ff6edef3b7a3fc122fd7583b6
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 21 19:56:43 2023 +0800
+| | 
+| |     Changed image reference path
+| | 
+| * commit b4e9e53176e9ba0682adec1f65f37fc33bb9f712
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 21 19:54:56 2023 +0800
+| | 
+| |     Deleted old image folders
+| |   
+| *   commit ee86d66bfb2061856a893c9d17754355c6098028
+| |\  Merge: a1f0723 be92173
+| | | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Fri Apr 21 19:53:00 2023 +0800
+| | | 
+| | |     Merge pull request #5 from lainemulvay:History
+| | |     
+| | |     Add history view template under history folder. Moved image folder outside.
+| | | 
+| | * commit be9217353b29073571eae8f77034234b405f7840
+| |/  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Fri Apr 21 19:51:59 2023 +0800
+| |   
+| |       Add history view template under history folder.
+| |       Moved image folder outside
+| | 
+| * commit a1f072334fa82f2b620dc32420795387ff22a895
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 21 19:39:49 2023 +0800
+| | 
+| |     Added a gitignore file for .DS_Store, Added to
+| |     meeting log, deleted some testing files
+| | 
+| * commit fe7832712fc086d419ff534c6ce0bb51b3af272e
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri Apr 21 15:57:32 2023 +0800
+| | 
+| |     css update for responsive
+| | 
+* | commit c843a46845c5fd86dd208689d1658458bc45ec5d
+|/  Author: Murray Lewin <murraylewin91@gmail.com>
+|   Date:   Sat Apr 22 07:18:30 2023 +0800
+|   
+|       commitment
+| 
+* commit b4c211a4a121e487a9cf1d0fef730f02d4d2115c
+| Author: Murray Lewin <murraylewin91@gmail.com>
+| Date:   Fri Apr 21 15:31:06 2023 +0800
+| 
+|     adding
+| 
+* commit b0ebe124d3ee240b4393982c8aab571410f44a9c
+| Author: Murray Lewin <murraylewin91@gmail.com>
+| Date:   Fri Apr 21 15:21:40 2023 +0800
+| 
+|     edit changes
+| 
+* commit 3f18026437b1d50f5cacbf73362823972caf6c25
+| Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| Date:   Fri Apr 21 15:13:43 2023 +0800
+| 
+|     remove duplicated file
+|   
+*   commit c93aecb37f083413521a6737355711cadb737461
+|\  Merge: e17164b 3938411
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Fri Apr 21 15:10:06 2023 +0800
+| | 
+| |     chat bug fix
+| |   
+| *   commit 3938411c6454f24da3938e11bd9ed0210c46e881
+| |\  Merge: 2d36f14 d3ae560
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Fri Apr 21 14:41:07 2023 +0800
+| | | 
+| | |     Merge branch 'main' of https://github.com/lainemulvay/CITS3403-Project
+| | | 
+| | * commit d3ae560e8fc2ec72cda4e062f456b0a2e8aa4af4
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Fri Apr 21 14:40:48 2023 +0800
+| | | 
+| | |     added a alternative chat html
+| | | 
+| * | commit 2d36f14a7d399d8e4aa18c2cc8670d07f95cf84d
+| |\| Merge: 7b14a4e 5ab411f
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Fri Apr 21 14:40:49 2023 +0800
+| | | 
+| | |     Merge branch 'main' of https://github.com/lainemulvay/CITS3403-Project
+| | |   
+| | *   commit 5ab411fdcf329a84771754b667a3b9c1dd2bafd9
+| | |\  Merge: 2a9d74f 43512d5
+| | | | Author: hznkyh <hank021008@outlook.com>
+| | | | Date:   Fri Apr 21 14:39:48 2023 +0800
+| | | | 
+| | | |     Merge branch 'main' of https://github.com/lainemulvay/CITS3403-Project
+| | | | 
+| | * | commit 2a9d74f2af9fd22bec6f9b04179722c2eecdd983
+| | | | Author: hznkyh <hank021008@outlook.com>
+| | | | Date:   Fri Apr 21 14:36:58 2023 +0800
+| | | | 
+| | | |     deleting duplicate files
+| | | | 
+| * | | commit 7b14a4e19ab996402761ae86b9ecd4147550ae24
+| | |/  Author: Murray Lewin <murraylewin91@gmail.com>
+| |/|   Date:   Fri Apr 21 14:40:32 2023 +0800
+| | |   
+| | |       removing bootstrap
+| | | 
+| * | commit 43512d5f3cd9970a4749a4ad2b9e952d2f91af86
+| |/  Author: Murray Lewin <murraylewin91@gmail.com>
+| |   Date:   Fri Apr 21 14:30:28 2023 +0800
+| |   
+| |       chat
+| | 
+| * commit a87d70ad3ff6352c36328e60a9644f6f21fdf40c
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 21 14:21:10 2023 +0800
+| | 
+| |     deleting test files
+| | 
+* | commit e17164b832332eb1fa0acbc772cf93a3a8110c0e
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Fri Apr 21 14:46:59 2023 +0800
+|   
+|       chat bug fix
+|   
+*   commit 4e223b921c1322f4f7ce84a900181255cde7825d
+|\  Merge: f6cab83 bcbf227
+| | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | Date:   Fri Apr 21 14:18:18 2023 +0800
+| | 
+| |     Merge pull request #4 from lainemulvay:testing
+| |     
+| |     testing
+| | 
+| * commit bcbf227015e093ef4c8dc146a06015815c095db2
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 21 14:17:36 2023 +0800
+| | 
+| |     testing
+| |   
+* |   commit f6cab83d8e0f46863a121acb61c656f762811c29
+|\ \  Merge: ef1af6f 25c1448
+| |/  Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+|/|   Date:   Fri Apr 21 14:15:53 2023 +0800
+| |   
+| |       Merge pull request #3 from lainemulvay:testing
+| |       
+| |       testing
+| | 
+| * commit 25c144826a7fa922090286982dc96faecacd0a11
+|/  Author: hznkyh <hank021008@outlook.com>
+|   Date:   Fri Apr 21 14:15:34 2023 +0800
+|   
+|       testing
+| 
+* commit ef1af6f7a8f34b2b11b03c0f2d50a9d6bb56c704
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Fri Apr 21 14:14:59 2023 +0800
+| 
+|     testing
+|   
+*   commit f960991fd9a4cc3c58af15a73c90d5725b036c85
+|\  Merge: 9cb2776 1f31ba4
+| | Author: Murray Lewin <murraylewin91@gmail.com>
+| | Date:   Fri Apr 21 14:09:49 2023 +0800
+| | 
+| |     Merge branches 'main' and 'main' of https://github.com/lainemulvay/CITS3403-Project
+| |   
+| *   commit 1f31ba4e6769a3de0f2b0e1c3a1a6e0dfc312b0e
+| |\  Merge: 1d60d4a 6e5f968
+| | | Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| | | Date:   Fri Apr 21 14:09:37 2023 +0800
+| | | 
+| | |     Merge pull request #2 from lainemulvay:test
+| | |     
+| | |     testing
+| | | 
+| | * commit 6e5f9680e97401c02ec8b32111de059039538249
+| |/  Author: hznkyh <hank021008@outlook.com>
+| |   Date:   Fri Apr 21 14:06:01 2023 +0800
+| |   
+| |       testing
+| | 
+| * commit 1d60d4a504031f2c3994e3cebec33585ec068853
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 21 14:03:38 2023 +0800
+| | 
+| |     testing
+| |   
+| *   commit fee60b34150b52b007e54110483edfea0928756c
+| |\  Merge: eb2641b b27eb84
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Fri Apr 21 14:02:25 2023 +0800
+| | | 
+| | |     Merge branch 'main' of https://github.com/lainemulvay/CITS3403-Project
+| | | 
+| * | commit eb2641b0beae2ab92f087585e916ba127a027bfc
+| | | Author: hznkyh <hank021008@outlook.com>
+| | | Date:   Fri Apr 21 13:47:00 2023 +0800
+| | | 
+| | |     testing branch
+| | | 
+* | | commit 9cb2776cd17eb6f50a8b4b7dec04b346148db3d7
+| |/  Author: Murray Lewin <murraylewin91@gmail.com>
+|/|   Date:   Fri Apr 21 14:09:29 2023 +0800
+| |   
+| |       chat view
+| |   
+* |   commit b27eb840dd662c8aa10961decbea260f088ec25c
+|\ \  Merge: c4127bc 2993238
+| | | Author: Murray Lewin <murraylewin91@gmail.com>
+| | | Date:   Fri Apr 21 13:52:27 2023 +0800
+| | | 
+| | |     Merge branch 'main' of https://github.com/lainemulvay/CITS3403-Project
+| | | 
+| * | commit 2993238446c4dc795879578adb810cc797749491
+| |/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| |   Date:   Fri Apr 21 13:46:47 2023 +0800
+| |   
+| |       file reorganise
+| | 
+| * commit b7d5231da9d024d053bf59a77e3e240461bad29e
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Fri Apr 21 13:41:37 2023 +0800
+| | 
+| |     test
+| | 
+| * commit 00589d96b7c19af9186c195315572e26cb545f58
+| | Author: LaineMulvay <22708032@student.uwa.edu.au>
+| | Date:   Fri Apr 21 13:40:42 2023 +0800
+| | 
+| |     test
+| | 
+* | commit c4127bc347bb0cc519b2f94d847ef708bf64a3f2
+|/  Author: Murray Lewin <murraylewin91@gmail.com>
+|   Date:   Fri Apr 21 13:51:42 2023 +0800
+|   
+|       chat page
+| 
+* commit 87e08275996dc0e488f14fb2626b15801384aa8a
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Fri Apr 21 13:31:29 2023 +0800
+| 
+|     reconstructing branch
+| 
+* commit 330ccc106e99f92e7e3dd06c14941c0262565fcf
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Fri Apr 21 13:29:29 2023 +0800
+| 
+|     reconstruting branch
+| 
+* commit dbe9ff74772e3a412e441c502faaee42bcb559aa
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Thu Apr 20 15:03:48 2023 +0800
+| 
+|     added more info from Teams chat history
+| 
+* commit 643d3fdaedcd7c72a9a469ea4127cac6c167de9c
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Thu Apr 20 14:53:15 2023 +0800
+| 
+|     added summaries of previous meetings
+| 
+* commit c21bdd446fc784c42cdcf6c058efc10751c1a1ad
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Thu Apr 20 14:52:13 2023 +0800
+| 
+|     include a file to log meetings
+| 
+* commit 568b30aa3682d5f08ea2349a9a4d60206da12c80
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Wed Apr 19 21:22:09 2023 +0800
+| 
+|     fixed back button not working when clicking the space around the text
+| 
+* commit c46759ab4eef19bcf7fb4255ff8130a4c2d9dde7
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Wed Apr 19 21:01:47 2023 +0800
+| 
+|     fixed back button collision with input field
+| 
+* commit e2301be00894978f851b211155e7f42afcd0a6cc
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Wed Apr 19 20:58:46 2023 +0800
+| 
+|     fixed back button collision with input field
+| 
+* commit 5753ac64b12df9fa9520439da9d12cecd0eb663a
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Wed Apr 19 20:57:55 2023 +0800
+| 
+|     fixed back button collision with input field
+| 
+* commit faeb31e80d3ca26231898ed6ced769f9060c6298
+| Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| Date:   Wed Apr 19 12:58:08 2023 +0800
+| 
+|     add meta tag
+| 
+* commit 4661bb18c606064df47b60efb62f59c96d25796b
+| Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| Date:   Wed Apr 19 02:27:11 2023 +0800
+| 
+|     Reg view update
+| 
+* commit 758becdb1289e44ba330be60df1c0f28c6f448e1
+| Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| Date:   Wed Apr 19 02:26:29 2023 +0800
+| 
+|     Login and Reg page update
+| 
+* commit 1fdd47223d5a606bc55a4f69673e28d48f9fce88
+| Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| Date:   Wed Apr 19 01:38:19 2023 +0800
+| 
+|     update img
+| 
+* commit ea851f808ac8eaf890a96790213be54e83367feb
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Tue Apr 18 21:53:09 2023 +0800
+| 
+|     applied more styles to description page
+| 
+* commit 05a96c2bce94feb051583ea212ed5ae29af7276c
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Tue Apr 18 21:31:01 2023 +0800
+| 
+|     Applied some style to descriptions
+| 
+* commit 9e2409dd90297fcc8b91f5008d470646f4030d92
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Tue Apr 18 21:16:49 2023 +0800
+| 
+|     linked to a register page
+| 
+* commit 75c1a47434c8da7b07d63d29e8d7dfd0c81b1346
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Tue Apr 18 21:14:04 2023 +0800
+| 
+|     added some description and navigation functionality
+|   
+*   commit 23d6fb181180a4a93c8c40df4e3a0e5f83236d0a
+|\  Merge: 1b039e6 39d0963
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sun Apr 16 18:30:58 2023 +0800
+| | 
+| |     Merge branch 'main' of https://github.com/lainemulvay/CITS3403-Project into main
+| | 
+| * commit 39d09636dcb43e7bc08bdd7b76f112c662fff98d
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun Apr 16 15:51:55 2023 +0800
+| | 
+| |     update tasks
+| | 
+| * commit a2ff7c008391c824f1a847e395ecf4511504626c
+| | Author: hznkyh <hank021008@outlook.com>
+| | Date:   Sun Apr 16 15:48:48 2023 +0800
+| | 
+| |     adjusted files for validator
+| | 
+* | commit 1b039e6f4d022055a7566892bdcc8ba7d2d9ea81
+| | Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| | Date:   Sun Apr 16 18:17:29 2023 +0800
+| | 
+| |     login css update
+| | 
+* | commit 7a2f764fe317671cf32a98f135ab7fbfe177e42a
+|/  Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+|   Date:   Sun Apr 16 18:13:42 2023 +0800
+|   
+|       Reg page deve
+| 
+* commit 7aaa0a307e465b538418aa2ad275d928c69a5105
+| Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| Date:   Sun Apr 16 14:19:20 2023 +0800
+| 
+|     login page responsive update
+| 
+* commit 0eccaea5e98e93be92ce143bec7c5b9e19968985
+| Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| Date:   Sun Apr 16 03:38:32 2023 +0800
+| 
+|     responsive & code tidy up
+| 
+* commit e9da0cd8b30b5694c8d6cd8769d2b4be49202d25
+| Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| Date:   Sat Apr 15 22:46:42 2023 +0800
+| 
+|     Delete .DS_Store
+| 
+* commit f1c9734dd5dea2798f264654c995d7b4c36e4f95
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sat Apr 15 22:40:26 2023 +0800
+| 
+|     added folder for final login view
+| 
+* commit e6d6ea6963ad7808ac1c67fbc751ad2c8e680dee
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sat Apr 15 20:01:26 2023 +0800
+| 
+|     upload new file
+| 
+* commit 6adf9d6d56072b06cbbf733cb67612a17d1149fa
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Sat Apr 15 20:00:52 2023 +0800
+| 
+|     update file
+| 
+* commit 4d5c235551e71a43ef9c8d527fab86dc989a0a60
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Fri Apr 14 15:02:14 2023 +0800
+| 
+|     testing git
+| 
+* commit 4320bb21656bd2b2beb9a2d3ba47806181160919
+| Author: hznkyh <hank021008@outlook.com>
+| Date:   Fri Apr 14 14:50:26 2023 +0800
+| 
+|     test
+| 
+* commit 1fd4ba7b60f0eeb56c44f00a72d9fd67de0ddd9c
+| Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| Date:   Fri Apr 14 14:24:37 2023 +0800
+| 
+|     Add files via upload
+| 
+* commit e122c200fba2a67b47e10b3d660a24567b43ca17
+| Author: hznkyh <113084676+hznkyh@users.noreply.github.com>
+| Date:   Fri Apr 14 14:24:15 2023 +0800
+| 
+|     Create new folder
+| 
+* commit 8ea6f65f1cd961f3756048c80872355848cf7c50
+| Author: Vicky Chow <vicky.chow.senmedia@gmail.com>
+| Date:   Fri Apr 14 14:00:14 2023 +0800
+| 
+|     draft
+| 
+* commit e010cb794a30f05a7334f72465bb956b5d931bf9
+| Author: LaineMulvay <22708032@student.uwa.edu.au>
+| Date:   Fri Apr 14 13:38:17 2023 +0800
+| 
+|     Added Project and Murrays_ideas folder and moved 90's Space Jam to it
+| 
+* commit 8b0c41d2a5af6d67b95dc902b33d961bce98b8a7
+| Author: Murray Lewin <81797977+GrassTree-Muzz@users.noreply.github.com>
+| Date:   Fri Apr 14 12:54:32 2023 +0800
+| 
+|     Add files via upload
+|     
+|     Rotating Chatbot HTML
+| 
+* commit 6e6f51ffbe80810d7d6d891914532c4f5d570b34
+| Author: LaineMulvay <22708032@student.uwa.edu.au>
+| Date:   Fri Apr 14 10:22:04 2023 +0800
+| 
+|     Added Chat and History pages
+| 
+* commit 1c92633f7179d6be307211f3ce5581e62ddd1154
+  Author: LaineMulvay <22708032@student.uwa.edu.au>
+  Date:   Fri Apr 14 09:35:53 2023 +0800
+  
+      Added basic website
