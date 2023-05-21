@@ -5,4 +5,4 @@
 
 ## ***routes.py***
 @route
-- index
+- / index
