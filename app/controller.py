@@ -1,7 +1,6 @@
-from flask import session, request, jsonify
+from flask import session, jsonify
 from app.models import User, Chat, ChatQuestion, ChatResponse
 from app import db
-from sqlalchemy.exc import SQLAlchemyError
 from werkzeug.security import generate_password_hash
 
 # Get the current user based on the session id
