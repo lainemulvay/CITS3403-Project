@@ -58,6 +58,9 @@ app/                                  <--Main App Module-->
             profile_view              --- Profile page template 
             reg_view                  --- Registration page template
             ....html
+      __init__.py                     ---Initialize app---
+      controller.py                   ---Functions for app models---
+      model.py                        ---Database models---
 management/                           <--Information record of team management-->
       Flask set up steps.txt          ---Shared instructions for project set up.---
       meeting_log.txt                 ---Meeting log---
